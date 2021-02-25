@@ -6,5 +6,5 @@ CXX_FLAGS =  -std=c++11 -Wno-implicit-fallthrough -Wno-noexcept-type -pipe    -f
 
 CXX_DEFINES = -DHAVE_ATOMICS -DHAVE_CRYPT -DHAVE_CURL_MULTI_WAIT -DHAVE_DH_PADDED -DHAVE_FSTATAT -DHAVE_GETHBYXR -DHAVE_GETIFADDRS -DHAVE_LIBZ -DHAVE_NAMEINFO -DHAVE_PROTOR -DHAVE_READLINE -DHAVE_SENDFILE -DHAVE_SETRESUID -DHAVE_SHADOWPW -DHAVE_SIGWTI -DHAVE_SSL -DHAVE_TLS -DHAVE_TLS1 -DHAVE_TLS11 -DHAVE_TLS12 -DHAVE_XML2 -DHAVE_XRDCRYPTO -DUSE_LIBC_SEMAPHORE=0 -DXRDPLUGIN_SOVERSION=\"4\" -DXrdPosixPreload_EXPORTS -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE -D__linux__=1
 
-CXX_INCLUDES = -I/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/.. -I/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/. -I/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src -I/content/root_src/root_build/XROOTD-prefix/src/XROOTD-build/src -I/usr/local/include -I/usr/include/x86_64-linux-gnu 
+CXX_INCLUDES = -I/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/.. -I/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/. -I/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src -I/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD-build/src -I/usr/local/include -I/usr/include/x86_64-linux-gnu 
 

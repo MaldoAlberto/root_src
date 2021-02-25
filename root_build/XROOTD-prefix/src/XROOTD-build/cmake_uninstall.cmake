@@ -1,8 +1,8 @@
-IF(NOT EXISTS "/content/root_src/root_build/XROOTD-prefix/src/XROOTD-build/install_manifest.txt")
-  MESSAGE(FATAL_ERROR "Cannot find install manifest: \"/content/root_src/root_build/XROOTD-prefix/src/XROOTD-build/install_manifest.txt\"")
-ENDIF(NOT EXISTS "/content/root_src/root_build/XROOTD-prefix/src/XROOTD-build/install_manifest.txt")
+IF(NOT EXISTS "/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD-build/install_manifest.txt")
+  MESSAGE(FATAL_ERROR "Cannot find install manifest: \"/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD-build/install_manifest.txt\"")
+ENDIF(NOT EXISTS "/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD-build/install_manifest.txt")
 
-FILE(READ "/content/root_src/root_build/XROOTD-prefix/src/XROOTD-build/install_manifest.txt" files)
+FILE(READ "/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD-build/install_manifest.txt" files)
 STRING(REGEX REPLACE "\n" ";" files "${files}")
 FOREACH(file ${files})
   MESSAGE(STATUS "Uninstalling \"$ENV{DESTDIR}${file}\"")

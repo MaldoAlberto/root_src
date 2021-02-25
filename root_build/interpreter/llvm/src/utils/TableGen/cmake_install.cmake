@@ -1,8 +1,8 @@
-# Install script for directory: /content/root_src/interpreter/llvm/src/utils/TableGen
+# Install script for directory: /content/root_src_37/interpreter/llvm/src/utils/TableGen
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/content/root_src/root_install")
+  set(CMAKE_INSTALL_PREFIX "/content/root_src_37/root_install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,7 +38,7 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/content/root_src/root_build/interpreter/llvm/src/bin/llvm-tblgen")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/content/root_src_37/root_build/interpreter/llvm/src/bin/llvm-tblgen")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/llvm-tblgen" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/llvm-tblgen")
     if(CMAKE_INSTALL_DO_STRIP)

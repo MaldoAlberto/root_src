@@ -1,8 +1,8 @@
-# Install script for directory: /content/root_src/geom
+# Install script for directory: /content/root_src_37/geom
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/content/root_src/root_install")
+  set(CMAKE_INSTALL_PREFIX "/content/root_src_37/root_install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,15 +38,15 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/geom/gdml" TYPE DIRECTORY FILES "/content/root_src/geom/gdml/" FILES_MATCHING REGEX "/[^/]*\\.py$" REGEX "/inc$" EXCLUDE REGEX "/src$" EXCLUDE)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/geom/gdml" TYPE DIRECTORY FILES "/content/root_src_37/geom/gdml/" FILES_MATCHING REGEX "/[^/]*\\.py$" REGEX "/inc$" EXCLUDE REGEX "/src$" EXCLUDE)
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/content/root_src/root_build/geom/geom/cmake_install.cmake")
-  include("/content/root_src/root_build/geom/geombuilder/cmake_install.cmake")
-  include("/content/root_src/root_build/geom/geompainter/cmake_install.cmake")
-  include("/content/root_src/root_build/geom/gdml/cmake_install.cmake")
+  include("/content/root_src_37/root_build/geom/geom/cmake_install.cmake")
+  include("/content/root_src_37/root_build/geom/geombuilder/cmake_install.cmake")
+  include("/content/root_src_37/root_build/geom/geompainter/cmake_install.cmake")
+  include("/content/root_src_37/root_build/geom/gdml/cmake_install.cmake")
 
 endif()
 

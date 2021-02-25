@@ -42,5 +42,5 @@ main/CMakeFiles/rootn.exe.dir/src/rmain.cxx.o
  ../core/meta/inc/TSchemaHelper.h
  ../core/meta/inc/TVirtualIsAProxy.h
  ../core/rint/inc/TRint.h
- /content/root_src/main/src/rmain.cxx
+ /content/root_src_37/main/src/rmain.cxx
  ginclude/RConfigure.h

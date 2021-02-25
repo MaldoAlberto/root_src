@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/content/root_src/interpreter/llvm/src/lib/Target/NVPTX/MCTargetDesc/NVPTXMCAsmInfo.cpp" "/content/root_src/root_build/interpreter/llvm/src/lib/Target/NVPTX/MCTargetDesc/CMakeFiles/LLVMNVPTXDesc.dir/NVPTXMCAsmInfo.cpp.o"
-  "/content/root_src/interpreter/llvm/src/lib/Target/NVPTX/MCTargetDesc/NVPTXMCTargetDesc.cpp" "/content/root_src/root_build/interpreter/llvm/src/lib/Target/NVPTX/MCTargetDesc/CMakeFiles/LLVMNVPTXDesc.dir/NVPTXMCTargetDesc.cpp.o"
+  "/content/root_src_37/interpreter/llvm/src/lib/Target/NVPTX/MCTargetDesc/NVPTXMCAsmInfo.cpp" "/content/root_src_37/root_build/interpreter/llvm/src/lib/Target/NVPTX/MCTargetDesc/CMakeFiles/LLVMNVPTXDesc.dir/NVPTXMCAsmInfo.cpp.o"
+  "/content/root_src_37/interpreter/llvm/src/lib/Target/NVPTX/MCTargetDesc/NVPTXMCTargetDesc.cpp" "/content/root_src_37/root_build/interpreter/llvm/src/lib/Target/NVPTX/MCTargetDesc/CMakeFiles/LLVMNVPTXDesc.dir/NVPTXMCTargetDesc.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

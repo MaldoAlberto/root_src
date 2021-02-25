@@ -1,8 +1,8 @@
-# Install script for directory: /content/root_src/interpreter/llvm/src/tools/clang
+# Install script for directory: /content/root_src_37/interpreter/llvm/src/tools/clang
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/content/root_src/root_install")
+  set(CMAKE_INSTALL_PREFIX "/content/root_src_37/root_install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,28 +39,28 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES
-    "/content/root_src/interpreter/llvm/src/tools/clang/include/clang"
-    "/content/root_src/interpreter/llvm/src/tools/clang/include/clang-c"
+    "/content/root_src_37/interpreter/llvm/src/tools/clang/include/clang"
+    "/content/root_src_37/interpreter/llvm/src/tools/clang/include/clang-c"
     FILES_MATCHING REGEX "/[^/]*\\.def$" REGEX "/[^/]*\\.h$" REGEX "/config\\.h$" EXCLUDE REGEX "/\\.svn$" EXCLUDE)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/content/root_src/root_build/interpreter/llvm/src/tools/clang/include/clang" FILES_MATCHING REGEX "/CMakeFiles$" EXCLUDE REGEX "/[^/]*\\.inc$" REGEX "/[^/]*\\.h$")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/content/root_src_37/root_build/interpreter/llvm/src/tools/clang/include/clang" FILES_MATCHING REGEX "/CMakeFiles$" EXCLUDE REGEX "/[^/]*\\.inc$" REGEX "/[^/]*\\.h$")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/clang" TYPE PROGRAM FILES "/content/root_src/interpreter/llvm/src/tools/clang/utils/bash-autocomplete.sh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/clang" TYPE PROGRAM FILES "/content/root_src_37/interpreter/llvm/src/tools/clang/utils/bash-autocomplete.sh")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/content/root_src/root_build/interpreter/llvm/src/tools/clang/utils/TableGen/cmake_install.cmake")
-  include("/content/root_src/root_build/interpreter/llvm/src/tools/clang/include/cmake_install.cmake")
-  include("/content/root_src/root_build/interpreter/llvm/src/tools/clang/lib/cmake_install.cmake")
-  include("/content/root_src/root_build/interpreter/llvm/src/tools/clang/tools/cmake_install.cmake")
-  include("/content/root_src/root_build/interpreter/llvm/src/tools/clang/runtime/cmake_install.cmake")
-  include("/content/root_src/root_build/interpreter/llvm/src/tools/clang/docs/cmake_install.cmake")
-  include("/content/root_src/root_build/interpreter/llvm/src/tools/clang/cmake/modules/cmake_install.cmake")
+  include("/content/root_src_37/root_build/interpreter/llvm/src/tools/clang/utils/TableGen/cmake_install.cmake")
+  include("/content/root_src_37/root_build/interpreter/llvm/src/tools/clang/include/cmake_install.cmake")
+  include("/content/root_src_37/root_build/interpreter/llvm/src/tools/clang/lib/cmake_install.cmake")
+  include("/content/root_src_37/root_build/interpreter/llvm/src/tools/clang/tools/cmake_install.cmake")
+  include("/content/root_src_37/root_build/interpreter/llvm/src/tools/clang/runtime/cmake_install.cmake")
+  include("/content/root_src_37/root_build/interpreter/llvm/src/tools/clang/docs/cmake_install.cmake")
+  include("/content/root_src_37/root_build/interpreter/llvm/src/tools/clang/cmake/modules/cmake_install.cmake")
 
 endif()
 

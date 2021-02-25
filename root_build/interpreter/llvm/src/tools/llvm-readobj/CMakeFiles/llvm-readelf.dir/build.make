@@ -43,10 +43,10 @@ RM = /usr/local/lib/python2.7/dist-packages/cmake/data/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /content/root_src
+CMAKE_SOURCE_DIR = /content/root_src_37
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /content/root_src/root_build
+CMAKE_BINARY_DIR = /content/root_src_37/root_build
 
 # Utility rule file for llvm-readelf.
 
@@ -58,8 +58,8 @@ interpreter/llvm/src/tools/llvm-readobj/CMakeFiles/llvm-readelf: interpreter/llv
 
 
 interpreter/llvm/src/bin/llvm-readelf: interpreter/llvm/src/bin/llvm-readobj
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/content/root_src/root_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating ../../bin/llvm-readelf"
-	cd /content/root_src/root_build/interpreter/llvm/src/tools/llvm-readobj && /usr/local/lib/python2.7/dist-packages/cmake/data/bin/cmake -E create_symlink llvm-readobj /content/root_src/root_build/interpreter/llvm/src/./bin/llvm-readelf
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/content/root_src_37/root_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating ../../bin/llvm-readelf"
+	cd /content/root_src_37/root_build/interpreter/llvm/src/tools/llvm-readobj && /usr/local/lib/python2.7/dist-packages/cmake/data/bin/cmake -E create_symlink llvm-readobj /content/root_src_37/root_build/interpreter/llvm/src/./bin/llvm-readelf
 
 llvm-readelf: interpreter/llvm/src/tools/llvm-readobj/CMakeFiles/llvm-readelf
 llvm-readelf: interpreter/llvm/src/bin/llvm-readelf
@@ -73,10 +73,10 @@ interpreter/llvm/src/tools/llvm-readobj/CMakeFiles/llvm-readelf.dir/build: llvm-
 .PHONY : interpreter/llvm/src/tools/llvm-readobj/CMakeFiles/llvm-readelf.dir/build
 
 interpreter/llvm/src/tools/llvm-readobj/CMakeFiles/llvm-readelf.dir/clean:
-	cd /content/root_src/root_build/interpreter/llvm/src/tools/llvm-readobj && $(CMAKE_COMMAND) -P CMakeFiles/llvm-readelf.dir/cmake_clean.cmake
+	cd /content/root_src_37/root_build/interpreter/llvm/src/tools/llvm-readobj && $(CMAKE_COMMAND) -P CMakeFiles/llvm-readelf.dir/cmake_clean.cmake
 .PHONY : interpreter/llvm/src/tools/llvm-readobj/CMakeFiles/llvm-readelf.dir/clean
 
 interpreter/llvm/src/tools/llvm-readobj/CMakeFiles/llvm-readelf.dir/depend:
-	cd /content/root_src/root_build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /content/root_src /content/root_src/interpreter/llvm/src/tools/llvm-readobj /content/root_src/root_build /content/root_src/root_build/interpreter/llvm/src/tools/llvm-readobj /content/root_src/root_build/interpreter/llvm/src/tools/llvm-readobj/CMakeFiles/llvm-readelf.dir/DependInfo.cmake --color=$(COLOR)
+	cd /content/root_src_37/root_build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /content/root_src_37 /content/root_src_37/interpreter/llvm/src/tools/llvm-readobj /content/root_src_37/root_build /content/root_src_37/root_build/interpreter/llvm/src/tools/llvm-readobj /content/root_src_37/root_build/interpreter/llvm/src/tools/llvm-readobj/CMakeFiles/llvm-readelf.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : interpreter/llvm/src/tools/llvm-readobj/CMakeFiles/llvm-readelf.dir/depend
 

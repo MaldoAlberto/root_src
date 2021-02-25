@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/content/root_src/interpreter/llvm/src/utils/count/count.c" "/content/root_src/root_build/interpreter/llvm/src/utils/count/CMakeFiles/count.dir/count.c.o"
+  "/content/root_src_37/interpreter/llvm/src/utils/count/count.c" "/content/root_src_37/root_build/interpreter/llvm/src/utils/count/CMakeFiles/count.dir/count.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

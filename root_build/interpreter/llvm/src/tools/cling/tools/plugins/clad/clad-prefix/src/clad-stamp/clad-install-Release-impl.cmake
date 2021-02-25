@@ -1,4 +1,4 @@
-set(command "env;DESTDIR=/content/root_src/root_build/plugins;/usr/local/lib/python2.7/dist-packages/cmake/data/bin/cmake;--build;.;--target;install")
+set(command "env;DESTDIR=/content/root_src_37/root_build/plugins;/usr/local/lib/python2.7/dist-packages/cmake/data/bin/cmake;--build;.;--target;install")
 
 execute_process(COMMAND ${command} RESULT_VARIABLE result)
 if(result)
@@ -8,7 +8,7 @@ if(result)
   endforeach()
   message(FATAL_ERROR "${msg}")
 endif()
-set(command "/usr/local/lib/python2.7/dist-packages/cmake/data/bin/cmake;-E;copy_directory;/content/root_src/root_build/plugins//content/root_src/root_install/;/content/root_src/root_build/etc/cling//plugins")
+set(command "/usr/local/lib/python2.7/dist-packages/cmake/data/bin/cmake;-E;copy_directory;/content/root_src_37/root_build/plugins//content/root_src_37/root_install/;/content/root_src_37/root_build/etc/cling//plugins")
 
 execute_process(COMMAND ${command} RESULT_VARIABLE result)
 if(result)

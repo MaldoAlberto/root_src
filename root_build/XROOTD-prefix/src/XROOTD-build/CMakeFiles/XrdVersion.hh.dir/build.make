@@ -43,10 +43,10 @@ RM = /usr/local/lib/python2.7/dist-packages/cmake/data/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /content/root_src/root_build/XROOTD-prefix/src/XROOTD
+CMAKE_SOURCE_DIR = /content/root_src_37/root_build/XROOTD-prefix/src/XROOTD
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /content/root_src/root_build/XROOTD-prefix/src/XROOTD-build
+CMAKE_BINARY_DIR = /content/root_src_37/root_build/XROOTD-prefix/src/XROOTD-build
 
 # Utility rule file for XrdVersion.hh.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /content/root_src/root_build/XROOTD-prefix/src/XROOTD-build
 include CMakeFiles/XrdVersion.hh.dir/progress.make
 
 CMakeFiles/XrdVersion.hh:
-	/content/root_src/root_build/XROOTD-prefix/src/XROOTD/genversion.sh /content/root_src/root_build/XROOTD-prefix/src/XROOTD
+	/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/genversion.sh /content/root_src_37/root_build/XROOTD-prefix/src/XROOTD
 
 XrdVersion.hh: CMakeFiles/XrdVersion.hh
 XrdVersion.hh: CMakeFiles/XrdVersion.hh.dir/build.make
@@ -71,6 +71,6 @@ CMakeFiles/XrdVersion.hh.dir/clean:
 .PHONY : CMakeFiles/XrdVersion.hh.dir/clean
 
 CMakeFiles/XrdVersion.hh.dir/depend:
-	cd /content/root_src/root_build/XROOTD-prefix/src/XROOTD-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /content/root_src/root_build/XROOTD-prefix/src/XROOTD /content/root_src/root_build/XROOTD-prefix/src/XROOTD /content/root_src/root_build/XROOTD-prefix/src/XROOTD-build /content/root_src/root_build/XROOTD-prefix/src/XROOTD-build /content/root_src/root_build/XROOTD-prefix/src/XROOTD-build/CMakeFiles/XrdVersion.hh.dir/DependInfo.cmake --color=$(COLOR)
+	cd /content/root_src_37/root_build/XROOTD-prefix/src/XROOTD-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /content/root_src_37/root_build/XROOTD-prefix/src/XROOTD /content/root_src_37/root_build/XROOTD-prefix/src/XROOTD /content/root_src_37/root_build/XROOTD-prefix/src/XROOTD-build /content/root_src_37/root_build/XROOTD-prefix/src/XROOTD-build /content/root_src_37/root_build/XROOTD-prefix/src/XROOTD-build/CMakeFiles/XrdVersion.hh.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/XrdVersion.hh.dir/depend
 

@@ -6,5 +6,5 @@ CXX_FLAGS =  -std=c++11 -Wno-implicit-fallthrough -Wno-noexcept-type -pipe  -Wsh
 
 CXX_DEFINES = -DCLING_VERSION="ROOT_0.7~dev" -DGTEST_HAS_RTTI=0 -DLLVM_BUILD_GLOBAL_ISEL -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS
 
-CXX_INCLUDES = -I/content/root_src/root_build/interpreter/llvm/src/tools/cling/lib/MetaProcessor -I/content/root_src/interpreter/cling/lib/MetaProcessor -I/content/root_src/interpreter/cling/include -I/content/root_src/root_build/interpreter/llvm/src/tools/cling/include -I/content/root_src/interpreter/llvm/src/tools/clang/include -I/content/root_src/root_build/interpreter/llvm/src/tools/clang/include -I/content/root_src/root_build/interpreter/llvm/src/include -I/content/root_src/interpreter/llvm/src/include 
+CXX_INCLUDES = -I/content/root_src_37/root_build/interpreter/llvm/src/tools/cling/lib/MetaProcessor -I/content/root_src_37/interpreter/cling/lib/MetaProcessor -I/content/root_src_37/interpreter/cling/include -I/content/root_src_37/root_build/interpreter/llvm/src/tools/cling/include -I/content/root_src_37/interpreter/llvm/src/tools/clang/include -I/content/root_src_37/root_build/interpreter/llvm/src/tools/clang/include -I/content/root_src_37/root_build/interpreter/llvm/src/include -I/content/root_src_37/interpreter/llvm/src/include 
 

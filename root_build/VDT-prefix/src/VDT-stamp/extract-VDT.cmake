@@ -1,7 +1,7 @@
 # Make file names absolute:
 #
-get_filename_component(filename "/content/root_src/root_build/VDT-prefix/src/vdt-0.4.3.tar.gz" ABSOLUTE)
-get_filename_component(directory "/content/root_src/root_build/VDT-prefix/src/VDT" ABSOLUTE)
+get_filename_component(filename "/content/root_src_37/root_build/VDT-prefix/src/vdt-0.4.3.tar.gz" ABSOLUTE)
+get_filename_component(directory "/content/root_src_37/root_build/VDT-prefix/src/VDT" ABSOLUTE)
 
 message(STATUS "extracting...
      src='${filename}'

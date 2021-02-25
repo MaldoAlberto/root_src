@@ -22,7 +22,7 @@ TargetConditionals.h
 
 ../core/base/inc/RVersion.h
 
-/content/root_src/core/clib/src/strlcpy.c
+/content/root_src_37/core/clib/src/strlcpy.c
 ROOT/RConfig.hxx
 -
 unistd.h

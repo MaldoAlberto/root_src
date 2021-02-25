@@ -116,7 +116,7 @@ hist/hist/CMakeFiles/Hist.dir/src/HFitImpl.cxx.o: ../core/foundation/inc/ROOT/RW
 hist/hist/CMakeFiles/Hist.dir/src/HFitImpl.cxx.o: ../core/foundation/inc/ROOT/TypeTraits.hxx
 hist/hist/CMakeFiles/Hist.dir/src/HFitImpl.cxx.o: ../core/foundation/inc/ROOT/libcpp_string_view.h
 hist/hist/CMakeFiles/Hist.dir/src/HFitImpl.cxx.o: ../core/gui/inc/GuiTypes.h
-hist/hist/CMakeFiles/Hist.dir/src/HFitImpl.cxx.o: ../core/imt/inc/ROOT/TPoolManager.hxx
+hist/hist/CMakeFiles/Hist.dir/src/HFitImpl.cxx.o: ../core/imt/inc/ROOT/RTaskArena.hxx
 hist/hist/CMakeFiles/Hist.dir/src/HFitImpl.cxx.o: ../core/imt/inc/ROOT/TThreadExecutor.hxx
 hist/hist/CMakeFiles/Hist.dir/src/HFitImpl.cxx.o: ../core/meta/inc/TClass.h
 hist/hist/CMakeFiles/Hist.dir/src/HFitImpl.cxx.o: ../core/meta/inc/TDataType.h
@@ -481,7 +481,7 @@ hist/hist/CMakeFiles/Hist.dir/src/TBackCompFitter.cxx.o: ../core/foundation/inc/
 hist/hist/CMakeFiles/Hist.dir/src/TBackCompFitter.cxx.o: ../core/foundation/inc/ROOT/RWrap_libcpp_string_view.h
 hist/hist/CMakeFiles/Hist.dir/src/TBackCompFitter.cxx.o: ../core/foundation/inc/ROOT/TypeTraits.hxx
 hist/hist/CMakeFiles/Hist.dir/src/TBackCompFitter.cxx.o: ../core/foundation/inc/ROOT/libcpp_string_view.h
-hist/hist/CMakeFiles/Hist.dir/src/TBackCompFitter.cxx.o: ../core/imt/inc/ROOT/TPoolManager.hxx
+hist/hist/CMakeFiles/Hist.dir/src/TBackCompFitter.cxx.o: ../core/imt/inc/ROOT/RTaskArena.hxx
 hist/hist/CMakeFiles/Hist.dir/src/TBackCompFitter.cxx.o: ../core/imt/inc/ROOT/TThreadExecutor.hxx
 hist/hist/CMakeFiles/Hist.dir/src/TBackCompFitter.cxx.o: ../core/meta/inc/TClass.h
 hist/hist/CMakeFiles/Hist.dir/src/TBackCompFitter.cxx.o: ../core/meta/inc/TDataType.h

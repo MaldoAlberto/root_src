@@ -48,10 +48,10 @@ RM = /usr/local/lib/python2.7/dist-packages/cmake/data/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /content/root_src
+CMAKE_SOURCE_DIR = /content/root_src_37
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /content/root_src/root_build
+CMAKE_BINARY_DIR = /content/root_src_37/root_build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -102,17 +102,6 @@ list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/local/lib/python2.7/dist-packages/cmake/data/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -124,21 +113,10 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
-# Special rule for the target package
-package: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /content/root_src/root_build && /usr/local/lib/python2.7/dist-packages/cmake/data/bin/cpack --config ./CPackConfig.cmake
-.PHONY : package
-
-# Special rule for the target package
-package/fast: package
-
-.PHONY : package/fast
-
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /content/root_src/root_build && /usr/local/lib/python2.7/dist-packages/cmake/data/bin/cpack --config ./CPackSourceConfig.cmake /content/root_src/root_build/CPackSourceConfig.cmake
+	cd /content/root_src_37/root_build && /usr/local/lib/python2.7/dist-packages/cmake/data/bin/cpack --config ./CPackSourceConfig.cmake /content/root_src_37/root_build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -146,16 +124,38 @@ package_source/fast: package_source
 
 .PHONY : package_source/fast
 
+# Special rule for the target package
+package: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
+	cd /content/root_src_37/root_build && /usr/local/lib/python2.7/dist-packages/cmake/data/bin/cpack --config ./CPackConfig.cmake
+.PHONY : package
+
+# Special rule for the target package
+package/fast: package
+
+.PHONY : package/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/local/lib/python2.7/dist-packages/cmake/data/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	cd /content/root_src/root_build && $(CMAKE_COMMAND) -E cmake_progress_start /content/root_src/root_build/CMakeFiles /content/root_src/root_build/bindings/jupyroot/CMakeFiles/progress.marks
-	cd /content/root_src/root_build && $(MAKE) -f CMakeFiles/Makefile2 bindings/jupyroot/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /content/root_src/root_build/CMakeFiles 0
+	cd /content/root_src_37/root_build && $(CMAKE_COMMAND) -E cmake_progress_start /content/root_src_37/root_build/CMakeFiles /content/root_src_37/root_build/bindings/jupyroot/CMakeFiles/progress.marks
+	cd /content/root_src_37/root_build && $(MAKE) -f CMakeFiles/Makefile2 bindings/jupyroot/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /content/root_src_37/root_build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /content/root_src/root_build && $(MAKE) -f CMakeFiles/Makefile2 bindings/jupyroot/clean
+	cd /content/root_src_37/root_build && $(MAKE) -f CMakeFiles/Makefile2 bindings/jupyroot/clean
 .PHONY : clean
 
 # The main clean target
@@ -165,33 +165,33 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /content/root_src/root_build && $(MAKE) -f CMakeFiles/Makefile2 bindings/jupyroot/preinstall
+	cd /content/root_src_37/root_build && $(MAKE) -f CMakeFiles/Makefile2 bindings/jupyroot/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /content/root_src/root_build && $(MAKE) -f CMakeFiles/Makefile2 bindings/jupyroot/preinstall
+	cd /content/root_src_37/root_build && $(MAKE) -f CMakeFiles/Makefile2 bindings/jupyroot/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /content/root_src/root_build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /content/root_src_37/root_build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
-bindings/jupyroot/CMakeFiles/JupyROOT3_6.dir/rule:
-	cd /content/root_src/root_build && $(MAKE) -f CMakeFiles/Makefile2 bindings/jupyroot/CMakeFiles/JupyROOT3_6.dir/rule
-.PHONY : bindings/jupyroot/CMakeFiles/JupyROOT3_6.dir/rule
+bindings/jupyroot/CMakeFiles/JupyROOT3_7.dir/rule:
+	cd /content/root_src_37/root_build && $(MAKE) -f CMakeFiles/Makefile2 bindings/jupyroot/CMakeFiles/JupyROOT3_7.dir/rule
+.PHONY : bindings/jupyroot/CMakeFiles/JupyROOT3_7.dir/rule
 
 # Convenience name for target.
-JupyROOT3_6: bindings/jupyroot/CMakeFiles/JupyROOT3_6.dir/rule
+JupyROOT3_7: bindings/jupyroot/CMakeFiles/JupyROOT3_7.dir/rule
 
-.PHONY : JupyROOT3_6
+.PHONY : JupyROOT3_7
 
 # fast build rule for target.
-JupyROOT3_6/fast:
-	cd /content/root_src/root_build && $(MAKE) -f bindings/jupyroot/CMakeFiles/JupyROOT3_6.dir/build.make bindings/jupyroot/CMakeFiles/JupyROOT3_6.dir/build
-.PHONY : JupyROOT3_6/fast
+JupyROOT3_7/fast:
+	cd /content/root_src_37/root_build && $(MAKE) -f bindings/jupyroot/CMakeFiles/JupyROOT3_7.dir/build.make bindings/jupyroot/CMakeFiles/JupyROOT3_7.dir/build
+.PHONY : JupyROOT3_7/fast
 
 src/IOHandler.o: src/IOHandler.cxx.o
 
@@ -199,7 +199,7 @@ src/IOHandler.o: src/IOHandler.cxx.o
 
 # target to build an object file
 src/IOHandler.cxx.o:
-	cd /content/root_src/root_build && $(MAKE) -f bindings/jupyroot/CMakeFiles/JupyROOT3_6.dir/build.make bindings/jupyroot/CMakeFiles/JupyROOT3_6.dir/src/IOHandler.cxx.o
+	cd /content/root_src_37/root_build && $(MAKE) -f bindings/jupyroot/CMakeFiles/JupyROOT3_7.dir/build.make bindings/jupyroot/CMakeFiles/JupyROOT3_7.dir/src/IOHandler.cxx.o
 .PHONY : src/IOHandler.cxx.o
 
 src/IOHandler.i: src/IOHandler.cxx.i
@@ -208,7 +208,7 @@ src/IOHandler.i: src/IOHandler.cxx.i
 
 # target to preprocess a source file
 src/IOHandler.cxx.i:
-	cd /content/root_src/root_build && $(MAKE) -f bindings/jupyroot/CMakeFiles/JupyROOT3_6.dir/build.make bindings/jupyroot/CMakeFiles/JupyROOT3_6.dir/src/IOHandler.cxx.i
+	cd /content/root_src_37/root_build && $(MAKE) -f bindings/jupyroot/CMakeFiles/JupyROOT3_7.dir/build.make bindings/jupyroot/CMakeFiles/JupyROOT3_7.dir/src/IOHandler.cxx.i
 .PHONY : src/IOHandler.cxx.i
 
 src/IOHandler.s: src/IOHandler.cxx.s
@@ -217,7 +217,7 @@ src/IOHandler.s: src/IOHandler.cxx.s
 
 # target to generate assembly for a file
 src/IOHandler.cxx.s:
-	cd /content/root_src/root_build && $(MAKE) -f bindings/jupyroot/CMakeFiles/JupyROOT3_6.dir/build.make bindings/jupyroot/CMakeFiles/JupyROOT3_6.dir/src/IOHandler.cxx.s
+	cd /content/root_src_37/root_build && $(MAKE) -f bindings/jupyroot/CMakeFiles/JupyROOT3_7.dir/build.make bindings/jupyroot/CMakeFiles/JupyROOT3_7.dir/src/IOHandler.cxx.s
 .PHONY : src/IOHandler.cxx.s
 
 # Help Target
@@ -230,11 +230,11 @@ help:
 	@echo "... install/local"
 	@echo "... install"
 	@echo "... list_install_components"
-	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... package"
 	@echo "... package_source"
-	@echo "... JupyROOT3_6"
+	@echo "... package"
+	@echo "... rebuild_cache"
+	@echo "... JupyROOT3_7"
 	@echo "... src/IOHandler.o"
 	@echo "... src/IOHandler.i"
 	@echo "... src/IOHandler.s"
@@ -249,6 +249,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /content/root_src/root_build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /content/root_src_37/root_build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -592,13 +592,13 @@ namespace ROOT {
       static ::ROOT::TGenericClassInfo 
          instance("ROOT::Math::IBaseFunctionMultiDimTempl<double>", "Math/IFunction.h", 62,
                   typeid(::ROOT::Math::IBaseFunctionMultiDimTempl<double>), ::ROOT::Internal::DefineBehavior(ptr, ptr),
-                  &ROOTcLcLMathcLcLIBaseFunctionMultiDimTempllEdoublegR_Dictionary, isa_proxy, 0,
+                  &ROOTcLcLMathcLcLIBaseFunctionMultiDimTempllEdoublegR_Dictionary, isa_proxy, 4,
                   sizeof(::ROOT::Math::IBaseFunctionMultiDimTempl<double>) );
       instance.SetDelete(&delete_ROOTcLcLMathcLcLIBaseFunctionMultiDimTempllEdoublegR);
       instance.SetDeleteArray(&deleteArray_ROOTcLcLMathcLcLIBaseFunctionMultiDimTempllEdoublegR);
       instance.SetDestructor(&destruct_ROOTcLcLMathcLcLIBaseFunctionMultiDimTempllEdoublegR);
 
-      ::ROOT::AddClassAlternate("ROOT::Math::IBaseFunctionMultiDimTempl<double>","ROOT::Math::IMultiGenFunction");
+      ::ROOT::AddClassAlternate("ROOT::Math::IBaseFunctionMultiDimTempl<double>","ROOT::Math::IBaseFunctionMultiDim");
       return &instance;
    }
    TGenericClassInfo *GenerateInitInstance(const ::ROOT::Math::IBaseFunctionMultiDimTempl<double>*)
@@ -615,10 +615,7 @@ namespace ROOT {
    return theClass;
    }
 
-   static void ROOTcLcLMathcLcLIBaseFunctionMultiDimTempllEdoublegR_TClassManip(TClass* theClass){
-      theClass->CreateAttributeMap();
-      TDictAttributeMap* attrMap( theClass->GetAttributeMap() );
-      attrMap->AddProperty("fromTypedef","true");
+   static void ROOTcLcLMathcLcLIBaseFunctionMultiDimTempllEdoublegR_TClassManip(TClass* ){
    }
 
 } // end of namespace ROOT
@@ -638,13 +635,13 @@ namespace ROOT {
       static ::ROOT::TGenericClassInfo 
          instance("ROOT::Math::IGradientFunctionMultiDimTempl<double>", "Math/IFunction.h", 326,
                   typeid(::ROOT::Math::IGradientFunctionMultiDimTempl<double>), ::ROOT::Internal::DefineBehavior(ptr, ptr),
-                  &ROOTcLcLMathcLcLIGradientFunctionMultiDimTempllEdoublegR_Dictionary, isa_proxy, 0,
+                  &ROOTcLcLMathcLcLIGradientFunctionMultiDimTempllEdoublegR_Dictionary, isa_proxy, 4,
                   sizeof(::ROOT::Math::IGradientFunctionMultiDimTempl<double>) );
       instance.SetDelete(&delete_ROOTcLcLMathcLcLIGradientFunctionMultiDimTempllEdoublegR);
       instance.SetDeleteArray(&deleteArray_ROOTcLcLMathcLcLIGradientFunctionMultiDimTempllEdoublegR);
       instance.SetDestructor(&destruct_ROOTcLcLMathcLcLIGradientFunctionMultiDimTempllEdoublegR);
 
-      ::ROOT::AddClassAlternate("ROOT::Math::IGradientFunctionMultiDimTempl<double>","ROOT::Math::IMultiGradFunction");
+      ::ROOT::AddClassAlternate("ROOT::Math::IGradientFunctionMultiDimTempl<double>","ROOT::Math::IGradientFunctionMultiDim");
       return &instance;
    }
    TGenericClassInfo *GenerateInitInstance(const ::ROOT::Math::IGradientFunctionMultiDimTempl<double>*)
@@ -661,10 +658,7 @@ namespace ROOT {
    return theClass;
    }
 
-   static void ROOTcLcLMathcLcLIGradientFunctionMultiDimTempllEdoublegR_TClassManip(TClass* theClass){
-      theClass->CreateAttributeMap();
-      TDictAttributeMap* attrMap( theClass->GetAttributeMap() );
-      attrMap->AddProperty("fromTypedef","true");
+   static void ROOTcLcLMathcLcLIGradientFunctionMultiDimTempllEdoublegR_TClassManip(TClass* ){
    }
 
 } // end of namespace ROOT
@@ -727,13 +721,11 @@ namespace ROOT {
       static ::ROOT::TGenericClassInfo 
          instance("ROOT::Math::IBaseFunctionOneDim", "Math/IFunction.h", 135,
                   typeid(::ROOT::Math::IBaseFunctionOneDim), ::ROOT::Internal::DefineBehavior(ptr, ptr),
-                  &ROOTcLcLMathcLcLIBaseFunctionOneDim_Dictionary, isa_proxy, 0,
+                  &ROOTcLcLMathcLcLIBaseFunctionOneDim_Dictionary, isa_proxy, 4,
                   sizeof(::ROOT::Math::IBaseFunctionOneDim) );
       instance.SetDelete(&delete_ROOTcLcLMathcLcLIBaseFunctionOneDim);
       instance.SetDeleteArray(&deleteArray_ROOTcLcLMathcLcLIBaseFunctionOneDim);
       instance.SetDestructor(&destruct_ROOTcLcLMathcLcLIBaseFunctionOneDim);
-
-      ::ROOT::AddClassAlternate("ROOT::Math::IBaseFunctionOneDim","ROOT::Math::IGenFunction");
       return &instance;
    }
    TGenericClassInfo *GenerateInitInstance(const ::ROOT::Math::IBaseFunctionOneDim*)
@@ -750,10 +742,7 @@ namespace ROOT {
    return theClass;
    }
 
-   static void ROOTcLcLMathcLcLIBaseFunctionOneDim_TClassManip(TClass* theClass){
-      theClass->CreateAttributeMap();
-      TDictAttributeMap* attrMap( theClass->GetAttributeMap() );
-      attrMap->AddProperty("fromTypedef","true");
+   static void ROOTcLcLMathcLcLIBaseFunctionOneDim_TClassManip(TClass* ){
    }
 
 } // end of namespace ROOT
@@ -814,13 +803,11 @@ namespace ROOT {
       static ::ROOT::TGenericClassInfo 
          instance("ROOT::Math::IGradientFunctionOneDim", "Math/IFunction.h", 381,
                   typeid(::ROOT::Math::IGradientFunctionOneDim), ::ROOT::Internal::DefineBehavior(ptr, ptr),
-                  &ROOTcLcLMathcLcLIGradientFunctionOneDim_Dictionary, isa_proxy, 0,
+                  &ROOTcLcLMathcLcLIGradientFunctionOneDim_Dictionary, isa_proxy, 4,
                   sizeof(::ROOT::Math::IGradientFunctionOneDim) );
       instance.SetDelete(&delete_ROOTcLcLMathcLcLIGradientFunctionOneDim);
       instance.SetDeleteArray(&deleteArray_ROOTcLcLMathcLcLIGradientFunctionOneDim);
       instance.SetDestructor(&destruct_ROOTcLcLMathcLcLIGradientFunctionOneDim);
-
-      ::ROOT::AddClassAlternate("ROOT::Math::IGradientFunctionOneDim","ROOT::Math::IGradFunction");
       return &instance;
    }
    TGenericClassInfo *GenerateInitInstance(const ::ROOT::Math::IGradientFunctionOneDim*)
@@ -837,10 +824,7 @@ namespace ROOT {
    return theClass;
    }
 
-   static void ROOTcLcLMathcLcLIGradientFunctionOneDim_TClassManip(TClass* theClass){
-      theClass->CreateAttributeMap();
-      TDictAttributeMap* attrMap( theClass->GetAttributeMap() );
-      attrMap->AddProperty("fromTypedef","true");
+   static void ROOTcLcLMathcLcLIGradientFunctionOneDim_TClassManip(TClass* ){
    }
 
 } // end of namespace ROOT

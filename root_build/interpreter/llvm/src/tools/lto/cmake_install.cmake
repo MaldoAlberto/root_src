@@ -1,8 +1,8 @@
-# Install script for directory: /content/root_src/interpreter/llvm/src/tools/lto
+# Install script for directory: /content/root_src_37/interpreter/llvm/src/tools/lto
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/content/root_src/root_install")
+  set(CMAKE_INSTALL_PREFIX "/content/root_src_37/root_install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,8 +39,8 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xLTOx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES
-    "/content/root_src/root_build/interpreter/llvm/src/lib/libLTO.so.5.0.0"
-    "/content/root_src/root_build/interpreter/llvm/src/lib/libLTO.so.5"
+    "/content/root_src_37/root_build/interpreter/llvm/src/lib/libLTO.so.5.0.0"
+    "/content/root_src_37/root_build/interpreter/llvm/src/lib/libLTO.so.5"
     )
   foreach(file
       "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libLTO.so.5.0.0"
@@ -56,7 +56,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xLTOx" OR NOT CMAKE_INSTALL_COMPONEN
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xLTOx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/content/root_src/root_build/interpreter/llvm/src/lib/libLTO.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/content/root_src_37/root_build/interpreter/llvm/src/lib/libLTO.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libLTO.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libLTO.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -66,6 +66,6 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xLTOx" OR NOT CMAKE_INSTALL_COMPONEN
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xLTOx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/llvm-c" TYPE FILE FILES "/content/root_src/interpreter/llvm/src/include/llvm-c/lto.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/llvm-c" TYPE FILE FILES "/content/root_src_37/interpreter/llvm/src/include/llvm-c/lto.h")
 endif()
 

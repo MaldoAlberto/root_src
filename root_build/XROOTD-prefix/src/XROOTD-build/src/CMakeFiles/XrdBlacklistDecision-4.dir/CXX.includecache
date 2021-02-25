@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/./XrdOss/XrdOss.hh
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/./XrdOss/XrdOss.hh
 dirent.h
 -
 errno.h
@@ -20,11 +20,11 @@ sys/types.h
 string.h
 -
 XrdOuc/XrdOucIOVec.hh
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/./XrdOss/XrdOuc/XrdOucIOVec.hh
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/./XrdOss/XrdOuc/XrdOucIOVec.hh
 
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/./XrdOuc/XrdOucIOVec.hh
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/./XrdOuc/XrdOucIOVec.hh
 
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/./XrdSys/XrdSysError.hh
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/./XrdSys/XrdSysError.hh
 stdlib.h
 -
 unistd.h
@@ -36,11 +36,11 @@ strings.h
 string.h
 -
 
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/XrdFileCache/XrdFileCacheBlacklistDecision.cc
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/XrdFileCache/XrdFileCacheBlacklistDecision.cc
 XrdFileCacheDecision.hh
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/XrdFileCache/XrdFileCacheDecision.hh
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/XrdFileCache/XrdFileCacheDecision.hh
 XrdSys/XrdSysError.hh
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/XrdFileCache/XrdSys/XrdSysError.hh
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/XrdFileCache/XrdSys/XrdSysError.hh
 vector
 -
 fcntl.h
@@ -50,7 +50,7 @@ stdio.h
 fnmatch.h
 -
 
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/XrdFileCache/XrdFileCacheDecision.hh
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/XrdFileCache/XrdFileCacheDecision.hh
 string
 -
 iostream
@@ -58,7 +58,7 @@ iostream
 stdio.h
 -
 XrdOss/XrdOss.hh
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/XrdFileCache/XrdOss/XrdOss.hh
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/XrdFileCache/XrdOss/XrdOss.hh
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h
 bits/wordsize.h

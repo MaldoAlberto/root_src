@@ -6,5 +6,5 @@ C_FLAGS =  -Wno-implicit-fallthrough -pipe -Wall -W -pthread -O3 -DNDEBUG -fPIC 
 
 C_DEFINES = 
 
-C_INCLUDES = -I/content/root_src/builtins/xxhash 
+C_INCLUDES = -I/content/root_src_37/builtins/xxhash 
 

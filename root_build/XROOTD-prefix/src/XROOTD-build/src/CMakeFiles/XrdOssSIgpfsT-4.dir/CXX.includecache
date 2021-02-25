@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/./XrdOss/XrdOss.hh
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/./XrdOss/XrdOss.hh
 dirent.h
 -
 errno.h
@@ -20,19 +20,19 @@ sys/types.h
 string.h
 -
 XrdOuc/XrdOucIOVec.hh
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/./XrdOss/XrdOuc/XrdOucIOVec.hh
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/./XrdOss/XrdOuc/XrdOucIOVec.hh
 
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/./XrdOss/XrdOssStatInfo.hh
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/./XrdOss/XrdOssStatInfo.hh
 
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/./XrdOuc/XrdOucEnv.hh
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/./XrdOuc/XrdOucEnv.hh
 stdlib.h
 -
 strings.h
 -
 XrdOuc/XrdOucHash.hh
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/./XrdOuc/XrdOuc/XrdOucHash.hh
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/./XrdOuc/XrdOuc/XrdOucHash.hh
 
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/./XrdOuc/XrdOucHash.hh
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/./XrdOuc/XrdOucHash.hh
 stdlib.h
 -
 sys/types.h
@@ -42,17 +42,17 @@ string.h
 time.h
 -
 XrdOuc/XrdOucHash.icc
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/./XrdOuc/XrdOuc/XrdOucHash.icc
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/./XrdOuc/XrdOuc/XrdOucHash.icc
 
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/./XrdOuc/XrdOucHash.icc
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/./XrdOuc/XrdOucHash.icc
 errno.h
 -
 string.h
 -
 
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/./XrdOuc/XrdOucIOVec.hh
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/./XrdOuc/XrdOucIOVec.hh
 
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/./XrdSys/XrdSysError.hh
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/./XrdSys/XrdSysError.hh
 stdlib.h
 -
 unistd.h
@@ -64,7 +64,7 @@ strings.h
 string.h
 -
 
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/XrdOss/XrdOssSIgpfsT.cc
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/XrdOss/XrdOssSIgpfsT.cc
 sys/types.h
 -
 sys/stat.h
@@ -78,15 +78,15 @@ string.h
 stdlib.h
 -
 XrdVersion.hh
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/XrdOss/XrdVersion.hh
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/XrdOss/XrdVersion.hh
 XrdOss/XrdOss.hh
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/XrdOss/XrdOss/XrdOss.hh
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/XrdOss/XrdOss/XrdOss.hh
 XrdOss/XrdOssStatInfo.hh
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/XrdOss/XrdOss/XrdOssStatInfo.hh
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/XrdOss/XrdOss/XrdOssStatInfo.hh
 XrdOuc/XrdOucEnv.hh
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/XrdOss/XrdOuc/XrdOucEnv.hh
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/XrdOss/XrdOuc/XrdOucEnv.hh
 XrdSys/XrdSysError.hh
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/XrdOss/XrdSys/XrdSysError.hh
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/XrdOss/XrdSys/XrdSysError.hh
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h
 bits/wordsize.h

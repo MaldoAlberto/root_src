@@ -52,7 +52,7 @@ set_target_properties(LLVMTestingSupport PROPERTIES
 set_property(TARGET LLVMTestingSupport APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(LLVMTestingSupport PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/content/root_src/root_build/interpreter/llvm/src/lib/libLLVMTestingSupport.a"
+  IMPORTED_LOCATION_RELEASE "/content/root_src_37/root_build/interpreter/llvm/src/lib/libLLVMTestingSupport.a"
   )
 
 # Make sure the targets which have been exported in some other 

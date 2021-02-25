@@ -43,10 +43,10 @@ RM = /usr/local/lib/python2.7/dist-packages/cmake/data/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /content/root_src
+CMAKE_SOURCE_DIR = /content/root_src_37
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /content/root_src/root_build
+CMAKE_BINARY_DIR = /content/root_src_37/root_build
 
 # Utility rule file for move_header_core_clib.
 
@@ -58,12 +58,12 @@ core/clib/CMakeFiles/move_header_core_clib: include/strlcpy.h
 
 
 include/snprintf.h: ../core/clib/inc/snprintf.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/content/root_src/root_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Copying header /content/root_src/core/clib/inc/snprintf.h to /content/root_src/root_build/include"
-	cd /content/root_src/root_build/core/clib && /usr/local/lib/python2.7/dist-packages/cmake/data/bin/cmake -E copy /content/root_src/core/clib/inc/snprintf.h /content/root_src/root_build/include/snprintf.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/content/root_src_37/root_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Copying header /content/root_src_37/core/clib/inc/snprintf.h to /content/root_src_37/root_build/include"
+	cd /content/root_src_37/root_build/core/clib && /usr/local/lib/python2.7/dist-packages/cmake/data/bin/cmake -E copy /content/root_src_37/core/clib/inc/snprintf.h /content/root_src_37/root_build/include/snprintf.h
 
 include/strlcpy.h: ../core/clib/inc/strlcpy.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/content/root_src/root_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Copying header /content/root_src/core/clib/inc/strlcpy.h to /content/root_src/root_build/include"
-	cd /content/root_src/root_build/core/clib && /usr/local/lib/python2.7/dist-packages/cmake/data/bin/cmake -E copy /content/root_src/core/clib/inc/strlcpy.h /content/root_src/root_build/include/strlcpy.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/content/root_src_37/root_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Copying header /content/root_src_37/core/clib/inc/strlcpy.h to /content/root_src_37/root_build/include"
+	cd /content/root_src_37/root_build/core/clib && /usr/local/lib/python2.7/dist-packages/cmake/data/bin/cmake -E copy /content/root_src_37/core/clib/inc/strlcpy.h /content/root_src_37/root_build/include/strlcpy.h
 
 move_header_core_clib: core/clib/CMakeFiles/move_header_core_clib
 move_header_core_clib: include/snprintf.h
@@ -78,10 +78,10 @@ core/clib/CMakeFiles/move_header_core_clib.dir/build: move_header_core_clib
 .PHONY : core/clib/CMakeFiles/move_header_core_clib.dir/build
 
 core/clib/CMakeFiles/move_header_core_clib.dir/clean:
-	cd /content/root_src/root_build/core/clib && $(CMAKE_COMMAND) -P CMakeFiles/move_header_core_clib.dir/cmake_clean.cmake
+	cd /content/root_src_37/root_build/core/clib && $(CMAKE_COMMAND) -P CMakeFiles/move_header_core_clib.dir/cmake_clean.cmake
 .PHONY : core/clib/CMakeFiles/move_header_core_clib.dir/clean
 
 core/clib/CMakeFiles/move_header_core_clib.dir/depend:
-	cd /content/root_src/root_build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /content/root_src /content/root_src/core/clib /content/root_src/root_build /content/root_src/root_build/core/clib /content/root_src/root_build/core/clib/CMakeFiles/move_header_core_clib.dir/DependInfo.cmake --color=$(COLOR)
+	cd /content/root_src_37/root_build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /content/root_src_37 /content/root_src_37/core/clib /content/root_src_37/root_build /content/root_src_37/root_build/core/clib /content/root_src_37/root_build/core/clib/CMakeFiles/move_header_core_clib.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : core/clib/CMakeFiles/move_header_core_clib.dir/depend
 

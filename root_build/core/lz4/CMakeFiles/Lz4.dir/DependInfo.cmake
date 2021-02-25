@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/content/root_src/core/lz4/src/ZipLZ4.cxx" "/content/root_src/root_build/core/lz4/CMakeFiles/Lz4.dir/src/ZipLZ4.cxx.o"
+  "/content/root_src_37/core/lz4/src/ZipLZ4.cxx" "/content/root_src_37/root_build/core/lz4/CMakeFiles/Lz4.dir/src/ZipLZ4.cxx.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

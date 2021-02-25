@@ -726,33 +726,33 @@ Rtypes.h
 Rtypes.h
 ../math/matrix/inc/Rtypes.h
 
-/content/root_src/hist/spectrumpainter/src/TSpectrum2Painter.cxx
+/content/root_src_37/hist/spectrumpainter/src/TSpectrum2Painter.cxx
 climits
 -
 TROOT.h
-/content/root_src/hist/spectrumpainter/src/TROOT.h
+/content/root_src_37/hist/spectrumpainter/src/TROOT.h
 TColor.h
-/content/root_src/hist/spectrumpainter/src/TColor.h
+/content/root_src_37/hist/spectrumpainter/src/TColor.h
 TMath.h
-/content/root_src/hist/spectrumpainter/src/TMath.h
+/content/root_src_37/hist/spectrumpainter/src/TMath.h
 TLine.h
-/content/root_src/hist/spectrumpainter/src/TLine.h
+/content/root_src_37/hist/spectrumpainter/src/TLine.h
 TEllipse.h
-/content/root_src/hist/spectrumpainter/src/TEllipse.h
+/content/root_src_37/hist/spectrumpainter/src/TEllipse.h
 TPad.h
-/content/root_src/hist/spectrumpainter/src/TPad.h
+/content/root_src_37/hist/spectrumpainter/src/TPad.h
 TBox.h
-/content/root_src/hist/spectrumpainter/src/TBox.h
+/content/root_src_37/hist/spectrumpainter/src/TBox.h
 TF1.h
-/content/root_src/hist/spectrumpainter/src/TF1.h
+/content/root_src_37/hist/spectrumpainter/src/TF1.h
 TH2.h
-/content/root_src/hist/spectrumpainter/src/TH2.h
+/content/root_src_37/hist/spectrumpainter/src/TH2.h
 TGaxis.h
-/content/root_src/hist/spectrumpainter/src/TGaxis.h
+/content/root_src_37/hist/spectrumpainter/src/TGaxis.h
 THLimitsFinder.h
-/content/root_src/hist/spectrumpainter/src/THLimitsFinder.h
+/content/root_src_37/hist/spectrumpainter/src/THLimitsFinder.h
 TSpectrum2Painter.h
-/content/root_src/hist/spectrumpainter/src/TSpectrum2Painter.h
+/content/root_src_37/hist/spectrumpainter/src/TSpectrum2Painter.h
 
 ginclude/RConfigure.h
 

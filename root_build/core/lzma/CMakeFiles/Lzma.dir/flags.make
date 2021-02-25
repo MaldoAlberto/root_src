@@ -6,5 +6,5 @@ C_FLAGS =  -Wno-implicit-fallthrough -pipe -Wall -W -pthread -O3 -DNDEBUG -fPIC
 
 C_DEFINES = 
 
-C_INCLUDES = -I/content/root_src/core/lzma/inc -I/content/root_src/core/base/inc -I/content/root_src/root_build/ginclude 
+C_INCLUDES = -I/content/root_src_37/core/lzma/inc -I/content/root_src_37/core/base/inc -I/content/root_src_37/root_build/ginclude 
 

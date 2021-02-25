@@ -64,23 +64,23 @@ set(ROOT_EXE_LINKER_FLAGS " -rdynamic")
 #
 
 # ROOT configured for use from the build tree - absolute paths are used.
-set(ROOT_INCLUDE_DIRS /content/root_src/root_build/include)
+set(ROOT_INCLUDE_DIRS /content/root_src_37/root_build/include)
 
 
 # ROOT configured for use from the build tree - absolute paths are used.
-set(ROOT_LIBRARY_DIR /content/root_src/root_build/lib)
+set(ROOT_LIBRARY_DIR /content/root_src_37/root_build/lib)
 
 
 # ROOT configured for use from the build tree - absolute paths are used.
-set(ROOT_BINDIR /content/root_src/root_build/bin)
+set(ROOT_BINDIR /content/root_src_37/root_build/bin)
 
 
 # Deprecated value, please don't use it and use ROOT_BINDIR instead.
-set(ROOT_BINARY_DIR /content/root_src/root_build/bin)
+set(ROOT_BINARY_DIR /content/root_src_37/root_build/bin)
 
 
 # Python version used to build ROOT
-set(ROOT_PYTHON_VERSION 3.6.9)
+set(ROOT_PYTHON_VERSION 3.7.10)
 
 #----------------------------------------------------------------------------
 # Include RootMacros.cmake to get ROOT's CMake macros
@@ -94,7 +94,7 @@ endif()
 
 #----------------------------------------------------------------------------
 # Setup components and options
-set(_root_enabled_options  asimage builtin_afterimage builtin_clang builtin_ftgl builtin_gl2ps builtin_glew builtin_llvm builtin_lz4 builtin_tbb builtin_vdt builtin_xrootd builtin_xxhash builtin_zstd clad dataframe exceptions gdml http imt mlp opengl pyroot roofit runtime_cxxmodules shared ssl tmva tmva-cpu tmva-pymva spectrum vdt x11 xml xrootd)
+set(_root_enabled_options  asimage builtin_afterimage builtin_clang builtin_ftgl builtin_gl2ps builtin_glew builtin_llvm builtin_lz4 builtin_tbb builtin_vdt builtin_xrootd builtin_xxhash builtin_zstd clad dataframe exceptions gdml http imt mlp mysql opengl pgsql pyroot roofit runtime_cxxmodules shared sqlite ssl tmva tmva-cpu tmva-pymva spectrum vdt x11 xml xrootd)
 set(_root_all_options  alien arrow asimage builtin_afterimage builtin_cfitsio builtin_clang builtin_davix builtin_fftw3 builtin_freetype builtin_ftgl builtin_gl2ps builtin_glew builtin_gsl builtin_llvm builtin_lz4 builtin_lzma builtin_openssl builtin_pcre builtin_tbb builtin_unuran builtin_vc builtin_vdt builtin_veccore builtin_xrootd builtin_xxhash builtin_zlib builtin_zstd ccache cefweb clad cocoa coverage cuda cudnn cxxmodules dataframe davix dcache dev exceptions fftw3 fitsio fortran gdml gfal gnuinstall gsl_shared gviz http fcgi imt jemalloc libcxx macos_native mathmore memory_termination memstat mlp minuit2 monalisa mpi mysql odbc opengl oracle pgsql pyroot pyroot_legacy pythia6_nolink pythia6 pythia8 qt5web r roofit webgui root7 rpath runtime_cxxmodules shadowpw shared soversion sqlite ssl tcmalloc tmva tmva-cpu tmva-gpu tmva-pymva tmva-rmva spectrum unuran vc vmc vdt veccore vecgeom win_broken_tests winrtdebug x11 xml xrootd xproofd)
 
 foreach(_opt ${_root_enabled_options})

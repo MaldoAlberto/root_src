@@ -158,7 +158,7 @@ string
 map
 -
 
-/content/root_src/core/foundation/src/FoundationUtils.cxx
+/content/root_src_37/core/foundation/src/FoundationUtils.cxx
 ROOT/FoundationUtils.hxx
 -
 RConfigure.h
@@ -176,13 +176,13 @@ Windows4Root.h
 unistd.h
 -
 
-/content/root_src/core/foundation/src/RConversionRuleParser.cxx
+/content/root_src_37/core/foundation/src/RConversionRuleParser.cxx
 RConversionRuleParser.h
-/content/root_src/core/foundation/src/RConversionRuleParser.h
+/content/root_src_37/core/foundation/src/RConversionRuleParser.h
 TSchemaRuleProcessor.h
-/content/root_src/core/foundation/src/TSchemaRuleProcessor.h
+/content/root_src_37/core/foundation/src/TSchemaRuleProcessor.h
 TClassEdit.h
-/content/root_src/core/foundation/src/TClassEdit.h
+/content/root_src_37/core/foundation/src/TClassEdit.h
 algorithm
 -
 iostream
@@ -198,7 +198,7 @@ utility
 vector
 -
 
-/content/root_src/core/foundation/src/TClassEdit.cxx
+/content/root_src_37/core/foundation/src/TClassEdit.cxx
 stdio.h
 -
 stdlib.h
@@ -208,11 +208,11 @@ assert.h
 string.h
 -
 TClassEdit.h
-/content/root_src/core/foundation/src/TClassEdit.h
+/content/root_src_37/core/foundation/src/TClassEdit.h
 cctype
 -
 Rstrstream.h
-/content/root_src/core/foundation/src/Rstrstream.h
+/content/root_src_37/core/foundation/src/Rstrstream.h
 set
 -
 stack
@@ -220,7 +220,7 @@ stack
 memory
 -
 ROOT/RStringView.hxx
-/content/root_src/core/foundation/src/ROOT/RStringView.hxx
+/content/root_src_37/core/foundation/src/ROOT/RStringView.hxx
 algorithm
 -
 iostream

@@ -98,15 +98,15 @@ string
 
 ../core/meta/inc/TVirtualIsAProxy.h
 
-/content/root_src/rootx/src/rootcoreteam.h
+/content/root_src_37/rootx/src/rootcoreteam.h
 
-/content/root_src/rootx/src/rootx.cxx
+/content/root_src_37/rootx/src/rootx.cxx
 RConfigure.h
-/content/root_src/rootx/src/RConfigure.h
+/content/root_src_37/rootx/src/RConfigure.h
 Rtypes.h
-/content/root_src/rootx/src/Rtypes.h
+/content/root_src_37/rootx/src/Rtypes.h
 rootCommandLineOptionsHelp.h
-/content/root_src/rootx/src/rootCommandLineOptionsHelp.h
+/content/root_src_37/rootx/src/rootCommandLineOptionsHelp.h
 stdio.h
 -
 stdlib.h
@@ -134,9 +134,9 @@ AvailabilityMacros.h
 mach-o/dyld.h
 -
 
-/content/root_src/rootx/src/rootxx.cxx
+/content/root_src_37/rootx/src/rootxx.cxx
 RConfigure.h
-/content/root_src/rootx/src/RConfigure.h
+/content/root_src_37/rootx/src/RConfigure.h
 cassert
 -
 csignal
@@ -162,11 +162,11 @@ X11/xpm.h
 X11/extensions/shape.h
 -
 Rtypes.h
-/content/root_src/rootx/src/Rtypes.h
+/content/root_src_37/rootx/src/Rtypes.h
 RConfigure.h
-/content/root_src/rootx/src/RConfigure.h
+/content/root_src_37/rootx/src/RConfigure.h
 rootcoreteam.h
-/content/root_src/rootx/src/rootcoreteam.h
+/content/root_src_37/rootx/src/rootcoreteam.h
 sys/select.h
 -
 time.h

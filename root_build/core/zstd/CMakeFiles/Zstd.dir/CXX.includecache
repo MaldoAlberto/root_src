@@ -32,13 +32,13 @@ TargetConditionals.h
 
 ../core/zstd/inc/ZipZSTD.h
 
-/content/root_src/core/zstd/src/ZipZSTD.cxx
+/content/root_src_37/core/zstd/src/ZipZSTD.cxx
 ZipZSTD.h
-/content/root_src/core/zstd/src/ZipZSTD.h
+/content/root_src_37/core/zstd/src/ZipZSTD.h
 ROOT/RConfig.hxx
-/content/root_src/core/zstd/src/ROOT/RConfig.hxx
+/content/root_src_37/core/zstd/src/ROOT/RConfig.hxx
 zdict.h
-/content/root_src/core/zstd/src/zdict.h
+/content/root_src_37/core/zstd/src/zdict.h
 zstd.h
 -
 memory

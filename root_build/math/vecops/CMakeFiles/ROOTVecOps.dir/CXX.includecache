@@ -174,13 +174,13 @@ cmath
 vdt/vdtMath.h
 -
 
-/content/root_src/math/vecops/src/RAdoptAllocator.cxx
+/content/root_src_37/math/vecops/src/RAdoptAllocator.cxx
 ROOT/RAdoptAllocator.hxx
 -
 
-/content/root_src/math/vecops/src/RVec.cxx
+/content/root_src_37/math/vecops/src/RVec.cxx
 ROOT/RVec.hxx
-/content/root_src/math/vecops/src/ROOT/RVec.hxx
+/content/root_src_37/math/vecops/src/ROOT/RVec.hxx
 
 ginclude/RConfigure.h
 

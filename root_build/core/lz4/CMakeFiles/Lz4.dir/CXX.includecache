@@ -42,11 +42,11 @@ TargetConditionals.h
 
 ../core/lz4/inc/ZipLZ4.h
 
-/content/root_src/core/lz4/src/ZipLZ4.cxx
+/content/root_src_37/core/lz4/src/ZipLZ4.cxx
 ZipLZ4.h
-/content/root_src/core/lz4/src/ZipLZ4.h
+/content/root_src_37/core/lz4/src/ZipLZ4.h
 ROOT/RConfig.hxx
-/content/root_src/core/lz4/src/ROOT/RConfig.hxx
+/content/root_src_37/core/lz4/src/ROOT/RConfig.hxx
 cinttypes
 -
 cstdint

@@ -1,8 +1,8 @@
-# Install script for directory: /content/root_src/interpreter/llvm/src/tools/clang/lib
+# Install script for directory: /content/root_src_37/interpreter/llvm/src/tools/clang/lib
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/content/root_src/root_install")
+  set(CMAKE_INSTALL_PREFIX "/content/root_src_37/root_install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,24 +39,24 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/content/root_src/root_build/interpreter/llvm/src/tools/clang/lib/Headers/cmake_install.cmake")
-  include("/content/root_src/root_build/interpreter/llvm/src/tools/clang/lib/Basic/cmake_install.cmake")
-  include("/content/root_src/root_build/interpreter/llvm/src/tools/clang/lib/Lex/cmake_install.cmake")
-  include("/content/root_src/root_build/interpreter/llvm/src/tools/clang/lib/Parse/cmake_install.cmake")
-  include("/content/root_src/root_build/interpreter/llvm/src/tools/clang/lib/AST/cmake_install.cmake")
-  include("/content/root_src/root_build/interpreter/llvm/src/tools/clang/lib/ASTMatchers/cmake_install.cmake")
-  include("/content/root_src/root_build/interpreter/llvm/src/tools/clang/lib/Sema/cmake_install.cmake")
-  include("/content/root_src/root_build/interpreter/llvm/src/tools/clang/lib/CodeGen/cmake_install.cmake")
-  include("/content/root_src/root_build/interpreter/llvm/src/tools/clang/lib/Analysis/cmake_install.cmake")
-  include("/content/root_src/root_build/interpreter/llvm/src/tools/clang/lib/Edit/cmake_install.cmake")
-  include("/content/root_src/root_build/interpreter/llvm/src/tools/clang/lib/Rewrite/cmake_install.cmake")
-  include("/content/root_src/root_build/interpreter/llvm/src/tools/clang/lib/Driver/cmake_install.cmake")
-  include("/content/root_src/root_build/interpreter/llvm/src/tools/clang/lib/Serialization/cmake_install.cmake")
-  include("/content/root_src/root_build/interpreter/llvm/src/tools/clang/lib/Frontend/cmake_install.cmake")
-  include("/content/root_src/root_build/interpreter/llvm/src/tools/clang/lib/FrontendTool/cmake_install.cmake")
-  include("/content/root_src/root_build/interpreter/llvm/src/tools/clang/lib/Tooling/cmake_install.cmake")
-  include("/content/root_src/root_build/interpreter/llvm/src/tools/clang/lib/Index/cmake_install.cmake")
-  include("/content/root_src/root_build/interpreter/llvm/src/tools/clang/lib/Format/cmake_install.cmake")
+  include("/content/root_src_37/root_build/interpreter/llvm/src/tools/clang/lib/Headers/cmake_install.cmake")
+  include("/content/root_src_37/root_build/interpreter/llvm/src/tools/clang/lib/Basic/cmake_install.cmake")
+  include("/content/root_src_37/root_build/interpreter/llvm/src/tools/clang/lib/Lex/cmake_install.cmake")
+  include("/content/root_src_37/root_build/interpreter/llvm/src/tools/clang/lib/Parse/cmake_install.cmake")
+  include("/content/root_src_37/root_build/interpreter/llvm/src/tools/clang/lib/AST/cmake_install.cmake")
+  include("/content/root_src_37/root_build/interpreter/llvm/src/tools/clang/lib/ASTMatchers/cmake_install.cmake")
+  include("/content/root_src_37/root_build/interpreter/llvm/src/tools/clang/lib/Sema/cmake_install.cmake")
+  include("/content/root_src_37/root_build/interpreter/llvm/src/tools/clang/lib/CodeGen/cmake_install.cmake")
+  include("/content/root_src_37/root_build/interpreter/llvm/src/tools/clang/lib/Analysis/cmake_install.cmake")
+  include("/content/root_src_37/root_build/interpreter/llvm/src/tools/clang/lib/Edit/cmake_install.cmake")
+  include("/content/root_src_37/root_build/interpreter/llvm/src/tools/clang/lib/Rewrite/cmake_install.cmake")
+  include("/content/root_src_37/root_build/interpreter/llvm/src/tools/clang/lib/Driver/cmake_install.cmake")
+  include("/content/root_src_37/root_build/interpreter/llvm/src/tools/clang/lib/Serialization/cmake_install.cmake")
+  include("/content/root_src_37/root_build/interpreter/llvm/src/tools/clang/lib/Frontend/cmake_install.cmake")
+  include("/content/root_src_37/root_build/interpreter/llvm/src/tools/clang/lib/FrontendTool/cmake_install.cmake")
+  include("/content/root_src_37/root_build/interpreter/llvm/src/tools/clang/lib/Tooling/cmake_install.cmake")
+  include("/content/root_src_37/root_build/interpreter/llvm/src/tools/clang/lib/Index/cmake_install.cmake")
+  include("/content/root_src_37/root_build/interpreter/llvm/src/tools/clang/lib/Format/cmake_install.cmake")
 
 endif()
 

@@ -21,6 +21,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/ROOTDataFrame.dir/src/RRootDS.cxx.o"
   "CMakeFiles/ROOTDataFrame.dir/src/RSlotStack.cxx.o"
   "CMakeFiles/ROOTDataFrame.dir/src/RTrivialDS.cxx.o"
+  "CMakeFiles/ROOTDataFrame.dir/src/RSqliteDS.cxx.o"
   "../../lib/libROOTDataFrame.pdb"
   "../../lib/libROOTDataFrame.so"
 )

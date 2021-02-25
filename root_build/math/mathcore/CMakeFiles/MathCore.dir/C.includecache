@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/content/root_src/math/mathcore/src/triangle.c
+/content/root_src_37/math/mathcore/src/triangle.c
 stdio.h
 -
 stdlib.h
@@ -22,7 +22,7 @@ float.h
 fpu_control.h
 -
 triangle.h
-/content/root_src/math/mathcore/src/triangle.h
+/content/root_src_37/math/mathcore/src/triangle.h
 
-/content/root_src/math/mathcore/src/triangle.h
+/content/root_src_37/math/mathcore/src/triangle.h
 

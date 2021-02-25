@@ -1,8 +1,8 @@
-# Install script for directory: /content/root_src/graf2d
+# Install script for directory: /content/root_src_37/graf2d
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/content/root_src/root_install")
+  set(CMAKE_INSTALL_PREFIX "/content/root_src_37/root_install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,13 +39,13 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/content/root_src/root_build/graf2d/gpad/cmake_install.cmake")
-  include("/content/root_src/root_build/graf2d/graf/cmake_install.cmake")
-  include("/content/root_src/root_build/graf2d/postscript/cmake_install.cmake")
-  include("/content/root_src/root_build/graf2d/mathtext/cmake_install.cmake")
-  include("/content/root_src/root_build/graf2d/x11/cmake_install.cmake")
-  include("/content/root_src/root_build/graf2d/x11ttf/cmake_install.cmake")
-  include("/content/root_src/root_build/graf2d/asimage/cmake_install.cmake")
+  include("/content/root_src_37/root_build/graf2d/gpad/cmake_install.cmake")
+  include("/content/root_src_37/root_build/graf2d/graf/cmake_install.cmake")
+  include("/content/root_src_37/root_build/graf2d/postscript/cmake_install.cmake")
+  include("/content/root_src_37/root_build/graf2d/mathtext/cmake_install.cmake")
+  include("/content/root_src_37/root_build/graf2d/x11/cmake_install.cmake")
+  include("/content/root_src_37/root_build/graf2d/x11ttf/cmake_install.cmake")
+  include("/content/root_src_37/root_build/graf2d/asimage/cmake_install.cmake")
 
 endif()
 

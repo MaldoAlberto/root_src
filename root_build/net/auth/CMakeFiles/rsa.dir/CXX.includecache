@@ -28,7 +28,7 @@ rsadef.h
 stdio.h
 -
 
-/content/root_src/net/auth/src/rsaaux.cxx
+/content/root_src_37/net/auth/src/rsaaux.cxx
 stdio.h
 -
 ctype.h
@@ -52,15 +52,15 @@ unistd.h
 sys/time.h
 -
 rsaaux.h
-/content/root_src/net/auth/src/rsaaux.h
+/content/root_src_37/net/auth/src/rsaaux.h
 rsalib.h
-/content/root_src/net/auth/src/rsalib.h
+/content/root_src_37/net/auth/src/rsalib.h
 
-/content/root_src/net/auth/src/rsafun.cxx
+/content/root_src_37/net/auth/src/rsafun.cxx
 rsafun.h
-/content/root_src/net/auth/src/rsafun.h
+/content/root_src_37/net/auth/src/rsafun.h
 
-/content/root_src/net/auth/src/rsalib.cxx
+/content/root_src_37/net/auth/src/rsalib.cxx
 stdio.h
 -
 string.h
@@ -72,7 +72,7 @@ stdlib.h
 errno.h
 -
 rsaaux.h
-/content/root_src/net/auth/src/rsaaux.h
+/content/root_src_37/net/auth/src/rsaaux.h
 rsalib.h
-/content/root_src/net/auth/src/rsalib.h
+/content/root_src_37/net/auth/src/rsalib.h
 

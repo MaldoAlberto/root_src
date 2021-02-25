@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/./XrdOuc/XrdOucTList.hh
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/./XrdOuc/XrdOucTList.hh
 stdlib.h
 -
 string.h
@@ -14,7 +14,7 @@ string.h
 strings.h
 -
 
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/./XrdSys/XrdSysError.hh
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/./XrdSys/XrdSysError.hh
 stdlib.h
 -
 unistd.h
@@ -26,13 +26,13 @@ strings.h
 string.h
 -
 
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/./XrdSys/XrdSysHeaders.hh
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/./XrdSys/XrdSysHeaders.hh
 iostream
 -
 iostream.h
 -
 
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/./XrdSys/XrdSysPlatform.hh
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/./XrdSys/XrdSysPlatform.hh
 stdlib.h
 -
 memory.h
@@ -56,11 +56,11 @@ AvailabilityMacros.h
 features.h
 -
 XrdSys/XrdWin32.hh
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/./XrdSys/XrdSys/XrdWin32.hh
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/./XrdSys/XrdSys/XrdWin32.hh
 sys/param.h
 -
 
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/./XrdSys/XrdSysPthread.hh
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/./XrdSys/XrdSysPthread.hh
 errno.h
 -
 pthread.h
@@ -76,9 +76,9 @@ mach/clock.h
 mach/mach.h
 -
 XrdSys/XrdSysError.hh
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/./XrdSys/XrdSys/XrdSysError.hh
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/./XrdSys/XrdSys/XrdSysError.hh
 
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/XrdApps/XrdWait41.cc
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/XrdApps/XrdWait41.cc
 ctype.h
 -
 dirent.h
@@ -106,13 +106,13 @@ sys/stat.h
 sys/types.h
 -
 XrdOuc/XrdOucTList.hh
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/XrdApps/XrdOuc/XrdOucTList.hh
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/XrdApps/XrdOuc/XrdOucTList.hh
 XrdSys/XrdSysHeaders.hh
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/XrdApps/XrdSys/XrdSysHeaders.hh
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/XrdApps/XrdSys/XrdSysHeaders.hh
 XrdSys/XrdSysPlatform.hh
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/XrdApps/XrdSys/XrdSysPlatform.hh
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/XrdApps/XrdSys/XrdSysPlatform.hh
 XrdSys/XrdSysPthread.hh
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/XrdApps/XrdSys/XrdSysPthread.hh
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/XrdApps/XrdSys/XrdSysPthread.hh
 
 /usr/include/x86_64-linux-gnu/asm/param.h
 asm-generic/param.h

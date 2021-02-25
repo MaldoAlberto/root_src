@@ -65,7 +65,7 @@ roofit/roostats/CMakeFiles/G__RooStats.dir/G__RooStats.cxx.o
  ../roofit/roostats/inc/RooStats/ToyMCStudy.h
  ../roofit/roostats/inc/RooStats/UniformProposal.h
  ../roofit/roostats/inc/RooStats/UpperLimitMCSModule.h
- /content/root_src/root_build/roofit/roostats/G__RooStats.cxx
+ /content/root_src_37/root_build/roofit/roostats/G__RooStats.cxx
  include/BatchData.h
  include/Bytes.h
  include/Byteswap.h
@@ -320,70 +320,70 @@ roofit/roostats/G__RooStats.cxx
  ../roofit/roostats/inc/RooStats/TestStatistic.h
  ../roofit/roostats/inc/RooStats/ToyMCSampler.h
  ../roofit/roostats/inc/RooStats/UniformProposal.h
- /content/root_src/roofit/roostats/inc/LinkDef.h
- /content/root_src/roofit/roostats/inc/RooStats/AsymptoticCalculator.h
- /content/root_src/roofit/roostats/inc/RooStats/BayesianCalculator.h
- /content/root_src/roofit/roostats/inc/RooStats/BernsteinCorrection.h
- /content/root_src/roofit/roostats/inc/RooStats/CombinedCalculator.h
- /content/root_src/roofit/roostats/inc/RooStats/ConfInterval.h
- /content/root_src/roofit/roostats/inc/RooStats/ConfidenceBelt.h
- /content/root_src/roofit/roostats/inc/RooStats/DebuggingSampler.h
- /content/root_src/roofit/roostats/inc/RooStats/DebuggingTestStat.h
- /content/root_src/roofit/roostats/inc/RooStats/DetailedOutputAggregator.h
- /content/root_src/roofit/roostats/inc/RooStats/FeldmanCousins.h
- /content/root_src/roofit/roostats/inc/RooStats/FrequentistCalculator.h
- /content/root_src/roofit/roostats/inc/RooStats/HLFactory.h
- /content/root_src/roofit/roostats/inc/RooStats/Heaviside.h
- /content/root_src/roofit/roostats/inc/RooStats/HybridCalculator.h
- /content/root_src/roofit/roostats/inc/RooStats/HybridCalculatorOriginal.h
- /content/root_src/roofit/roostats/inc/RooStats/HybridPlot.h
- /content/root_src/roofit/roostats/inc/RooStats/HybridResult.h
- /content/root_src/roofit/roostats/inc/RooStats/HypoTestCalculator.h
- /content/root_src/roofit/roostats/inc/RooStats/HypoTestCalculatorGeneric.h
- /content/root_src/roofit/roostats/inc/RooStats/HypoTestInverter.h
- /content/root_src/roofit/roostats/inc/RooStats/HypoTestInverterOriginal.h
- /content/root_src/roofit/roostats/inc/RooStats/HypoTestInverterPlot.h
- /content/root_src/roofit/roostats/inc/RooStats/HypoTestInverterResult.h
- /content/root_src/roofit/roostats/inc/RooStats/HypoTestPlot.h
- /content/root_src/roofit/roostats/inc/RooStats/HypoTestResult.h
- /content/root_src/roofit/roostats/inc/RooStats/IntervalCalculator.h
- /content/root_src/roofit/roostats/inc/RooStats/LikelihoodInterval.h
- /content/root_src/roofit/roostats/inc/RooStats/LikelihoodIntervalPlot.h
- /content/root_src/roofit/roostats/inc/RooStats/MCMCCalculator.h
- /content/root_src/roofit/roostats/inc/RooStats/MCMCInterval.h
- /content/root_src/roofit/roostats/inc/RooStats/MCMCIntervalPlot.h
- /content/root_src/roofit/roostats/inc/RooStats/MarkovChain.h
- /content/root_src/roofit/roostats/inc/RooStats/MaxLikelihoodEstimateTestStat.h
- /content/root_src/roofit/roostats/inc/RooStats/MetropolisHastings.h
- /content/root_src/roofit/roostats/inc/RooStats/MinNLLTestStat.h
- /content/root_src/roofit/roostats/inc/RooStats/ModelConfig.h
- /content/root_src/roofit/roostats/inc/RooStats/NeymanConstruction.h
- /content/root_src/roofit/roostats/inc/RooStats/NumEventsTestStat.h
- /content/root_src/roofit/roostats/inc/RooStats/NumberCountingPdfFactory.h
- /content/root_src/roofit/roostats/inc/RooStats/NumberCountingUtils.h
- /content/root_src/roofit/roostats/inc/RooStats/PdfProposal.h
- /content/root_src/roofit/roostats/inc/RooStats/PointSetInterval.h
- /content/root_src/roofit/roostats/inc/RooStats/ProfileInspector.h
- /content/root_src/roofit/roostats/inc/RooStats/ProfileLikelihoodCalculator.h
- /content/root_src/roofit/roostats/inc/RooStats/ProfileLikelihoodTestStat.h
- /content/root_src/roofit/roostats/inc/RooStats/ProofConfig.h
- /content/root_src/roofit/roostats/inc/RooStats/ProposalFunction.h
- /content/root_src/roofit/roostats/inc/RooStats/ProposalHelper.h
- /content/root_src/roofit/roostats/inc/RooStats/RatioOfProfiledLikelihoodsTestStat.h
- /content/root_src/roofit/roostats/inc/RooStats/RooStatsUtils.h
- /content/root_src/roofit/roostats/inc/RooStats/SPlot.h
- /content/root_src/roofit/roostats/inc/RooStats/SamplingDistPlot.h
- /content/root_src/roofit/roostats/inc/RooStats/SamplingDistribution.h
- /content/root_src/roofit/roostats/inc/RooStats/SequentialProposal.h
- /content/root_src/roofit/roostats/inc/RooStats/SimpleInterval.h
- /content/root_src/roofit/roostats/inc/RooStats/SimpleLikelihoodRatioTestStat.h
- /content/root_src/roofit/roostats/inc/RooStats/TestStatSampler.h
- /content/root_src/roofit/roostats/inc/RooStats/TestStatistic.h
- /content/root_src/roofit/roostats/inc/RooStats/ToyMCImportanceSampler.h
- /content/root_src/roofit/roostats/inc/RooStats/ToyMCSampler.h
- /content/root_src/roofit/roostats/inc/RooStats/ToyMCStudy.h
- /content/root_src/roofit/roostats/inc/RooStats/UniformProposal.h
- /content/root_src/roofit/roostats/inc/RooStats/UpperLimitMCSModule.h
+ /content/root_src_37/roofit/roostats/inc/LinkDef.h
+ /content/root_src_37/roofit/roostats/inc/RooStats/AsymptoticCalculator.h
+ /content/root_src_37/roofit/roostats/inc/RooStats/BayesianCalculator.h
+ /content/root_src_37/roofit/roostats/inc/RooStats/BernsteinCorrection.h
+ /content/root_src_37/roofit/roostats/inc/RooStats/CombinedCalculator.h
+ /content/root_src_37/roofit/roostats/inc/RooStats/ConfInterval.h
+ /content/root_src_37/roofit/roostats/inc/RooStats/ConfidenceBelt.h
+ /content/root_src_37/roofit/roostats/inc/RooStats/DebuggingSampler.h
+ /content/root_src_37/roofit/roostats/inc/RooStats/DebuggingTestStat.h
+ /content/root_src_37/roofit/roostats/inc/RooStats/DetailedOutputAggregator.h
+ /content/root_src_37/roofit/roostats/inc/RooStats/FeldmanCousins.h
+ /content/root_src_37/roofit/roostats/inc/RooStats/FrequentistCalculator.h
+ /content/root_src_37/roofit/roostats/inc/RooStats/HLFactory.h
+ /content/root_src_37/roofit/roostats/inc/RooStats/Heaviside.h
+ /content/root_src_37/roofit/roostats/inc/RooStats/HybridCalculator.h
+ /content/root_src_37/roofit/roostats/inc/RooStats/HybridCalculatorOriginal.h
+ /content/root_src_37/roofit/roostats/inc/RooStats/HybridPlot.h
+ /content/root_src_37/roofit/roostats/inc/RooStats/HybridResult.h
+ /content/root_src_37/roofit/roostats/inc/RooStats/HypoTestCalculator.h
+ /content/root_src_37/roofit/roostats/inc/RooStats/HypoTestCalculatorGeneric.h
+ /content/root_src_37/roofit/roostats/inc/RooStats/HypoTestInverter.h
+ /content/root_src_37/roofit/roostats/inc/RooStats/HypoTestInverterOriginal.h
+ /content/root_src_37/roofit/roostats/inc/RooStats/HypoTestInverterPlot.h
+ /content/root_src_37/roofit/roostats/inc/RooStats/HypoTestInverterResult.h
+ /content/root_src_37/roofit/roostats/inc/RooStats/HypoTestPlot.h
+ /content/root_src_37/roofit/roostats/inc/RooStats/HypoTestResult.h
+ /content/root_src_37/roofit/roostats/inc/RooStats/IntervalCalculator.h
+ /content/root_src_37/roofit/roostats/inc/RooStats/LikelihoodInterval.h
+ /content/root_src_37/roofit/roostats/inc/RooStats/LikelihoodIntervalPlot.h
+ /content/root_src_37/roofit/roostats/inc/RooStats/MCMCCalculator.h
+ /content/root_src_37/roofit/roostats/inc/RooStats/MCMCInterval.h
+ /content/root_src_37/roofit/roostats/inc/RooStats/MCMCIntervalPlot.h
+ /content/root_src_37/roofit/roostats/inc/RooStats/MarkovChain.h
+ /content/root_src_37/roofit/roostats/inc/RooStats/MaxLikelihoodEstimateTestStat.h
+ /content/root_src_37/roofit/roostats/inc/RooStats/MetropolisHastings.h
+ /content/root_src_37/roofit/roostats/inc/RooStats/MinNLLTestStat.h
+ /content/root_src_37/roofit/roostats/inc/RooStats/ModelConfig.h
+ /content/root_src_37/roofit/roostats/inc/RooStats/NeymanConstruction.h
+ /content/root_src_37/roofit/roostats/inc/RooStats/NumEventsTestStat.h
+ /content/root_src_37/roofit/roostats/inc/RooStats/NumberCountingPdfFactory.h
+ /content/root_src_37/roofit/roostats/inc/RooStats/NumberCountingUtils.h
+ /content/root_src_37/roofit/roostats/inc/RooStats/PdfProposal.h
+ /content/root_src_37/roofit/roostats/inc/RooStats/PointSetInterval.h
+ /content/root_src_37/roofit/roostats/inc/RooStats/ProfileInspector.h
+ /content/root_src_37/roofit/roostats/inc/RooStats/ProfileLikelihoodCalculator.h
+ /content/root_src_37/roofit/roostats/inc/RooStats/ProfileLikelihoodTestStat.h
+ /content/root_src_37/roofit/roostats/inc/RooStats/ProofConfig.h
+ /content/root_src_37/roofit/roostats/inc/RooStats/ProposalFunction.h
+ /content/root_src_37/roofit/roostats/inc/RooStats/ProposalHelper.h
+ /content/root_src_37/roofit/roostats/inc/RooStats/RatioOfProfiledLikelihoodsTestStat.h
+ /content/root_src_37/roofit/roostats/inc/RooStats/RooStatsUtils.h
+ /content/root_src_37/roofit/roostats/inc/RooStats/SPlot.h
+ /content/root_src_37/roofit/roostats/inc/RooStats/SamplingDistPlot.h
+ /content/root_src_37/roofit/roostats/inc/RooStats/SamplingDistribution.h
+ /content/root_src_37/roofit/roostats/inc/RooStats/SequentialProposal.h
+ /content/root_src_37/roofit/roostats/inc/RooStats/SimpleInterval.h
+ /content/root_src_37/roofit/roostats/inc/RooStats/SimpleLikelihoodRatioTestStat.h
+ /content/root_src_37/roofit/roostats/inc/RooStats/TestStatSampler.h
+ /content/root_src_37/roofit/roostats/inc/RooStats/TestStatistic.h
+ /content/root_src_37/roofit/roostats/inc/RooStats/ToyMCImportanceSampler.h
+ /content/root_src_37/roofit/roostats/inc/RooStats/ToyMCSampler.h
+ /content/root_src_37/roofit/roostats/inc/RooStats/ToyMCStudy.h
+ /content/root_src_37/roofit/roostats/inc/RooStats/UniformProposal.h
+ /content/root_src_37/roofit/roostats/inc/RooStats/UpperLimitMCSModule.h
  include/BatchData.h
  include/Bytes.h
  include/Byteswap.h

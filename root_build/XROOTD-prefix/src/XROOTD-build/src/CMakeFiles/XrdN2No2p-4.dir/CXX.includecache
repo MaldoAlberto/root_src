@@ -6,15 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/./XrdOuc/XrdOucName2Name.hh
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/./XrdOuc/XrdOucName2Name.hh
 string
 -
 vector
 -
 
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/./XrdOuc/XrdOucTokenizer.hh
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/./XrdOuc/XrdOucTokenizer.hh
 
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/./XrdSys/XrdSysError.hh
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/./XrdSys/XrdSysError.hh
 stdlib.h
 -
 unistd.h
@@ -26,7 +26,7 @@ strings.h
 string.h
 -
 
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/XrdOuc/XrdOucN2No2p.cc
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/XrdOuc/XrdOucN2No2p.cc
 algorithm
 -
 errno.h
@@ -40,13 +40,13 @@ string.h
 unistd.h
 -
 XrdVersion.hh
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/XrdOuc/XrdVersion.hh
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/XrdOuc/XrdVersion.hh
 XrdOuc/XrdOucName2Name.hh
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/XrdOuc/XrdOuc/XrdOucName2Name.hh
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/XrdOuc/XrdOuc/XrdOucName2Name.hh
 XrdOuc/XrdOucTokenizer.hh
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/XrdOuc/XrdOuc/XrdOucTokenizer.hh
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/XrdOuc/XrdOuc/XrdOucTokenizer.hh
 XrdSys/XrdSysError.hh
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/XrdOuc/XrdSys/XrdSysError.hh
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/XrdOuc/XrdSys/XrdSysError.hh
 
 src/XrdVersion.hh
 

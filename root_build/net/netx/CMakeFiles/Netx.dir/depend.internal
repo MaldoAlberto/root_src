@@ -78,7 +78,7 @@ net/netx/CMakeFiles/Netx.dir/src/TXNetFile.cxx.o
  ../proof/proofd/inc/XpdSysPthread.h
  ../proof/proofd/inc/XrdProofdXrdVers.h
  ../proof/proofd/inc/XrdSysToOuc.h
- /content/root_src/net/netx/src/TXNetFile.cxx
+ /content/root_src_37/net/netx/src/TXNetFile.cxx
  ginclude/RConfigure.h
 net/netx/CMakeFiles/Netx.dir/src/TXNetFileStager.cxx.o
  ../core/base/inc/Bytes.h
@@ -150,7 +150,7 @@ net/netx/CMakeFiles/Netx.dir/src/TXNetFileStager.cxx.o
  ../net/net/inc/TNetFile.h
  ../net/netx/inc/TXNetFileStager.h
  ../net/netx/inc/TXNetSystem.h
- /content/root_src/net/netx/src/TXNetFileStager.cxx
+ /content/root_src_37/net/netx/src/TXNetFileStager.cxx
  ginclude/RConfigure.h
 net/netx/CMakeFiles/Netx.dir/src/TXNetSystem.cxx.o
  ../core/base/inc/Bytes.h
@@ -225,5 +225,5 @@ net/netx/CMakeFiles/Netx.dir/src/TXNetSystem.cxx.o
  ../net/netx/inc/TXNetFile.h
  ../net/netx/inc/TXNetSystem.h
  ../proof/proofd/inc/XrdProofdXrdVers.h
- /content/root_src/net/netx/src/TXNetSystem.cxx
+ /content/root_src_37/net/netx/src/TXNetSystem.cxx
  ginclude/RConfigure.h

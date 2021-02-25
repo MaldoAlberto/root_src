@@ -1,4 +1,4 @@
-set(command "/usr/local/lib/python2.7/dist-packages/cmake/data/bin/cmake;-P;/content/root_src/root_build/XROOTD-prefix/src/XROOTD-stamp/download-XROOTD.cmake")
+set(command "/usr/local/lib/python2.7/dist-packages/cmake/data/bin/cmake;-P;/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD-stamp/download-XROOTD.cmake")
 
 execute_process(COMMAND ${command} RESULT_VARIABLE result)
 if(result)
@@ -8,7 +8,7 @@ if(result)
   endforeach()
   message(FATAL_ERROR "${msg}")
 endif()
-set(command "/usr/local/lib/python2.7/dist-packages/cmake/data/bin/cmake;-P;/content/root_src/root_build/XROOTD-prefix/src/XROOTD-stamp/verify-XROOTD.cmake")
+set(command "/usr/local/lib/python2.7/dist-packages/cmake/data/bin/cmake;-P;/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD-stamp/verify-XROOTD.cmake")
 
 execute_process(COMMAND ${command} RESULT_VARIABLE result)
 if(result)
@@ -18,7 +18,7 @@ if(result)
   endforeach()
   message(FATAL_ERROR "${msg}")
 endif()
-set(command "/usr/local/lib/python2.7/dist-packages/cmake/data/bin/cmake;-P;/content/root_src/root_build/XROOTD-prefix/src/XROOTD-stamp/extract-XROOTD.cmake")
+set(command "/usr/local/lib/python2.7/dist-packages/cmake/data/bin/cmake;-P;/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD-stamp/extract-XROOTD.cmake")
 
 execute_process(COMMAND ${command} RESULT_VARIABLE result)
 if(result)

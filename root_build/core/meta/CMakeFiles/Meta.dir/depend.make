@@ -1135,6 +1135,7 @@ core/meta/CMakeFiles/Meta.dir/src/TProtoClass.cxx.o: ../core/cont/inc/TIterator.
 core/meta/CMakeFiles/Meta.dir/src/TProtoClass.cxx.o: ../core/cont/inc/TList.h
 core/meta/CMakeFiles/Meta.dir/src/TProtoClass.cxx.o: ../core/cont/inc/TObjArray.h
 core/meta/CMakeFiles/Meta.dir/src/TProtoClass.cxx.o: ../core/cont/inc/TSeqCollection.h
+core/meta/CMakeFiles/Meta.dir/src/TProtoClass.cxx.o: ../core/cont/inc/TVirtualCollectionProxy.h
 core/meta/CMakeFiles/Meta.dir/src/TProtoClass.cxx.o: ../core/foundation/inc/ESTLType.h
 core/meta/CMakeFiles/Meta.dir/src/TProtoClass.cxx.o: ../core/foundation/inc/ROOT/RStringView.hxx
 core/meta/CMakeFiles/Meta.dir/src/TProtoClass.cxx.o: ../core/foundation/inc/ROOT/RWrap_libcpp_string_view.h

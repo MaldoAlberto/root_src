@@ -2495,16 +2495,6 @@ geom/geom/CMakeFiles/Geom.dir/src/TGeoTube.cxx.o: ../math/mathcore/inc/TMath.h
 geom/geom/CMakeFiles/Geom.dir/src/TGeoTube.cxx.o: ../geom/geom/src/TGeoTube.cxx
 geom/geom/CMakeFiles/Geom.dir/src/TGeoTube.cxx.o: ginclude/RConfigure.h
 
-geom/geom/CMakeFiles/Geom.dir/src/TGeoUnit.cxx.o: ../core/base/inc/DllImport.h
-geom/geom/CMakeFiles/Geom.dir/src/TGeoUnit.cxx.o: ../core/base/inc/ROOT/RConfig.hxx
-geom/geom/CMakeFiles/Geom.dir/src/TGeoUnit.cxx.o: ../core/base/inc/RVersion.h
-geom/geom/CMakeFiles/Geom.dir/src/TGeoUnit.cxx.o: ../core/base/inc/RtypesCore.h
-geom/geom/CMakeFiles/Geom.dir/src/TGeoUnit.cxx.o: ../core/base/inc/TError.h
-geom/geom/CMakeFiles/Geom.dir/src/TGeoUnit.cxx.o: ../geom/geom/inc/TGeant4SystemOfUnits.h
-geom/geom/CMakeFiles/Geom.dir/src/TGeoUnit.cxx.o: ../geom/geom/inc/TGeoSystemOfUnits.h
-geom/geom/CMakeFiles/Geom.dir/src/TGeoUnit.cxx.o: ../geom/geom/src/TGeoUnit.cxx
-geom/geom/CMakeFiles/Geom.dir/src/TGeoUnit.cxx.o: ginclude/RConfigure.h
-
 geom/geom/CMakeFiles/Geom.dir/src/TGeoVector3.cxx.o: ../core/base/inc/DllImport.h
 geom/geom/CMakeFiles/Geom.dir/src/TGeoVector3.cxx.o: ../core/base/inc/ROOT/RConfig.hxx
 geom/geom/CMakeFiles/Geom.dir/src/TGeoVector3.cxx.o: ../core/base/inc/RVersion.h

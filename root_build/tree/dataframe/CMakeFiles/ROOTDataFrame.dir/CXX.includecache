@@ -144,6 +144,14 @@ RtypesCore.h
 stdarg.h
 -
 
+../core/base/inc/TInetAddress.h
+TObject.h
+../core/base/inc/TObject.h
+TString.h
+../core/base/inc/TString.h
+vector
+-
+
 ../core/base/inc/TMathBase.h
 Rtypes.h
 ../core/base/inc/Rtypes.h
@@ -189,6 +197,22 @@ TString.h
 ../core/base/inc/TString.h
 TArrayI.h
 ../core/base/inc/TArrayI.h
+
+../core/base/inc/TQClass.h
+TQObject.h
+../core/base/inc/TQObject.h
+TClass.h
+../core/base/inc/TClass.h
+
+../core/base/inc/TQObject.h
+TList.h
+../core/base/inc/TList.h
+TString.h
+../core/base/inc/TString.h
+TVirtualQConnection.h
+../core/base/inc/TVirtualQConnection.h
+TQClass.h
+../core/base/inc/TQClass.h
 
 ../core/base/inc/TROOT.h
 TDirectory.h
@@ -236,6 +260,40 @@ stdio.h
 string
 -
 
+../core/base/inc/TSysEvtHandler.h
+TObject.h
+../core/base/inc/TObject.h
+TQObject.h
+../core/base/inc/TQObject.h
+
+../core/base/inc/TSystem.h
+stdio.h
+-
+ctype.h
+-
+fcntl.h
+-
+unistd.h
+-
+TNamed.h
+../core/base/inc/TNamed.h
+TInetAddress.h
+../core/base/inc/TInetAddress.h
+TTimer.h
+../core/base/inc/TTimer.h
+
+../core/base/inc/TTime.h
+Rtypes.h
+../core/base/inc/Rtypes.h
+
+../core/base/inc/TTimer.h
+TSysEvtHandler.h
+../core/base/inc/TSysEvtHandler.h
+TTime.h
+../core/base/inc/TTime.h
+TString.h
+../core/base/inc/TString.h
+
 ../core/base/inc/TUUID.h
 Rtypes.h
 ../core/base/inc/Rtypes.h
@@ -257,6 +315,12 @@ TObject.h
 ../core/base/inc/TObject.h
 memory
 -
+
+../core/base/inc/TVirtualQConnection.h
+TList.h
+../core/base/inc/TList.h
+TInterpreter.h
+../core/base/inc/TInterpreter.h
 
 ../core/base/inc/TVirtualRWMutex.h
 TVirtualMutex.h
@@ -516,11 +580,9 @@ sstream
 ROOT/RStringView.hxx
 ../core/foundation/inc/ROOT/RStringView.hxx
 
-../core/imt/inc/ROOT/TPoolManager.hxx
+../core/imt/inc/ROOT/RTaskArena.hxx
 RConfigure.h
 ../core/imt/inc/ROOT/RConfigure.h
-Rtypes.h
-../core/imt/inc/ROOT/Rtypes.h
 memory
 -
 
@@ -529,10 +591,8 @@ RConfigure.h
 ../core/imt/inc/ROOT/RConfigure.h
 ROOT/TExecutor.hxx
 ../core/imt/inc/ROOT/ROOT/TExecutor.hxx
-ROOT/TPoolManager.hxx
-../core/imt/inc/ROOT/ROOT/TPoolManager.hxx
-TROOT.h
-../core/imt/inc/ROOT/TROOT.h
+RTaskArena.hxx
+../core/imt/inc/ROOT/RTaskArena.hxx
 TError.h
 ../core/imt/inc/ROOT/TError.h
 functional
@@ -625,6 +685,8 @@ string
 -
 
 ../core/meta/inc/TVirtualArray.h
+TClass.h
+../core/meta/inc/TClass.h
 TClassRef.h
 ../core/meta/inc/TClassRef.h
 
@@ -798,6 +860,18 @@ TH2.h
 TProfile.h
 ../hist/hist/inc/TProfile.h
 
+../io/io/inc/ROOT/RRawFile.hxx
+ROOT/RStringView.hxx
+-
+cstddef
+-
+cstdint
+-
+memory
+-
+string
+-
+
 ../io/io/inc/ROOT/TBufferMerger.hxx
 TFileMerger.h
 ../io/io/inc/ROOT/TFileMerger.h
@@ -892,6 +966,8 @@ TVirtualArray.h
 
 ../math/mathcore/inc/Fit/FitExecutionPolicy.h
 
+../math/mathcore/inc/Math/TRandomEngine.h
+
 ../math/mathcore/inc/TMath.h
 Rtypes.h
 ../math/mathcore/inc/Rtypes.h
@@ -909,6 +985,12 @@ float.h
 -
 math.h
 -
+
+../math/mathcore/inc/TRandom.h
+Math/TRandomEngine.h
+../math/mathcore/inc/Math/TRandomEngine.h
+TNamed.h
+../math/mathcore/inc/TNamed.h
 
 ../math/mathcore/inc/TStatistic.h
 TObject.h
@@ -1622,6 +1704,22 @@ ROOT/RStringView.hxx
 string
 -
 
+../tree/dataframe/inc/ROOT/RSqliteDS.hxx
+ROOT/RDataFrame.hxx
+../tree/dataframe/inc/ROOT/ROOT/RDataFrame.hxx
+ROOT/RDataSource.hxx
+../tree/dataframe/inc/ROOT/ROOT/RDataSource.hxx
+ROOT/RStringView.hxx
+../tree/dataframe/inc/ROOT/ROOT/RStringView.hxx
+memory
+-
+mutex
+-
+string
+-
+vector
+-
+
 ../tree/dataframe/inc/ROOT/RTrivialDS.hxx
 ROOT/RDF/RInterface.hxx
 ../tree/dataframe/inc/ROOT/ROOT/RDF/RInterface.hxx
@@ -1840,19 +1938,19 @@ TBranchProxy.h
 type_traits
 -
 
-/content/root_src/tree/dataframe/src/RActionBase.cxx
+/content/root_src_37/tree/dataframe/src/RActionBase.cxx
 ROOT/RDF/RActionBase.hxx
-/content/root_src/tree/dataframe/src/ROOT/RDF/RActionBase.hxx
+/content/root_src_37/tree/dataframe/src/ROOT/RDF/RActionBase.hxx
 ROOT/RDF/RLoopManager.hxx
-/content/root_src/tree/dataframe/src/ROOT/RDF/RLoopManager.hxx
+/content/root_src_37/tree/dataframe/src/ROOT/RDF/RLoopManager.hxx
 
-/content/root_src/tree/dataframe/src/RColumnValue.cxx
+/content/root_src_37/tree/dataframe/src/RColumnValue.cxx
 ROOT/RDF/RColumnValue.hxx
-/content/root_src/tree/dataframe/src/ROOT/RDF/RColumnValue.hxx
+/content/root_src_37/tree/dataframe/src/ROOT/RDF/RColumnValue.hxx
 vector
 -
 
-/content/root_src/tree/dataframe/src/RCsvDS.cxx
+/content/root_src_37/tree/dataframe/src/RCsvDS.cxx
 ROOT/RDF/Utils.hxx
 -
 ROOT/TSeq.hxx
@@ -1872,49 +1970,49 @@ sstream
 string
 -
 
-/content/root_src/tree/dataframe/src/RCustomColumnBase.cxx
+/content/root_src_37/tree/dataframe/src/RCustomColumnBase.cxx
 ROOT/RDF/RCustomColumnBase.hxx
-/content/root_src/tree/dataframe/src/ROOT/RDF/RCustomColumnBase.hxx
+/content/root_src_37/tree/dataframe/src/ROOT/RDF/RCustomColumnBase.hxx
 ROOT/RStringView.hxx
-/content/root_src/tree/dataframe/src/ROOT/RStringView.hxx
+/content/root_src_37/tree/dataframe/src/ROOT/RStringView.hxx
 RtypesCore.h
-/content/root_src/tree/dataframe/src/RtypesCore.h
+/content/root_src_37/tree/dataframe/src/RtypesCore.h
 string
 -
 vector
 -
 
-/content/root_src/tree/dataframe/src/RCutFlowReport.cxx
+/content/root_src_37/tree/dataframe/src/RCutFlowReport.cxx
 ROOT/RDF/RCutFlowReport.hxx
-/content/root_src/tree/dataframe/src/ROOT/RDF/RCutFlowReport.hxx
+/content/root_src_37/tree/dataframe/src/ROOT/RDF/RCutFlowReport.hxx
 algorithm
 -
 stdexcept
 -
 
-/content/root_src/tree/dataframe/src/RDFActionHelpers.cxx
+/content/root_src_37/tree/dataframe/src/RDFActionHelpers.cxx
 ROOT/RDF/ActionHelpers.hxx
-/content/root_src/tree/dataframe/src/ROOT/RDF/ActionHelpers.hxx
+/content/root_src_37/tree/dataframe/src/ROOT/RDF/ActionHelpers.hxx
 
-/content/root_src/tree/dataframe/src/RDFBookedCustomColumns.cxx
+/content/root_src_37/tree/dataframe/src/RDFBookedCustomColumns.cxx
 ROOT/RDF/RBookedCustomColumns.hxx
-/content/root_src/tree/dataframe/src/ROOT/RDF/RBookedCustomColumns.hxx
+/content/root_src_37/tree/dataframe/src/ROOT/RDF/RBookedCustomColumns.hxx
 
-/content/root_src/tree/dataframe/src/RDFDisplay.cxx
+/content/root_src_37/tree/dataframe/src/RDFDisplay.cxx
 ROOT/RDF/RDisplay.hxx
-/content/root_src/tree/dataframe/src/ROOT/RDF/RDisplay.hxx
+/content/root_src_37/tree/dataframe/src/ROOT/RDF/RDisplay.hxx
 TInterpreter.h
-/content/root_src/tree/dataframe/src/TInterpreter.h
+/content/root_src_37/tree/dataframe/src/TInterpreter.h
 iomanip
 -
 limits
 -
 
-/content/root_src/tree/dataframe/src/RDFGraphUtils.cxx
+/content/root_src_37/tree/dataframe/src/RDFGraphUtils.cxx
 ROOT/RDF/GraphUtils.hxx
-/content/root_src/tree/dataframe/src/ROOT/RDF/GraphUtils.hxx
+/content/root_src_37/tree/dataframe/src/ROOT/RDF/GraphUtils.hxx
 
-/content/root_src/tree/dataframe/src/RDFHistoModels.cxx
+/content/root_src_37/tree/dataframe/src/RDFHistoModels.cxx
 ROOT/RDF/HistoModels.hxx
 -
 ROOT/TSeq.hxx
@@ -1928,15 +2026,15 @@ stddef.h
 vector
 -
 TAxis.h
-/content/root_src/tree/dataframe/src/TAxis.h
+/content/root_src_37/tree/dataframe/src/TAxis.h
 TH1.h
-/content/root_src/tree/dataframe/src/TH1.h
+/content/root_src_37/tree/dataframe/src/TH1.h
 TH2.h
-/content/root_src/tree/dataframe/src/TH2.h
+/content/root_src_37/tree/dataframe/src/TH2.h
 TH3.h
-/content/root_src/tree/dataframe/src/TH3.h
+/content/root_src_37/tree/dataframe/src/TH3.h
 
-/content/root_src/tree/dataframe/src/RDFInterfaceUtils.cxx
+/content/root_src_37/tree/dataframe/src/RDFInterfaceUtils.cxx
 ROOT/RDF/InterfaceUtils.hxx
 -
 ROOT/RDataFrame.hxx
@@ -1970,7 +2068,7 @@ TString.h
 TTree.h
 -
 lexertk.hpp
-/content/root_src/tree/dataframe/src/lexertk.hpp
+/content/root_src_37/tree/dataframe/src/lexertk.hpp
 algorithm
 -
 set
@@ -1984,35 +2082,35 @@ sstream
 typeinfo
 -
 
-/content/root_src/tree/dataframe/src/RDFUtils.cxx
+/content/root_src_37/tree/dataframe/src/RDFUtils.cxx
 RConfigure.h
-/content/root_src/tree/dataframe/src/RConfigure.h
+/content/root_src_37/tree/dataframe/src/RConfigure.h
 ROOT/RDataSource.hxx
-/content/root_src/tree/dataframe/src/ROOT/RDataSource.hxx
+/content/root_src_37/tree/dataframe/src/ROOT/RDataSource.hxx
 ROOT/RDF/RCustomColumnBase.hxx
-/content/root_src/tree/dataframe/src/ROOT/RDF/RCustomColumnBase.hxx
+/content/root_src_37/tree/dataframe/src/ROOT/RDF/RCustomColumnBase.hxx
 ROOT/RDF/RLoopManager.hxx
-/content/root_src/tree/dataframe/src/ROOT/RDF/RLoopManager.hxx
+/content/root_src_37/tree/dataframe/src/ROOT/RDF/RLoopManager.hxx
 RtypesCore.h
-/content/root_src/tree/dataframe/src/RtypesCore.h
+/content/root_src_37/tree/dataframe/src/RtypesCore.h
 TBranch.h
-/content/root_src/tree/dataframe/src/TBranch.h
+/content/root_src_37/tree/dataframe/src/TBranch.h
 TBranchElement.h
-/content/root_src/tree/dataframe/src/TBranchElement.h
+/content/root_src_37/tree/dataframe/src/TBranchElement.h
 TClass.h
-/content/root_src/tree/dataframe/src/TClass.h
+/content/root_src_37/tree/dataframe/src/TClass.h
 TClassEdit.h
-/content/root_src/tree/dataframe/src/TClassEdit.h
+/content/root_src_37/tree/dataframe/src/TClassEdit.h
 TClassRef.h
-/content/root_src/tree/dataframe/src/TClassRef.h
+/content/root_src_37/tree/dataframe/src/TClassRef.h
 TInterpreter.h
-/content/root_src/tree/dataframe/src/TInterpreter.h
+/content/root_src_37/tree/dataframe/src/TInterpreter.h
 TLeaf.h
-/content/root_src/tree/dataframe/src/TLeaf.h
+/content/root_src_37/tree/dataframe/src/TLeaf.h
 TROOT.h
-/content/root_src/tree/dataframe/src/TROOT.h
+/content/root_src_37/tree/dataframe/src/TROOT.h
 TTree.h
-/content/root_src/tree/dataframe/src/TTree.h
+/content/root_src_37/tree/dataframe/src/TTree.h
 stdexcept
 -
 string
@@ -2022,89 +2120,91 @@ cstring
 typeinfo
 -
 
-/content/root_src/tree/dataframe/src/RDataFrame.cxx
+/content/root_src_37/tree/dataframe/src/RDataFrame.cxx
 algorithm
 -
 stdexcept
 -
 ROOT/RDataFrame.hxx
-/content/root_src/tree/dataframe/src/ROOT/RDataFrame.hxx
+/content/root_src_37/tree/dataframe/src/ROOT/RDataFrame.hxx
 ROOT/RDataSource.hxx
-/content/root_src/tree/dataframe/src/ROOT/RDataSource.hxx
+/content/root_src_37/tree/dataframe/src/ROOT/RDataSource.hxx
 TChain.h
-/content/root_src/tree/dataframe/src/TChain.h
+/content/root_src_37/tree/dataframe/src/TChain.h
 TDirectory.h
-/content/root_src/tree/dataframe/src/TDirectory.h
+/content/root_src_37/tree/dataframe/src/TDirectory.h
 
-/content/root_src/tree/dataframe/src/RFilterBase.cxx
+/content/root_src_37/tree/dataframe/src/RFilterBase.cxx
 ROOT/RDF/RCutFlowReport.hxx
-/content/root_src/tree/dataframe/src/ROOT/RDF/RCutFlowReport.hxx
+/content/root_src_37/tree/dataframe/src/ROOT/RDF/RCutFlowReport.hxx
 ROOT/RDF/RFilterBase.hxx
-/content/root_src/tree/dataframe/src/ROOT/RDF/RFilterBase.hxx
+/content/root_src_37/tree/dataframe/src/ROOT/RDF/RFilterBase.hxx
 numeric
 -
 
-/content/root_src/tree/dataframe/src/RJittedAction.cxx
+/content/root_src_37/tree/dataframe/src/RJittedAction.cxx
 ROOT/RDF/RBookedCustomColumns.hxx
-/content/root_src/tree/dataframe/src/ROOT/RDF/RBookedCustomColumns.hxx
+/content/root_src_37/tree/dataframe/src/ROOT/RDF/RBookedCustomColumns.hxx
 ROOT/RDF/RLoopManager.hxx
-/content/root_src/tree/dataframe/src/ROOT/RDF/RLoopManager.hxx
+/content/root_src_37/tree/dataframe/src/ROOT/RDF/RLoopManager.hxx
 ROOT/RDF/RJittedAction.hxx
-/content/root_src/tree/dataframe/src/ROOT/RDF/RJittedAction.hxx
+/content/root_src_37/tree/dataframe/src/ROOT/RDF/RJittedAction.hxx
 TError.h
-/content/root_src/tree/dataframe/src/TError.h
+/content/root_src_37/tree/dataframe/src/TError.h
 
-/content/root_src/tree/dataframe/src/RJittedCustomColumn.cxx
+/content/root_src_37/tree/dataframe/src/RJittedCustomColumn.cxx
 ROOT/RDF/RJittedCustomColumn.hxx
 -
 TError.h
 -
 
-/content/root_src/tree/dataframe/src/RJittedFilter.cxx
+/content/root_src_37/tree/dataframe/src/RJittedFilter.cxx
 ROOT/RDF/RCutFlowReport.hxx
-/content/root_src/tree/dataframe/src/ROOT/RDF/RCutFlowReport.hxx
+/content/root_src_37/tree/dataframe/src/ROOT/RDF/RCutFlowReport.hxx
 ROOT/RDF/RBookedCustomColumns.hxx
-/content/root_src/tree/dataframe/src/ROOT/RDF/RBookedCustomColumns.hxx
+/content/root_src_37/tree/dataframe/src/ROOT/RDF/RBookedCustomColumns.hxx
 ROOT/RDF/RLoopManager.hxx
-/content/root_src/tree/dataframe/src/ROOT/RDF/RLoopManager.hxx
+/content/root_src_37/tree/dataframe/src/ROOT/RDF/RLoopManager.hxx
 ROOT/RDF/RJittedFilter.hxx
-/content/root_src/tree/dataframe/src/ROOT/RDF/RJittedFilter.hxx
+/content/root_src_37/tree/dataframe/src/ROOT/RDF/RJittedFilter.hxx
 
-/content/root_src/tree/dataframe/src/RLoopManager.cxx
+/content/root_src_37/tree/dataframe/src/RLoopManager.cxx
 RConfigure.h
-/content/root_src/tree/dataframe/src/RConfigure.h
+/content/root_src_37/tree/dataframe/src/RConfigure.h
 ROOT/RDF/GraphNode.hxx
-/content/root_src/tree/dataframe/src/ROOT/RDF/GraphNode.hxx
+/content/root_src_37/tree/dataframe/src/ROOT/RDF/GraphNode.hxx
 ROOT/RDF/RActionBase.hxx
-/content/root_src/tree/dataframe/src/ROOT/RDF/RActionBase.hxx
+/content/root_src_37/tree/dataframe/src/ROOT/RDF/RActionBase.hxx
 ROOT/RDF/RFilterBase.hxx
-/content/root_src/tree/dataframe/src/ROOT/RDF/RFilterBase.hxx
+/content/root_src_37/tree/dataframe/src/ROOT/RDF/RFilterBase.hxx
 ROOT/RDF/RLoopManager.hxx
-/content/root_src/tree/dataframe/src/ROOT/RDF/RLoopManager.hxx
+/content/root_src_37/tree/dataframe/src/ROOT/RDF/RLoopManager.hxx
 ROOT/RDF/RRangeBase.hxx
-/content/root_src/tree/dataframe/src/ROOT/RDF/RRangeBase.hxx
+/content/root_src_37/tree/dataframe/src/ROOT/RDF/RRangeBase.hxx
 ROOT/RDF/RSlotStack.hxx
-/content/root_src/tree/dataframe/src/ROOT/RDF/RSlotStack.hxx
+/content/root_src_37/tree/dataframe/src/ROOT/RDF/RSlotStack.hxx
 RtypesCore.h
-/content/root_src/tree/dataframe/src/RtypesCore.h
+/content/root_src_37/tree/dataframe/src/RtypesCore.h
 TBranchElement.h
-/content/root_src/tree/dataframe/src/TBranchElement.h
+/content/root_src_37/tree/dataframe/src/TBranchElement.h
 TBranchObject.h
-/content/root_src/tree/dataframe/src/TBranchObject.h
+/content/root_src_37/tree/dataframe/src/TBranchObject.h
 TEntryList.h
-/content/root_src/tree/dataframe/src/TEntryList.h
+/content/root_src_37/tree/dataframe/src/TEntryList.h
 TFriendElement.h
-/content/root_src/tree/dataframe/src/TFriendElement.h
+/content/root_src_37/tree/dataframe/src/TFriendElement.h
 TInterpreter.h
-/content/root_src/tree/dataframe/src/TInterpreter.h
+/content/root_src_37/tree/dataframe/src/TInterpreter.h
 TROOT.h
-/content/root_src/tree/dataframe/src/TROOT.h
+/content/root_src_37/tree/dataframe/src/TROOT.h
 TTreeReader.h
-/content/root_src/tree/dataframe/src/TTreeReader.h
+/content/root_src_37/tree/dataframe/src/TTreeReader.h
+TTree.h
+/content/root_src_37/tree/dataframe/src/TTree.h
 ROOT/TThreadExecutor.hxx
-/content/root_src/tree/dataframe/src/ROOT/TThreadExecutor.hxx
+/content/root_src_37/tree/dataframe/src/ROOT/TThreadExecutor.hxx
 ROOT/TTreeProcessorMT.hxx
-/content/root_src/tree/dataframe/src/ROOT/TTreeProcessorMT.hxx
+/content/root_src_37/tree/dataframe/src/ROOT/TTreeProcessorMT.hxx
 atomic
 -
 exception
@@ -2125,12 +2225,14 @@ vector
 -
 set
 -
+limits
+-
 
-/content/root_src/tree/dataframe/src/RRangeBase.cxx
+/content/root_src_37/tree/dataframe/src/RRangeBase.cxx
 ROOT/RDF/RRangeBase.hxx
-/content/root_src/tree/dataframe/src/ROOT/RDF/RRangeBase.hxx
+/content/root_src_37/tree/dataframe/src/ROOT/RDF/RRangeBase.hxx
 
-/content/root_src/tree/dataframe/src/RRootDS.cxx
+/content/root_src_37/tree/dataframe/src/RRootDS.cxx
 ROOT/RDF/Utils.hxx
 -
 ROOT/RRootDS.hxx
@@ -2152,7 +2254,7 @@ algorithm
 vector
 -
 
-/content/root_src/tree/dataframe/src/RSlotStack.cxx
+/content/root_src_37/tree/dataframe/src/RSlotStack.cxx
 ROOT/TSeq.hxx
 -
 ROOT/RDF/RSlotStack.hxx
@@ -2162,7 +2264,43 @@ TError.h
 mutex
 -
 
-/content/root_src/tree/dataframe/src/RTrivialDS.cxx
+/content/root_src_37/tree/dataframe/src/RSqliteDS.cxx
+ROOT/RSqliteDS.hxx
+-
+ROOT/RConfig.hxx
+-
+ROOT/RDF/Utils.hxx
+-
+ROOT/RMakeUnique.hxx
+-
+ROOT/RRawFile.hxx
+-
+TError.h
+/content/root_src_37/tree/dataframe/src/TError.h
+TRandom.h
+/content/root_src_37/tree/dataframe/src/TRandom.h
+TSystem.h
+/content/root_src_37/tree/dataframe/src/TSystem.h
+algorithm
+-
+cctype
+-
+cerrno
+-
+cstring
+-
+ctime
+-
+memory
+-
+stdexcept
+-
+utility
+-
+sqlite3.h
+-
+
+/content/root_src_37/tree/dataframe/src/RTrivialDS.cxx
 ROOT/RDF/Utils.hxx
 -
 ROOT/TSeq.hxx
@@ -2174,7 +2312,7 @@ ROOT/RMakeUnique.hxx
 TError.h
 -
 
-/content/root_src/tree/dataframe/src/lexertk.hpp
+/content/root_src_37/tree/dataframe/src/lexertk.hpp
 algorithm
 -
 cctype

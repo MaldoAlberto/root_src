@@ -2,10 +2,10 @@
 
 
 # LLVM_BUILD_* values available only from LLVM build tree.
-set(LLVM_BUILD_BINARY_DIR "/content/root_src/root_build/interpreter/llvm/src")
-set(LLVM_BUILD_LIBRARY_DIR "/content/root_src/root_build/interpreter/llvm/src/./lib")
-set(LLVM_BUILD_MAIN_INCLUDE_DIR "/content/root_src/interpreter/llvm/src/include")
-set(LLVM_BUILD_MAIN_SRC_DIR "/content/root_src/interpreter/llvm/src")
+set(LLVM_BUILD_BINARY_DIR "/content/root_src_37/root_build/interpreter/llvm/src")
+set(LLVM_BUILD_LIBRARY_DIR "/content/root_src_37/root_build/interpreter/llvm/src/./lib")
+set(LLVM_BUILD_MAIN_INCLUDE_DIR "/content/root_src_37/interpreter/llvm/src/include")
+set(LLVM_BUILD_MAIN_SRC_DIR "/content/root_src_37/interpreter/llvm/src")
 
 
 set(LLVM_VERSION_MAJOR 5)
@@ -125,25 +125,25 @@ set(LLVM_ON_WIN32 0)
 
 set(LLVM_LIBDIR_SUFFIX )
 
-set(LLVM_INCLUDE_DIRS "/content/root_src/interpreter/llvm/src/include;/content/root_src/root_build/interpreter/llvm/src/include")
-set(LLVM_LIBRARY_DIRS "/content/root_src/root_build/interpreter/llvm/src/./lib")
+set(LLVM_INCLUDE_DIRS "/content/root_src_37/interpreter/llvm/src/include;/content/root_src_37/root_build/interpreter/llvm/src/include")
+set(LLVM_LIBRARY_DIRS "/content/root_src_37/root_build/interpreter/llvm/src/./lib")
 
 # These variables are duplicated, but they must match the LLVM variables of the
 # same name. The variables ending in "S" could some day become lists, and are
 # preserved for convention and compatibility.
-set(LLVM_INCLUDE_DIR "/content/root_src/interpreter/llvm/src/include;/content/root_src/root_build/interpreter/llvm/src/include")
-set(LLVM_LIBRARY_DIR "/content/root_src/root_build/interpreter/llvm/src/./lib")
+set(LLVM_INCLUDE_DIR "/content/root_src_37/interpreter/llvm/src/include;/content/root_src_37/root_build/interpreter/llvm/src/include")
+set(LLVM_LIBRARY_DIR "/content/root_src_37/root_build/interpreter/llvm/src/./lib")
 
 set(LLVM_DEFINITIONS "")
-set(LLVM_CMAKE_DIR "/content/root_src/interpreter/llvm/src/cmake/modules")
-set(LLVM_BINARY_DIR "/content/root_src/root_build/interpreter/llvm/src")
-set(LLVM_TOOLS_BINARY_DIR "/content/root_src/root_build/interpreter/llvm/src/./bin")
+set(LLVM_CMAKE_DIR "/content/root_src_37/interpreter/llvm/src/cmake/modules")
+set(LLVM_BINARY_DIR "/content/root_src_37/root_build/interpreter/llvm/src")
+set(LLVM_TOOLS_BINARY_DIR "/content/root_src_37/root_build/interpreter/llvm/src/./bin")
 set(LLVM_TOOLS_INSTALL_DIR "bin")
 
 if(NOT TARGET LLVMSupport)
   set(LLVM_EXPORTED_TARGETS "LLVMDemangle;LLVMSupport;LLVMTableGen;llvm-tblgen;LLVMCore;LLVMIRReader;LLVMCodeGen;LLVMSelectionDAG;LLVMAsmPrinter;LLVMMIRParser;LLVMGlobalISel;LLVMBinaryFormat;LLVMBitReader;LLVMBitWriter;LLVMTransformUtils;LLVMInstrumentation;LLVMInstCombine;LLVMScalarOpts;LLVMipo;LLVMVectorize;LLVMHello;LLVMObjCARCOpts;LLVMCoroutines;LLVMLinker;LLVMAnalysis;LLVMLTO;LLVMMC;LLVMMCParser;LLVMMCDisassembler;LLVMObject;LLVMObjectYAML;LLVMOption;LLVMDebugInfoDWARF;LLVMDebugInfoMSF;LLVMDebugInfoCodeView;LLVMDebugInfoPDB;LLVMSymbolize;LLVMExecutionEngine;LLVMInterpreter;LLVMMCJIT;LLVMOrcJIT;LLVMRuntimeDyld;LLVMTarget;LLVMX86CodeGen;LLVMX86AsmParser;LLVMX86Disassembler;LLVMX86AsmPrinter;LLVMX86Desc;LLVMX86Info;LLVMX86Utils;LLVMNVPTXCodeGen;LLVMNVPTXInfo;LLVMNVPTXAsmPrinter;LLVMNVPTXDesc;LLVMAsmParser;LLVMLineEditor;LLVMProfileData;LLVMCoverage;LLVMPasses;LLVMDlltoolDriver;LLVMLibDriver;LLVMXRay;LTO;clang-tblgen;LLVMTestingSupport")
-  include("/content/root_src/root_build/interpreter/llvm/src/lib/cmake/llvm/LLVMExports.cmake")
-  include("/content/root_src/root_build/interpreter/llvm/src/lib/cmake/llvm/LLVMBuildTreeOnlyTargets.cmake")
+  include("/content/root_src_37/root_build/interpreter/llvm/src/lib/cmake/llvm/LLVMExports.cmake")
+  include("/content/root_src_37/root_build/interpreter/llvm/src/lib/cmake/llvm/LLVMBuildTreeOnlyTargets.cmake")
 endif()
 
 set_property(GLOBAL PROPERTY LLVM_TARGETS_CONFIGURED On)

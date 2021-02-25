@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/content/root_src/builtins/glew/src/glew.c" "/content/root_src/root_build/builtins/glew/CMakeFiles/GLEW.dir/src/glew.c.o"
+  "/content/root_src_37/builtins/glew/src/glew.c" "/content/root_src_37/root_build/builtins/glew/CMakeFiles/GLEW.dir/src/glew.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

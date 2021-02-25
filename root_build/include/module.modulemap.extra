@@ -52,8 +52,8 @@ module "Thread" {
 module "Imt" {
   requires cplusplus
   module "ROOT/TFuture.hxx" { header "ROOT/TFuture.hxx" export * }
-  module "ROOT/TPoolManager.hxx" { header "ROOT/TPoolManager.hxx" export * }
   module "ROOT/TTaskGroup.hxx" { header "ROOT/TTaskGroup.hxx" export * }
+  module "ROOT/RTaskArena.hxx" { header "ROOT/RTaskArena.hxx" export * }
   module "ROOT/TThreadExecutor.hxx" { header "ROOT/TThreadExecutor.hxx" export * }
   link "libImt.so"
   export *
@@ -927,6 +927,7 @@ module "ROOTDataFrame" {
   module "ROOT/RDF/RSlotStack.hxx" { header "ROOT/RDF/RSlotStack.hxx" export * }
   module "ROOT/RDF/Utils.hxx" { header "ROOT/RDF/Utils.hxx" export * }
   module "ROOT/RDF/PyROOTHelpers.hxx" { header "ROOT/RDF/PyROOTHelpers.hxx" export * }
+  module "ROOT/RSqliteDS.hxx" { header "ROOT/RSqliteDS.hxx" export * }
   link "libROOTDataFrame.so"
   export *
 }
@@ -1868,6 +1869,36 @@ module "ROOTTPython" {
   module "TPyReturn.h" { header "TPyReturn.h" export * }
   module "TPython.h" { header "TPython.h" export * }
   link "libROOTTPython.so"
+  export *
+}
+
+module "RMySQL" {
+  requires cplusplus
+  module "TMySQLResult.h" { header "TMySQLResult.h" export * }
+  module "TMySQLRow.h" { header "TMySQLRow.h" export * }
+  module "TMySQLServer.h" { header "TMySQLServer.h" export * }
+  module "TMySQLStatement.h" { header "TMySQLStatement.h" export * }
+  link "libRMySQL.so"
+  export *
+}
+
+module "PgSQL" {
+  requires cplusplus
+  module "TPgSQLResult.h" { header "TPgSQLResult.h" export * }
+  module "TPgSQLRow.h" { header "TPgSQLRow.h" export * }
+  module "TPgSQLServer.h" { header "TPgSQLServer.h" export * }
+  module "TPgSQLStatement.h" { header "TPgSQLStatement.h" export * }
+  link "libPgSQL.so"
+  export *
+}
+
+module "RSQLite" {
+  requires cplusplus
+  module "TSQLiteResult.h" { header "TSQLiteResult.h" export * }
+  module "TSQLiteRow.h" { header "TSQLiteRow.h" export * }
+  module "TSQLiteServer.h" { header "TSQLiteServer.h" export * }
+  module "TSQLiteStatement.h" { header "TSQLiteStatement.h" export * }
+  link "libRSQLite.so"
   export *
 }
 

@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/content/root_src/builtins/lz4/lz4.c" "/content/root_src/root_build/builtins/lz4/CMakeFiles/lz4.dir/lz4.c.o"
-  "/content/root_src/builtins/lz4/lz4frame.c" "/content/root_src/root_build/builtins/lz4/CMakeFiles/lz4.dir/lz4frame.c.o"
-  "/content/root_src/builtins/lz4/lz4hc.c" "/content/root_src/root_build/builtins/lz4/CMakeFiles/lz4.dir/lz4hc.c.o"
+  "/content/root_src_37/builtins/lz4/lz4.c" "/content/root_src_37/root_build/builtins/lz4/CMakeFiles/lz4.dir/lz4.c.o"
+  "/content/root_src_37/builtins/lz4/lz4frame.c" "/content/root_src_37/root_build/builtins/lz4/CMakeFiles/lz4.dir/lz4frame.c.o"
+  "/content/root_src_37/builtins/lz4/lz4hc.c" "/content/root_src_37/root_build/builtins/lz4/CMakeFiles/lz4.dir/lz4hc.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -17,7 +17,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/content/root_src/root_build/builtins/xxhash/CMakeFiles/xxhash.dir/DependInfo.cmake"
+  "/content/root_src_37/root_build/builtins/xxhash/CMakeFiles/xxhash.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

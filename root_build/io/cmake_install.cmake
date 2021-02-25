@@ -1,8 +1,8 @@
-# Install script for directory: /content/root_src/io
+# Install script for directory: /content/root_src_37/io
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/content/root_src/root_install")
+  set(CMAKE_INSTALL_PREFIX "/content/root_src_37/root_install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,11 +39,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/content/root_src/root_build/io/io/cmake_install.cmake")
-  include("/content/root_src/root_build/io/rootpcm/cmake_install.cmake")
-  include("/content/root_src/root_build/io/sql/cmake_install.cmake")
-  include("/content/root_src/root_build/io/xml/cmake_install.cmake")
-  include("/content/root_src/root_build/io/xmlparser/cmake_install.cmake")
+  include("/content/root_src_37/root_build/io/io/cmake_install.cmake")
+  include("/content/root_src_37/root_build/io/rootpcm/cmake_install.cmake")
+  include("/content/root_src_37/root_build/io/sql/cmake_install.cmake")
+  include("/content/root_src_37/root_build/io/xml/cmake_install.cmake")
+  include("/content/root_src_37/root_build/io/xmlparser/cmake_install.cmake")
 
 endif()
 

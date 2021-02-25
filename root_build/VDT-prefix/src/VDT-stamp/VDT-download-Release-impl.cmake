@@ -1,4 +1,4 @@
-set(command "/usr/local/lib/python2.7/dist-packages/cmake/data/bin/cmake;-P;/content/root_src/root_build/VDT-prefix/src/VDT-stamp/download-VDT.cmake")
+set(command "/usr/local/lib/python2.7/dist-packages/cmake/data/bin/cmake;-P;/content/root_src_37/root_build/VDT-prefix/src/VDT-stamp/download-VDT.cmake")
 
 execute_process(COMMAND ${command} RESULT_VARIABLE result)
 if(result)
@@ -8,7 +8,7 @@ if(result)
   endforeach()
   message(FATAL_ERROR "${msg}")
 endif()
-set(command "/usr/local/lib/python2.7/dist-packages/cmake/data/bin/cmake;-P;/content/root_src/root_build/VDT-prefix/src/VDT-stamp/verify-VDT.cmake")
+set(command "/usr/local/lib/python2.7/dist-packages/cmake/data/bin/cmake;-P;/content/root_src_37/root_build/VDT-prefix/src/VDT-stamp/verify-VDT.cmake")
 
 execute_process(COMMAND ${command} RESULT_VARIABLE result)
 if(result)
@@ -18,7 +18,7 @@ if(result)
   endforeach()
   message(FATAL_ERROR "${msg}")
 endif()
-set(command "/usr/local/lib/python2.7/dist-packages/cmake/data/bin/cmake;-P;/content/root_src/root_build/VDT-prefix/src/VDT-stamp/extract-VDT.cmake")
+set(command "/usr/local/lib/python2.7/dist-packages/cmake/data/bin/cmake;-P;/content/root_src_37/root_build/VDT-prefix/src/VDT-stamp/extract-VDT.cmake")
 
 execute_process(COMMAND ${command} RESULT_VARIABLE result)
 if(result)

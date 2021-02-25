@@ -13,9 +13,9 @@
 -- Detecting CXX compile features
 -- Detecting CXX compile features - done
 -- Found PythonInterp: /usr/local/bin/python (found version "2.7.17") 
-running cd src;/usr/local/bin/python /content/root_src/root_build/VDT-prefix/src/VDT/src/signatures_generator.py   -o /content/root_src/root_build/VDT-prefix/src/VDT/src;cd - 2>&1
-/content/root_src/root_build/VDT-prefix/src/VDT-build
+running cd src;/usr/local/bin/python /content/root_src_37/root_build/VDT-prefix/src/VDT/src/signatures_generator.py   -o /content/root_src_37/root_build/VDT-prefix/src/VDT/src;cd - 2>&1
+/content/root_src_37/root_build/VDT-prefix/src/VDT-build
 -- Libraries are configured as: SHARED
 -- Configuring done
 -- Generating done
--- Build files have been written to: /content/root_src/root_build/VDT-prefix/src/VDT-build
+-- Build files have been written to: /content/root_src_37/root_build/VDT-prefix/src/VDT-build

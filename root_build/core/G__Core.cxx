@@ -308,7 +308,7 @@ namespace ROOT {
       ::timespec *ptr = 0;
       static ::TVirtualIsAProxy* isa_proxy = new ::TIsAProxy(typeid(::timespec));
       static ::ROOT::TGenericClassInfo 
-         instance("timespec", "sched.h", 8,
+         instance("timespec", "sched.h", 9,
                   typeid(::timespec), ::ROOT::Internal::DefineBehavior(ptr, ptr),
                   &timespec_Dictionary, isa_proxy, 0,
                   sizeof(::timespec) );
@@ -317,8 +317,6 @@ namespace ROOT {
       instance.SetDelete(&delete_timespec);
       instance.SetDeleteArray(&deleteArray_timespec);
       instance.SetDestructor(&destruct_timespec);
-
-      ::ROOT::AddClassAlternate("timespec","timespec_t");
       return &instance;
    }
    TGenericClassInfo *GenerateInitInstance(const ::timespec*)
@@ -335,10 +333,7 @@ namespace ROOT {
    return theClass;
    }
 
-   static void timespec_TClassManip(TClass* theClass){
-      theClass->CreateAttributeMap();
-      TDictAttributeMap* attrMap( theClass->GetAttributeMap() );
-      attrMap->AddProperty("fromTypedef","true");
+   static void timespec_TClassManip(TClass* ){
    }
 
 } // end of namespace ROOT
@@ -6194,8 +6189,6 @@ namespace ROOT {
       instance.SetDeleteArray(&deleteArray_TPair);
       instance.SetDestructor(&destruct_TPair);
       instance.SetStreamerFunc(&streamer_TPair);
-
-      ::ROOT::AddClassAlternate("TPair","TAssoc");
       return &instance;
    }
    TGenericClassInfo *GenerateInitInstance(const ::TPair*)
@@ -11124,7 +11117,7 @@ namespace ROOT {
       ::TStreamerBasicPointer *ptr = 0;
       static ::TVirtualIsAProxy* isa_proxy = new ::TInstrumentedIsAProxy< ::TStreamerBasicPointer >(0);
       static ::ROOT::TGenericClassInfo 
-         instance("TStreamerBasicPointer", ::TStreamerBasicPointer::Class_Version(), "TStreamerElement.h", 198,
+         instance("TStreamerBasicPointer", ::TStreamerBasicPointer::Class_Version(), "TStreamerElement.h", 199,
                   typeid(::TStreamerBasicPointer), ::ROOT::Internal::DefineBehavior(ptr, ptr),
                   &::TStreamerBasicPointer::Dictionary, isa_proxy, 17,
                   sizeof(::TStreamerBasicPointer) );
@@ -11158,7 +11151,7 @@ namespace ROOT {
       ::TStreamerLoop *ptr = 0;
       static ::TVirtualIsAProxy* isa_proxy = new ::TInstrumentedIsAProxy< ::TStreamerLoop >(0);
       static ::ROOT::TGenericClassInfo 
-         instance("TStreamerLoop", ::TStreamerLoop::Class_Version(), "TStreamerElement.h", 235,
+         instance("TStreamerLoop", ::TStreamerLoop::Class_Version(), "TStreamerElement.h", 236,
                   typeid(::TStreamerLoop), ::ROOT::Internal::DefineBehavior(ptr, ptr),
                   &::TStreamerLoop::Dictionary, isa_proxy, 17,
                   sizeof(::TStreamerLoop) );
@@ -11192,7 +11185,7 @@ namespace ROOT {
       ::TStreamerBasicType *ptr = 0;
       static ::TVirtualIsAProxy* isa_proxy = new ::TInstrumentedIsAProxy< ::TStreamerBasicType >(0);
       static ::ROOT::TGenericClassInfo 
-         instance("TStreamerBasicType", ::TStreamerBasicType::Class_Version(), "TStreamerElement.h", 269,
+         instance("TStreamerBasicType", ::TStreamerBasicType::Class_Version(), "TStreamerElement.h", 270,
                   typeid(::TStreamerBasicType), ::ROOT::Internal::DefineBehavior(ptr, ptr),
                   &::TStreamerBasicType::Dictionary, isa_proxy, 17,
                   sizeof(::TStreamerBasicType) );
@@ -11226,7 +11219,7 @@ namespace ROOT {
       ::TStreamerObject *ptr = 0;
       static ::TVirtualIsAProxy* isa_proxy = new ::TInstrumentedIsAProxy< ::TStreamerObject >(0);
       static ::ROOT::TGenericClassInfo 
-         instance("TStreamerObject", ::TStreamerObject::Class_Version(), "TStreamerElement.h", 293,
+         instance("TStreamerObject", ::TStreamerObject::Class_Version(), "TStreamerElement.h", 294,
                   typeid(::TStreamerObject), ::ROOT::Internal::DefineBehavior(ptr, ptr),
                   &::TStreamerObject::Dictionary, isa_proxy, 17,
                   sizeof(::TStreamerObject) );
@@ -11260,7 +11253,7 @@ namespace ROOT {
       ::TStreamerObjectAny *ptr = 0;
       static ::TVirtualIsAProxy* isa_proxy = new ::TInstrumentedIsAProxy< ::TStreamerObjectAny >(0);
       static ::ROOT::TGenericClassInfo 
-         instance("TStreamerObjectAny", ::TStreamerObjectAny::Class_Version(), "TStreamerElement.h", 312,
+         instance("TStreamerObjectAny", ::TStreamerObjectAny::Class_Version(), "TStreamerElement.h", 313,
                   typeid(::TStreamerObjectAny), ::ROOT::Internal::DefineBehavior(ptr, ptr),
                   &::TStreamerObjectAny::Dictionary, isa_proxy, 17,
                   sizeof(::TStreamerObjectAny) );
@@ -11294,7 +11287,7 @@ namespace ROOT {
       ::TStreamerObjectPointer *ptr = 0;
       static ::TVirtualIsAProxy* isa_proxy = new ::TInstrumentedIsAProxy< ::TStreamerObjectPointer >(0);
       static ::ROOT::TGenericClassInfo 
-         instance("TStreamerObjectPointer", ::TStreamerObjectPointer::Class_Version(), "TStreamerElement.h", 331,
+         instance("TStreamerObjectPointer", ::TStreamerObjectPointer::Class_Version(), "TStreamerElement.h", 332,
                   typeid(::TStreamerObjectPointer), ::ROOT::Internal::DefineBehavior(ptr, ptr),
                   &::TStreamerObjectPointer::Dictionary, isa_proxy, 17,
                   sizeof(::TStreamerObjectPointer) );
@@ -11328,7 +11321,7 @@ namespace ROOT {
       ::TStreamerObjectAnyPointer *ptr = 0;
       static ::TVirtualIsAProxy* isa_proxy = new ::TInstrumentedIsAProxy< ::TStreamerObjectAnyPointer >(0);
       static ::ROOT::TGenericClassInfo 
-         instance("TStreamerObjectAnyPointer", ::TStreamerObjectAnyPointer::Class_Version(), "TStreamerElement.h", 352,
+         instance("TStreamerObjectAnyPointer", ::TStreamerObjectAnyPointer::Class_Version(), "TStreamerElement.h", 353,
                   typeid(::TStreamerObjectAnyPointer), ::ROOT::Internal::DefineBehavior(ptr, ptr),
                   &::TStreamerObjectAnyPointer::Dictionary, isa_proxy, 17,
                   sizeof(::TStreamerObjectAnyPointer) );
@@ -11362,7 +11355,7 @@ namespace ROOT {
       ::TStreamerString *ptr = 0;
       static ::TVirtualIsAProxy* isa_proxy = new ::TInstrumentedIsAProxy< ::TStreamerString >(0);
       static ::ROOT::TGenericClassInfo 
-         instance("TStreamerString", ::TStreamerString::Class_Version(), "TStreamerElement.h", 373,
+         instance("TStreamerString", ::TStreamerString::Class_Version(), "TStreamerElement.h", 374,
                   typeid(::TStreamerString), ::ROOT::Internal::DefineBehavior(ptr, ptr),
                   &::TStreamerString::Dictionary, isa_proxy, 17,
                   sizeof(::TStreamerString) );
@@ -11396,7 +11389,7 @@ namespace ROOT {
       ::TStreamerSTL *ptr = 0;
       static ::TVirtualIsAProxy* isa_proxy = new ::TInstrumentedIsAProxy< ::TStreamerSTL >(0);
       static ::ROOT::TGenericClassInfo 
-         instance("TStreamerSTL", ::TStreamerSTL::Class_Version(), "TStreamerElement.h", 391,
+         instance("TStreamerSTL", ::TStreamerSTL::Class_Version(), "TStreamerElement.h", 392,
                   typeid(::TStreamerSTL), ::ROOT::Internal::DefineBehavior(ptr, ptr),
                   &::TStreamerSTL::Dictionary, isa_proxy, 17,
                   sizeof(::TStreamerSTL) );
@@ -11430,7 +11423,7 @@ namespace ROOT {
       ::TStreamerSTLstring *ptr = 0;
       static ::TVirtualIsAProxy* isa_proxy = new ::TInstrumentedIsAProxy< ::TStreamerSTLstring >(0);
       static ::ROOT::TGenericClassInfo 
-         instance("TStreamerSTLstring", ::TStreamerSTLstring::Class_Version(), "TStreamerElement.h", 425,
+         instance("TStreamerSTLstring", ::TStreamerSTLstring::Class_Version(), "TStreamerElement.h", 426,
                   typeid(::TStreamerSTLstring), ::ROOT::Internal::DefineBehavior(ptr, ptr),
                   &::TStreamerSTLstring::Dictionary, isa_proxy, 17,
                   sizeof(::TStreamerSTLstring) );
@@ -11462,7 +11455,7 @@ namespace ROOT {
       ::TStreamerArtificial *ptr = 0;
       static ::TVirtualIsAProxy* isa_proxy = new ::TInstrumentedIsAProxy< ::TStreamerArtificial >(0);
       static ::ROOT::TGenericClassInfo 
-         instance("TStreamerArtificial", ::TStreamerArtificial::Class_Version(), "TStreamerElement.h", 449,
+         instance("TStreamerArtificial", ::TStreamerArtificial::Class_Version(), "TStreamerElement.h", 450,
                   typeid(::TStreamerArtificial), ::ROOT::Internal::DefineBehavior(ptr, ptr),
                   &::TStreamerArtificial::Dictionary, isa_proxy, 17,
                   sizeof(::TStreamerArtificial) );
@@ -11523,7 +11516,7 @@ namespace ROOT {
       ::TVirtualArray *ptr = 0;
       static ::TVirtualIsAProxy* isa_proxy = new ::TIsAProxy(typeid(::TVirtualArray));
       static ::ROOT::TGenericClassInfo 
-         instance("TVirtualArray", 0, "TVirtualArray.h", 26,
+         instance("TVirtualArray", 0, "TVirtualArray.h", 27,
                   typeid(::TVirtualArray), ::ROOT::Internal::DefineBehavior(ptr, ptr),
                   &TVirtualArray_Dictionary, isa_proxy, 9,
                   sizeof(::TVirtualArray) );

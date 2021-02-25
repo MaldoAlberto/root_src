@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/move_header_core_imt"
+  "../../include/ROOT/RTaskArena.hxx"
   "../../include/ROOT/TFuture.hxx"
-  "../../include/ROOT/TPoolManager.hxx"
   "../../include/ROOT/TTaskGroup.hxx"
   "../../include/ROOT/TThreadExecutor.hxx"
 )

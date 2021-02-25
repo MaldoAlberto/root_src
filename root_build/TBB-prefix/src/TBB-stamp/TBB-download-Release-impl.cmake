@@ -1,4 +1,4 @@
-set(command "/usr/local/lib/python2.7/dist-packages/cmake/data/bin/cmake;-P;/content/root_src/root_build/TBB-prefix/src/TBB-stamp/download-TBB.cmake")
+set(command "/usr/local/lib/python2.7/dist-packages/cmake/data/bin/cmake;-P;/content/root_src_37/root_build/TBB-prefix/src/TBB-stamp/download-TBB.cmake")
 
 execute_process(COMMAND ${command} RESULT_VARIABLE result)
 if(result)
@@ -8,7 +8,7 @@ if(result)
   endforeach()
   message(FATAL_ERROR "${msg}")
 endif()
-set(command "/usr/local/lib/python2.7/dist-packages/cmake/data/bin/cmake;-P;/content/root_src/root_build/TBB-prefix/src/TBB-stamp/verify-TBB.cmake")
+set(command "/usr/local/lib/python2.7/dist-packages/cmake/data/bin/cmake;-P;/content/root_src_37/root_build/TBB-prefix/src/TBB-stamp/verify-TBB.cmake")
 
 execute_process(COMMAND ${command} RESULT_VARIABLE result)
 if(result)
@@ -18,7 +18,7 @@ if(result)
   endforeach()
   message(FATAL_ERROR "${msg}")
 endif()
-set(command "/usr/local/lib/python2.7/dist-packages/cmake/data/bin/cmake;-P;/content/root_src/root_build/TBB-prefix/src/TBB-stamp/extract-TBB.cmake")
+set(command "/usr/local/lib/python2.7/dist-packages/cmake/data/bin/cmake;-P;/content/root_src_37/root_build/TBB-prefix/src/TBB-stamp/extract-TBB.cmake")
 
 execute_process(COMMAND ${command} RESULT_VARIABLE result)
 if(result)

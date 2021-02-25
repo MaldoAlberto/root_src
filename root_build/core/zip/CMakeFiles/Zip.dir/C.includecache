@@ -54,21 +54,21 @@ assert.h
 pthread.h
 -
 
-/content/root_src/core/zip/src/Bits.c
+/content/root_src_37/core/zip/src/Bits.c
 Bits.h
-/content/root_src/core/zip/src/Bits.h
+/content/root_src_37/core/zip/src/Bits.h
 zlib.h
-/content/root_src/core/zip/src/zlib.h
+/content/root_src_37/core/zip/src/zlib.h
 stdio.h
 -
 assert.h
 -
 
-/content/root_src/core/zip/src/Bits.h
+/content/root_src_37/core/zip/src/Bits.h
 ZIP.h
-/content/root_src/core/zip/src/ZIP.h
+/content/root_src_37/core/zip/src/ZIP.h
 
-/content/root_src/core/zip/src/Tailor.h
+/content/root_src_37/core/zip/src/Tailor.h
 alloc.h
 -
 malloc.h
@@ -104,7 +104,7 @@ LoMem.h
 Pascal.h
 -
 macstat.h
-/content/root_src/core/zip/src/macstat.h
+/content/root_src_37/core/zip/src/macstat.h
 stddef.h
 -
 stat.h
@@ -118,7 +118,7 @@ sys/types.h
 sys/stat.h
 -
 amiga/z-stat.h
-/content/root_src/core/zip/src/amiga/z-stat.h
+/content/root_src_37/core/zip/src/amiga/z-stat.h
 sys/types.h
 -
 sys/stat.h
@@ -126,15 +126,15 @@ sys/stat.h
 sys/xglob.h
 -
 
-/content/root_src/core/zip/src/ZDeflate.c
+/content/root_src_37/core/zip/src/ZDeflate.c
 Bits.h
-/content/root_src/core/zip/src/Bits.h
+/content/root_src_37/core/zip/src/Bits.h
 
-/content/root_src/core/zip/src/ZIP.h
+/content/root_src_37/core/zip/src/ZIP.h
 Tailor.h
-/content/root_src/core/zip/src/Tailor.h
+/content/root_src_37/core/zip/src/Tailor.h
 
-/content/root_src/core/zip/src/ZInflate.c
+/content/root_src_37/core/zip/src/ZInflate.c
 stdio.h
 -
 stdlib.h
@@ -142,23 +142,23 @@ stdlib.h
 string.h
 -
 zlib.h
-/content/root_src/core/zip/src/zlib.h
+/content/root_src_37/core/zip/src/zlib.h
 RConfigure.h
-/content/root_src/core/zip/src/RConfigure.h
+/content/root_src_37/core/zip/src/RConfigure.h
 ZipLZMA.h
-/content/root_src/core/zip/src/ZipLZMA.h
+/content/root_src_37/core/zip/src/ZipLZMA.h
 ZipLZ4.h
-/content/root_src/core/zip/src/ZipLZ4.h
+/content/root_src_37/core/zip/src/ZipLZ4.h
 Inflate.h
-/content/root_src/core/zip/src/Inflate.h
+/content/root_src_37/core/zip/src/Inflate.h
 
-/content/root_src/core/zip/src/ZTrees.c
+/content/root_src_37/core/zip/src/ZTrees.c
 Bits.h
-/content/root_src/core/zip/src/Bits.h
+/content/root_src_37/core/zip/src/Bits.h
 ctype.h
 -
 ThreadLocalStorage.h
-/content/root_src/core/zip/src/ThreadLocalStorage.h
+/content/root_src_37/core/zip/src/ThreadLocalStorage.h
 
 ginclude/RConfigure.h
 

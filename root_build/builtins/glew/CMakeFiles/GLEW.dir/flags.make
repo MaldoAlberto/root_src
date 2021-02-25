@@ -6,5 +6,5 @@ C_FLAGS =  -Wno-implicit-fallthrough -pipe -Wall -W -pthread -O3 -DNDEBUG -fPIC 
 
 C_DEFINES = -DGLEW_EXPORTS
 
-C_INCLUDES = -I/content/root_src/builtins/glew/inc 
+C_INCLUDES = -I/content/root_src_37/builtins/glew/inc 
 

@@ -1,8 +1,8 @@
-# Install script for directory: /content/root_src/root_build/interpreter/llvm/src/tools/cling/tools/plugins/clad/clad-prefix/src/clad
+# Install script for directory: /content/root_src_37/root_build/interpreter/llvm/src/tools/cling/tools/plugins/clad/clad-prefix/src/clad
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/content/root_src/root_install")
+  set(CMAKE_INSTALL_PREFIX "/content/root_src_37/root_install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/content/root_src/root_build/interpreter/llvm/src/tools/cling/tools/plugins/clad/clad-prefix/src/clad/include/" FILES_MATCHING REGEX "/[^/]*\\.def$" REGEX "/[^/]*\\.h$" REGEX "/\\.svn$" EXCLUDE)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/content/root_src_37/root_build/interpreter/llvm/src/tools/cling/tools/plugins/clad/clad-prefix/src/clad/include/" FILES_MATCHING REGEX "/[^/]*\\.def$" REGEX "/[^/]*\\.h$" REGEX "/\\.svn$" EXCLUDE)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/content/root_src/root_build/interpreter/llvm/src/tools/cling/tools/plugins/clad/clad-prefix/src/clad-build/include/" FILES_MATCHING REGEX "/CMakeFiles$" EXCLUDE REGEX "/[^/]*\\.inc$")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/content/root_src_37/root_build/interpreter/llvm/src/tools/cling/tools/plugins/clad/clad-prefix/src/clad-build/include/" FILES_MATCHING REGEX "/CMakeFiles$" EXCLUDE REGEX "/[^/]*\\.inc$")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/content/root_src/root_build/interpreter/llvm/src/tools/cling/tools/plugins/clad/clad-prefix/src/clad-build/lib/cmake_install.cmake")
-  include("/content/root_src/root_build/interpreter/llvm/src/tools/cling/tools/plugins/clad/clad-prefix/src/clad-build/tools/cmake_install.cmake")
+  include("/content/root_src_37/root_build/interpreter/llvm/src/tools/cling/tools/plugins/clad/clad-prefix/src/clad-build/lib/cmake_install.cmake")
+  include("/content/root_src_37/root_build/interpreter/llvm/src/tools/cling/tools/plugins/clad/clad-prefix/src/clad-build/tools/cmake_install.cmake")
 
 endif()
 
@@ -60,5 +60,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/content/root_src/root_build/interpreter/llvm/src/tools/cling/tools/plugins/clad/clad-prefix/src/clad-build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/content/root_src_37/root_build/interpreter/llvm/src/tools/cling/tools/plugins/clad/clad-prefix/src/clad-build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

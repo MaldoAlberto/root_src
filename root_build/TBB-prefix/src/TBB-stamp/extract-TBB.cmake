@@ -1,7 +1,7 @@
 # Make file names absolute:
 #
-get_filename_component(filename "/content/root_src/root_build/TBB-prefix/src/tbb-2019_U9.tar.gz" ABSOLUTE)
-get_filename_component(directory "/content/root_src/root_build/TBB-prefix/src/TBB" ABSOLUTE)
+get_filename_component(filename "/content/root_src_37/root_build/TBB-prefix/src/tbb-2019_U9.tar.gz" ABSOLUTE)
+get_filename_component(directory "/content/root_src_37/root_build/TBB-prefix/src/TBB" ABSOLUTE)
 
 message(STATUS "extracting...
      src='${filename}'

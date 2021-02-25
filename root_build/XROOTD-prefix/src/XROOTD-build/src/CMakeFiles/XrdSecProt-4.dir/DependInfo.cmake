@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/XrdSec/XrdSecProtect.cc" "/content/root_src/root_build/XROOTD-prefix/src/XROOTD-build/src/CMakeFiles/XrdSecProt-4.dir/XrdSec/XrdSecProtect.cc.o"
-  "/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/XrdSec/XrdSecProtector.cc" "/content/root_src/root_build/XROOTD-prefix/src/XROOTD-build/src/CMakeFiles/XrdSecProt-4.dir/XrdSec/XrdSecProtector.cc.o"
+  "/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/XrdSec/XrdSecProtect.cc" "/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD-build/src/CMakeFiles/XrdSecProt-4.dir/XrdSec/XrdSecProtect.cc.o"
+  "/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/XrdSec/XrdSecProtector.cc" "/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD-build/src/CMakeFiles/XrdSecProt-4.dir/XrdSec/XrdSecProtector.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -43,9 +43,9 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/.."
-  "/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/."
-  "/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src"
+  "/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/.."
+  "/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/."
+  "/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src"
   "src"
   "/usr/local/include"
   "/usr/include/x86_64-linux-gnu"
@@ -53,7 +53,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/content/root_src/root_build/XROOTD-prefix/src/XROOTD-build/src/CMakeFiles/XrdUtils.dir/DependInfo.cmake"
+  "/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD-build/src/CMakeFiles/XrdUtils.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

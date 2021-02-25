@@ -498,7 +498,7 @@ TSystem.h
 TList.h
 ../proof/proof/inc/TList.h
 
-/content/root_src/main/src/xpdtest.cxx
+/content/root_src_37/main/src/xpdtest.cxx
 stdio.h
 -
 errno.h
@@ -522,13 +522,13 @@ netdb.h
 signal.h
 -
 Riostream.h
-/content/root_src/main/src/Riostream.h
+/content/root_src_37/main/src/Riostream.h
 TSystem.h
-/content/root_src/main/src/TSystem.h
+/content/root_src_37/main/src/TSystem.h
 TProof.h
-/content/root_src/main/src/TProof.h
+/content/root_src_37/main/src/TProof.h
 TString.h
-/content/root_src/main/src/TString.h
+/content/root_src_37/main/src/TString.h
 
 ginclude/RConfigure.h
 

@@ -53,10 +53,10 @@ tree/treeplayer/CMakeFiles/G__TreePlayer.dir/G__TreePlayer.cxx.o: include/ROOT/R
 tree/treeplayer/CMakeFiles/G__TreePlayer.dir/G__TreePlayer.cxx.o: include/ROOT/RConfig.hxx
 tree/treeplayer/CMakeFiles/G__TreePlayer.dir/G__TreePlayer.cxx.o: include/ROOT/RMakeUnique.hxx
 tree/treeplayer/CMakeFiles/G__TreePlayer.dir/G__TreePlayer.cxx.o: include/ROOT/RStringView.hxx
+tree/treeplayer/CMakeFiles/G__TreePlayer.dir/G__TreePlayer.cxx.o: include/ROOT/RTaskArena.hxx
 tree/treeplayer/CMakeFiles/G__TreePlayer.dir/G__TreePlayer.cxx.o: include/ROOT/RWrap_libcpp_string_view.h
 tree/treeplayer/CMakeFiles/G__TreePlayer.dir/G__TreePlayer.cxx.o: include/ROOT/TExecutor.hxx
 tree/treeplayer/CMakeFiles/G__TreePlayer.dir/G__TreePlayer.cxx.o: include/ROOT/TIOFeatures.hxx
-tree/treeplayer/CMakeFiles/G__TreePlayer.dir/G__TreePlayer.cxx.o: include/ROOT/TPoolManager.hxx
 tree/treeplayer/CMakeFiles/G__TreePlayer.dir/G__TreePlayer.cxx.o: include/ROOT/TRWSpinLock.hxx
 tree/treeplayer/CMakeFiles/G__TreePlayer.dir/G__TreePlayer.cxx.o: include/ROOT/TSeq.hxx
 tree/treeplayer/CMakeFiles/G__TreePlayer.dir/G__TreePlayer.cxx.o: include/ROOT/TSpinMutex.hxx
@@ -234,10 +234,10 @@ tree/treeplayer/G__TreePlayer.cxx: include/ROOT/RConcurrentHashColl.hxx
 tree/treeplayer/G__TreePlayer.cxx: include/ROOT/RConfig.hxx
 tree/treeplayer/G__TreePlayer.cxx: include/ROOT/RMakeUnique.hxx
 tree/treeplayer/G__TreePlayer.cxx: include/ROOT/RStringView.hxx
+tree/treeplayer/G__TreePlayer.cxx: include/ROOT/RTaskArena.hxx
 tree/treeplayer/G__TreePlayer.cxx: include/ROOT/RWrap_libcpp_string_view.h
 tree/treeplayer/G__TreePlayer.cxx: include/ROOT/TExecutor.hxx
 tree/treeplayer/G__TreePlayer.cxx: include/ROOT/TIOFeatures.hxx
-tree/treeplayer/G__TreePlayer.cxx: include/ROOT/TPoolManager.hxx
 tree/treeplayer/G__TreePlayer.cxx: include/ROOT/TRWSpinLock.hxx
 tree/treeplayer/G__TreePlayer.cxx: include/ROOT/TSeq.hxx
 tree/treeplayer/G__TreePlayer.cxx: include/ROOT/TSpinMutex.hxx

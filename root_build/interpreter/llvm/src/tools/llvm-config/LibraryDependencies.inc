@@ -19,7 +19,7 @@ struct AvailableComponent {
   /// The list of libraries required when linking this component.
   const char *RequiredLibraries[18];
 } AvailableComponents[69] = {
-  { "all", nullptr, true, { "dlltooldriver", "objectyaml", "lineeditor", "testingsupport", "all-targets", "nativecodegen", "tablegen", "coroutines", "interpreter", "libdriver", "symbolize", "engine", "mirparser", "coverage", "lto", "gtest_main", "orcjit" } },
+  { "all", nullptr, true, { "mirparser", "dlltooldriver", "lto", "engine", "coverage", "coroutines", "lineeditor", "symbolize", "all-targets", "testingsupport", "tablegen", "interpreter", "nativecodegen", "orcjit", "gtest_main", "libdriver", "objectyaml" } },
   { "all-targets", nullptr, true, { "x86", "nvptx" } },
   { "analysis", "LLVMAnalysis", true, { "binaryformat", "core", "object", "profiledata", "support" } },
   { "asmparser", "LLVMAsmParser", true, { "binaryformat", "core", "support" } },

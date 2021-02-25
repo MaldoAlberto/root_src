@@ -440,7 +440,7 @@ string
 
 ../core/meta/inc/TVirtualIsAProxy.h
 
-/content/root_src/main/src/pmain.cxx
+/content/root_src_37/main/src/pmain.cxx
 stdio.h
 -
 errno.h
@@ -458,15 +458,15 @@ sys/types.h
 ROOT/RConfig.hxx
 -
 RConfigure.h
-/content/root_src/main/src/RConfigure.h
+/content/root_src_37/main/src/RConfigure.h
 TApplication.h
-/content/root_src/main/src/TApplication.h
+/content/root_src_37/main/src/TApplication.h
 TInterpreter.h
-/content/root_src/main/src/TInterpreter.h
+/content/root_src_37/main/src/TInterpreter.h
 TROOT.h
-/content/root_src/main/src/TROOT.h
+/content/root_src_37/main/src/TROOT.h
 TSystem.h
-/content/root_src/main/src/TSystem.h
+/content/root_src_37/main/src/TSystem.h
 
 ginclude/RConfigure.h
 

@@ -75,13 +75,13 @@
 -- Could NOT find Macaroons (missing: MACAROONS_INCLUDES MACAROONS_LIB) 
 -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.1") 
 -- Checking for module 'json-c'
---   No package 'json-c' found
+--   Found json-c, version 0.12.1
 -- Checking for module 'uuid'
 --   Found uuid, version 2.31.1
 -- Performing Test CURL_PIPELINING
 -- Performing Test CURL_PIPELINING - Success
 -- ----------------------------------------
--- Installation path: /content/root_src/root_build
+-- Installation path: /content/root_src_37/root_build
 -- C Compiler:        /usr/bin/cc
 -- C++ Compiler:      /usr/bin/c++
 -- Build type:        RelWithDebInfo
@@ -100,4 +100,4 @@
 -- ----------------------------------------
 -- Configuring done
 -- Generating done
--- Build files have been written to: /content/root_src/root_build/XROOTD-prefix/src/XROOTD-build
+-- Build files have been written to: /content/root_src_37/root_build/XROOTD-prefix/src/XROOTD-build

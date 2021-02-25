@@ -59,10 +59,10 @@ RM = /usr/local/lib/python2.7/dist-packages/cmake/data/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /content/root_src/root_build/VDT-prefix/src/VDT
+CMAKE_SOURCE_DIR = /content/root_src_37/root_build/VDT-prefix/src/VDT
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /content/root_src/root_build/VDT-prefix/src/VDT-build
+CMAKE_BINARY_DIR = /content/root_src_37/root_build/VDT-prefix/src/VDT-build
 
 #=============================================================================
 # Directory level rules for directory src
@@ -107,7 +107,7 @@ lib/preinstall:
 lib/CMakeFiles/vdt.dir/all:
 	$(MAKE) -f lib/CMakeFiles/vdt.dir/build.make lib/CMakeFiles/vdt.dir/depend
 	$(MAKE) -f lib/CMakeFiles/vdt.dir/build.make lib/CMakeFiles/vdt.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/content/root_src/root_build/VDT-prefix/src/VDT-build/CMakeFiles --progress-num=1,2 "Built target vdt"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/content/root_src_37/root_build/VDT-prefix/src/VDT-build/CMakeFiles --progress-num=1,2 "Built target vdt"
 .PHONY : lib/CMakeFiles/vdt.dir/all
 
 # Include target in all.
@@ -117,9 +117,9 @@ all: lib/CMakeFiles/vdt.dir/all
 
 # Build rule for subdir invocation for target.
 lib/CMakeFiles/vdt.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /content/root_src/root_build/VDT-prefix/src/VDT-build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /content/root_src_37/root_build/VDT-prefix/src/VDT-build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 lib/CMakeFiles/vdt.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /content/root_src/root_build/VDT-prefix/src/VDT-build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /content/root_src_37/root_build/VDT-prefix/src/VDT-build/CMakeFiles 0
 .PHONY : lib/CMakeFiles/vdt.dir/rule
 
 # Convenience name for target.

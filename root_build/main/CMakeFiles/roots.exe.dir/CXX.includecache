@@ -460,7 +460,7 @@ string
 
 ../core/meta/inc/TVirtualIsAProxy.h
 
-/content/root_src/main/src/roots.cxx
+/content/root_src_37/main/src/roots.cxx
 stdio.h
 -
 sys/types.h
@@ -472,17 +472,17 @@ unistd.h
 errno.h
 -
 TInterpreter.h
-/content/root_src/main/src/TInterpreter.h
+/content/root_src_37/main/src/TInterpreter.h
 TROOT.h
-/content/root_src/main/src/TROOT.h
+/content/root_src_37/main/src/TROOT.h
 TApplication.h
-/content/root_src/main/src/TApplication.h
+/content/root_src_37/main/src/TApplication.h
 TPluginManager.h
-/content/root_src/main/src/TPluginManager.h
+/content/root_src_37/main/src/TPluginManager.h
 TSystem.h
-/content/root_src/main/src/TSystem.h
+/content/root_src_37/main/src/TSystem.h
 TString.h
-/content/root_src/main/src/TString.h
+/content/root_src_37/main/src/TString.h
 
 ginclude/RConfigure.h
 

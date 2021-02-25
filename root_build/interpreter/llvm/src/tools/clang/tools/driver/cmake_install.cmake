@@ -1,8 +1,8 @@
-# Install script for directory: /content/root_src/interpreter/llvm/src/tools/clang/tools/driver
+# Install script for directory: /content/root_src_37/interpreter/llvm/src/tools/clang/tools/driver
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/content/root_src/root_install")
+  set(CMAKE_INSTALL_PREFIX "/content/root_src_37/root_install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,7 +38,7 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xclangx" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/content/root_src/interpreter/llvm/src/cmake/modules/LLVMInstallSymlink.cmake")
+  include("/content/root_src_37/interpreter/llvm/src/cmake/modules/LLVMInstallSymlink.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xclangx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -46,7 +46,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xclangx" OR NOT CMAKE_INSTALL_COMPON
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xclangx" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/content/root_src/interpreter/llvm/src/cmake/modules/LLVMInstallSymlink.cmake")
+  include("/content/root_src_37/interpreter/llvm/src/cmake/modules/LLVMInstallSymlink.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xclangx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -54,7 +54,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xclangx" OR NOT CMAKE_INSTALL_COMPON
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xclangx" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/content/root_src/interpreter/llvm/src/cmake/modules/LLVMInstallSymlink.cmake")
+  include("/content/root_src_37/interpreter/llvm/src/cmake/modules/LLVMInstallSymlink.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xclangx" OR NOT CMAKE_INSTALL_COMPONENT)

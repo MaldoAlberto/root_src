@@ -37,6 +37,7 @@ tree/dataframe/CMakeFiles/G__ROOTDataFrame.dir/G__ROOTDataFrame.cxx.o: ../tree/d
 tree/dataframe/CMakeFiles/G__ROOTDataFrame.dir/G__ROOTDataFrame.cxx.o: ../tree/dataframe/inc/ROOT/RResultPtr.hxx
 tree/dataframe/CMakeFiles/G__ROOTDataFrame.dir/G__ROOTDataFrame.cxx.o: ../tree/dataframe/inc/ROOT/RRootDS.hxx
 tree/dataframe/CMakeFiles/G__ROOTDataFrame.dir/G__ROOTDataFrame.cxx.o: ../tree/dataframe/inc/ROOT/RSnapshotOptions.hxx
+tree/dataframe/CMakeFiles/G__ROOTDataFrame.dir/G__ROOTDataFrame.cxx.o: ../tree/dataframe/inc/ROOT/RSqliteDS.hxx
 tree/dataframe/CMakeFiles/G__ROOTDataFrame.dir/G__ROOTDataFrame.cxx.o: ../tree/dataframe/inc/ROOT/RTrivialDS.hxx
 tree/dataframe/CMakeFiles/G__ROOTDataFrame.dir/G__ROOTDataFrame.cxx.o: tree/dataframe/G__ROOTDataFrame.cxx
 tree/dataframe/CMakeFiles/G__ROOTDataFrame.dir/G__ROOTDataFrame.cxx.o: include/Bytes.h
@@ -241,6 +242,7 @@ tree/dataframe/G__ROOTDataFrame.cxx: ../tree/dataframe/inc/ROOT/RLazyDS.hxx
 tree/dataframe/G__ROOTDataFrame.cxx: ../tree/dataframe/inc/ROOT/RResultPtr.hxx
 tree/dataframe/G__ROOTDataFrame.cxx: ../tree/dataframe/inc/ROOT/RRootDS.hxx
 tree/dataframe/G__ROOTDataFrame.cxx: ../tree/dataframe/inc/ROOT/RSnapshotOptions.hxx
+tree/dataframe/G__ROOTDataFrame.cxx: ../tree/dataframe/inc/ROOT/RSqliteDS.hxx
 tree/dataframe/G__ROOTDataFrame.cxx: ../tree/dataframe/inc/ROOT/RTrivialDS.hxx
 tree/dataframe/G__ROOTDataFrame.cxx: include/Bytes.h
 tree/dataframe/G__ROOTDataFrame.cxx: include/Byteswap.h

@@ -1,7 +1,8 @@
 -- Downloading...
-   dst='/content/root_src/root_build/XROOTD-prefix/src/xrootd-4.10.0.tar.gz'
+   dst='/content/root_src_37/root_build/XROOTD-prefix/src/xrootd-4.10.0.tar.gz'
    timeout='none'
 -- Using src='http://lcgpackages.web.cern.ch/lcgpackages/tarFiles/sources/xrootd-4.10.0.tar.gz'
+-- [download 100% complete]
 -- [download 1% complete]
 -- [download 2% complete]
 -- [download 3% complete]
@@ -103,11 +104,11 @@
 -- [download 99% complete]
 -- [download 100% complete]
 -- verifying file...
-       file='/content/root_src/root_build/XROOTD-prefix/src/xrootd-4.10.0.tar.gz'
+       file='/content/root_src_37/root_build/XROOTD-prefix/src/xrootd-4.10.0.tar.gz'
 -- Downloading... done
 -- extracting...
-     src='/content/root_src/root_build/XROOTD-prefix/src/xrootd-4.10.0.tar.gz'
-     dst='/content/root_src/root_build/XROOTD-prefix/src/XROOTD'
+     src='/content/root_src_37/root_build/XROOTD-prefix/src/xrootd-4.10.0.tar.gz'
+     dst='/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD'
 -- extracting... [tar xfz]
 -- extracting... [analysis]
 -- extracting... [rename]

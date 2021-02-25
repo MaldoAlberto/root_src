@@ -207,7 +207,7 @@ math/minuit/CMakeFiles/Minuit.dir/src/TLinearMinimizer.cxx.o: ../core/foundation
 math/minuit/CMakeFiles/Minuit.dir/src/TLinearMinimizer.cxx.o: ../core/foundation/inc/ROOT/RWrap_libcpp_string_view.h
 math/minuit/CMakeFiles/Minuit.dir/src/TLinearMinimizer.cxx.o: ../core/foundation/inc/ROOT/TypeTraits.hxx
 math/minuit/CMakeFiles/Minuit.dir/src/TLinearMinimizer.cxx.o: ../core/foundation/inc/ROOT/libcpp_string_view.h
-math/minuit/CMakeFiles/Minuit.dir/src/TLinearMinimizer.cxx.o: ../core/imt/inc/ROOT/TPoolManager.hxx
+math/minuit/CMakeFiles/Minuit.dir/src/TLinearMinimizer.cxx.o: ../core/imt/inc/ROOT/RTaskArena.hxx
 math/minuit/CMakeFiles/Minuit.dir/src/TLinearMinimizer.cxx.o: ../core/imt/inc/ROOT/TThreadExecutor.hxx
 math/minuit/CMakeFiles/Minuit.dir/src/TLinearMinimizer.cxx.o: ../core/meta/inc/TClass.h
 math/minuit/CMakeFiles/Minuit.dir/src/TLinearMinimizer.cxx.o: ../core/meta/inc/TDataType.h

@@ -4,7 +4,7 @@
 rootx/CMakeFiles/root.dir/__/core/clib/src/strlcpy.c.o
  ../core/base/inc/ROOT/RConfig.hxx
  ../core/base/inc/RVersion.h
- /content/root_src/core/clib/src/strlcpy.c
+ /content/root_src_37/core/clib/src/strlcpy.c
  ginclude/RConfigure.h
 rootx/CMakeFiles/root.dir/src/rootx.cxx.o
  ../core/base/inc/DllImport.h
@@ -18,7 +18,7 @@ rootx/CMakeFiles/root.dir/src/rootx.cxx.o
  ../core/meta/inc/TIsAProxy.h
  ../core/meta/inc/TSchemaHelper.h
  ../core/meta/inc/TVirtualIsAProxy.h
- /content/root_src/rootx/src/rootx.cxx
+ /content/root_src_37/rootx/src/rootx.cxx
  ginclude/RConfigure.h
  ginclude/rootCommandLineOptionsHelp.h
 rootx/CMakeFiles/root.dir/src/rootxx.cxx.o
@@ -33,6 +33,6 @@ rootx/CMakeFiles/root.dir/src/rootxx.cxx.o
  ../core/meta/inc/TIsAProxy.h
  ../core/meta/inc/TSchemaHelper.h
  ../core/meta/inc/TVirtualIsAProxy.h
- /content/root_src/rootx/src/rootcoreteam.h
- /content/root_src/rootx/src/rootxx.cxx
+ /content/root_src_37/rootx/src/rootcoreteam.h
+ /content/root_src_37/rootx/src/rootxx.cxx
  ginclude/RConfigure.h

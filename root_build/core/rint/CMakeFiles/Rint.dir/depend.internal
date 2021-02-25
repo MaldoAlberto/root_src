@@ -80,7 +80,7 @@ core/rint/CMakeFiles/Rint.dir/src/TRint.cxx.o
  ../core/rint/inc/TTabCom.h
  ../core/textinput/inc/Getline.h
  ../core/thread/inc/ThreadLocalStorage.h
- /content/root_src/core/rint/src/TRint.cxx
+ /content/root_src_37/core/rint/src/TRint.cxx
  ginclude/RConfigure.h
 core/rint/CMakeFiles/Rint.dir/src/TTabCom.cxx.o
  ../core/base/inc/Bytes.h
@@ -149,5 +149,5 @@ core/rint/CMakeFiles/Rint.dir/src/TTabCom.cxx.o
  ../core/meta/inc/TVirtualIsAProxy.h
  ../core/rint/inc/TTabCom.h
  ../core/textinput/inc/Getline.h
- /content/root_src/core/rint/src/TTabCom.cxx
+ /content/root_src_37/core/rint/src/TTabCom.cxx
  ginclude/RConfigure.h

@@ -115,14 +115,14 @@ LIBS_AFTERIMAGE = -L./ -lfreetype -ltiff -lX11    -lSM -lICE -lXext -ljpeg -lpng
 LIBRARIES	= $(LIBS_AFTERIMAGE) $(LIBS_X) $(LIBS_XEXTS)
 LIBRARIES_TEST	= $(LIBS_TEST) $(LIBS_X) $(LIBS_XEXTS)
 
-prefix          = /content/root_src/root_build
-exec_prefix     = /content/root_src/root_build
-LIBDIR          = $(DESTDIR)/content/root_src/root_build/lib
-INCLUDEDIR      = $(DESTDIR)/content/root_src/root_build/include
-AFTER_INC_DIR	= $(DESTDIR)/content/root_src/root_build/include/$(LIB_DIR_NAME)
+prefix          = /content/root_src_37/root_build
+exec_prefix     = /content/root_src_37/root_build
+LIBDIR          = $(DESTDIR)/content/root_src_37/root_build/lib
+INCLUDEDIR      = $(DESTDIR)/content/root_src_37/root_build/include
+AFTER_INC_DIR	= $(DESTDIR)/content/root_src_37/root_build/include/$(LIB_DIR_NAME)
 AFTER_BIN_DIR	= $(DESTDIR)${exec_prefix}/bin
-AFTER_MAN_DIR	= $(DESTDIR)/content/root_src/root_build/man/man3
-AFTER_APP_MAN_DIR	= $(DESTDIR)/content/root_src/root_build/man/man1
+AFTER_MAN_DIR	= $(DESTDIR)/content/root_src_37/root_build/man/man3
+AFTER_APP_MAN_DIR	= $(DESTDIR)/content/root_src_37/root_build/man/man1
 AFTER_SHAREDIR	= $(DESTDIR)${prefix}/share/$(LIB_DIR_NAME)
 AFTER_DOC_DIR	= $(AFTER_SHAREDIR)/doc
 

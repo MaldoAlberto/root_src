@@ -1,8 +1,8 @@
-# Install script for directory: /content/root_src/interpreter/llvm/src
+# Install script for directory: /content/root_src_37/interpreter/llvm/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/content/root_src/root_install")
+  set(CMAKE_INSTALL_PREFIX "/content/root_src_37/root_install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,34 +39,34 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xllvm-headersx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES
-    "/content/root_src/interpreter/llvm/src/include/llvm"
-    "/content/root_src/interpreter/llvm/src/include/llvm-c"
+    "/content/root_src_37/interpreter/llvm/src/include/llvm"
+    "/content/root_src_37/interpreter/llvm/src/include/llvm-c"
     FILES_MATCHING REGEX "/[^/]*\\.def$" REGEX "/[^/]*\\.h$" REGEX "/[^/]*\\.td$" REGEX "/[^/]*\\.inc$" REGEX "/LICENSE\\.TXT$" REGEX "/\\.svn$" EXCLUDE)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xllvm-headersx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/content/root_src/root_build/interpreter/llvm/src/include/llvm" FILES_MATCHING REGEX "/[^/]*\\.def$" REGEX "/[^/]*\\.h$" REGEX "/[^/]*\\.gen$" REGEX "/[^/]*\\.inc$" REGEX "/CMakeFiles$" EXCLUDE REGEX "/config\\.h$" EXCLUDE REGEX "/\\.svn$" EXCLUDE)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/content/root_src_37/root_build/interpreter/llvm/src/include/llvm" FILES_MATCHING REGEX "/[^/]*\\.def$" REGEX "/[^/]*\\.h$" REGEX "/[^/]*\\.gen$" REGEX "/[^/]*\\.inc$" REGEX "/CMakeFiles$" EXCLUDE REGEX "/config\\.h$" EXCLUDE REGEX "/\\.svn$" EXCLUDE)
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/content/root_src/root_build/interpreter/llvm/src/lib/Demangle/cmake_install.cmake")
-  include("/content/root_src/root_build/interpreter/llvm/src/lib/Support/cmake_install.cmake")
-  include("/content/root_src/root_build/interpreter/llvm/src/lib/TableGen/cmake_install.cmake")
-  include("/content/root_src/root_build/interpreter/llvm/src/utils/TableGen/cmake_install.cmake")
-  include("/content/root_src/root_build/interpreter/llvm/src/include/llvm/cmake_install.cmake")
-  include("/content/root_src/root_build/interpreter/llvm/src/lib/cmake_install.cmake")
-  include("/content/root_src/root_build/interpreter/llvm/src/utils/FileCheck/cmake_install.cmake")
-  include("/content/root_src/root_build/interpreter/llvm/src/utils/PerfectShuffle/cmake_install.cmake")
-  include("/content/root_src/root_build/interpreter/llvm/src/utils/count/cmake_install.cmake")
-  include("/content/root_src/root_build/interpreter/llvm/src/utils/not/cmake_install.cmake")
-  include("/content/root_src/root_build/interpreter/llvm/src/utils/llvm-lit/cmake_install.cmake")
-  include("/content/root_src/root_build/interpreter/llvm/src/utils/yaml-bench/cmake_install.cmake")
-  include("/content/root_src/root_build/interpreter/llvm/src/projects/cmake_install.cmake")
-  include("/content/root_src/root_build/interpreter/llvm/src/tools/cmake_install.cmake")
-  include("/content/root_src/root_build/interpreter/llvm/src/runtimes/cmake_install.cmake")
-  include("/content/root_src/root_build/interpreter/llvm/src/docs/cmake_install.cmake")
-  include("/content/root_src/root_build/interpreter/llvm/src/cmake/modules/cmake_install.cmake")
+  include("/content/root_src_37/root_build/interpreter/llvm/src/lib/Demangle/cmake_install.cmake")
+  include("/content/root_src_37/root_build/interpreter/llvm/src/lib/Support/cmake_install.cmake")
+  include("/content/root_src_37/root_build/interpreter/llvm/src/lib/TableGen/cmake_install.cmake")
+  include("/content/root_src_37/root_build/interpreter/llvm/src/utils/TableGen/cmake_install.cmake")
+  include("/content/root_src_37/root_build/interpreter/llvm/src/include/llvm/cmake_install.cmake")
+  include("/content/root_src_37/root_build/interpreter/llvm/src/lib/cmake_install.cmake")
+  include("/content/root_src_37/root_build/interpreter/llvm/src/utils/FileCheck/cmake_install.cmake")
+  include("/content/root_src_37/root_build/interpreter/llvm/src/utils/PerfectShuffle/cmake_install.cmake")
+  include("/content/root_src_37/root_build/interpreter/llvm/src/utils/count/cmake_install.cmake")
+  include("/content/root_src_37/root_build/interpreter/llvm/src/utils/not/cmake_install.cmake")
+  include("/content/root_src_37/root_build/interpreter/llvm/src/utils/llvm-lit/cmake_install.cmake")
+  include("/content/root_src_37/root_build/interpreter/llvm/src/utils/yaml-bench/cmake_install.cmake")
+  include("/content/root_src_37/root_build/interpreter/llvm/src/projects/cmake_install.cmake")
+  include("/content/root_src_37/root_build/interpreter/llvm/src/tools/cmake_install.cmake")
+  include("/content/root_src_37/root_build/interpreter/llvm/src/runtimes/cmake_install.cmake")
+  include("/content/root_src_37/root_build/interpreter/llvm/src/docs/cmake_install.cmake")
+  include("/content/root_src_37/root_build/interpreter/llvm/src/cmake/modules/cmake_install.cmake")
 
 endif()
 

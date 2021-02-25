@@ -100,8 +100,8 @@ core/CMakeFiles/BaseTROOT.dir/base/src/TROOT.cxx.o
  ../core/meta/inc/TVirtualIsAProxy.h
  ../core/thread/inc/ThreadLocalStorage.h
  ../core/unix/inc/TUnixSystem.h
- /content/root_src/core/base/src/TListOfTypes.h
- /content/root_src/core/base/src/TROOT.cxx
+ /content/root_src_37/core/base/src/TListOfTypes.h
+ /content/root_src_37/core/base/src/TROOT.cxx
  ginclude/RConfigOptions.h
  ginclude/RConfigure.h
  ginclude/RGitCommit.h

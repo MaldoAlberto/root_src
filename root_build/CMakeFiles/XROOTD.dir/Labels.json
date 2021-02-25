@@ -2,34 +2,34 @@
 	"sources" : 
 	[
 		{
-			"file" : "/content/root_src/root_build/CMakeFiles/XROOTD"
+			"file" : "/content/root_src_37/root_build/CMakeFiles/XROOTD"
 		},
 		{
-			"file" : "/content/root_src/root_build/CMakeFiles/XROOTD.rule"
+			"file" : "/content/root_src_37/root_build/CMakeFiles/XROOTD.rule"
 		},
 		{
-			"file" : "/content/root_src/root_build/CMakeFiles/XROOTD-complete.rule"
+			"file" : "/content/root_src_37/root_build/CMakeFiles/XROOTD-complete.rule"
 		},
 		{
-			"file" : "/content/root_src/root_build/XROOTD-prefix/src/XROOTD-stamp/XROOTD-install.rule"
+			"file" : "/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD-stamp/XROOTD-install.rule"
 		},
 		{
-			"file" : "/content/root_src/root_build/XROOTD-prefix/src/XROOTD-stamp/XROOTD-mkdir.rule"
+			"file" : "/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD-stamp/XROOTD-mkdir.rule"
 		},
 		{
-			"file" : "/content/root_src/root_build/XROOTD-prefix/src/XROOTD-stamp/XROOTD-download.rule"
+			"file" : "/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD-stamp/XROOTD-download.rule"
 		},
 		{
-			"file" : "/content/root_src/root_build/XROOTD-prefix/src/XROOTD-stamp/XROOTD-update.rule"
+			"file" : "/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD-stamp/XROOTD-update.rule"
 		},
 		{
-			"file" : "/content/root_src/root_build/XROOTD-prefix/src/XROOTD-stamp/XROOTD-patch.rule"
+			"file" : "/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD-stamp/XROOTD-patch.rule"
 		},
 		{
-			"file" : "/content/root_src/root_build/XROOTD-prefix/src/XROOTD-stamp/XROOTD-configure.rule"
+			"file" : "/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD-stamp/XROOTD-configure.rule"
 		},
 		{
-			"file" : "/content/root_src/root_build/XROOTD-prefix/src/XROOTD-stamp/XROOTD-build.rule"
+			"file" : "/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD-stamp/XROOTD-build.rule"
 		}
 	],
 	"target" : 

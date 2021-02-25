@@ -1,8 +1,8 @@
-# Install script for directory: /content/root_src/root_build/XROOTD-prefix/src/XROOTD/bindings
+# Install script for directory: /content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/bindings
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/content/root_src/root_build")
+  set(CMAKE_INSTALL_PREFIX "/content/root_src_37/root_build")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

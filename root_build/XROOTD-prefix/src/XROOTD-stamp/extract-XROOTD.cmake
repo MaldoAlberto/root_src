@@ -1,7 +1,7 @@
 # Make file names absolute:
 #
-get_filename_component(filename "/content/root_src/root_build/XROOTD-prefix/src/xrootd-4.10.0.tar.gz" ABSOLUTE)
-get_filename_component(directory "/content/root_src/root_build/XROOTD-prefix/src/XROOTD" ABSOLUTE)
+get_filename_component(filename "/content/root_src_37/root_build/XROOTD-prefix/src/xrootd-4.10.0.tar.gz" ABSOLUTE)
+get_filename_component(directory "/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD" ABSOLUTE)
 
 message(STATUS "extracting...
      src='${filename}'

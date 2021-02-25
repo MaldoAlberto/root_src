@@ -83,7 +83,7 @@ if(APPLE)
   execute_process(COMMAND sw_vers "-productVersion"
                   COMMAND cut -d . -f 1-2
                   OUTPUT_VARIABLE osvers OUTPUT_STRIP_TRAILING_WHITESPACE)
-  set(OS_NAME_VERSION macosx64-${osvers})
+  set(OS_NAME_VERSION macos-${osvers}-${CMAKE_SYSTEM_PROCESSOR})
 elseif(WIN32)
   set(OS_NAME_VERSION win32)
 else()
@@ -107,12 +107,12 @@ else()
 endif()
 #---Build type---------------------------------------------------------------------------------------
 if(NOT CMAKE_BUILD_TYPE STREQUAL Release)
-  string(TOLOWER .${CMAKE_BUILD_TYPE} BUILD_TYPE)
+  string(TOLOWER .${CMAKE_BUILD_TYPE} BUILD_TYPE_FOR_NAME)
 endif()
 
 set(CPACK_PACKAGE_RELOCATABLE True)
 set(CPACK_PACKAGE_INSTALL_DIRECTORY "root_v${ROOT_VERSION}")
-set(CPACK_PACKAGE_FILE_NAME "root_v${ROOT_VERSION}.${OS_NAME_VERSION}${COMPILER_NAME_VERSION}${BUILD_TYPE}")
+set(CPACK_PACKAGE_FILE_NAME "root_v${ROOT_VERSION}.${OS_NAME_VERSION}${COMPILER_NAME_VERSION}${BUILD_TYPE_FOR_NAME}")
 set(CPACK_PACKAGE_EXECUTABLES "root" "ROOT")
 
 if(WIN32)

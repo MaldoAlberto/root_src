@@ -150,8 +150,8 @@ roofit/histfactory/CMakeFiles/hist2workspace.dir/src/MakeModelAndMeasurements.cx
  ../roofit/roofitcore/inc/RooWorkspace.h
  ../roofit/roofitcore/inc/RooWorkspaceHandle.h
  ../roofit/roostats/inc/RooStats/ModelConfig.h
- /content/root_src/roofit/histfactory/src/Helper.h
- /content/root_src/roofit/histfactory/src/MakeModelAndMeasurements.cxx
+ /content/root_src_37/roofit/histfactory/src/Helper.h
+ /content/root_src_37/roofit/histfactory/src/MakeModelAndMeasurements.cxx
  ginclude/RConfigure.h
 roofit/histfactory/CMakeFiles/hist2workspace.dir/src/hist2workspace.cxx.o
  ../core/base/inc/Bytes.h
@@ -255,6 +255,6 @@ roofit/histfactory/CMakeFiles/hist2workspace.dir/src/hist2workspace.cxx.o
  ../roofit/roofitcore/inc/RooPrintable.h
  ../roofit/roofitcore/inc/RooSTLRefCountList.h
  ../roofit/roofitcore/inc/RooWorkspace.h
- /content/root_src/roofit/histfactory/src/hist2workspace.cxx
+ /content/root_src_37/roofit/histfactory/src/hist2workspace.cxx
  ginclude/RConfigure.h
  ginclude/hist2workspaceCommandLineOptionsHelp.h

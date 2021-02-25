@@ -1,4 +1,4 @@
-#!/usr/bin/env /usr/bin/python3.6
+#!/usr/bin/env /usr/bin/python3.7
 
 # ROOT command line tools module: cmdLineUtils
 # Author: Julien Ripoche

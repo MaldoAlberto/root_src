@@ -350,9 +350,9 @@ TApplication.h
 TString.h
 ../core/rint/inc/TString.h
 
-/content/root_src/main/src/rmain.cxx
+/content/root_src_37/main/src/rmain.cxx
 TRint.h
-/content/root_src/main/src/TRint.h
+/content/root_src_37/main/src/TRint.h
 
 ginclude/RConfigure.h
 

@@ -340,17 +340,17 @@ TTF.h
 RConfigure.h
 ../graf2d/x11ttf/inc/RConfigure.h
 
-/content/root_src/graf2d/x11ttf/src/TGX11TTF.cxx
+/content/root_src_37/graf2d/x11ttf/src/TGX11TTF.cxx
 stdlib.h
 -
 ft2build.h
 -
 TGX11TTF.h
-/content/root_src/graf2d/x11ttf/src/TGX11TTF.h
+/content/root_src_37/graf2d/x11ttf/src/TGX11TTF.h
 TClass.h
-/content/root_src/graf2d/x11ttf/src/TClass.h
+/content/root_src_37/graf2d/x11ttf/src/TClass.h
 TEnv.h
-/content/root_src/graf2d/x11ttf/src/TEnv.h
+/content/root_src_37/graf2d/x11ttf/src/TEnv.h
 X11/Xlib.h
 -
 X11/Xutil.h
@@ -364,9 +364,9 @@ X11/keysym.h
 X11/xpm.h
 -
 THashTable.h
-/content/root_src/graf2d/x11ttf/src/THashTable.h
+/content/root_src_37/graf2d/x11ttf/src/THashTable.h
 TRefCnt.h
-/content/root_src/graf2d/x11ttf/src/TRefCnt.h
+/content/root_src_37/graf2d/x11ttf/src/TRefCnt.h
 X11/Xft/Xft.h
 -
 

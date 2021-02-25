@@ -43,10 +43,10 @@ RM = /usr/local/lib/python2.7/dist-packages/cmake/data/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /content/root_src
+CMAKE_SOURCE_DIR = /content/root_src_37
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /content/root_src/root_build
+CMAKE_BINARY_DIR = /content/root_src_37/root_build
 
 # Utility rule file for install-LTO.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /content/root_src/root_build
 include interpreter/llvm/src/tools/lto/CMakeFiles/install-LTO.dir/progress.make
 
 interpreter/llvm/src/tools/lto/CMakeFiles/install-LTO: interpreter/llvm/src/lib/libLTO.so
-	cd /content/root_src/root_build/interpreter/llvm/src/tools/lto && /usr/local/lib/python2.7/dist-packages/cmake/data/bin/cmake -DCMAKE_INSTALL_COMPONENT=LTO -P /content/root_src/root_build/cmake_install.cmake
+	cd /content/root_src_37/root_build/interpreter/llvm/src/tools/lto && /usr/local/lib/python2.7/dist-packages/cmake/data/bin/cmake -DCMAKE_INSTALL_COMPONENT=LTO -P /content/root_src_37/root_build/cmake_install.cmake
 
 install-LTO: interpreter/llvm/src/tools/lto/CMakeFiles/install-LTO
 install-LTO: interpreter/llvm/src/tools/lto/CMakeFiles/install-LTO.dir/build.make
@@ -67,10 +67,10 @@ interpreter/llvm/src/tools/lto/CMakeFiles/install-LTO.dir/build: install-LTO
 .PHONY : interpreter/llvm/src/tools/lto/CMakeFiles/install-LTO.dir/build
 
 interpreter/llvm/src/tools/lto/CMakeFiles/install-LTO.dir/clean:
-	cd /content/root_src/root_build/interpreter/llvm/src/tools/lto && $(CMAKE_COMMAND) -P CMakeFiles/install-LTO.dir/cmake_clean.cmake
+	cd /content/root_src_37/root_build/interpreter/llvm/src/tools/lto && $(CMAKE_COMMAND) -P CMakeFiles/install-LTO.dir/cmake_clean.cmake
 .PHONY : interpreter/llvm/src/tools/lto/CMakeFiles/install-LTO.dir/clean
 
 interpreter/llvm/src/tools/lto/CMakeFiles/install-LTO.dir/depend:
-	cd /content/root_src/root_build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /content/root_src /content/root_src/interpreter/llvm/src/tools/lto /content/root_src/root_build /content/root_src/root_build/interpreter/llvm/src/tools/lto /content/root_src/root_build/interpreter/llvm/src/tools/lto/CMakeFiles/install-LTO.dir/DependInfo.cmake --color=$(COLOR)
+	cd /content/root_src_37/root_build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /content/root_src_37 /content/root_src_37/interpreter/llvm/src/tools/lto /content/root_src_37/root_build /content/root_src_37/root_build/interpreter/llvm/src/tools/lto /content/root_src_37/root_build/interpreter/llvm/src/tools/lto/CMakeFiles/install-LTO.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : interpreter/llvm/src/tools/lto/CMakeFiles/install-LTO.dir/depend
 

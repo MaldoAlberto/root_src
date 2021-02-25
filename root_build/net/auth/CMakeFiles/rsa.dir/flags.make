@@ -6,5 +6,5 @@ CXX_FLAGS =  -std=c++11 -Wno-implicit-fallthrough -Wno-noexcept-type -pipe  -Wsh
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/content/root_src/net/auth/inc -I/content/root_src/net/auth/res 
+CXX_INCLUDES = -I/content/root_src_37/net/auth/inc -I/content/root_src_37/net/auth/res 
 

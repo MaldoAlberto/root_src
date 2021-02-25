@@ -6,5 +6,5 @@ CXX_FLAGS =  -std=c++11 -Wno-implicit-fallthrough -Wno-noexcept-type -pipe  -Wsh
 
 CXX_DEFINES = -DGTEST_HAS_RTTI=0 -DLLVM_BUILD_GLOBAL_ISEL -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS
 
-CXX_INCLUDES = -I/content/root_src/root_build/interpreter/llvm/src/utils/FileCheck -I/content/root_src/interpreter/llvm/src/utils/FileCheck -I/content/root_src/root_build/interpreter/llvm/src/include -I/content/root_src/interpreter/llvm/src/include 
+CXX_INCLUDES = -I/content/root_src_37/root_build/interpreter/llvm/src/utils/FileCheck -I/content/root_src_37/interpreter/llvm/src/utils/FileCheck -I/content/root_src_37/root_build/interpreter/llvm/src/include -I/content/root_src_37/interpreter/llvm/src/include 
 

@@ -770,31 +770,31 @@ TVirtualMutex.h
 Rtypes.h
 ../tree/tree/inc/ROOT/Rtypes.h
 
-/content/root_src/main/src/hadd.cxx
+/content/root_src_37/main/src/hadd.cxx
 Compression.h
-/content/root_src/main/src/Compression.h
+/content/root_src_37/main/src/Compression.h
 ROOT/RConfig.hxx
 -
 ROOT/TIOFeatures.hxx
-/content/root_src/main/src/ROOT/TIOFeatures.hxx
+/content/root_src_37/main/src/ROOT/TIOFeatures.hxx
 string
 -
 TFile.h
-/content/root_src/main/src/TFile.h
+/content/root_src_37/main/src/TFile.h
 THashList.h
-/content/root_src/main/src/THashList.h
+/content/root_src_37/main/src/THashList.h
 TKey.h
-/content/root_src/main/src/TKey.h
+/content/root_src_37/main/src/TKey.h
 Riostream.h
-/content/root_src/main/src/Riostream.h
+/content/root_src_37/main/src/Riostream.h
 TClass.h
-/content/root_src/main/src/TClass.h
+/content/root_src_37/main/src/TClass.h
 TSystem.h
-/content/root_src/main/src/TSystem.h
+/content/root_src_37/main/src/TSystem.h
 TUUID.h
-/content/root_src/main/src/TUUID.h
+/content/root_src_37/main/src/TUUID.h
 ROOT/StringConv.hxx
-/content/root_src/main/src/ROOT/StringConv.hxx
+/content/root_src_37/main/src/ROOT/StringConv.hxx
 stdlib.h
 -
 climits
@@ -802,11 +802,11 @@ climits
 sstream
 -
 haddCommandLineOptionsHelp.h
-/content/root_src/main/src/haddCommandLineOptionsHelp.h
+/content/root_src_37/main/src/haddCommandLineOptionsHelp.h
 TFileMerger.h
-/content/root_src/main/src/TFileMerger.h
+/content/root_src_37/main/src/TFileMerger.h
 ROOT/TProcessExecutor.hxx
-/content/root_src/main/src/ROOT/TProcessExecutor.hxx
+/content/root_src_37/main/src/ROOT/TProcessExecutor.hxx
 
 ginclude/RConfigure.h
 

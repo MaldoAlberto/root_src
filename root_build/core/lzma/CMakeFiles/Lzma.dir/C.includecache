@@ -8,11 +8,11 @@
 
 ../core/lzma/inc/ZipLZMA.h
 
-/content/root_src/core/lzma/src/ZipLZMA.c
+/content/root_src_37/core/lzma/src/ZipLZMA.c
 ZipLZMA.h
-/content/root_src/core/lzma/src/ZipLZMA.h
+/content/root_src_37/core/lzma/src/ZipLZMA.h
 lzma.h
-/content/root_src/core/lzma/src/lzma.h
+/content/root_src_37/core/lzma/src/lzma.h
 stdio.h
 -
 

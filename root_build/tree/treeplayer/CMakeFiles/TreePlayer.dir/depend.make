@@ -1163,7 +1163,7 @@ tree/treeplayer/CMakeFiles/TreePlayer.dir/src/TSimpleAnalysis.cxx.o: ../core/fou
 tree/treeplayer/CMakeFiles/TreePlayer.dir/src/TSimpleAnalysis.cxx.o: ../core/foundation/inc/ROOT/RWrap_libcpp_string_view.h
 tree/treeplayer/CMakeFiles/TreePlayer.dir/src/TSimpleAnalysis.cxx.o: ../core/foundation/inc/ROOT/TypeTraits.hxx
 tree/treeplayer/CMakeFiles/TreePlayer.dir/src/TSimpleAnalysis.cxx.o: ../core/foundation/inc/ROOT/libcpp_string_view.h
-tree/treeplayer/CMakeFiles/TreePlayer.dir/src/TSimpleAnalysis.cxx.o: ../core/imt/inc/ROOT/TPoolManager.hxx
+tree/treeplayer/CMakeFiles/TreePlayer.dir/src/TSimpleAnalysis.cxx.o: ../core/imt/inc/ROOT/RTaskArena.hxx
 tree/treeplayer/CMakeFiles/TreePlayer.dir/src/TSimpleAnalysis.cxx.o: ../core/imt/inc/ROOT/TThreadExecutor.hxx
 tree/treeplayer/CMakeFiles/TreePlayer.dir/src/TSimpleAnalysis.cxx.o: ../core/meta/inc/TClass.h
 tree/treeplayer/CMakeFiles/TreePlayer.dir/src/TSimpleAnalysis.cxx.o: ../core/meta/inc/TDataType.h
@@ -2008,7 +2008,7 @@ tree/treeplayer/CMakeFiles/TreePlayer.dir/src/TTreeProcessorMT.cxx.o: ../core/fo
 tree/treeplayer/CMakeFiles/TreePlayer.dir/src/TTreeProcessorMT.cxx.o: ../core/foundation/inc/ROOT/RWrap_libcpp_string_view.h
 tree/treeplayer/CMakeFiles/TreePlayer.dir/src/TTreeProcessorMT.cxx.o: ../core/foundation/inc/ROOT/TypeTraits.hxx
 tree/treeplayer/CMakeFiles/TreePlayer.dir/src/TTreeProcessorMT.cxx.o: ../core/foundation/inc/ROOT/libcpp_string_view.h
-tree/treeplayer/CMakeFiles/TreePlayer.dir/src/TTreeProcessorMT.cxx.o: ../core/imt/inc/ROOT/TPoolManager.hxx
+tree/treeplayer/CMakeFiles/TreePlayer.dir/src/TTreeProcessorMT.cxx.o: ../core/imt/inc/ROOT/RTaskArena.hxx
 tree/treeplayer/CMakeFiles/TreePlayer.dir/src/TTreeProcessorMT.cxx.o: ../core/imt/inc/ROOT/TThreadExecutor.hxx
 tree/treeplayer/CMakeFiles/TreePlayer.dir/src/TTreeProcessorMT.cxx.o: ../core/meta/inc/TClass.h
 tree/treeplayer/CMakeFiles/TreePlayer.dir/src/TTreeProcessorMT.cxx.o: ../core/meta/inc/TClassRef.h

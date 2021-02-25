@@ -24,7 +24,7 @@
 #-------------------------------------------------------------------------------
 
 version=v4.10.0
-prefix=/content/root_src/root_build
+prefix=/content/root_src_37/root_build
 includedir=${prefix}/include/xrootd
 plugin_version=4
 

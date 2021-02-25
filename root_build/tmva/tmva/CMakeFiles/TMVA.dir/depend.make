@@ -350,7 +350,7 @@ tmva/tmva/CMakeFiles/TMVA.dir/src/CCPruner.cxx.o: ../core/foundation/inc/ROOT/RS
 tmva/tmva/CMakeFiles/TMVA.dir/src/CCPruner.cxx.o: ../core/foundation/inc/ROOT/RWrap_libcpp_string_view.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/CCPruner.cxx.o: ../core/foundation/inc/ROOT/TypeTraits.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/CCPruner.cxx.o: ../core/foundation/inc/ROOT/libcpp_string_view.h
-tmva/tmva/CMakeFiles/TMVA.dir/src/CCPruner.cxx.o: ../core/imt/inc/ROOT/TPoolManager.hxx
+tmva/tmva/CMakeFiles/TMVA.dir/src/CCPruner.cxx.o: ../core/imt/inc/ROOT/RTaskArena.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/CCPruner.cxx.o: ../core/imt/inc/ROOT/TThreadExecutor.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/CCPruner.cxx.o: ../core/meta/inc/TClass.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/CCPruner.cxx.o: ../core/meta/inc/TDataType.h
@@ -459,7 +459,7 @@ tmva/tmva/CMakeFiles/TMVA.dir/src/CCTreeWrapper.cxx.o: ../core/foundation/inc/RO
 tmva/tmva/CMakeFiles/TMVA.dir/src/CCTreeWrapper.cxx.o: ../core/foundation/inc/ROOT/RWrap_libcpp_string_view.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/CCTreeWrapper.cxx.o: ../core/foundation/inc/ROOT/TypeTraits.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/CCTreeWrapper.cxx.o: ../core/foundation/inc/ROOT/libcpp_string_view.h
-tmva/tmva/CMakeFiles/TMVA.dir/src/CCTreeWrapper.cxx.o: ../core/imt/inc/ROOT/TPoolManager.hxx
+tmva/tmva/CMakeFiles/TMVA.dir/src/CCTreeWrapper.cxx.o: ../core/imt/inc/ROOT/RTaskArena.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/CCTreeWrapper.cxx.o: ../core/imt/inc/ROOT/TThreadExecutor.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/CCTreeWrapper.cxx.o: ../core/meta/inc/TClass.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/CCTreeWrapper.cxx.o: ../core/meta/inc/TDataType.h
@@ -629,7 +629,7 @@ tmva/tmva/CMakeFiles/TMVA.dir/src/Classification.cxx.o: ../core/foundation/inc/R
 tmva/tmva/CMakeFiles/TMVA.dir/src/Classification.cxx.o: ../core/foundation/inc/ROOT/libcpp_string_view.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/Classification.cxx.o: ../core/gui/inc/GuiTypes.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/Classification.cxx.o: ../core/gui/inc/TCanvasImp.h
-tmva/tmva/CMakeFiles/TMVA.dir/src/Classification.cxx.o: ../core/imt/inc/ROOT/TPoolManager.hxx
+tmva/tmva/CMakeFiles/TMVA.dir/src/Classification.cxx.o: ../core/imt/inc/ROOT/RTaskArena.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/Classification.cxx.o: ../core/imt/inc/ROOT/TThreadExecutor.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/Classification.cxx.o: ../core/meta/inc/TClass.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/Classification.cxx.o: ../core/meta/inc/TDataType.h
@@ -817,7 +817,7 @@ tmva/tmva/CMakeFiles/TMVA.dir/src/Config.cxx.o: ../core/foundation/inc/ROOT/RStr
 tmva/tmva/CMakeFiles/TMVA.dir/src/Config.cxx.o: ../core/foundation/inc/ROOT/RWrap_libcpp_string_view.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/Config.cxx.o: ../core/foundation/inc/ROOT/TypeTraits.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/Config.cxx.o: ../core/foundation/inc/ROOT/libcpp_string_view.h
-tmva/tmva/CMakeFiles/TMVA.dir/src/Config.cxx.o: ../core/imt/inc/ROOT/TPoolManager.hxx
+tmva/tmva/CMakeFiles/TMVA.dir/src/Config.cxx.o: ../core/imt/inc/ROOT/RTaskArena.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/Config.cxx.o: ../core/imt/inc/ROOT/TThreadExecutor.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/Config.cxx.o: ../core/meta/inc/TClass.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/Config.cxx.o: ../core/meta/inc/TDataType.h
@@ -894,7 +894,7 @@ tmva/tmva/CMakeFiles/TMVA.dir/src/Configurable.cxx.o: ../core/foundation/inc/ROO
 tmva/tmva/CMakeFiles/TMVA.dir/src/Configurable.cxx.o: ../core/foundation/inc/ROOT/RWrap_libcpp_string_view.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/Configurable.cxx.o: ../core/foundation/inc/ROOT/TypeTraits.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/Configurable.cxx.o: ../core/foundation/inc/ROOT/libcpp_string_view.h
-tmva/tmva/CMakeFiles/TMVA.dir/src/Configurable.cxx.o: ../core/imt/inc/ROOT/TPoolManager.hxx
+tmva/tmva/CMakeFiles/TMVA.dir/src/Configurable.cxx.o: ../core/imt/inc/ROOT/RTaskArena.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/Configurable.cxx.o: ../core/imt/inc/ROOT/TThreadExecutor.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/Configurable.cxx.o: ../core/meta/inc/TClass.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/Configurable.cxx.o: ../core/meta/inc/TDataType.h
@@ -1027,7 +1027,7 @@ tmva/tmva/CMakeFiles/TMVA.dir/src/CostComplexityPruneTool.cxx.o: ../core/foundat
 tmva/tmva/CMakeFiles/TMVA.dir/src/CostComplexityPruneTool.cxx.o: ../core/foundation/inc/ROOT/RWrap_libcpp_string_view.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/CostComplexityPruneTool.cxx.o: ../core/foundation/inc/ROOT/TypeTraits.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/CostComplexityPruneTool.cxx.o: ../core/foundation/inc/ROOT/libcpp_string_view.h
-tmva/tmva/CMakeFiles/TMVA.dir/src/CostComplexityPruneTool.cxx.o: ../core/imt/inc/ROOT/TPoolManager.hxx
+tmva/tmva/CMakeFiles/TMVA.dir/src/CostComplexityPruneTool.cxx.o: ../core/imt/inc/ROOT/RTaskArena.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/CostComplexityPruneTool.cxx.o: ../core/imt/inc/ROOT/TThreadExecutor.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/CostComplexityPruneTool.cxx.o: ../core/meta/inc/TClass.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/CostComplexityPruneTool.cxx.o: ../core/meta/inc/TDataType.h
@@ -1179,7 +1179,7 @@ tmva/tmva/CMakeFiles/TMVA.dir/src/CrossValidation.cxx.o: ../core/foundation/inc/
 tmva/tmva/CMakeFiles/TMVA.dir/src/CrossValidation.cxx.o: ../core/foundation/inc/ROOT/libcpp_string_view.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/CrossValidation.cxx.o: ../core/gui/inc/GuiTypes.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/CrossValidation.cxx.o: ../core/gui/inc/TCanvasImp.h
-tmva/tmva/CMakeFiles/TMVA.dir/src/CrossValidation.cxx.o: ../core/imt/inc/ROOT/TPoolManager.hxx
+tmva/tmva/CMakeFiles/TMVA.dir/src/CrossValidation.cxx.o: ../core/imt/inc/ROOT/RTaskArena.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/CrossValidation.cxx.o: ../core/imt/inc/ROOT/TThreadExecutor.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/CrossValidation.cxx.o: ../core/meta/inc/TClass.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/CrossValidation.cxx.o: ../core/meta/inc/TDataType.h
@@ -1433,7 +1433,7 @@ tmva/tmva/CMakeFiles/TMVA.dir/src/DNN/Architectures/Cpu.cxx.o: ../core/foundatio
 tmva/tmva/CMakeFiles/TMVA.dir/src/DNN/Architectures/Cpu.cxx.o: ../core/foundation/inc/ROOT/RWrap_libcpp_string_view.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/DNN/Architectures/Cpu.cxx.o: ../core/foundation/inc/ROOT/TypeTraits.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/DNN/Architectures/Cpu.cxx.o: ../core/foundation/inc/ROOT/libcpp_string_view.h
-tmva/tmva/CMakeFiles/TMVA.dir/src/DNN/Architectures/Cpu.cxx.o: ../core/imt/inc/ROOT/TPoolManager.hxx
+tmva/tmva/CMakeFiles/TMVA.dir/src/DNN/Architectures/Cpu.cxx.o: ../core/imt/inc/ROOT/RTaskArena.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/DNN/Architectures/Cpu.cxx.o: ../core/imt/inc/ROOT/TThreadExecutor.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/DNN/Architectures/Cpu.cxx.o: ../core/meta/inc/TClass.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/DNN/Architectures/Cpu.cxx.o: ../core/meta/inc/TDataType.h
@@ -1563,7 +1563,7 @@ tmva/tmva/CMakeFiles/TMVA.dir/src/DNN/Architectures/Cpu/CpuBuffer.cxx.o: ../core
 tmva/tmva/CMakeFiles/TMVA.dir/src/DNN/Architectures/Cpu/CpuBuffer.cxx.o: ../core/foundation/inc/ROOT/RWrap_libcpp_string_view.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/DNN/Architectures/Cpu/CpuBuffer.cxx.o: ../core/foundation/inc/ROOT/TypeTraits.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/DNN/Architectures/Cpu/CpuBuffer.cxx.o: ../core/foundation/inc/ROOT/libcpp_string_view.h
-tmva/tmva/CMakeFiles/TMVA.dir/src/DNN/Architectures/Cpu/CpuBuffer.cxx.o: ../core/imt/inc/ROOT/TPoolManager.hxx
+tmva/tmva/CMakeFiles/TMVA.dir/src/DNN/Architectures/Cpu/CpuBuffer.cxx.o: ../core/imt/inc/ROOT/RTaskArena.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/DNN/Architectures/Cpu/CpuBuffer.cxx.o: ../core/imt/inc/ROOT/TThreadExecutor.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/DNN/Architectures/Cpu/CpuBuffer.cxx.o: ../core/meta/inc/TClass.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/DNN/Architectures/Cpu/CpuBuffer.cxx.o: ../core/meta/inc/TDataType.h
@@ -1664,7 +1664,7 @@ tmva/tmva/CMakeFiles/TMVA.dir/src/DNN/Architectures/Cpu/CpuMatrix.cxx.o: ../core
 tmva/tmva/CMakeFiles/TMVA.dir/src/DNN/Architectures/Cpu/CpuMatrix.cxx.o: ../core/foundation/inc/ROOT/RWrap_libcpp_string_view.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/DNN/Architectures/Cpu/CpuMatrix.cxx.o: ../core/foundation/inc/ROOT/TypeTraits.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/DNN/Architectures/Cpu/CpuMatrix.cxx.o: ../core/foundation/inc/ROOT/libcpp_string_view.h
-tmva/tmva/CMakeFiles/TMVA.dir/src/DNN/Architectures/Cpu/CpuMatrix.cxx.o: ../core/imt/inc/ROOT/TPoolManager.hxx
+tmva/tmva/CMakeFiles/TMVA.dir/src/DNN/Architectures/Cpu/CpuMatrix.cxx.o: ../core/imt/inc/ROOT/RTaskArena.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/DNN/Architectures/Cpu/CpuMatrix.cxx.o: ../core/imt/inc/ROOT/TThreadExecutor.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/DNN/Architectures/Cpu/CpuMatrix.cxx.o: ../core/meta/inc/TClass.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/DNN/Architectures/Cpu/CpuMatrix.cxx.o: ../core/meta/inc/TDataType.h
@@ -2122,7 +2122,7 @@ tmva/tmva/CMakeFiles/TMVA.dir/src/DataLoader.cxx.o: ../core/foundation/inc/ROOT/
 tmva/tmva/CMakeFiles/TMVA.dir/src/DataLoader.cxx.o: ../core/foundation/inc/ROOT/RWrap_libcpp_string_view.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/DataLoader.cxx.o: ../core/foundation/inc/ROOT/TypeTraits.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/DataLoader.cxx.o: ../core/foundation/inc/ROOT/libcpp_string_view.h
-tmva/tmva/CMakeFiles/TMVA.dir/src/DataLoader.cxx.o: ../core/imt/inc/ROOT/TPoolManager.hxx
+tmva/tmva/CMakeFiles/TMVA.dir/src/DataLoader.cxx.o: ../core/imt/inc/ROOT/RTaskArena.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/DataLoader.cxx.o: ../core/imt/inc/ROOT/TThreadExecutor.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/DataLoader.cxx.o: ../core/meta/inc/TClass.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/DataLoader.cxx.o: ../core/meta/inc/TDataType.h
@@ -2692,7 +2692,7 @@ tmva/tmva/CMakeFiles/TMVA.dir/src/DecisionTree.cxx.o: ../core/foundation/inc/ROO
 tmva/tmva/CMakeFiles/TMVA.dir/src/DecisionTree.cxx.o: ../core/foundation/inc/ROOT/RWrap_libcpp_string_view.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/DecisionTree.cxx.o: ../core/foundation/inc/ROOT/TypeTraits.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/DecisionTree.cxx.o: ../core/foundation/inc/ROOT/libcpp_string_view.h
-tmva/tmva/CMakeFiles/TMVA.dir/src/DecisionTree.cxx.o: ../core/imt/inc/ROOT/TPoolManager.hxx
+tmva/tmva/CMakeFiles/TMVA.dir/src/DecisionTree.cxx.o: ../core/imt/inc/ROOT/RTaskArena.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/DecisionTree.cxx.o: ../core/imt/inc/ROOT/TThreadExecutor.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/DecisionTree.cxx.o: ../core/meta/inc/TClass.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/DecisionTree.cxx.o: ../core/meta/inc/TDataType.h
@@ -2921,7 +2921,7 @@ tmva/tmva/CMakeFiles/TMVA.dir/src/Envelope.cxx.o: ../core/foundation/inc/ROOT/Ty
 tmva/tmva/CMakeFiles/TMVA.dir/src/Envelope.cxx.o: ../core/foundation/inc/ROOT/libcpp_string_view.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/Envelope.cxx.o: ../core/gui/inc/GuiTypes.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/Envelope.cxx.o: ../core/gui/inc/TCanvasImp.h
-tmva/tmva/CMakeFiles/TMVA.dir/src/Envelope.cxx.o: ../core/imt/inc/ROOT/TPoolManager.hxx
+tmva/tmva/CMakeFiles/TMVA.dir/src/Envelope.cxx.o: ../core/imt/inc/ROOT/RTaskArena.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/Envelope.cxx.o: ../core/imt/inc/ROOT/TThreadExecutor.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/Envelope.cxx.o: ../core/meta/inc/TClass.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/Envelope.cxx.o: ../core/meta/inc/TDataType.h
@@ -3132,7 +3132,7 @@ tmva/tmva/CMakeFiles/TMVA.dir/src/ExpectedErrorPruneTool.cxx.o: ../core/foundati
 tmva/tmva/CMakeFiles/TMVA.dir/src/ExpectedErrorPruneTool.cxx.o: ../core/foundation/inc/ROOT/RWrap_libcpp_string_view.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/ExpectedErrorPruneTool.cxx.o: ../core/foundation/inc/ROOT/TypeTraits.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/ExpectedErrorPruneTool.cxx.o: ../core/foundation/inc/ROOT/libcpp_string_view.h
-tmva/tmva/CMakeFiles/TMVA.dir/src/ExpectedErrorPruneTool.cxx.o: ../core/imt/inc/ROOT/TPoolManager.hxx
+tmva/tmva/CMakeFiles/TMVA.dir/src/ExpectedErrorPruneTool.cxx.o: ../core/imt/inc/ROOT/RTaskArena.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/ExpectedErrorPruneTool.cxx.o: ../core/imt/inc/ROOT/TThreadExecutor.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/ExpectedErrorPruneTool.cxx.o: ../core/meta/inc/TClass.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/ExpectedErrorPruneTool.cxx.o: ../core/meta/inc/TDataType.h
@@ -3251,7 +3251,7 @@ tmva/tmva/CMakeFiles/TMVA.dir/src/Factory.cxx.o: ../core/foundation/inc/ROOT/Typ
 tmva/tmva/CMakeFiles/TMVA.dir/src/Factory.cxx.o: ../core/foundation/inc/ROOT/libcpp_string_view.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/Factory.cxx.o: ../core/gui/inc/GuiTypes.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/Factory.cxx.o: ../core/gui/inc/TCanvasImp.h
-tmva/tmva/CMakeFiles/TMVA.dir/src/Factory.cxx.o: ../core/imt/inc/ROOT/TPoolManager.hxx
+tmva/tmva/CMakeFiles/TMVA.dir/src/Factory.cxx.o: ../core/imt/inc/ROOT/RTaskArena.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/Factory.cxx.o: ../core/imt/inc/ROOT/TThreadExecutor.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/Factory.cxx.o: ../core/meta/inc/TClass.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/Factory.cxx.o: ../core/meta/inc/TDataType.h
@@ -3707,7 +3707,7 @@ tmva/tmva/CMakeFiles/TMVA.dir/src/HyperParameterOptimisation.cxx.o: ../core/foun
 tmva/tmva/CMakeFiles/TMVA.dir/src/HyperParameterOptimisation.cxx.o: ../core/foundation/inc/ROOT/RWrap_libcpp_string_view.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/HyperParameterOptimisation.cxx.o: ../core/foundation/inc/ROOT/TypeTraits.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/HyperParameterOptimisation.cxx.o: ../core/foundation/inc/ROOT/libcpp_string_view.h
-tmva/tmva/CMakeFiles/TMVA.dir/src/HyperParameterOptimisation.cxx.o: ../core/imt/inc/ROOT/TPoolManager.hxx
+tmva/tmva/CMakeFiles/TMVA.dir/src/HyperParameterOptimisation.cxx.o: ../core/imt/inc/ROOT/RTaskArena.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/HyperParameterOptimisation.cxx.o: ../core/imt/inc/ROOT/TThreadExecutor.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/HyperParameterOptimisation.cxx.o: ../core/meta/inc/TClass.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/HyperParameterOptimisation.cxx.o: ../core/meta/inc/TDataType.h
@@ -4052,7 +4052,7 @@ tmva/tmva/CMakeFiles/TMVA.dir/src/LossFunction.cxx.o: ../core/foundation/inc/ROO
 tmva/tmva/CMakeFiles/TMVA.dir/src/LossFunction.cxx.o: ../core/foundation/inc/ROOT/RWrap_libcpp_string_view.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/LossFunction.cxx.o: ../core/foundation/inc/ROOT/TypeTraits.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/LossFunction.cxx.o: ../core/foundation/inc/ROOT/libcpp_string_view.h
-tmva/tmva/CMakeFiles/TMVA.dir/src/LossFunction.cxx.o: ../core/imt/inc/ROOT/TPoolManager.hxx
+tmva/tmva/CMakeFiles/TMVA.dir/src/LossFunction.cxx.o: ../core/imt/inc/ROOT/RTaskArena.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/LossFunction.cxx.o: ../core/imt/inc/ROOT/TThreadExecutor.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/LossFunction.cxx.o: ../core/meta/inc/TClass.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/LossFunction.cxx.o: ../core/meta/inc/TDataType.h
@@ -4303,7 +4303,7 @@ tmva/tmva/CMakeFiles/TMVA.dir/src/MethodBDT.cxx.o: ../core/foundation/inc/ROOT/R
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodBDT.cxx.o: ../core/foundation/inc/ROOT/RWrap_libcpp_string_view.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodBDT.cxx.o: ../core/foundation/inc/ROOT/TypeTraits.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodBDT.cxx.o: ../core/foundation/inc/ROOT/libcpp_string_view.h
-tmva/tmva/CMakeFiles/TMVA.dir/src/MethodBDT.cxx.o: ../core/imt/inc/ROOT/TPoolManager.hxx
+tmva/tmva/CMakeFiles/TMVA.dir/src/MethodBDT.cxx.o: ../core/imt/inc/ROOT/RTaskArena.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodBDT.cxx.o: ../core/imt/inc/ROOT/TThreadExecutor.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodBDT.cxx.o: ../core/meta/inc/TClass.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodBDT.cxx.o: ../core/meta/inc/TDataType.h
@@ -4460,7 +4460,7 @@ tmva/tmva/CMakeFiles/TMVA.dir/src/MethodBase.cxx.o: ../core/foundation/inc/ROOT/
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodBase.cxx.o: ../core/foundation/inc/ROOT/RWrap_libcpp_string_view.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodBase.cxx.o: ../core/foundation/inc/ROOT/TypeTraits.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodBase.cxx.o: ../core/foundation/inc/ROOT/libcpp_string_view.h
-tmva/tmva/CMakeFiles/TMVA.dir/src/MethodBase.cxx.o: ../core/imt/inc/ROOT/TPoolManager.hxx
+tmva/tmva/CMakeFiles/TMVA.dir/src/MethodBase.cxx.o: ../core/imt/inc/ROOT/RTaskArena.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodBase.cxx.o: ../core/imt/inc/ROOT/TThreadExecutor.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodBase.cxx.o: ../core/meta/inc/TClass.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodBase.cxx.o: ../core/meta/inc/TDataType.h
@@ -4725,7 +4725,7 @@ tmva/tmva/CMakeFiles/TMVA.dir/src/MethodBoost.cxx.o: ../core/foundation/inc/ROOT
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodBoost.cxx.o: ../core/foundation/inc/ROOT/RWrap_libcpp_string_view.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodBoost.cxx.o: ../core/foundation/inc/ROOT/TypeTraits.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodBoost.cxx.o: ../core/foundation/inc/ROOT/libcpp_string_view.h
-tmva/tmva/CMakeFiles/TMVA.dir/src/MethodBoost.cxx.o: ../core/imt/inc/ROOT/TPoolManager.hxx
+tmva/tmva/CMakeFiles/TMVA.dir/src/MethodBoost.cxx.o: ../core/imt/inc/ROOT/RTaskArena.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodBoost.cxx.o: ../core/imt/inc/ROOT/TThreadExecutor.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodBoost.cxx.o: ../core/meta/inc/TClass.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodBoost.cxx.o: ../core/meta/inc/TDataType.h
@@ -5010,7 +5010,7 @@ tmva/tmva/CMakeFiles/TMVA.dir/src/MethodCategory.cxx.o: ../core/foundation/inc/R
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodCategory.cxx.o: ../core/foundation/inc/ROOT/RWrap_libcpp_string_view.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodCategory.cxx.o: ../core/foundation/inc/ROOT/TypeTraits.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodCategory.cxx.o: ../core/foundation/inc/ROOT/libcpp_string_view.h
-tmva/tmva/CMakeFiles/TMVA.dir/src/MethodCategory.cxx.o: ../core/imt/inc/ROOT/TPoolManager.hxx
+tmva/tmva/CMakeFiles/TMVA.dir/src/MethodCategory.cxx.o: ../core/imt/inc/ROOT/RTaskArena.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodCategory.cxx.o: ../core/imt/inc/ROOT/TThreadExecutor.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodCategory.cxx.o: ../core/meta/inc/TClass.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodCategory.cxx.o: ../core/meta/inc/TDataType.h
@@ -5133,7 +5133,7 @@ tmva/tmva/CMakeFiles/TMVA.dir/src/MethodCompositeBase.cxx.o: ../core/foundation/
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodCompositeBase.cxx.o: ../core/foundation/inc/ROOT/RWrap_libcpp_string_view.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodCompositeBase.cxx.o: ../core/foundation/inc/ROOT/TypeTraits.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodCompositeBase.cxx.o: ../core/foundation/inc/ROOT/libcpp_string_view.h
-tmva/tmva/CMakeFiles/TMVA.dir/src/MethodCompositeBase.cxx.o: ../core/imt/inc/ROOT/TPoolManager.hxx
+tmva/tmva/CMakeFiles/TMVA.dir/src/MethodCompositeBase.cxx.o: ../core/imt/inc/ROOT/RTaskArena.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodCompositeBase.cxx.o: ../core/imt/inc/ROOT/TThreadExecutor.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodCompositeBase.cxx.o: ../core/meta/inc/TClass.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodCompositeBase.cxx.o: ../core/meta/inc/TDataType.h
@@ -5251,7 +5251,7 @@ tmva/tmva/CMakeFiles/TMVA.dir/src/MethodCrossValidation.cxx.o: ../core/foundatio
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodCrossValidation.cxx.o: ../core/foundation/inc/ROOT/RWrap_libcpp_string_view.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodCrossValidation.cxx.o: ../core/foundation/inc/ROOT/TypeTraits.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodCrossValidation.cxx.o: ../core/foundation/inc/ROOT/libcpp_string_view.h
-tmva/tmva/CMakeFiles/TMVA.dir/src/MethodCrossValidation.cxx.o: ../core/imt/inc/ROOT/TPoolManager.hxx
+tmva/tmva/CMakeFiles/TMVA.dir/src/MethodCrossValidation.cxx.o: ../core/imt/inc/ROOT/RTaskArena.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodCrossValidation.cxx.o: ../core/imt/inc/ROOT/TThreadExecutor.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodCrossValidation.cxx.o: ../core/meta/inc/TClass.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodCrossValidation.cxx.o: ../core/meta/inc/TDataType.h
@@ -5369,7 +5369,7 @@ tmva/tmva/CMakeFiles/TMVA.dir/src/MethodCuts.cxx.o: ../core/foundation/inc/ROOT/
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodCuts.cxx.o: ../core/foundation/inc/ROOT/RWrap_libcpp_string_view.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodCuts.cxx.o: ../core/foundation/inc/ROOT/TypeTraits.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodCuts.cxx.o: ../core/foundation/inc/ROOT/libcpp_string_view.h
-tmva/tmva/CMakeFiles/TMVA.dir/src/MethodCuts.cxx.o: ../core/imt/inc/ROOT/TPoolManager.hxx
+tmva/tmva/CMakeFiles/TMVA.dir/src/MethodCuts.cxx.o: ../core/imt/inc/ROOT/RTaskArena.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodCuts.cxx.o: ../core/imt/inc/ROOT/TThreadExecutor.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodCuts.cxx.o: ../core/meta/inc/TClass.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodCuts.cxx.o: ../core/meta/inc/TDataType.h
@@ -5501,7 +5501,7 @@ tmva/tmva/CMakeFiles/TMVA.dir/src/MethodDL.cxx.o: ../core/foundation/inc/ROOT/RS
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodDL.cxx.o: ../core/foundation/inc/ROOT/RWrap_libcpp_string_view.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodDL.cxx.o: ../core/foundation/inc/ROOT/TypeTraits.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodDL.cxx.o: ../core/foundation/inc/ROOT/libcpp_string_view.h
-tmva/tmva/CMakeFiles/TMVA.dir/src/MethodDL.cxx.o: ../core/imt/inc/ROOT/TPoolManager.hxx
+tmva/tmva/CMakeFiles/TMVA.dir/src/MethodDL.cxx.o: ../core/imt/inc/ROOT/RTaskArena.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodDL.cxx.o: ../core/imt/inc/ROOT/TThreadExecutor.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodDL.cxx.o: ../core/meta/inc/TClass.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodDL.cxx.o: ../core/meta/inc/TDataType.h
@@ -5681,7 +5681,7 @@ tmva/tmva/CMakeFiles/TMVA.dir/src/MethodDNN.cxx.o: ../core/foundation/inc/ROOT/l
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodDNN.cxx.o: ../core/gui/inc/GuiTypes.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodDNN.cxx.o: ../core/gui/inc/TApplicationImp.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodDNN.cxx.o: ../core/gui/inc/TCanvasImp.h
-tmva/tmva/CMakeFiles/TMVA.dir/src/MethodDNN.cxx.o: ../core/imt/inc/ROOT/TPoolManager.hxx
+tmva/tmva/CMakeFiles/TMVA.dir/src/MethodDNN.cxx.o: ../core/imt/inc/ROOT/RTaskArena.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodDNN.cxx.o: ../core/imt/inc/ROOT/TThreadExecutor.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodDNN.cxx.o: ../core/meta/inc/TClass.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodDNN.cxx.o: ../core/meta/inc/TDataType.h
@@ -5849,7 +5849,7 @@ tmva/tmva/CMakeFiles/TMVA.dir/src/MethodDT.cxx.o: ../core/foundation/inc/ROOT/RS
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodDT.cxx.o: ../core/foundation/inc/ROOT/RWrap_libcpp_string_view.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodDT.cxx.o: ../core/foundation/inc/ROOT/TypeTraits.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodDT.cxx.o: ../core/foundation/inc/ROOT/libcpp_string_view.h
-tmva/tmva/CMakeFiles/TMVA.dir/src/MethodDT.cxx.o: ../core/imt/inc/ROOT/TPoolManager.hxx
+tmva/tmva/CMakeFiles/TMVA.dir/src/MethodDT.cxx.o: ../core/imt/inc/ROOT/RTaskArena.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodDT.cxx.o: ../core/imt/inc/ROOT/TThreadExecutor.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodDT.cxx.o: ../core/meta/inc/TClass.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodDT.cxx.o: ../core/meta/inc/TDataType.h
@@ -5982,7 +5982,7 @@ tmva/tmva/CMakeFiles/TMVA.dir/src/MethodFDA.cxx.o: ../core/foundation/inc/ROOT/R
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodFDA.cxx.o: ../core/foundation/inc/ROOT/RWrap_libcpp_string_view.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodFDA.cxx.o: ../core/foundation/inc/ROOT/TypeTraits.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodFDA.cxx.o: ../core/foundation/inc/ROOT/libcpp_string_view.h
-tmva/tmva/CMakeFiles/TMVA.dir/src/MethodFDA.cxx.o: ../core/imt/inc/ROOT/TPoolManager.hxx
+tmva/tmva/CMakeFiles/TMVA.dir/src/MethodFDA.cxx.o: ../core/imt/inc/ROOT/RTaskArena.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodFDA.cxx.o: ../core/imt/inc/ROOT/TThreadExecutor.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodFDA.cxx.o: ../core/meta/inc/TClass.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodFDA.cxx.o: ../core/meta/inc/TDataType.h
@@ -6680,7 +6680,7 @@ tmva/tmva/CMakeFiles/TMVA.dir/src/MethodMLP.cxx.o: ../core/foundation/inc/ROOT/R
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodMLP.cxx.o: ../core/foundation/inc/ROOT/RWrap_libcpp_string_view.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodMLP.cxx.o: ../core/foundation/inc/ROOT/TypeTraits.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodMLP.cxx.o: ../core/foundation/inc/ROOT/libcpp_string_view.h
-tmva/tmva/CMakeFiles/TMVA.dir/src/MethodMLP.cxx.o: ../core/imt/inc/ROOT/TPoolManager.hxx
+tmva/tmva/CMakeFiles/TMVA.dir/src/MethodMLP.cxx.o: ../core/imt/inc/ROOT/RTaskArena.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodMLP.cxx.o: ../core/imt/inc/ROOT/TThreadExecutor.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodMLP.cxx.o: ../core/meta/inc/TClass.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodMLP.cxx.o: ../core/meta/inc/TDataType.h
@@ -6823,7 +6823,7 @@ tmva/tmva/CMakeFiles/TMVA.dir/src/MethodPDEFoam.cxx.o: ../core/foundation/inc/RO
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodPDEFoam.cxx.o: ../core/foundation/inc/ROOT/RWrap_libcpp_string_view.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodPDEFoam.cxx.o: ../core/foundation/inc/ROOT/TypeTraits.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodPDEFoam.cxx.o: ../core/foundation/inc/ROOT/libcpp_string_view.h
-tmva/tmva/CMakeFiles/TMVA.dir/src/MethodPDEFoam.cxx.o: ../core/imt/inc/ROOT/TPoolManager.hxx
+tmva/tmva/CMakeFiles/TMVA.dir/src/MethodPDEFoam.cxx.o: ../core/imt/inc/ROOT/RTaskArena.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodPDEFoam.cxx.o: ../core/imt/inc/ROOT/TThreadExecutor.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodPDEFoam.cxx.o: ../core/meta/inc/TClass.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodPDEFoam.cxx.o: ../core/meta/inc/TDataType.h
@@ -7185,7 +7185,7 @@ tmva/tmva/CMakeFiles/TMVA.dir/src/MethodRuleFit.cxx.o: ../core/foundation/inc/RO
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodRuleFit.cxx.o: ../core/foundation/inc/ROOT/RWrap_libcpp_string_view.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodRuleFit.cxx.o: ../core/foundation/inc/ROOT/TypeTraits.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodRuleFit.cxx.o: ../core/foundation/inc/ROOT/libcpp_string_view.h
-tmva/tmva/CMakeFiles/TMVA.dir/src/MethodRuleFit.cxx.o: ../core/imt/inc/ROOT/TPoolManager.hxx
+tmva/tmva/CMakeFiles/TMVA.dir/src/MethodRuleFit.cxx.o: ../core/imt/inc/ROOT/RTaskArena.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodRuleFit.cxx.o: ../core/imt/inc/ROOT/TThreadExecutor.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodRuleFit.cxx.o: ../core/meta/inc/TClass.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodRuleFit.cxx.o: ../core/meta/inc/TDataType.h
@@ -7464,7 +7464,7 @@ tmva/tmva/CMakeFiles/TMVA.dir/src/MethodTMlpANN.cxx.o: ../core/foundation/inc/RO
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodTMlpANN.cxx.o: ../core/foundation/inc/ROOT/RWrap_libcpp_string_view.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodTMlpANN.cxx.o: ../core/foundation/inc/ROOT/TypeTraits.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodTMlpANN.cxx.o: ../core/foundation/inc/ROOT/libcpp_string_view.h
-tmva/tmva/CMakeFiles/TMVA.dir/src/MethodTMlpANN.cxx.o: ../core/imt/inc/ROOT/TPoolManager.hxx
+tmva/tmva/CMakeFiles/TMVA.dir/src/MethodTMlpANN.cxx.o: ../core/imt/inc/ROOT/RTaskArena.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodTMlpANN.cxx.o: ../core/imt/inc/ROOT/TThreadExecutor.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodTMlpANN.cxx.o: ../core/meta/inc/TClass.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/MethodTMlpANN.cxx.o: ../core/meta/inc/TDataType.h
@@ -7716,7 +7716,7 @@ tmva/tmva/CMakeFiles/TMVA.dir/src/MsgLogger.cxx.o: ../core/foundation/inc/ROOT/R
 tmva/tmva/CMakeFiles/TMVA.dir/src/MsgLogger.cxx.o: ../core/foundation/inc/ROOT/RWrap_libcpp_string_view.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/MsgLogger.cxx.o: ../core/foundation/inc/ROOT/TypeTraits.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/MsgLogger.cxx.o: ../core/foundation/inc/ROOT/libcpp_string_view.h
-tmva/tmva/CMakeFiles/TMVA.dir/src/MsgLogger.cxx.o: ../core/imt/inc/ROOT/TPoolManager.hxx
+tmva/tmva/CMakeFiles/TMVA.dir/src/MsgLogger.cxx.o: ../core/imt/inc/ROOT/RTaskArena.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/MsgLogger.cxx.o: ../core/imt/inc/ROOT/TThreadExecutor.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/MsgLogger.cxx.o: ../core/meta/inc/TClass.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/MsgLogger.cxx.o: ../core/meta/inc/TDataType.h
@@ -7803,7 +7803,7 @@ tmva/tmva/CMakeFiles/TMVA.dir/src/NeuralNet.cxx.o: ../core/foundation/inc/ROOT/l
 tmva/tmva/CMakeFiles/TMVA.dir/src/NeuralNet.cxx.o: ../core/gui/inc/GuiTypes.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/NeuralNet.cxx.o: ../core/gui/inc/TApplicationImp.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/NeuralNet.cxx.o: ../core/gui/inc/TCanvasImp.h
-tmva/tmva/CMakeFiles/TMVA.dir/src/NeuralNet.cxx.o: ../core/imt/inc/ROOT/TPoolManager.hxx
+tmva/tmva/CMakeFiles/TMVA.dir/src/NeuralNet.cxx.o: ../core/imt/inc/ROOT/RTaskArena.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/NeuralNet.cxx.o: ../core/imt/inc/ROOT/TThreadExecutor.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/NeuralNet.cxx.o: ../core/meta/inc/TClass.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/NeuralNet.cxx.o: ../core/meta/inc/TDataType.h
@@ -8036,7 +8036,7 @@ tmva/tmva/CMakeFiles/TMVA.dir/src/OptimizeConfigParameters.cxx.o: ../core/founda
 tmva/tmva/CMakeFiles/TMVA.dir/src/OptimizeConfigParameters.cxx.o: ../core/foundation/inc/ROOT/RWrap_libcpp_string_view.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/OptimizeConfigParameters.cxx.o: ../core/foundation/inc/ROOT/TypeTraits.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/OptimizeConfigParameters.cxx.o: ../core/foundation/inc/ROOT/libcpp_string_view.h
-tmva/tmva/CMakeFiles/TMVA.dir/src/OptimizeConfigParameters.cxx.o: ../core/imt/inc/ROOT/TPoolManager.hxx
+tmva/tmva/CMakeFiles/TMVA.dir/src/OptimizeConfigParameters.cxx.o: ../core/imt/inc/ROOT/RTaskArena.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/OptimizeConfigParameters.cxx.o: ../core/imt/inc/ROOT/TThreadExecutor.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/OptimizeConfigParameters.cxx.o: ../core/meta/inc/TClass.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/OptimizeConfigParameters.cxx.o: ../core/meta/inc/TDataType.h
@@ -9721,7 +9721,7 @@ tmva/tmva/CMakeFiles/TMVA.dir/src/ROCCalc.cxx.o: ../core/foundation/inc/ROOT/RSt
 tmva/tmva/CMakeFiles/TMVA.dir/src/ROCCalc.cxx.o: ../core/foundation/inc/ROOT/RWrap_libcpp_string_view.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/ROCCalc.cxx.o: ../core/foundation/inc/ROOT/TypeTraits.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/ROCCalc.cxx.o: ../core/foundation/inc/ROOT/libcpp_string_view.h
-tmva/tmva/CMakeFiles/TMVA.dir/src/ROCCalc.cxx.o: ../core/imt/inc/ROOT/TPoolManager.hxx
+tmva/tmva/CMakeFiles/TMVA.dir/src/ROCCalc.cxx.o: ../core/imt/inc/ROOT/RTaskArena.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/ROCCalc.cxx.o: ../core/imt/inc/ROOT/TThreadExecutor.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/ROCCalc.cxx.o: ../core/meta/inc/TClass.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/ROCCalc.cxx.o: ../core/meta/inc/TDataType.h
@@ -9840,7 +9840,7 @@ tmva/tmva/CMakeFiles/TMVA.dir/src/ROCCurve.cxx.o: ../core/foundation/inc/ROOT/RS
 tmva/tmva/CMakeFiles/TMVA.dir/src/ROCCurve.cxx.o: ../core/foundation/inc/ROOT/RWrap_libcpp_string_view.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/ROCCurve.cxx.o: ../core/foundation/inc/ROOT/TypeTraits.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/ROCCurve.cxx.o: ../core/foundation/inc/ROOT/libcpp_string_view.h
-tmva/tmva/CMakeFiles/TMVA.dir/src/ROCCurve.cxx.o: ../core/imt/inc/ROOT/TPoolManager.hxx
+tmva/tmva/CMakeFiles/TMVA.dir/src/ROCCurve.cxx.o: ../core/imt/inc/ROOT/RTaskArena.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/ROCCurve.cxx.o: ../core/imt/inc/ROOT/TThreadExecutor.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/ROCCurve.cxx.o: ../core/meta/inc/TClass.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/ROCCurve.cxx.o: ../core/meta/inc/TDataType.h
@@ -9961,7 +9961,7 @@ tmva/tmva/CMakeFiles/TMVA.dir/src/Reader.cxx.o: ../core/foundation/inc/ROOT/RStr
 tmva/tmva/CMakeFiles/TMVA.dir/src/Reader.cxx.o: ../core/foundation/inc/ROOT/RWrap_libcpp_string_view.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/Reader.cxx.o: ../core/foundation/inc/ROOT/TypeTraits.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/Reader.cxx.o: ../core/foundation/inc/ROOT/libcpp_string_view.h
-tmva/tmva/CMakeFiles/TMVA.dir/src/Reader.cxx.o: ../core/imt/inc/ROOT/TPoolManager.hxx
+tmva/tmva/CMakeFiles/TMVA.dir/src/Reader.cxx.o: ../core/imt/inc/ROOT/RTaskArena.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/Reader.cxx.o: ../core/imt/inc/ROOT/TThreadExecutor.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/Reader.cxx.o: ../core/meta/inc/TClass.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/Reader.cxx.o: ../core/meta/inc/TDataType.h
@@ -10540,7 +10540,7 @@ tmva/tmva/CMakeFiles/TMVA.dir/src/Rule.cxx.o: ../core/foundation/inc/ROOT/RStrin
 tmva/tmva/CMakeFiles/TMVA.dir/src/Rule.cxx.o: ../core/foundation/inc/ROOT/RWrap_libcpp_string_view.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/Rule.cxx.o: ../core/foundation/inc/ROOT/TypeTraits.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/Rule.cxx.o: ../core/foundation/inc/ROOT/libcpp_string_view.h
-tmva/tmva/CMakeFiles/TMVA.dir/src/Rule.cxx.o: ../core/imt/inc/ROOT/TPoolManager.hxx
+tmva/tmva/CMakeFiles/TMVA.dir/src/Rule.cxx.o: ../core/imt/inc/ROOT/RTaskArena.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/Rule.cxx.o: ../core/imt/inc/ROOT/TThreadExecutor.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/Rule.cxx.o: ../core/meta/inc/TClass.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/Rule.cxx.o: ../core/meta/inc/TDataType.h
@@ -10681,7 +10681,7 @@ tmva/tmva/CMakeFiles/TMVA.dir/src/RuleCut.cxx.o: ../core/foundation/inc/ROOT/RSt
 tmva/tmva/CMakeFiles/TMVA.dir/src/RuleCut.cxx.o: ../core/foundation/inc/ROOT/RWrap_libcpp_string_view.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/RuleCut.cxx.o: ../core/foundation/inc/ROOT/TypeTraits.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/RuleCut.cxx.o: ../core/foundation/inc/ROOT/libcpp_string_view.h
-tmva/tmva/CMakeFiles/TMVA.dir/src/RuleCut.cxx.o: ../core/imt/inc/ROOT/TPoolManager.hxx
+tmva/tmva/CMakeFiles/TMVA.dir/src/RuleCut.cxx.o: ../core/imt/inc/ROOT/RTaskArena.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/RuleCut.cxx.o: ../core/imt/inc/ROOT/TThreadExecutor.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/RuleCut.cxx.o: ../core/meta/inc/TClass.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/RuleCut.cxx.o: ../core/meta/inc/TDataType.h
@@ -10788,7 +10788,7 @@ tmva/tmva/CMakeFiles/TMVA.dir/src/RuleEnsemble.cxx.o: ../core/foundation/inc/ROO
 tmva/tmva/CMakeFiles/TMVA.dir/src/RuleEnsemble.cxx.o: ../core/foundation/inc/ROOT/RWrap_libcpp_string_view.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/RuleEnsemble.cxx.o: ../core/foundation/inc/ROOT/TypeTraits.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/RuleEnsemble.cxx.o: ../core/foundation/inc/ROOT/libcpp_string_view.h
-tmva/tmva/CMakeFiles/TMVA.dir/src/RuleEnsemble.cxx.o: ../core/imt/inc/ROOT/TPoolManager.hxx
+tmva/tmva/CMakeFiles/TMVA.dir/src/RuleEnsemble.cxx.o: ../core/imt/inc/ROOT/RTaskArena.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/RuleEnsemble.cxx.o: ../core/imt/inc/ROOT/TThreadExecutor.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/RuleEnsemble.cxx.o: ../core/meta/inc/TClass.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/RuleEnsemble.cxx.o: ../core/meta/inc/TDataType.h
@@ -10935,7 +10935,7 @@ tmva/tmva/CMakeFiles/TMVA.dir/src/RuleFit.cxx.o: ../core/foundation/inc/ROOT/RSt
 tmva/tmva/CMakeFiles/TMVA.dir/src/RuleFit.cxx.o: ../core/foundation/inc/ROOT/RWrap_libcpp_string_view.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/RuleFit.cxx.o: ../core/foundation/inc/ROOT/TypeTraits.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/RuleFit.cxx.o: ../core/foundation/inc/ROOT/libcpp_string_view.h
-tmva/tmva/CMakeFiles/TMVA.dir/src/RuleFit.cxx.o: ../core/imt/inc/ROOT/TPoolManager.hxx
+tmva/tmva/CMakeFiles/TMVA.dir/src/RuleFit.cxx.o: ../core/imt/inc/ROOT/RTaskArena.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/RuleFit.cxx.o: ../core/imt/inc/ROOT/TThreadExecutor.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/RuleFit.cxx.o: ../core/meta/inc/TClass.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/RuleFit.cxx.o: ../core/meta/inc/TDataType.h
@@ -11086,7 +11086,7 @@ tmva/tmva/CMakeFiles/TMVA.dir/src/RuleFitAPI.cxx.o: ../core/foundation/inc/ROOT/
 tmva/tmva/CMakeFiles/TMVA.dir/src/RuleFitAPI.cxx.o: ../core/foundation/inc/ROOT/RWrap_libcpp_string_view.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/RuleFitAPI.cxx.o: ../core/foundation/inc/ROOT/TypeTraits.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/RuleFitAPI.cxx.o: ../core/foundation/inc/ROOT/libcpp_string_view.h
-tmva/tmva/CMakeFiles/TMVA.dir/src/RuleFitAPI.cxx.o: ../core/imt/inc/ROOT/TPoolManager.hxx
+tmva/tmva/CMakeFiles/TMVA.dir/src/RuleFitAPI.cxx.o: ../core/imt/inc/ROOT/RTaskArena.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/RuleFitAPI.cxx.o: ../core/imt/inc/ROOT/TThreadExecutor.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/RuleFitAPI.cxx.o: ../core/meta/inc/TClass.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/RuleFitAPI.cxx.o: ../core/meta/inc/TDataType.h
@@ -11234,7 +11234,7 @@ tmva/tmva/CMakeFiles/TMVA.dir/src/RuleFitParams.cxx.o: ../core/foundation/inc/RO
 tmva/tmva/CMakeFiles/TMVA.dir/src/RuleFitParams.cxx.o: ../core/foundation/inc/ROOT/RWrap_libcpp_string_view.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/RuleFitParams.cxx.o: ../core/foundation/inc/ROOT/TypeTraits.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/RuleFitParams.cxx.o: ../core/foundation/inc/ROOT/libcpp_string_view.h
-tmva/tmva/CMakeFiles/TMVA.dir/src/RuleFitParams.cxx.o: ../core/imt/inc/ROOT/TPoolManager.hxx
+tmva/tmva/CMakeFiles/TMVA.dir/src/RuleFitParams.cxx.o: ../core/imt/inc/ROOT/RTaskArena.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/RuleFitParams.cxx.o: ../core/imt/inc/ROOT/TThreadExecutor.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/RuleFitParams.cxx.o: ../core/meta/inc/TClass.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/RuleFitParams.cxx.o: ../core/meta/inc/TDataType.h
@@ -12198,7 +12198,7 @@ tmva/tmva/CMakeFiles/TMVA.dir/src/Timer.cxx.o: ../core/foundation/inc/ROOT/RStri
 tmva/tmva/CMakeFiles/TMVA.dir/src/Timer.cxx.o: ../core/foundation/inc/ROOT/RWrap_libcpp_string_view.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/Timer.cxx.o: ../core/foundation/inc/ROOT/TypeTraits.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/Timer.cxx.o: ../core/foundation/inc/ROOT/libcpp_string_view.h
-tmva/tmva/CMakeFiles/TMVA.dir/src/Timer.cxx.o: ../core/imt/inc/ROOT/TPoolManager.hxx
+tmva/tmva/CMakeFiles/TMVA.dir/src/Timer.cxx.o: ../core/imt/inc/ROOT/RTaskArena.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/Timer.cxx.o: ../core/imt/inc/ROOT/TThreadExecutor.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/Timer.cxx.o: ../core/meta/inc/TClass.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/Timer.cxx.o: ../core/meta/inc/TDataType.h
@@ -12285,7 +12285,7 @@ tmva/tmva/CMakeFiles/TMVA.dir/src/Tools.cxx.o: ../core/foundation/inc/ROOT/RStri
 tmva/tmva/CMakeFiles/TMVA.dir/src/Tools.cxx.o: ../core/foundation/inc/ROOT/RWrap_libcpp_string_view.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/Tools.cxx.o: ../core/foundation/inc/ROOT/TypeTraits.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/Tools.cxx.o: ../core/foundation/inc/ROOT/libcpp_string_view.h
-tmva/tmva/CMakeFiles/TMVA.dir/src/Tools.cxx.o: ../core/imt/inc/ROOT/TPoolManager.hxx
+tmva/tmva/CMakeFiles/TMVA.dir/src/Tools.cxx.o: ../core/imt/inc/ROOT/RTaskArena.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/Tools.cxx.o: ../core/imt/inc/ROOT/TThreadExecutor.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/Tools.cxx.o: ../core/meta/inc/TClass.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/Tools.cxx.o: ../core/meta/inc/TDataType.h
@@ -12444,7 +12444,7 @@ tmva/tmva/CMakeFiles/TMVA.dir/src/TransformationHandler.cxx.o: ../core/foundatio
 tmva/tmva/CMakeFiles/TMVA.dir/src/TransformationHandler.cxx.o: ../core/foundation/inc/ROOT/RWrap_libcpp_string_view.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/TransformationHandler.cxx.o: ../core/foundation/inc/ROOT/TypeTraits.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/TransformationHandler.cxx.o: ../core/foundation/inc/ROOT/libcpp_string_view.h
-tmva/tmva/CMakeFiles/TMVA.dir/src/TransformationHandler.cxx.o: ../core/imt/inc/ROOT/TPoolManager.hxx
+tmva/tmva/CMakeFiles/TMVA.dir/src/TransformationHandler.cxx.o: ../core/imt/inc/ROOT/RTaskArena.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/TransformationHandler.cxx.o: ../core/imt/inc/ROOT/TThreadExecutor.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/TransformationHandler.cxx.o: ../core/meta/inc/TClass.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/TransformationHandler.cxx.o: ../core/meta/inc/TDataType.h
@@ -12617,7 +12617,7 @@ tmva/tmva/CMakeFiles/TMVA.dir/src/VarTransformHandler.cxx.o: ../core/foundation/
 tmva/tmva/CMakeFiles/TMVA.dir/src/VarTransformHandler.cxx.o: ../core/gui/inc/GuiTypes.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/VarTransformHandler.cxx.o: ../core/gui/inc/TApplicationImp.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/VarTransformHandler.cxx.o: ../core/gui/inc/TCanvasImp.h
-tmva/tmva/CMakeFiles/TMVA.dir/src/VarTransformHandler.cxx.o: ../core/imt/inc/ROOT/TPoolManager.hxx
+tmva/tmva/CMakeFiles/TMVA.dir/src/VarTransformHandler.cxx.o: ../core/imt/inc/ROOT/RTaskArena.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/VarTransformHandler.cxx.o: ../core/imt/inc/ROOT/TThreadExecutor.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/VarTransformHandler.cxx.o: ../core/meta/inc/TClass.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/VarTransformHandler.cxx.o: ../core/meta/inc/TDataType.h
@@ -13111,7 +13111,7 @@ tmva/tmva/CMakeFiles/TMVA.dir/src/VariableImportance.cxx.o: ../core/foundation/i
 tmva/tmva/CMakeFiles/TMVA.dir/src/VariableImportance.cxx.o: ../core/foundation/inc/ROOT/libcpp_string_view.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/VariableImportance.cxx.o: ../core/gui/inc/GuiTypes.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/VariableImportance.cxx.o: ../core/gui/inc/TCanvasImp.h
-tmva/tmva/CMakeFiles/TMVA.dir/src/VariableImportance.cxx.o: ../core/imt/inc/ROOT/TPoolManager.hxx
+tmva/tmva/CMakeFiles/TMVA.dir/src/VariableImportance.cxx.o: ../core/imt/inc/ROOT/RTaskArena.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/VariableImportance.cxx.o: ../core/imt/inc/ROOT/TThreadExecutor.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/VariableImportance.cxx.o: ../core/meta/inc/TClass.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/VariableImportance.cxx.o: ../core/meta/inc/TDataType.h
@@ -13599,7 +13599,7 @@ tmva/tmva/CMakeFiles/TMVA.dir/src/VariableTransform.cxx.o: ../core/foundation/in
 tmva/tmva/CMakeFiles/TMVA.dir/src/VariableTransform.cxx.o: ../core/foundation/inc/ROOT/RWrap_libcpp_string_view.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/VariableTransform.cxx.o: ../core/foundation/inc/ROOT/TypeTraits.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/VariableTransform.cxx.o: ../core/foundation/inc/ROOT/libcpp_string_view.h
-tmva/tmva/CMakeFiles/TMVA.dir/src/VariableTransform.cxx.o: ../core/imt/inc/ROOT/TPoolManager.hxx
+tmva/tmva/CMakeFiles/TMVA.dir/src/VariableTransform.cxx.o: ../core/imt/inc/ROOT/RTaskArena.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/VariableTransform.cxx.o: ../core/imt/inc/ROOT/TThreadExecutor.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/VariableTransform.cxx.o: ../core/meta/inc/TClass.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/VariableTransform.cxx.o: ../core/meta/inc/TDataType.h
@@ -13720,7 +13720,7 @@ tmva/tmva/CMakeFiles/TMVA.dir/src/VariableTransformBase.cxx.o: ../core/foundatio
 tmva/tmva/CMakeFiles/TMVA.dir/src/VariableTransformBase.cxx.o: ../core/foundation/inc/ROOT/RWrap_libcpp_string_view.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/VariableTransformBase.cxx.o: ../core/foundation/inc/ROOT/TypeTraits.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/VariableTransformBase.cxx.o: ../core/foundation/inc/ROOT/libcpp_string_view.h
-tmva/tmva/CMakeFiles/TMVA.dir/src/VariableTransformBase.cxx.o: ../core/imt/inc/ROOT/TPoolManager.hxx
+tmva/tmva/CMakeFiles/TMVA.dir/src/VariableTransformBase.cxx.o: ../core/imt/inc/ROOT/RTaskArena.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/VariableTransformBase.cxx.o: ../core/imt/inc/ROOT/TThreadExecutor.hxx
 tmva/tmva/CMakeFiles/TMVA.dir/src/VariableTransformBase.cxx.o: ../core/meta/inc/TClass.h
 tmva/tmva/CMakeFiles/TMVA.dir/src/VariableTransformBase.cxx.o: ../core/meta/inc/TDataType.h

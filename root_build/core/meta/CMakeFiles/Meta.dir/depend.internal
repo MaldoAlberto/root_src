@@ -40,7 +40,7 @@ core/meta/CMakeFiles/Meta.dir/src/TBaseClass.cxx.o
  ../core/meta/inc/TIsAProxy.h
  ../core/meta/inc/TSchemaHelper.h
  ../core/meta/inc/TVirtualIsAProxy.h
- /content/root_src/core/meta/src/TBaseClass.cxx
+ /content/root_src_37/core/meta/src/TBaseClass.cxx
  ginclude/RConfigure.h
 core/meta/CMakeFiles/Meta.dir/src/TClass.cxx.o
  ../core/base/inc/Buttons.h
@@ -144,10 +144,10 @@ core/meta/CMakeFiles/Meta.dir/src/TClass.cxx.o
  ../core/meta/inc/TVirtualRefProxy.h
  ../core/meta/inc/TVirtualStreamerInfo.h
  ../core/thread/inc/ThreadLocalStorage.h
- /content/root_src/core/meta/src/TCheckHashRecursiveRemoveConsistency.h
- /content/root_src/core/meta/src/TClass.cxx
- /content/root_src/core/meta/src/TViewPubDataMembers.h
- /content/root_src/core/meta/src/TViewPubFunctions.h
+ /content/root_src_37/core/meta/src/TCheckHashRecursiveRemoveConsistency.h
+ /content/root_src_37/core/meta/src/TClass.cxx
+ /content/root_src_37/core/meta/src/TViewPubDataMembers.h
+ /content/root_src_37/core/meta/src/TViewPubFunctions.h
  ginclude/RConfigure.h
 core/meta/CMakeFiles/Meta.dir/src/TClassGenerator.cxx.o
  ../core/base/inc/DllImport.h
@@ -165,7 +165,7 @@ core/meta/CMakeFiles/Meta.dir/src/TClassGenerator.cxx.o
  ../core/meta/inc/TIsAProxy.h
  ../core/meta/inc/TSchemaHelper.h
  ../core/meta/inc/TVirtualIsAProxy.h
- /content/root_src/core/meta/src/TClassGenerator.cxx
+ /content/root_src_37/core/meta/src/TClassGenerator.cxx
  ginclude/RConfigure.h
 core/meta/CMakeFiles/Meta.dir/src/TClassRef.cxx.o
  ../core/base/inc/DllImport.h
@@ -199,7 +199,7 @@ core/meta/CMakeFiles/Meta.dir/src/TClassRef.cxx.o
  ../core/meta/inc/TIsAProxy.h
  ../core/meta/inc/TSchemaHelper.h
  ../core/meta/inc/TVirtualIsAProxy.h
- /content/root_src/core/meta/src/TClassRef.cxx
+ /content/root_src_37/core/meta/src/TClassRef.cxx
  ginclude/RConfigure.h
 core/meta/CMakeFiles/Meta.dir/src/TDataMember.cxx.o
  ../core/base/inc/Bytes.h
@@ -254,7 +254,7 @@ core/meta/CMakeFiles/Meta.dir/src/TDataMember.cxx.o
  ../core/meta/inc/TRealData.h
  ../core/meta/inc/TSchemaHelper.h
  ../core/meta/inc/TVirtualIsAProxy.h
- /content/root_src/core/meta/src/TDataMember.cxx
+ /content/root_src_37/core/meta/src/TDataMember.cxx
  ginclude/RConfigure.h
 core/meta/CMakeFiles/Meta.dir/src/TDataType.cxx.o
  ../core/base/inc/DllImport.h
@@ -288,7 +288,7 @@ core/meta/CMakeFiles/Meta.dir/src/TDataType.cxx.o
  ../core/meta/inc/TSchemaHelper.h
  ../core/meta/inc/TVirtualIsAProxy.h
  ../core/thread/inc/ThreadLocalStorage.h
- /content/root_src/core/meta/src/TDataType.cxx
+ /content/root_src_37/core/meta/src/TDataType.cxx
  ginclude/RConfigure.h
 core/meta/CMakeFiles/Meta.dir/src/TDictAttributeMap.cxx.o
  ../core/base/inc/Bytes.h
@@ -333,7 +333,7 @@ core/meta/CMakeFiles/Meta.dir/src/TDictAttributeMap.cxx.o
  ../core/meta/inc/TIsAProxy.h
  ../core/meta/inc/TSchemaHelper.h
  ../core/meta/inc/TVirtualIsAProxy.h
- /content/root_src/core/meta/src/TDictAttributeMap.cxx
+ /content/root_src_37/core/meta/src/TDictAttributeMap.cxx
  ginclude/RConfigure.h
 core/meta/CMakeFiles/Meta.dir/src/TDictionary.cxx.o
  ../core/base/inc/Bytes.h
@@ -379,7 +379,7 @@ core/meta/CMakeFiles/Meta.dir/src/TDictionary.cxx.o
  ../core/meta/inc/TIsAProxy.h
  ../core/meta/inc/TSchemaHelper.h
  ../core/meta/inc/TVirtualIsAProxy.h
- /content/root_src/core/meta/src/TDictionary.cxx
+ /content/root_src_37/core/meta/src/TDictionary.cxx
  ginclude/RConfigure.h
 core/meta/CMakeFiles/Meta.dir/src/TEnum.cxx.o
  ../core/base/inc/Bytes.h
@@ -431,7 +431,7 @@ core/meta/CMakeFiles/Meta.dir/src/TEnum.cxx.o
  ../core/meta/inc/TProtoClass.h
  ../core/meta/inc/TSchemaHelper.h
  ../core/meta/inc/TVirtualIsAProxy.h
- /content/root_src/core/meta/src/TEnum.cxx
+ /content/root_src_37/core/meta/src/TEnum.cxx
  ginclude/RConfigure.h
 core/meta/CMakeFiles/Meta.dir/src/TEnumConstant.cxx.o
  ../core/base/inc/DllImport.h
@@ -468,7 +468,7 @@ core/meta/CMakeFiles/Meta.dir/src/TEnumConstant.cxx.o
  ../core/meta/inc/TIsAProxy.h
  ../core/meta/inc/TSchemaHelper.h
  ../core/meta/inc/TVirtualIsAProxy.h
- /content/root_src/core/meta/src/TEnumConstant.cxx
+ /content/root_src_37/core/meta/src/TEnumConstant.cxx
  ginclude/RConfigure.h
 core/meta/CMakeFiles/Meta.dir/src/TFunction.cxx.o
  ../core/base/inc/Bytes.h
@@ -515,7 +515,7 @@ core/meta/CMakeFiles/Meta.dir/src/TFunction.cxx.o
  ../core/meta/inc/TMethodArg.h
  ../core/meta/inc/TSchemaHelper.h
  ../core/meta/inc/TVirtualIsAProxy.h
- /content/root_src/core/meta/src/TFunction.cxx
+ /content/root_src_37/core/meta/src/TFunction.cxx
  ginclude/RConfigure.h
 core/meta/CMakeFiles/Meta.dir/src/TFunctionTemplate.cxx.o
  ../core/base/inc/Bytes.h
@@ -559,7 +559,7 @@ core/meta/CMakeFiles/Meta.dir/src/TFunctionTemplate.cxx.o
  ../core/meta/inc/TIsAProxy.h
  ../core/meta/inc/TSchemaHelper.h
  ../core/meta/inc/TVirtualIsAProxy.h
- /content/root_src/core/meta/src/TFunctionTemplate.cxx
+ /content/root_src_37/core/meta/src/TFunctionTemplate.cxx
  ginclude/RConfigure.h
 core/meta/CMakeFiles/Meta.dir/src/TGenericClassInfo.cxx.o
  ../core/base/inc/Bytes.h
@@ -614,7 +614,7 @@ core/meta/CMakeFiles/Meta.dir/src/TGenericClassInfo.cxx.o
  ../core/meta/inc/TStreamer.h
  ../core/meta/inc/TVirtualIsAProxy.h
  ../core/meta/inc/TVirtualStreamerInfo.h
- /content/root_src/core/meta/src/TGenericClassInfo.cxx
+ /content/root_src_37/core/meta/src/TGenericClassInfo.cxx
  ginclude/RConfigure.h
 core/meta/CMakeFiles/Meta.dir/src/TGlobal.cxx.o
  ../core/base/inc/Bytes.h
@@ -658,7 +658,7 @@ core/meta/CMakeFiles/Meta.dir/src/TGlobal.cxx.o
  ../core/meta/inc/TIsAProxy.h
  ../core/meta/inc/TSchemaHelper.h
  ../core/meta/inc/TVirtualIsAProxy.h
- /content/root_src/core/meta/src/TGlobal.cxx
+ /content/root_src_37/core/meta/src/TGlobal.cxx
  ginclude/RConfigure.h
 core/meta/CMakeFiles/Meta.dir/src/TInterpreter.cxx.o
  ../core/base/inc/Bytes.h
@@ -703,7 +703,7 @@ core/meta/CMakeFiles/Meta.dir/src/TInterpreter.cxx.o
  ../core/meta/inc/TIsAProxy.h
  ../core/meta/inc/TSchemaHelper.h
  ../core/meta/inc/TVirtualIsAProxy.h
- /content/root_src/core/meta/src/TInterpreter.cxx
+ /content/root_src_37/core/meta/src/TInterpreter.cxx
  ginclude/RConfigure.h
 core/meta/CMakeFiles/Meta.dir/src/TIsAProxy.cxx.o
  ../core/base/inc/DllImport.h
@@ -740,7 +740,7 @@ core/meta/CMakeFiles/Meta.dir/src/TIsAProxy.cxx.o
  ../core/meta/inc/TIsAProxy.h
  ../core/meta/inc/TSchemaHelper.h
  ../core/meta/inc/TVirtualIsAProxy.h
- /content/root_src/core/meta/src/TIsAProxy.cxx
+ /content/root_src_37/core/meta/src/TIsAProxy.cxx
  ginclude/RConfigure.h
 core/meta/CMakeFiles/Meta.dir/src/TListOfDataMembers.cxx.o
  ../core/base/inc/Bytes.h
@@ -788,7 +788,7 @@ core/meta/CMakeFiles/Meta.dir/src/TListOfDataMembers.cxx.o
  ../core/meta/inc/TListOfDataMembers.h
  ../core/meta/inc/TSchemaHelper.h
  ../core/meta/inc/TVirtualIsAProxy.h
- /content/root_src/core/meta/src/TListOfDataMembers.cxx
+ /content/root_src_37/core/meta/src/TListOfDataMembers.cxx
  ginclude/RConfigure.h
 core/meta/CMakeFiles/Meta.dir/src/TListOfEnums.cxx.o
  ../core/base/inc/DllImport.h
@@ -830,7 +830,7 @@ core/meta/CMakeFiles/Meta.dir/src/TListOfEnums.cxx.o
  ../core/meta/inc/TListOfEnums.h
  ../core/meta/inc/TSchemaHelper.h
  ../core/meta/inc/TVirtualIsAProxy.h
- /content/root_src/core/meta/src/TListOfEnums.cxx
+ /content/root_src_37/core/meta/src/TListOfEnums.cxx
  ginclude/RConfigure.h
 core/meta/CMakeFiles/Meta.dir/src/TListOfEnumsWithLock.cxx.o
  ../core/base/inc/DllImport.h
@@ -873,7 +873,7 @@ core/meta/CMakeFiles/Meta.dir/src/TListOfEnumsWithLock.cxx.o
  ../core/meta/inc/TListOfEnumsWithLock.h
  ../core/meta/inc/TSchemaHelper.h
  ../core/meta/inc/TVirtualIsAProxy.h
- /content/root_src/core/meta/src/TListOfEnumsWithLock.cxx
+ /content/root_src_37/core/meta/src/TListOfEnumsWithLock.cxx
  ginclude/RConfigure.h
 core/meta/CMakeFiles/Meta.dir/src/TListOfFunctionTemplates.cxx.o
  ../core/base/inc/DllImport.h
@@ -917,7 +917,7 @@ core/meta/CMakeFiles/Meta.dir/src/TListOfFunctionTemplates.cxx.o
  ../core/meta/inc/TMethod.h
  ../core/meta/inc/TSchemaHelper.h
  ../core/meta/inc/TVirtualIsAProxy.h
- /content/root_src/core/meta/src/TListOfFunctionTemplates.cxx
+ /content/root_src_37/core/meta/src/TListOfFunctionTemplates.cxx
  ginclude/RConfigure.h
 core/meta/CMakeFiles/Meta.dir/src/TListOfFunctions.cxx.o
  ../core/base/inc/DllImport.h
@@ -960,7 +960,7 @@ core/meta/CMakeFiles/Meta.dir/src/TListOfFunctions.cxx.o
  ../core/meta/inc/TMethod.h
  ../core/meta/inc/TSchemaHelper.h
  ../core/meta/inc/TVirtualIsAProxy.h
- /content/root_src/core/meta/src/TListOfFunctions.cxx
+ /content/root_src_37/core/meta/src/TListOfFunctions.cxx
  ginclude/RConfigure.h
 core/meta/CMakeFiles/Meta.dir/src/TMethod.cxx.o
  ../core/base/inc/Bytes.h
@@ -1014,7 +1014,7 @@ core/meta/CMakeFiles/Meta.dir/src/TMethod.cxx.o
  ../core/meta/inc/TMethodCall.h
  ../core/meta/inc/TSchemaHelper.h
  ../core/meta/inc/TVirtualIsAProxy.h
- /content/root_src/core/meta/src/TMethod.cxx
+ /content/root_src_37/core/meta/src/TMethod.cxx
  ginclude/RConfigure.h
 core/meta/CMakeFiles/Meta.dir/src/TMethodArg.cxx.o
  ../core/base/inc/Bytes.h
@@ -1063,7 +1063,7 @@ core/meta/CMakeFiles/Meta.dir/src/TMethodArg.cxx.o
  ../core/meta/inc/TMethodCall.h
  ../core/meta/inc/TSchemaHelper.h
  ../core/meta/inc/TVirtualIsAProxy.h
- /content/root_src/core/meta/src/TMethodArg.cxx
+ /content/root_src_37/core/meta/src/TMethodArg.cxx
  ginclude/RConfigure.h
 core/meta/CMakeFiles/Meta.dir/src/TMethodCall.cxx.o
  ../core/base/inc/Bytes.h
@@ -1111,7 +1111,7 @@ core/meta/CMakeFiles/Meta.dir/src/TMethodCall.cxx.o
  ../core/meta/inc/TMethodCall.h
  ../core/meta/inc/TSchemaHelper.h
  ../core/meta/inc/TVirtualIsAProxy.h
- /content/root_src/core/meta/src/TMethodCall.cxx
+ /content/root_src_37/core/meta/src/TMethodCall.cxx
  ginclude/RConfigure.h
 core/meta/CMakeFiles/Meta.dir/src/TProtoClass.cxx.o
  ../core/base/inc/DllImport.h
@@ -1136,6 +1136,7 @@ core/meta/CMakeFiles/Meta.dir/src/TProtoClass.cxx.o
  ../core/cont/inc/TList.h
  ../core/cont/inc/TObjArray.h
  ../core/cont/inc/TSeqCollection.h
+ ../core/cont/inc/TVirtualCollectionProxy.h
  ../core/foundation/inc/ESTLType.h
  ../core/foundation/inc/ROOT/RStringView.hxx
  ../core/foundation/inc/ROOT/RWrap_libcpp_string_view.h
@@ -1159,7 +1160,7 @@ core/meta/CMakeFiles/Meta.dir/src/TProtoClass.cxx.o
  ../core/meta/inc/TRealData.h
  ../core/meta/inc/TSchemaHelper.h
  ../core/meta/inc/TVirtualIsAProxy.h
- /content/root_src/core/meta/src/TProtoClass.cxx
+ /content/root_src_37/core/meta/src/TProtoClass.cxx
  ginclude/RConfigure.h
 core/meta/CMakeFiles/Meta.dir/src/TRealData.cxx.o
  ../core/base/inc/DllImport.h
@@ -1199,7 +1200,7 @@ core/meta/CMakeFiles/Meta.dir/src/TRealData.cxx.o
  ../core/meta/inc/TSchemaHelper.h
  ../core/meta/inc/TStreamer.h
  ../core/meta/inc/TVirtualIsAProxy.h
- /content/root_src/core/meta/src/TRealData.cxx
+ /content/root_src_37/core/meta/src/TRealData.cxx
  ginclude/RConfigure.h
 core/meta/CMakeFiles/Meta.dir/src/TSchemaRule.cxx.o
  ../core/base/inc/Bytes.h
@@ -1247,7 +1248,7 @@ core/meta/CMakeFiles/Meta.dir/src/TSchemaRule.cxx.o
  ../core/meta/inc/TSchemaHelper.h
  ../core/meta/inc/TSchemaRule.h
  ../core/meta/inc/TVirtualIsAProxy.h
- /content/root_src/core/meta/src/TSchemaRule.cxx
+ /content/root_src_37/core/meta/src/TSchemaRule.cxx
  ginclude/RConfigure.h
 core/meta/CMakeFiles/Meta.dir/src/TSchemaRuleSet.cxx.o
  ../core/base/inc/Bytes.h
@@ -1299,7 +1300,7 @@ core/meta/CMakeFiles/Meta.dir/src/TSchemaRuleSet.cxx.o
  ../core/meta/inc/TStreamerElement.h
  ../core/meta/inc/TVirtualIsAProxy.h
  ../core/meta/inc/TVirtualStreamerInfo.h
- /content/root_src/core/meta/src/TSchemaRuleSet.cxx
+ /content/root_src_37/core/meta/src/TSchemaRuleSet.cxx
  ginclude/RConfigure.h
 core/meta/CMakeFiles/Meta.dir/src/TStatusBitsChecker.cxx.o
  ../core/base/inc/DllImport.h
@@ -1343,7 +1344,7 @@ core/meta/CMakeFiles/Meta.dir/src/TStatusBitsChecker.cxx.o
  ../core/meta/inc/TSchemaHelper.h
  ../core/meta/inc/TStatusBitsChecker.h
  ../core/meta/inc/TVirtualIsAProxy.h
- /content/root_src/core/meta/src/TStatusBitsChecker.cxx
+ /content/root_src_37/core/meta/src/TStatusBitsChecker.cxx
  ginclude/RConfigure.h
 core/meta/CMakeFiles/Meta.dir/src/TStreamerElement.cxx.o
  ../core/base/inc/Bytes.h
@@ -1400,7 +1401,7 @@ core/meta/CMakeFiles/Meta.dir/src/TStreamerElement.cxx.o
  ../core/meta/inc/TVirtualIsAProxy.h
  ../core/meta/inc/TVirtualStreamerInfo.h
  ../core/thread/inc/ThreadLocalStorage.h
- /content/root_src/core/meta/src/TStreamerElement.cxx
+ /content/root_src_37/core/meta/src/TStreamerElement.cxx
  ginclude/RConfigure.h
 core/meta/CMakeFiles/Meta.dir/src/TViewPubDataMembers.cxx.o
  ../core/base/inc/DllImport.h
@@ -1438,8 +1439,8 @@ core/meta/CMakeFiles/Meta.dir/src/TViewPubDataMembers.cxx.o
  ../core/meta/inc/TIsAProxy.h
  ../core/meta/inc/TSchemaHelper.h
  ../core/meta/inc/TVirtualIsAProxy.h
- /content/root_src/core/meta/src/TViewPubDataMembers.cxx
- /content/root_src/core/meta/src/TViewPubDataMembers.h
+ /content/root_src_37/core/meta/src/TViewPubDataMembers.cxx
+ /content/root_src_37/core/meta/src/TViewPubDataMembers.h
  ginclude/RConfigure.h
 core/meta/CMakeFiles/Meta.dir/src/TViewPubFunctions.cxx.o
  ../core/base/inc/DllImport.h
@@ -1478,8 +1479,8 @@ core/meta/CMakeFiles/Meta.dir/src/TViewPubFunctions.cxx.o
  ../core/meta/inc/TIsAProxy.h
  ../core/meta/inc/TSchemaHelper.h
  ../core/meta/inc/TVirtualIsAProxy.h
- /content/root_src/core/meta/src/TViewPubFunctions.cxx
- /content/root_src/core/meta/src/TViewPubFunctions.h
+ /content/root_src_37/core/meta/src/TViewPubFunctions.cxx
+ /content/root_src_37/core/meta/src/TViewPubFunctions.h
  ginclude/RConfigure.h
 core/meta/CMakeFiles/Meta.dir/src/TVirtualStreamerInfo.cxx.o
  ../core/base/inc/Bytes.h
@@ -1536,5 +1537,5 @@ core/meta/CMakeFiles/Meta.dir/src/TVirtualStreamerInfo.cxx.o
  ../core/meta/inc/TStreamerElement.h
  ../core/meta/inc/TVirtualIsAProxy.h
  ../core/meta/inc/TVirtualStreamerInfo.h
- /content/root_src/core/meta/src/TVirtualStreamerInfo.cxx
+ /content/root_src_37/core/meta/src/TVirtualStreamerInfo.cxx
  ginclude/RConfigure.h

@@ -3,7 +3,7 @@
 
 core/foundation/CMakeFiles/Foundation.dir/src/FoundationUtils.cxx.o
  ../core/foundation/res/ROOT/FoundationUtils.hxx
- /content/root_src/core/foundation/src/FoundationUtils.cxx
+ /content/root_src_37/core/foundation/src/FoundationUtils.cxx
  ginclude/RConfigure.h
 core/foundation/CMakeFiles/Foundation.dir/src/RConversionRuleParser.cxx.o
  ../core/base/inc/DllImport.h
@@ -18,7 +18,7 @@ core/foundation/CMakeFiles/Foundation.dir/src/RConversionRuleParser.cxx.o
  ../core/foundation/res/RConversionRuleParser.h
  ../core/foundation/res/TSchemaRuleProcessor.h
  ../core/foundation/res/TSchemaType.h
- /content/root_src/core/foundation/src/RConversionRuleParser.cxx
+ /content/root_src_37/core/foundation/src/RConversionRuleParser.cxx
  ginclude/RConfigure.h
 core/foundation/CMakeFiles/Foundation.dir/src/TClassEdit.cxx.o
  ../core/base/inc/ROOT/RConfig.hxx
@@ -29,5 +29,5 @@ core/foundation/CMakeFiles/Foundation.dir/src/TClassEdit.cxx.o
  ../core/foundation/inc/ROOT/RWrap_libcpp_string_view.h
  ../core/foundation/inc/ROOT/libcpp_string_view.h
  ../core/foundation/inc/TClassEdit.h
- /content/root_src/core/foundation/src/TClassEdit.cxx
+ /content/root_src_37/core/foundation/src/TClassEdit.cxx
  ginclude/RConfigure.h

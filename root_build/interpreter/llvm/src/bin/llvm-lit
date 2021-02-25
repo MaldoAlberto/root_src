@@ -4,8 +4,8 @@ import os
 import sys
 
 # Variables configured at build time.
-llvm_source_root = "/content/root_src/interpreter/llvm/src"
-llvm_obj_root = "/content/root_src/root_build/interpreter/llvm/src"
+llvm_source_root = "/content/root_src_37/interpreter/llvm/src"
+llvm_obj_root = "/content/root_src_37/root_build/interpreter/llvm/src"
 
 # Make sure we can find the lit package.
 sys.path.insert(0, os.path.join(llvm_source_root, 'utils', 'lit'))

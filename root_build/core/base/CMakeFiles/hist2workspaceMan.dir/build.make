@@ -43,10 +43,10 @@ RM = /usr/local/lib/python2.7/dist-packages/cmake/data/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /content/root_src
+CMAKE_SOURCE_DIR = /content/root_src_37
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /content/root_src/root_build
+CMAKE_BINARY_DIR = /content/root_src_37/root_build
 
 # Utility rule file for hist2workspaceMan.
 
@@ -58,8 +58,8 @@ core/base/CMakeFiles/hist2workspaceMan: man/hist2workspace.1
 
 man/hist2workspace.1: ../build/misc/argparse2help.py
 man/hist2workspace.1: ../roofit/histfactory/src/hist2workspace-argparse.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/content/root_src/root_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating ../../man/hist2workspace.1"
-	cd /content/root_src/root_build/core/base && /usr/bin/python3.6 -B /content/root_src/build/misc/argparse2help.py /content/root_src/roofit/histfactory/src/hist2workspace-argparse.py /content/root_src/root_build/man/hist2workspace.1
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/content/root_src_37/root_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating ../../man/hist2workspace.1"
+	cd /content/root_src_37/root_build/core/base && /usr/bin/python3.7 -B /content/root_src_37/build/misc/argparse2help.py /content/root_src_37/roofit/histfactory/src/hist2workspace-argparse.py /content/root_src_37/root_build/man/hist2workspace.1
 
 hist2workspaceMan: core/base/CMakeFiles/hist2workspaceMan
 hist2workspaceMan: man/hist2workspace.1
@@ -73,10 +73,10 @@ core/base/CMakeFiles/hist2workspaceMan.dir/build: hist2workspaceMan
 .PHONY : core/base/CMakeFiles/hist2workspaceMan.dir/build
 
 core/base/CMakeFiles/hist2workspaceMan.dir/clean:
-	cd /content/root_src/root_build/core/base && $(CMAKE_COMMAND) -P CMakeFiles/hist2workspaceMan.dir/cmake_clean.cmake
+	cd /content/root_src_37/root_build/core/base && $(CMAKE_COMMAND) -P CMakeFiles/hist2workspaceMan.dir/cmake_clean.cmake
 .PHONY : core/base/CMakeFiles/hist2workspaceMan.dir/clean
 
 core/base/CMakeFiles/hist2workspaceMan.dir/depend:
-	cd /content/root_src/root_build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /content/root_src /content/root_src/core/base /content/root_src/root_build /content/root_src/root_build/core/base /content/root_src/root_build/core/base/CMakeFiles/hist2workspaceMan.dir/DependInfo.cmake --color=$(COLOR)
+	cd /content/root_src_37/root_build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /content/root_src_37 /content/root_src_37/core/base /content/root_src_37/root_build /content/root_src_37/root_build/core/base /content/root_src_37/root_build/core/base/CMakeFiles/hist2workspaceMan.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : core/base/CMakeFiles/hist2workspaceMan.dir/depend
 

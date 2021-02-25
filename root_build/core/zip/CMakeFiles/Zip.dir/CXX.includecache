@@ -112,31 +112,31 @@ Compression.h
 
 ../core/zstd/inc/ZipZSTD.h
 
-/content/root_src/core/zip/src/Bits.h
+/content/root_src_37/core/zip/src/Bits.h
 ZIP.h
-/content/root_src/core/zip/src/ZIP.h
+/content/root_src_37/core/zip/src/ZIP.h
 
-/content/root_src/core/zip/src/Compression.cxx
+/content/root_src_37/core/zip/src/Compression.cxx
 Compression.h
-/content/root_src/core/zip/src/Compression.h
+/content/root_src_37/core/zip/src/Compression.h
 
-/content/root_src/core/zip/src/RZip.cxx
+/content/root_src_37/core/zip/src/RZip.cxx
 Compression.h
-/content/root_src/core/zip/src/Compression.h
+/content/root_src_37/core/zip/src/Compression.h
 RConfigure.h
-/content/root_src/core/zip/src/RConfigure.h
+/content/root_src_37/core/zip/src/RConfigure.h
 RZip.h
-/content/root_src/core/zip/src/RZip.h
+/content/root_src_37/core/zip/src/RZip.h
 Bits.h
-/content/root_src/core/zip/src/Bits.h
+/content/root_src_37/core/zip/src/Bits.h
 ZipLZMA.h
-/content/root_src/core/zip/src/ZipLZMA.h
+/content/root_src_37/core/zip/src/ZipLZMA.h
 ZipLZ4.h
-/content/root_src/core/zip/src/ZipLZ4.h
+/content/root_src_37/core/zip/src/ZipLZ4.h
 ZipZSTD.h
-/content/root_src/core/zip/src/ZipZSTD.h
+/content/root_src_37/core/zip/src/ZipZSTD.h
 zlib.h
-/content/root_src/core/zip/src/zlib.h
+/content/root_src_37/core/zip/src/zlib.h
 stdio.h
 -
 assert.h
@@ -144,7 +144,7 @@ assert.h
 iostream
 -
 
-/content/root_src/core/zip/src/Tailor.h
+/content/root_src_37/core/zip/src/Tailor.h
 alloc.h
 -
 malloc.h
@@ -180,7 +180,7 @@ LoMem.h
 Pascal.h
 -
 macstat.h
-/content/root_src/core/zip/src/macstat.h
+/content/root_src_37/core/zip/src/macstat.h
 stddef.h
 -
 stat.h
@@ -194,7 +194,7 @@ sys/types.h
 sys/stat.h
 -
 amiga/z-stat.h
-/content/root_src/core/zip/src/amiga/z-stat.h
+/content/root_src_37/core/zip/src/amiga/z-stat.h
 sys/types.h
 -
 sys/stat.h
@@ -202,9 +202,9 @@ sys/stat.h
 sys/xglob.h
 -
 
-/content/root_src/core/zip/src/ZIP.h
+/content/root_src_37/core/zip/src/ZIP.h
 Tailor.h
-/content/root_src/core/zip/src/Tailor.h
+/content/root_src_37/core/zip/src/Tailor.h
 
 ginclude/RConfigure.h
 

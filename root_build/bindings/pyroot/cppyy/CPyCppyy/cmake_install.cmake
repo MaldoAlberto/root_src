@@ -1,8 +1,8 @@
-# Install script for directory: /content/root_src/bindings/pyroot/cppyy/CPyCppyy
+# Install script for directory: /content/root_src_37/bindings/pyroot/cppyy/CPyCppyy
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/content/root_src/root_install")
+  set(CMAKE_INSTALL_PREFIX "/content/root_src_37/root_install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,21 +38,21 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xlibrariesx" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libcppyy3_6.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libcppyy3_6.so")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libcppyy3_7.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libcppyy3_7.so")
     file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libcppyy3_6.so"
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libcppyy3_7.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/content/root_src/root_build/lib/libcppyy3_6.so")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libcppyy3_6.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libcppyy3_6.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/content/root_src_37/root_build/lib/libcppyy3_7.so")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libcppyy3_7.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libcppyy3_7.so")
     file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libcppyy3_6.so"
-         OLD_RPATH "/content/root_src/root_build/lib:"
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libcppyy3_7.so"
+         OLD_RPATH "/content/root_src_37/root_build/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libcppyy3_6.so")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libcppyy3_7.so")
     endif()
   endif()
 endif()
@@ -62,11 +62,11 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/CPyCppyy" TYPE FILE FILES
-    "/content/root_src/bindings/pyroot/cppyy/CPyCppyy/inc/CPyCppyy/API.h"
-    "/content/root_src/bindings/pyroot/cppyy/CPyCppyy/inc/CPyCppyy/PyResult.h"
-    "/content/root_src/bindings/pyroot/cppyy/CPyCppyy/inc/CPyCppyy/CommonDefs.h"
-    "/content/root_src/bindings/pyroot/cppyy/CPyCppyy/inc/CPyCppyy/PyException.h"
-    "/content/root_src/bindings/pyroot/cppyy/CPyCppyy/inc/CPyCppyy/DispatchPtr.h"
+    "/content/root_src_37/bindings/pyroot/cppyy/CPyCppyy/inc/CPyCppyy/API.h"
+    "/content/root_src_37/bindings/pyroot/cppyy/CPyCppyy/inc/CPyCppyy/PyResult.h"
+    "/content/root_src_37/bindings/pyroot/cppyy/CPyCppyy/inc/CPyCppyy/CommonDefs.h"
+    "/content/root_src_37/bindings/pyroot/cppyy/CPyCppyy/inc/CPyCppyy/PyException.h"
+    "/content/root_src_37/bindings/pyroot/cppyy/CPyCppyy/inc/CPyCppyy/DispatchPtr.h"
     )
 endif()
 

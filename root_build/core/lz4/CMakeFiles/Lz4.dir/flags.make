@@ -6,5 +6,5 @@ CXX_FLAGS =  -std=c++11 -Wno-implicit-fallthrough -Wno-noexcept-type -pipe  -Wsh
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/content/root_src/core/lz4/inc -I/content/root_src/builtins/lz4 -I/content/root_src/builtins/xxhash -I/content/root_src/core/base/inc -I/content/root_src/root_build/ginclude 
+CXX_INCLUDES = -I/content/root_src_37/core/lz4/inc -I/content/root_src_37/builtins/lz4 -I/content/root_src_37/builtins/xxhash -I/content/root_src_37/core/base/inc -I/content/root_src_37/root_build/ginclude 
 

@@ -1,13 +1,12 @@
 #include "ROOT/TThreadExecutor.hxx"
-#include "ROOT/TTaskGroup.hxx"
-
+#include "ROpaqueTaskArena.hxx"
 #if !defined(_MSC_VER)
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wshadow"
 #endif
-
 #include "tbb/tbb.h"
-
+#define TBB_PREVIEW_GLOBAL_CONTROL 1 // required for TBB versions preceding 2019_U4
+#include "tbb/global_control.h"
 #if !defined(_MSC_VER)
 #pragma GCC diagnostic pop
 #endif
@@ -119,57 +118,71 @@ static T ParallelReduceHelper(const std::vector<T> &objs, const std::function<T(
 
    BRange_t objRange(objs.begin(), objs.end());
 
-   return tbb::this_task_arena::isolate([&]{
+   return tbb::this_task_arena::isolate([&] {
       return tbb::parallel_reduce(objRange, T{}, pred, redfunc);
    });
 
 }
 
 } // End NS Internal
-} // End NS ROOT
 
-namespace ROOT {
+//////////////////////////////////////////////////////////////////////////
+/// Class constructor.
+/// If the scheduler is active (e.g. because another TThreadExecutor is in flight, or ROOT::EnableImplicitMT() was
+/// called), work with the current pool of threads.
+/// If not, initialize the pool of threads, spawning nThreads. nThreads' default value, 0, initializes the
+/// pool with as many logical threads as are available in the system (see NLogicalCores in RTaskArenaWrapper.cxx).
+///
+/// At construction time, TThreadExecutor automatically enables ROOT's thread-safety locks as per calling
+/// ROOT::EnableThreadSafety().
+TThreadExecutor::TThreadExecutor(UInt_t nThreads)
+{
+   fTaskArenaW = ROOT::Internal::GetGlobalTaskArena(nThreads);
+}
 
-   //////////////////////////////////////////////////////////////////////////
-   /// Class constructor.
-   /// If the scheduler is active (e.g. because another TThreadExecutor is in flight, or ROOT::EnableImplicitMT() was
-   /// called), work with the current pool of threads.
-   /// If not, initialize the pool of threads, spawning nThreads. nThreads' default value, 0, initializes the
-   /// pool with as many logical threads as are available in the system (see NLogicalCores in TPoolManager.cxx).
-   ///
-   /// At construction time, TThreadExecutor automatically enables ROOT's thread-safety locks as per calling
-   /// ROOT::EnableThreadSafety().
-   TThreadExecutor::TThreadExecutor(UInt_t nThreads)
-   {
-      ROOT::EnableThreadSafety();
-
-      auto current = ROOT::Internal::TPoolManager::GetPoolSize();
-      if (nThreads && current && (current != nThreads))
-      {
-         Warning("TThreadExecutor", "There's already an active pool of threads. Proceeding with the current %d threads", current);
-      }
-      fSched = ROOT::Internal::GetPoolManager(nThreads);
+void TThreadExecutor::ParallelFor(unsigned int start, unsigned int end, unsigned step,
+                                  const std::function<void(unsigned int i)> &f)
+{
+   if (GetPoolSize() > tbb::global_control::active_value(tbb::global_control::max_allowed_parallelism)) {
+      Warning("TThreadExecutor::ParallelFor",
+              "tbb::global_control is limiting the number of parallel workers."
+              " Proceeding with %zu threads this time",
+              tbb::global_control::active_value(tbb::global_control::max_allowed_parallelism));
    }
-
-   void TThreadExecutor::ParallelFor(unsigned int start, unsigned int end, unsigned step, const std::function<void(unsigned int i)> &f)
-   {
-      tbb::this_task_arena::isolate([&]{
+   fTaskArenaW->Access().execute([&] {
+      tbb::this_task_arena::isolate([&] {
          tbb::parallel_for(start, end, step, f);
       });
-   }
-
-   double TThreadExecutor::ParallelReduce(const std::vector<double> &objs, const std::function<double(double a, double b)> &redfunc)
-   {
-      return ROOT::Internal::ParallelReduceHelper<double>(objs, redfunc);
-   }
-
-   float TThreadExecutor::ParallelReduce(const std::vector<float> &objs, const std::function<float(float a, float b)> &redfunc)
-   {
-      return ROOT::Internal::ParallelReduceHelper<float>(objs, redfunc);
-   }
-
-   unsigned TThreadExecutor::GetPoolSize(){
-      return ROOT::Internal::TPoolManager::GetPoolSize();
-   }
-
+   });
 }
+
+double TThreadExecutor::ParallelReduce(const std::vector<double> &objs,
+                                       const std::function<double(double a, double b)> &redfunc)
+{
+   if (GetPoolSize() > tbb::global_control::active_value(tbb::global_control::max_allowed_parallelism)) {
+      Warning("TThreadExecutor::ParallelReduce",
+              "tbb::global_control is limiting the number of parallel workers."
+              " Proceeding with %zu threads this time",
+              tbb::global_control::active_value(tbb::global_control::max_allowed_parallelism));
+   }
+   return fTaskArenaW->Access().execute([&] { return ROOT::Internal::ParallelReduceHelper<double>(objs, redfunc); });
+}
+
+float TThreadExecutor::ParallelReduce(const std::vector<float> &objs,
+                                      const std::function<float(float a, float b)> &redfunc)
+{
+   if (GetPoolSize() > tbb::global_control::active_value(tbb::global_control::max_allowed_parallelism)) {
+      Warning("TThreadExecutor::ParallelReduce",
+              "tbb::global_control is limiting the number of parallel workers."
+              " Proceeding with %zu threads this time",
+              tbb::global_control::active_value(tbb::global_control::max_allowed_parallelism));
+   }
+   return fTaskArenaW->Access().execute([&] { return ROOT::Internal::ParallelReduceHelper<float>(objs, redfunc); });
+}
+
+unsigned TThreadExecutor::GetPoolSize()
+{
+   return fTaskArenaW->TaskArenaSize();
+}
+
+} // namespace ROOT

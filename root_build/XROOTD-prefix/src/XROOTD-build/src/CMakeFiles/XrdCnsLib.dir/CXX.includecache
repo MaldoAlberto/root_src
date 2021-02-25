@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/./XrdCns/XrdCnsLog.hh
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/./XrdCns/XrdCnsLog.hh
 XrdOuc/XrdOucNSWalk.hh
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/./XrdCns/XrdOuc/XrdOucNSWalk.hh
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/./XrdCns/XrdOuc/XrdOucNSWalk.hh
 
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/./XrdCns/XrdCnsLogRec.hh
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/./XrdCns/XrdCnsLogRec.hh
 stddef.h
 -
 stdio.h
@@ -24,21 +24,21 @@ sys/param.h
 sys/types.h
 -
 XrdSys/XrdSysPlatform.hh
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/./XrdCns/XrdSys/XrdSysPlatform.hh
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/./XrdCns/XrdSys/XrdSysPlatform.hh
 XrdSys/XrdSysPthread.hh
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/./XrdCns/XrdSys/XrdSysPthread.hh
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/./XrdCns/XrdSys/XrdSysPthread.hh
 
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/./XrdCns/XrdCnsXref.hh
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/./XrdCns/XrdCnsXref.hh
 XrdOuc/XrdOucHash.hh
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/./XrdCns/XrdOuc/XrdOucHash.hh
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/./XrdCns/XrdOuc/XrdOucHash.hh
 XrdSys/XrdSysPthread.hh
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/./XrdCns/XrdSys/XrdSysPthread.hh
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/./XrdCns/XrdSys/XrdSysPthread.hh
 
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/./XrdNet/XrdNetAddr.hh
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/./XrdNet/XrdNetAddr.hh
 XrdNet/XrdNetAddrInfo.hh
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/./XrdNet/XrdNet/XrdNetAddrInfo.hh
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/./XrdNet/XrdNet/XrdNetAddrInfo.hh
 
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/./XrdNet/XrdNetAddrInfo.hh
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/./XrdNet/XrdNetAddrInfo.hh
 inttypes.h
 -
 stdlib.h
@@ -52,17 +52,17 @@ sys/socket.h
 sys/un.h
 -
 XrdNet/XrdNetSockAddr.hh
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/./XrdNet/XrdNet/XrdNetSockAddr.hh
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/./XrdNet/XrdNet/XrdNetSockAddr.hh
 XrdSys/XrdSysPlatform.hh
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/./XrdNet/XrdSys/XrdSysPlatform.hh
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/./XrdNet/XrdSys/XrdSysPlatform.hh
 
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/./XrdNet/XrdNetSockAddr.hh
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/./XrdNet/XrdNetSockAddr.hh
 sys/socket.h
 -
 netinet/in.h
 -
 
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/./XrdOuc/XrdOucHash.hh
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/./XrdOuc/XrdOucHash.hh
 stdlib.h
 -
 sys/types.h
@@ -72,15 +72,15 @@ string.h
 time.h
 -
 XrdOuc/XrdOucHash.icc
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/./XrdOuc/XrdOuc/XrdOucHash.icc
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/./XrdOuc/XrdOuc/XrdOucHash.icc
 
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/./XrdOuc/XrdOucHash.icc
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/./XrdOuc/XrdOucHash.icc
 errno.h
 -
 string.h
 -
 
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/./XrdOuc/XrdOucNSWalk.hh
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/./XrdOuc/XrdOucNSWalk.hh
 stdlib.h
 -
 fcntl.h
@@ -90,7 +90,7 @@ sys/types.h
 sys/stat.h
 -
 
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/./XrdOuc/XrdOucTList.hh
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/./XrdOuc/XrdOucTList.hh
 stdlib.h
 -
 string.h
@@ -98,7 +98,7 @@ string.h
 strings.h
 -
 
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/./XrdSys/XrdSysError.hh
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/./XrdSys/XrdSysError.hh
 stdlib.h
 -
 unistd.h
@@ -110,7 +110,7 @@ strings.h
 string.h
 -
 
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/./XrdSys/XrdSysPlatform.hh
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/./XrdSys/XrdSysPlatform.hh
 stdlib.h
 -
 memory.h
@@ -134,11 +134,11 @@ AvailabilityMacros.h
 features.h
 -
 XrdSys/XrdWin32.hh
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/./XrdSys/XrdSys/XrdWin32.hh
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/./XrdSys/XrdSys/XrdWin32.hh
 sys/param.h
 -
 
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/./XrdSys/XrdSysPthread.hh
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/./XrdSys/XrdSysPthread.hh
 errno.h
 -
 pthread.h
@@ -154,9 +154,9 @@ mach/clock.h
 mach/mach.h
 -
 XrdSys/XrdSysError.hh
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/./XrdSys/XrdSys/XrdSysError.hh
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/./XrdSys/XrdSys/XrdSysError.hh
 
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/./XrdSys/XrdSysTimer.hh
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/./XrdSys/XrdSysTimer.hh
 sys/time.h
 -
 time.h
@@ -164,9 +164,9 @@ time.h
 Winsock2.h
 -
 XrdSys/XrdWin32.hh
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/./XrdSys/XrdSys/XrdWin32.hh
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/./XrdSys/XrdSys/XrdWin32.hh
 
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/XrdCns/XrdCnsLog.cc
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/XrdCns/XrdCnsLog.cc
 errno.h
 -
 unistd.h
@@ -180,15 +180,15 @@ sys/types.h
 sys/stat.h
 -
 XrdCns/XrdCnsLog.hh
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/XrdCns/XrdCns/XrdCnsLog.hh
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/XrdCns/XrdCns/XrdCnsLog.hh
 XrdCns/XrdCnsLogRec.hh
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/XrdCns/XrdCns/XrdCnsLogRec.hh
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/XrdCns/XrdCns/XrdCnsLogRec.hh
 XrdNet/XrdNetAddr.hh
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/XrdCns/XrdNet/XrdNetAddr.hh
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/XrdCns/XrdNet/XrdNetAddr.hh
 XrdOuc/XrdOucTList.hh
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/XrdCns/XrdOuc/XrdOucTList.hh
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/XrdCns/XrdOuc/XrdOucTList.hh
 
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/XrdCns/XrdCnsLogRec.cc
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/XrdCns/XrdCnsLogRec.cc
 stdlib.h
 -
 stdio.h
@@ -200,13 +200,13 @@ sys/types.h
 time.h
 -
 XrdCns/XrdCnsLogRec.hh
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/XrdCns/XrdCns/XrdCnsLogRec.hh
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/XrdCns/XrdCns/XrdCnsLogRec.hh
 XrdSys/XrdSysTimer.hh
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/XrdCns/XrdSys/XrdSysTimer.hh
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/XrdCns/XrdSys/XrdSysTimer.hh
 
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/XrdCns/XrdCnsXref.cc
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/XrdCns/XrdCnsXref.cc
 XrdCns/XrdCnsXref.hh
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/XrdCns/XrdCns/XrdCnsXref.hh
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/XrdCns/XrdCns/XrdCnsXref.hh
 
 /usr/include/x86_64-linux-gnu/asm/param.h
 asm-generic/param.h

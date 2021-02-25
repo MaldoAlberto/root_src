@@ -54,5 +54,5 @@ main/CMakeFiles/roots.exe.dir/src/roots.cxx.o
  ../core/meta/inc/TMethodCall.h
  ../core/meta/inc/TSchemaHelper.h
  ../core/meta/inc/TVirtualIsAProxy.h
- /content/root_src/main/src/roots.cxx
+ /content/root_src_37/main/src/roots.cxx
  ginclude/RConfigure.h

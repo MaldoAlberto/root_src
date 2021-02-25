@@ -46,7 +46,7 @@ GL/glew.h
 windows.h
 -
 
-/content/root_src/builtins/glew/src/glew.c
+/content/root_src_37/builtins/glew/src/glew.c
 GL/glew.h
 -
 GL/osmesa.h

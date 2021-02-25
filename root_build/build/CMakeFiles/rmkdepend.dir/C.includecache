@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/content/root_src/build/rmkdepend/cppsetup.c
+/content/root_src_37/build/rmkdepend/cppsetup.c
 def.h
-/content/root_src/build/rmkdepend/def.h
+/content/root_src_37/build/rmkdepend/def.h
 ifparser.h
-/content/root_src/build/rmkdepend/ifparser.h
+/content/root_src_37/build/rmkdepend/ifparser.h
 
-/content/root_src/build/rmkdepend/def.h
+/content/root_src_37/build/rmkdepend/def.h
 stdio.h
 -
 string.h
@@ -28,9 +28,9 @@ sys/stat.h
 stdlib.h
 -
 
-/content/root_src/build/rmkdepend/ifparser.c
+/content/root_src_37/build/rmkdepend/ifparser.c
 ifparser.h
-/content/root_src/build/rmkdepend/ifparser.h
+/content/root_src_37/build/rmkdepend/ifparser.h
 ctype.h
 -
 stdlib.h
@@ -38,21 +38,21 @@ stdlib.h
 string.h
 -
 
-/content/root_src/build/rmkdepend/ifparser.h
+/content/root_src_37/build/rmkdepend/ifparser.h
 stdio.h
 -
 
-/content/root_src/build/rmkdepend/imakemdep.h
+/content/root_src_37/build/rmkdepend/imakemdep.h
 sys/param.h
 -
 
-/content/root_src/build/rmkdepend/include.c
+/content/root_src_37/build/rmkdepend/include.c
 def.h
-/content/root_src/build/rmkdepend/def.h
+/content/root_src_37/build/rmkdepend/def.h
 
-/content/root_src/build/rmkdepend/main.c
+/content/root_src_37/build/rmkdepend/main.c
 def.h
-/content/root_src/build/rmkdepend/def.h
+/content/root_src_37/build/rmkdepend/def.h
 signal.h
 -
 signal.h
@@ -66,13 +66,13 @@ unistd.h
 io.h
 -
 imakemdep.h
-/content/root_src/build/rmkdepend/imakemdep.h
+/content/root_src_37/build/rmkdepend/imakemdep.h
 
-/content/root_src/build/rmkdepend/parse.c
+/content/root_src_37/build/rmkdepend/parse.c
 def.h
-/content/root_src/build/rmkdepend/def.h
+/content/root_src_37/build/rmkdepend/def.h
 
-/content/root_src/build/rmkdepend/pr.c
+/content/root_src_37/build/rmkdepend/pr.c
 def.h
-/content/root_src/build/rmkdepend/def.h
+/content/root_src_37/build/rmkdepend/def.h
 

@@ -1,8 +1,8 @@
-# Install script for directory: /content/root_src/interpreter/llvm/src/lib/Transforms
+# Install script for directory: /content/root_src_37/interpreter/llvm/src/lib/Transforms
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/content/root_src/root_install")
+  set(CMAKE_INSTALL_PREFIX "/content/root_src_37/root_install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,15 +39,15 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/content/root_src/root_build/interpreter/llvm/src/lib/Transforms/Utils/cmake_install.cmake")
-  include("/content/root_src/root_build/interpreter/llvm/src/lib/Transforms/Instrumentation/cmake_install.cmake")
-  include("/content/root_src/root_build/interpreter/llvm/src/lib/Transforms/InstCombine/cmake_install.cmake")
-  include("/content/root_src/root_build/interpreter/llvm/src/lib/Transforms/Scalar/cmake_install.cmake")
-  include("/content/root_src/root_build/interpreter/llvm/src/lib/Transforms/IPO/cmake_install.cmake")
-  include("/content/root_src/root_build/interpreter/llvm/src/lib/Transforms/Vectorize/cmake_install.cmake")
-  include("/content/root_src/root_build/interpreter/llvm/src/lib/Transforms/Hello/cmake_install.cmake")
-  include("/content/root_src/root_build/interpreter/llvm/src/lib/Transforms/ObjCARC/cmake_install.cmake")
-  include("/content/root_src/root_build/interpreter/llvm/src/lib/Transforms/Coroutines/cmake_install.cmake")
+  include("/content/root_src_37/root_build/interpreter/llvm/src/lib/Transforms/Utils/cmake_install.cmake")
+  include("/content/root_src_37/root_build/interpreter/llvm/src/lib/Transforms/Instrumentation/cmake_install.cmake")
+  include("/content/root_src_37/root_build/interpreter/llvm/src/lib/Transforms/InstCombine/cmake_install.cmake")
+  include("/content/root_src_37/root_build/interpreter/llvm/src/lib/Transforms/Scalar/cmake_install.cmake")
+  include("/content/root_src_37/root_build/interpreter/llvm/src/lib/Transforms/IPO/cmake_install.cmake")
+  include("/content/root_src_37/root_build/interpreter/llvm/src/lib/Transforms/Vectorize/cmake_install.cmake")
+  include("/content/root_src_37/root_build/interpreter/llvm/src/lib/Transforms/Hello/cmake_install.cmake")
+  include("/content/root_src_37/root_build/interpreter/llvm/src/lib/Transforms/ObjCARC/cmake_install.cmake")
+  include("/content/root_src_37/root_build/interpreter/llvm/src/lib/Transforms/Coroutines/cmake_install.cmake")
 
 endif()
 

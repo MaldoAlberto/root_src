@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/content/root_src/build/rmkdepend/def.h
+/content/root_src_37/build/rmkdepend/def.h
 stdio.h
 -
 string.h
@@ -22,19 +22,19 @@ sys/stat.h
 stdlib.h
 -
 
-/content/root_src/build/rmkdepend/mainroot.cxx
+/content/root_src_37/build/rmkdepend/mainroot.cxx
 string
 -
 signal.h
 -
 def.h
-/content/root_src/build/rmkdepend/def.h
+/content/root_src_37/build/rmkdepend/def.h
 unistd.h
 -
 ../../core/dictgen/res/cygpath.h
-/content/root_src/core/dictgen/res/cygpath.h
+/content/root_src_37/core/dictgen/res/cygpath.h
 
-/content/root_src/core/dictgen/res/cygpath.h
+/content/root_src_37/core/dictgen/res/cygpath.h
 stdio.h
 -
 stdlib.h

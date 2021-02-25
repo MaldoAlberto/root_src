@@ -1142,7 +1142,7 @@ namespace ROOT {
       ::TGeoMixture *ptr = 0;
       static ::TVirtualIsAProxy* isa_proxy = new ::TInstrumentedIsAProxy< ::TGeoMixture >(0);
       static ::ROOT::TGenericClassInfo 
-         instance("TGeoMixture", ::TGeoMixture::Class_Version(), "TGeoMaterial.h", 150,
+         instance("TGeoMixture", ::TGeoMixture::Class_Version(), "TGeoMaterial.h", 151,
                   typeid(::TGeoMixture), ::ROOT::Internal::DefineBehavior(ptr, ptr),
                   &::TGeoMixture::Dictionary, isa_proxy, 4,
                   sizeof(::TGeoMixture) );

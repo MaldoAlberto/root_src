@@ -156,7 +156,7 @@ rpddefs.h
 Rtypes.h
 ../net/rpdutils/res/Rtypes.h
 
-/content/root_src/net/rpdutils/src/daemon.cxx
+/content/root_src_37/net/rpdutils/src/daemon.cxx
 stdio.h
 -
 stdlib.h
@@ -180,9 +180,9 @@ sys/wait.h
 ROOT/RConfig.hxx
 -
 rpdp.h
-/content/root_src/net/rpdutils/src/rpdp.h
+/content/root_src_37/net/rpdutils/src/rpdp.h
 
-/content/root_src/net/rpdutils/src/error.cxx
+/content/root_src_37/net/rpdutils/src/error.cxx
 stdio.h
 -
 unistd.h
@@ -196,13 +196,13 @@ errno.h
 string.h
 -
 snprintf.h
-/content/root_src/net/rpdutils/src/snprintf.h
+/content/root_src_37/net/rpdutils/src/snprintf.h
 rpderr.h
-/content/root_src/net/rpdutils/src/rpderr.h
+/content/root_src_37/net/rpdutils/src/rpderr.h
 rpdp.h
-/content/root_src/net/rpdutils/src/rpdp.h
+/content/root_src_37/net/rpdutils/src/rpdp.h
 
-/content/root_src/net/rpdutils/src/net.cxx
+/content/root_src_37/net/rpdutils/src/net.cxx
 ROOT/RConfig.hxx
 -
 stdio.h
@@ -228,11 +228,11 @@ netdb.h
 errno.h
 -
 rpdp.h
-/content/root_src/net/rpdutils/src/rpdp.h
+/content/root_src_37/net/rpdutils/src/rpdp.h
 rpderr.h
-/content/root_src/net/rpdutils/src/rpderr.h
+/content/root_src_37/net/rpdutils/src/rpderr.h
 
-/content/root_src/net/rpdutils/src/netpar.cxx
+/content/root_src_37/net/rpdutils/src/netpar.cxx
 ROOT/RConfig.hxx
 -
 stdio.h
@@ -262,13 +262,13 @@ errno.h
 strings.h
 -
 rpdp.h
-/content/root_src/net/rpdutils/src/rpdp.h
+/content/root_src_37/net/rpdutils/src/rpdp.h
 
-/content/root_src/net/rpdutils/src/rpdutils.cxx
+/content/root_src_37/net/rpdutils/src/rpdutils.cxx
 RConfigure.h
-/content/root_src/net/rpdutils/src/RConfigure.h
+/content/root_src_37/net/rpdutils/src/RConfigure.h
 TError.h
-/content/root_src/net/rpdutils/src/TError.h
+/content/root_src_37/net/rpdutils/src/TError.h
 ROOT/RConfig.hxx
 -
 ctype.h
@@ -304,7 +304,7 @@ netdb.h
 math.h
 -
 snprintf.h
-/content/root_src/net/rpdutils/src/snprintf.h
+/content/root_src_37/net/rpdutils/src/snprintf.h
 grp.h
 -
 sys/types.h
@@ -344,11 +344,11 @@ openssl/rsa.h
 openssl/ssl.h
 -
 rpdp.h
-/content/root_src/net/rpdutils/src/rpdp.h
+/content/root_src_37/net/rpdutils/src/rpdp.h
 rsadef.h
-/content/root_src/net/rpdutils/src/rsadef.h
+/content/root_src_37/net/rpdutils/src/rsadef.h
 rsalib.h
-/content/root_src/net/rpdutils/src/rsalib.h
+/content/root_src_37/net/rpdutils/src/rsalib.h
 
 ginclude/RConfigure.h
 

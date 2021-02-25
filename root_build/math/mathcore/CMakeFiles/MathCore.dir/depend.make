@@ -419,7 +419,7 @@ math/mathcore/CMakeFiles/MathCore.dir/src/FitUtil.cxx.o: ../core/foundation/inc/
 math/mathcore/CMakeFiles/MathCore.dir/src/FitUtil.cxx.o: ../core/foundation/inc/ROOT/RWrap_libcpp_string_view.h
 math/mathcore/CMakeFiles/MathCore.dir/src/FitUtil.cxx.o: ../core/foundation/inc/ROOT/TypeTraits.hxx
 math/mathcore/CMakeFiles/MathCore.dir/src/FitUtil.cxx.o: ../core/foundation/inc/ROOT/libcpp_string_view.h
-math/mathcore/CMakeFiles/MathCore.dir/src/FitUtil.cxx.o: ../core/imt/inc/ROOT/TPoolManager.hxx
+math/mathcore/CMakeFiles/MathCore.dir/src/FitUtil.cxx.o: ../core/imt/inc/ROOT/RTaskArena.hxx
 math/mathcore/CMakeFiles/MathCore.dir/src/FitUtil.cxx.o: ../core/imt/inc/ROOT/TThreadExecutor.hxx
 math/mathcore/CMakeFiles/MathCore.dir/src/FitUtil.cxx.o: ../core/meta/inc/TClass.h
 math/mathcore/CMakeFiles/MathCore.dir/src/FitUtil.cxx.o: ../core/meta/inc/TDataType.h
@@ -453,8 +453,6 @@ math/mathcore/CMakeFiles/MathCore.dir/src/FitUtil.cxx.o: ../math/mathcore/inc/Ma
 math/mathcore/CMakeFiles/MathCore.dir/src/FitUtil.cxx.o: ../math/mathcore/src/FitUtil.cxx
 math/mathcore/CMakeFiles/MathCore.dir/src/FitUtil.cxx.o: ginclude/RConfigure.h
 
-math/mathcore/CMakeFiles/MathCore.dir/src/Fitter.cxx.o: ../core/base/inc/Bytes.h
-math/mathcore/CMakeFiles/MathCore.dir/src/Fitter.cxx.o: ../core/base/inc/Byteswap.h
 math/mathcore/CMakeFiles/MathCore.dir/src/Fitter.cxx.o: ../core/base/inc/DllImport.h
 math/mathcore/CMakeFiles/MathCore.dir/src/Fitter.cxx.o: ../core/base/inc/ROOT/RConfig.hxx
 math/mathcore/CMakeFiles/MathCore.dir/src/Fitter.cxx.o: ../core/base/inc/ROOT/TExecutor.hxx
@@ -462,16 +460,11 @@ math/mathcore/CMakeFiles/MathCore.dir/src/Fitter.cxx.o: ../core/base/inc/ROOT/TS
 math/mathcore/CMakeFiles/MathCore.dir/src/Fitter.cxx.o: ../core/base/inc/RVersion.h
 math/mathcore/CMakeFiles/MathCore.dir/src/Fitter.cxx.o: ../core/base/inc/Rtypes.h
 math/mathcore/CMakeFiles/MathCore.dir/src/Fitter.cxx.o: ../core/base/inc/RtypesCore.h
-math/mathcore/CMakeFiles/MathCore.dir/src/Fitter.cxx.o: ../core/base/inc/TBuffer.h
-math/mathcore/CMakeFiles/MathCore.dir/src/Fitter.cxx.o: ../core/base/inc/TDirectory.h
 math/mathcore/CMakeFiles/MathCore.dir/src/Fitter.cxx.o: ../core/base/inc/TError.h
 math/mathcore/CMakeFiles/MathCore.dir/src/Fitter.cxx.o: ../core/base/inc/TMathBase.h
-math/mathcore/CMakeFiles/MathCore.dir/src/Fitter.cxx.o: ../core/base/inc/TNamed.h
 math/mathcore/CMakeFiles/MathCore.dir/src/Fitter.cxx.o: ../core/base/inc/TObject.h
-math/mathcore/CMakeFiles/MathCore.dir/src/Fitter.cxx.o: ../core/base/inc/TROOT.h
 math/mathcore/CMakeFiles/MathCore.dir/src/Fitter.cxx.o: ../core/base/inc/TStorage.h
 math/mathcore/CMakeFiles/MathCore.dir/src/Fitter.cxx.o: ../core/base/inc/TString.h
-math/mathcore/CMakeFiles/MathCore.dir/src/Fitter.cxx.o: ../core/base/inc/TUUID.h
 math/mathcore/CMakeFiles/MathCore.dir/src/Fitter.cxx.o: ../core/base/inc/TVersionCheck.h
 math/mathcore/CMakeFiles/MathCore.dir/src/Fitter.cxx.o: ../core/base/inc/TVirtualMutex.h
 math/mathcore/CMakeFiles/MathCore.dir/src/Fitter.cxx.o: ../core/base/inc/TVirtualRWMutex.h
@@ -481,18 +474,13 @@ math/mathcore/CMakeFiles/MathCore.dir/src/Fitter.cxx.o: ../core/cont/inc/ROOT/TS
 math/mathcore/CMakeFiles/MathCore.dir/src/Fitter.cxx.o: ../core/cont/inc/TCollection.h
 math/mathcore/CMakeFiles/MathCore.dir/src/Fitter.cxx.o: ../core/cont/inc/TIterator.h
 math/mathcore/CMakeFiles/MathCore.dir/src/Fitter.cxx.o: ../core/cont/inc/TList.h
-math/mathcore/CMakeFiles/MathCore.dir/src/Fitter.cxx.o: ../core/cont/inc/TObjArray.h
 math/mathcore/CMakeFiles/MathCore.dir/src/Fitter.cxx.o: ../core/cont/inc/TSeqCollection.h
-math/mathcore/CMakeFiles/MathCore.dir/src/Fitter.cxx.o: ../core/foundation/inc/ESTLType.h
 math/mathcore/CMakeFiles/MathCore.dir/src/Fitter.cxx.o: ../core/foundation/inc/ROOT/RStringView.hxx
 math/mathcore/CMakeFiles/MathCore.dir/src/Fitter.cxx.o: ../core/foundation/inc/ROOT/RWrap_libcpp_string_view.h
 math/mathcore/CMakeFiles/MathCore.dir/src/Fitter.cxx.o: ../core/foundation/inc/ROOT/TypeTraits.hxx
 math/mathcore/CMakeFiles/MathCore.dir/src/Fitter.cxx.o: ../core/foundation/inc/ROOT/libcpp_string_view.h
-math/mathcore/CMakeFiles/MathCore.dir/src/Fitter.cxx.o: ../core/imt/inc/ROOT/TPoolManager.hxx
+math/mathcore/CMakeFiles/MathCore.dir/src/Fitter.cxx.o: ../core/imt/inc/ROOT/RTaskArena.hxx
 math/mathcore/CMakeFiles/MathCore.dir/src/Fitter.cxx.o: ../core/imt/inc/ROOT/TThreadExecutor.hxx
-math/mathcore/CMakeFiles/MathCore.dir/src/Fitter.cxx.o: ../core/meta/inc/TClass.h
-math/mathcore/CMakeFiles/MathCore.dir/src/Fitter.cxx.o: ../core/meta/inc/TDataType.h
-math/mathcore/CMakeFiles/MathCore.dir/src/Fitter.cxx.o: ../core/meta/inc/TDictionary.h
 math/mathcore/CMakeFiles/MathCore.dir/src/Fitter.cxx.o: ../core/meta/inc/TGenericClassInfo.h
 math/mathcore/CMakeFiles/MathCore.dir/src/Fitter.cxx.o: ../core/meta/inc/TIsAProxy.h
 math/mathcore/CMakeFiles/MathCore.dir/src/Fitter.cxx.o: ../core/meta/inc/TSchemaHelper.h

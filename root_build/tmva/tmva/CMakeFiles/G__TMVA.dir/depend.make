@@ -260,12 +260,12 @@ tmva/tmva/CMakeFiles/G__TMVA.dir/G__TMVA.cxx.o: include/ROOT/RResultPtr.hxx
 tmva/tmva/CMakeFiles/G__TMVA.dir/G__TMVA.cxx.o: include/ROOT/RSnapshotOptions.hxx
 tmva/tmva/CMakeFiles/G__TMVA.dir/G__TMVA.cxx.o: include/ROOT/RSpan.hxx
 tmva/tmva/CMakeFiles/G__TMVA.dir/G__TMVA.cxx.o: include/ROOT/RStringView.hxx
+tmva/tmva/CMakeFiles/G__TMVA.dir/G__TMVA.cxx.o: include/ROOT/RTaskArena.hxx
 tmva/tmva/CMakeFiles/G__TMVA.dir/G__TMVA.cxx.o: include/ROOT/RVec.hxx
 tmva/tmva/CMakeFiles/G__TMVA.dir/G__TMVA.cxx.o: include/ROOT/RWrap_libcpp_string_view.h
 tmva/tmva/CMakeFiles/G__TMVA.dir/G__TMVA.cxx.o: include/ROOT/TBufferMerger.hxx
 tmva/tmva/CMakeFiles/G__TMVA.dir/G__TMVA.cxx.o: include/ROOT/TExecutor.hxx
 tmva/tmva/CMakeFiles/G__TMVA.dir/G__TMVA.cxx.o: include/ROOT/TIOFeatures.hxx
-tmva/tmva/CMakeFiles/G__TMVA.dir/G__TMVA.cxx.o: include/ROOT/TPoolManager.hxx
 tmva/tmva/CMakeFiles/G__TMVA.dir/G__TMVA.cxx.o: include/ROOT/TProcessExecutor.hxx
 tmva/tmva/CMakeFiles/G__TMVA.dir/G__TMVA.cxx.o: include/ROOT/TRWSpinLock.hxx
 tmva/tmva/CMakeFiles/G__TMVA.dir/G__TMVA.cxx.o: include/ROOT/TSeq.hxx
@@ -807,12 +807,12 @@ tmva/tmva/G__TMVA.cxx: include/ROOT/RResultPtr.hxx
 tmva/tmva/G__TMVA.cxx: include/ROOT/RSnapshotOptions.hxx
 tmva/tmva/G__TMVA.cxx: include/ROOT/RSpan.hxx
 tmva/tmva/G__TMVA.cxx: include/ROOT/RStringView.hxx
+tmva/tmva/G__TMVA.cxx: include/ROOT/RTaskArena.hxx
 tmva/tmva/G__TMVA.cxx: include/ROOT/RVec.hxx
 tmva/tmva/G__TMVA.cxx: include/ROOT/RWrap_libcpp_string_view.h
 tmva/tmva/G__TMVA.cxx: include/ROOT/TBufferMerger.hxx
 tmva/tmva/G__TMVA.cxx: include/ROOT/TExecutor.hxx
 tmva/tmva/G__TMVA.cxx: include/ROOT/TIOFeatures.hxx
-tmva/tmva/G__TMVA.cxx: include/ROOT/TPoolManager.hxx
 tmva/tmva/G__TMVA.cxx: include/ROOT/TProcessExecutor.hxx
 tmva/tmva/G__TMVA.cxx: include/ROOT/TRWSpinLock.hxx
 tmva/tmva/G__TMVA.cxx: include/ROOT/TSeq.hxx

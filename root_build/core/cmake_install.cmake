@@ -1,8 +1,8 @@
-# Install script for directory: /content/root_src/core
+# Install script for directory: /content/root_src_37/core
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/content/root_src/root_install")
+  set(CMAKE_INSTALL_PREFIX "/content/root_src_37/root_install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,7 +38,7 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE FILE FILES "/content/root_src/root_build/ginclude/RGitCommit.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE FILE FILES "/content/root_src_37/root_build/ginclude/RGitCommit.h")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xlibrariesx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -48,7 +48,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xlibrariesx" OR NOT CMAKE_INSTALL_CO
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libCore.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/content/root_src/root_build/lib/libCore.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/content/root_src_37/root_build/lib/libCore.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libCore.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libCore.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -61,32 +61,32 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xlibrariesx" OR NOT CMAKE_INSTALL_CO
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xlibrariesx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE FILE FILES "/content/root_src/root_build/lib/Core.pcm")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE FILE FILES "/content/root_src_37/root_build/lib/Core.pcm")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/content/root_src/root_build/core/clib/cmake_install.cmake")
-  include("/content/root_src/root_build/core/clingutils/cmake_install.cmake")
-  include("/content/root_src/root_build/core/cont/cmake_install.cmake")
-  include("/content/root_src/root_build/core/dictgen/cmake_install.cmake")
-  include("/content/root_src/root_build/core/foundation/cmake_install.cmake")
-  include("/content/root_src/root_build/core/gui/cmake_install.cmake")
-  include("/content/root_src/root_build/core/meta/cmake_install.cmake")
-  include("/content/root_src/root_build/core/metacling/cmake_install.cmake")
-  include("/content/root_src/root_build/core/multiproc/cmake_install.cmake")
-  include("/content/root_src/root_build/core/rint/cmake_install.cmake")
-  include("/content/root_src/root_build/core/textinput/cmake_install.cmake")
-  include("/content/root_src/root_build/core/thread/cmake_install.cmake")
-  include("/content/root_src/root_build/core/imt/cmake_install.cmake")
-  include("/content/root_src/root_build/core/zip/cmake_install.cmake")
-  include("/content/root_src/root_build/core/lzma/cmake_install.cmake")
-  include("/content/root_src/root_build/core/lz4/cmake_install.cmake")
-  include("/content/root_src/root_build/core/zstd/cmake_install.cmake")
-  include("/content/root_src/root_build/core/newdelete/cmake_install.cmake")
-  include("/content/root_src/root_build/core/base/cmake_install.cmake")
-  include("/content/root_src/root_build/core/unix/cmake_install.cmake")
-  include("/content/root_src/root_build/core/rootcling_stage1/cmake_install.cmake")
+  include("/content/root_src_37/root_build/core/clib/cmake_install.cmake")
+  include("/content/root_src_37/root_build/core/clingutils/cmake_install.cmake")
+  include("/content/root_src_37/root_build/core/cont/cmake_install.cmake")
+  include("/content/root_src_37/root_build/core/dictgen/cmake_install.cmake")
+  include("/content/root_src_37/root_build/core/foundation/cmake_install.cmake")
+  include("/content/root_src_37/root_build/core/gui/cmake_install.cmake")
+  include("/content/root_src_37/root_build/core/meta/cmake_install.cmake")
+  include("/content/root_src_37/root_build/core/metacling/cmake_install.cmake")
+  include("/content/root_src_37/root_build/core/multiproc/cmake_install.cmake")
+  include("/content/root_src_37/root_build/core/rint/cmake_install.cmake")
+  include("/content/root_src_37/root_build/core/textinput/cmake_install.cmake")
+  include("/content/root_src_37/root_build/core/thread/cmake_install.cmake")
+  include("/content/root_src_37/root_build/core/imt/cmake_install.cmake")
+  include("/content/root_src_37/root_build/core/zip/cmake_install.cmake")
+  include("/content/root_src_37/root_build/core/lzma/cmake_install.cmake")
+  include("/content/root_src_37/root_build/core/lz4/cmake_install.cmake")
+  include("/content/root_src_37/root_build/core/zstd/cmake_install.cmake")
+  include("/content/root_src_37/root_build/core/newdelete/cmake_install.cmake")
+  include("/content/root_src_37/root_build/core/base/cmake_install.cmake")
+  include("/content/root_src_37/root_build/core/unix/cmake_install.cmake")
+  include("/content/root_src_37/root_build/core/rootcling_stage1/cmake_install.cmake")
 
 endif()
 

@@ -1,8 +1,8 @@
 #! /bin/sh
 
-prefix=/content/root_src/root_build
-exec_prefix=/content/root_src/root_build
-AFTERIMAGE_LIBS="-L/content/root_src/root_build/lib -lAfterImage  -lfreetype -ltiff -lX11 -lSM -lICE -lXext -ljpeg -lpng -lz -lm"
+prefix=/content/root_src_37/root_build
+exec_prefix=/content/root_src_37/root_build
+AFTERIMAGE_LIBS="-L/content/root_src_37/root_build/lib -lAfterImage  -lfreetype -ltiff -lX11 -lSM -lICE -lXext -ljpeg -lpng -lz -lm"
 AFTERIMAGE_LIBS_EXTERNAL="-lfreetype -ltiff -lX11    -lSM -lICE -lXext -ljpeg -lpng -lz -lm"
 HAVE_AFTERBASE=""
 AFTERIMAGE_PREF_FORMAT="png"
@@ -100,9 +100,9 @@ if test "$echo_exec_prefix" = "yes" ; then
 fi
 
 if test "$echo_cflags" = "yes" ; then
- cflags="-I/content/root_src/root_build/include/libAfterImage"
- if test "/content/root_src/root_build/include" != "/usr/include" ; then
-  echo $cflags -I/content/root_src/root_build/include
+ cflags="-I/content/root_src_37/root_build/include/libAfterImage"
+ if test "/content/root_src_37/root_build/include" != "/usr/include" ; then
+  echo $cflags -I/content/root_src_37/root_build/include
  else
   echo $cflags
  fi
@@ -123,7 +123,7 @@ fi
 
 if test "$echo_libtool" = "yes" ; then
  convlib="libAfterImage.la"
- echo /content/root_src/root_build/lib/$convlib
+ echo /content/root_src_37/root_build/lib/$convlib
 fi
 
 if test "$echo_have_afterbase" = "yes" ; then

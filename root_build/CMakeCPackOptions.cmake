@@ -5,8 +5,8 @@
 if(CPACK_GENERATOR MATCHES "NSIS")
   # There is a bug in NSI that does not handle full unix paths properly. Make
   # sure there is at least one set of four (4) backlasshes.
-  set(CPACK_NSIS_MUI_ICON "/content/root_src\\icons\\RootIcon.ico")
-  set(CPACK_NSIS_MUI_UNIICON "/content/root_src\\icons\\RootIcon.ico")
+  set(CPACK_NSIS_MUI_ICON "/content/root_src_37\\icons\\RootIcon.ico")
+  set(CPACK_NSIS_MUI_UNIICON "/content/root_src_37\\icons\\RootIcon.ico")
   set(CPACK_NSIS_DISPLAY_NAME "ROOT 6.22.99")
   set(CPACK_NSIS_PACKAGE_NAME "ROOT 6.22.99")
   set(CPACK_NSIS_HELP_LINK "http:\\\\root.cern")

@@ -7,13 +7,13 @@ C_FLAGS =  -Wno-implicit-fallthrough -pipe -Wall -W -pthread -O3 -DNDEBUG
 
 C_DEFINES = 
 
-C_INCLUDES = -I/content/root_src/interpreter/cling/include -I/content/root_src/root_build/interpreter/llvm/src/tools/cling/include -I/content/root_src/interpreter/llvm/src/tools/clang/include -I/content/root_src/root_build/interpreter/llvm/src/tools/clang/include -I/content/root_src/root_build/interpreter/llvm/src/include -I/content/root_src/interpreter/llvm/src/include -I/content/root_src/core/base/inc -I/content/root_src/core/dictgen/res -I/content/root_src/root_build/ginclude 
+C_INCLUDES = -I/content/root_src_37/interpreter/cling/include -I/content/root_src_37/root_build/interpreter/llvm/src/tools/cling/include -I/content/root_src_37/interpreter/llvm/src/tools/clang/include -I/content/root_src_37/root_build/interpreter/llvm/src/tools/clang/include -I/content/root_src_37/root_build/interpreter/llvm/src/include -I/content/root_src_37/interpreter/llvm/src/include -I/content/root_src_37/core/base/inc -I/content/root_src_37/core/dictgen/res -I/content/root_src_37/root_build/ginclude 
 
 CXX_FLAGS =  -std=c++11 -Wno-implicit-fallthrough -Wno-noexcept-type -pipe  -Wshadow -Wall -W -Woverloaded-virtual -fsigned-char -pthread -O3 -DNDEBUG   -std=c++11
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/content/root_src/interpreter/cling/include -I/content/root_src/root_build/interpreter/llvm/src/tools/cling/include -I/content/root_src/interpreter/llvm/src/tools/clang/include -I/content/root_src/root_build/interpreter/llvm/src/tools/clang/include -I/content/root_src/root_build/interpreter/llvm/src/include -I/content/root_src/interpreter/llvm/src/include -I/content/root_src/core/base/inc -I/content/root_src/core/dictgen/res -I/content/root_src/root_build/ginclude 
+CXX_INCLUDES = -I/content/root_src_37/interpreter/cling/include -I/content/root_src_37/root_build/interpreter/llvm/src/tools/cling/include -I/content/root_src_37/interpreter/llvm/src/tools/clang/include -I/content/root_src_37/root_build/interpreter/llvm/src/tools/clang/include -I/content/root_src_37/root_build/interpreter/llvm/src/include -I/content/root_src_37/interpreter/llvm/src/include -I/content/root_src_37/core/base/inc -I/content/root_src_37/core/dictgen/res -I/content/root_src_37/root_build/ginclude 
 
 # Custom flags: core/rootcling_stage1/CMakeFiles/rootcling_stage1.dir/src/rootcling_stage1.cxx.o_FLAGS = -fno-rtti
 

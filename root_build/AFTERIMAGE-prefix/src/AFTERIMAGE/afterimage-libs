@@ -1,7 +1,7 @@
 #! /bin/sh
 #
 
-AFTERIMAGE_LIBS="-L/content/root_src/root_build/lib -lAfterImage  -lfreetype -ltiff -lX11 -lSM -lICE -lXext -ljpeg -lpng -lz -lm"
+AFTERIMAGE_LIBS="-L/content/root_src_37/root_build/lib -lAfterImage  -lfreetype -ltiff -lX11 -lSM -lICE -lXext -ljpeg -lpng -lz -lm"
 AFTERIMAGE_LIBS_EXTERNAL="-lfreetype -ltiff -lX11    -lSM -lICE -lXext -ljpeg -lpng -lz -lm"
 HAVE_AFTERBASE=""
 AFTERIMAGE_PREF_FORMAT="png"

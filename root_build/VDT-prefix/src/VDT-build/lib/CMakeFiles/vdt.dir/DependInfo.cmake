@@ -4,13 +4,13 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/content/root_src/root_build/VDT-prefix/src/VDT/src/vdtMath_signatures.cc" "/content/root_src/root_build/VDT-prefix/src/VDT-build/lib/CMakeFiles/vdt.dir/__/src/vdtMath_signatures.cc.o"
+  "/content/root_src_37/root_build/VDT-prefix/src/VDT/src/vdtMath_signatures.cc" "/content/root_src_37/root_build/VDT-prefix/src/VDT-build/lib/CMakeFiles/vdt.dir/__/src/vdtMath_signatures.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/content/root_src/root_build/VDT-prefix/src/VDT/include"
+  "/content/root_src_37/root_build/VDT-prefix/src/VDT/include"
   )
 
 # Targets to which this target links.

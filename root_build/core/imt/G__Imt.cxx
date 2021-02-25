@@ -39,8 +39,8 @@ namespace std {} using namespace std;
 
 // Header files passed as explicit arguments
 #include "ROOT/TFuture.hxx"
-#include "ROOT/TPoolManager.hxx"
 #include "ROOT/TTaskGroup.hxx"
+#include "ROOT/RTaskArena.hxx"
 #include "ROOT/TThreadExecutor.hxx"
 
 // Header files passed via #pragma extra_include
@@ -86,47 +86,6 @@ namespace ROOT {
    }
 
    static void ROOTcLcLExperimentalcLcLTTaskGroup_TClassManip(TClass* ){
-   }
-
-} // end of namespace ROOT
-
-namespace ROOT {
-   static TClass *ROOTcLcLInternalcLcLTPoolManager_Dictionary();
-   static void ROOTcLcLInternalcLcLTPoolManager_TClassManip(TClass*);
-   static void delete_ROOTcLcLInternalcLcLTPoolManager(void *p);
-   static void deleteArray_ROOTcLcLInternalcLcLTPoolManager(void *p);
-   static void destruct_ROOTcLcLInternalcLcLTPoolManager(void *p);
-
-   // Function generating the singleton type initializer
-   static TGenericClassInfo *GenerateInitInstanceLocal(const ::ROOT::Internal::TPoolManager*)
-   {
-      ::ROOT::Internal::TPoolManager *ptr = 0;
-      static ::TVirtualIsAProxy* isa_proxy = new ::TIsAProxy(typeid(::ROOT::Internal::TPoolManager));
-      static ::ROOT::TGenericClassInfo 
-         instance("ROOT::Internal::TPoolManager", "ROOT/TPoolManager.hxx", 50,
-                  typeid(::ROOT::Internal::TPoolManager), ::ROOT::Internal::DefineBehavior(ptr, ptr),
-                  &ROOTcLcLInternalcLcLTPoolManager_Dictionary, isa_proxy, 1,
-                  sizeof(::ROOT::Internal::TPoolManager) );
-      instance.SetDelete(&delete_ROOTcLcLInternalcLcLTPoolManager);
-      instance.SetDeleteArray(&deleteArray_ROOTcLcLInternalcLcLTPoolManager);
-      instance.SetDestructor(&destruct_ROOTcLcLInternalcLcLTPoolManager);
-      return &instance;
-   }
-   TGenericClassInfo *GenerateInitInstance(const ::ROOT::Internal::TPoolManager*)
-   {
-      return GenerateInitInstanceLocal((::ROOT::Internal::TPoolManager*)0);
-   }
-   // Static variable to force the class initialization
-   static ::ROOT::TGenericClassInfo *_R__UNIQUE_DICT_(Init) = GenerateInitInstanceLocal((const ::ROOT::Internal::TPoolManager*)0x0); R__UseDummy(_R__UNIQUE_DICT_(Init));
-
-   // Dictionary for non-ClassDef classes
-   static TClass *ROOTcLcLInternalcLcLTPoolManager_Dictionary() {
-      TClass* theClass =::ROOT::GenerateInitInstanceLocal((const ::ROOT::Internal::TPoolManager*)0x0)->GetClass();
-      ROOTcLcLInternalcLcLTPoolManager_TClassManip(theClass);
-   return theClass;
-   }
-
-   static void ROOTcLcLInternalcLcLTPoolManager_TClassManip(TClass* ){
    }
 
 } // end of namespace ROOT
@@ -196,20 +155,6 @@ namespace ROOT {
       ((current_t*)p)->~current_t();
    }
 } // end of namespace ROOT for class ::ROOT::Experimental::TTaskGroup
-
-namespace ROOT {
-   // Wrapper around operator delete
-   static void delete_ROOTcLcLInternalcLcLTPoolManager(void *p) {
-      delete ((::ROOT::Internal::TPoolManager*)p);
-   }
-   static void deleteArray_ROOTcLcLInternalcLcLTPoolManager(void *p) {
-      delete [] ((::ROOT::Internal::TPoolManager*)p);
-   }
-   static void destruct_ROOTcLcLInternalcLcLTPoolManager(void *p) {
-      typedef ::ROOT::Internal::TPoolManager current_t;
-      ((current_t*)p)->~current_t();
-   }
-} // end of namespace ROOT for class ::ROOT::Internal::TPoolManager
 
 namespace ROOT {
    // Wrappers around operator new

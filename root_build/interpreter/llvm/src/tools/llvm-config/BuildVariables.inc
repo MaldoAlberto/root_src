@@ -16,8 +16,8 @@
 //
 //===----------------------------------------------------------------------===//
 
-#define LLVM_SRC_ROOT "/content/root_src/interpreter/llvm/src"
-#define LLVM_OBJ_ROOT "/content/root_src/root_build/interpreter/llvm/src"
+#define LLVM_SRC_ROOT "/content/root_src_37/interpreter/llvm/src"
+#define LLVM_OBJ_ROOT "/content/root_src_37/root_build/interpreter/llvm/src"
 #define LLVM_CPPFLAGS "  "
 #define LLVM_CFLAGS " -Wno-implicit-fallthrough -pipe -Wall -W -pthread -fPIC -Werror=date-time -w -ffunction-sections -fdata-sections -O3 -DNDEBUG "
 #define LLVM_LDFLAGS ""

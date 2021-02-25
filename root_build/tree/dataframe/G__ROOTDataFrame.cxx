@@ -75,6 +75,7 @@ namespace std {} using namespace std;
 #include "ROOT/RDF/RSlotStack.hxx"
 #include "ROOT/RDF/Utils.hxx"
 #include "ROOT/RDF/PyROOTHelpers.hxx"
+#include "ROOT/RSqliteDS.hxx"
 
 // Header files passed via #pragma extra_include
 

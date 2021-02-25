@@ -41,7 +41,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/Geom.dir/src/TGeoTrd1.cxx.o"
   "CMakeFiles/Geom.dir/src/TGeoTrd2.cxx.o"
   "CMakeFiles/Geom.dir/src/TGeoTube.cxx.o"
-  "CMakeFiles/Geom.dir/src/TGeoUnit.cxx.o"
   "CMakeFiles/Geom.dir/src/TGeoVolume.cxx.o"
   "CMakeFiles/Geom.dir/src/TGeoVoxelFinder.cxx.o"
   "CMakeFiles/Geom.dir/src/TGeoXtru.cxx.o"

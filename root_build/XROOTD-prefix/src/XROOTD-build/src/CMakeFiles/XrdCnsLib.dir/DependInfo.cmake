@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/XrdCns/XrdCnsLog.cc" "/content/root_src/root_build/XROOTD-prefix/src/XROOTD-build/src/CMakeFiles/XrdCnsLib.dir/XrdCns/XrdCnsLog.cc.o"
-  "/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/XrdCns/XrdCnsLogRec.cc" "/content/root_src/root_build/XROOTD-prefix/src/XROOTD-build/src/CMakeFiles/XrdCnsLib.dir/XrdCns/XrdCnsLogRec.cc.o"
-  "/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/XrdCns/XrdCnsXref.cc" "/content/root_src/root_build/XROOTD-prefix/src/XROOTD-build/src/CMakeFiles/XrdCnsLib.dir/XrdCns/XrdCnsXref.cc.o"
+  "/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/XrdCns/XrdCnsLog.cc" "/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD-build/src/CMakeFiles/XrdCnsLib.dir/XrdCns/XrdCnsLog.cc.o"
+  "/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/XrdCns/XrdCnsLogRec.cc" "/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD-build/src/CMakeFiles/XrdCnsLib.dir/XrdCns/XrdCnsLogRec.cc.o"
+  "/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/XrdCns/XrdCnsXref.cc" "/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD-build/src/CMakeFiles/XrdCnsLib.dir/XrdCns/XrdCnsXref.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -44,9 +44,9 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/.."
-  "/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/."
-  "/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src"
+  "/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/.."
+  "/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/."
+  "/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src"
   "src"
   "/usr/local/include"
   "/usr/include/x86_64-linux-gnu"

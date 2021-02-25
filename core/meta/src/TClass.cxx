@@ -267,37 +267,45 @@ TClass::ENewType &TClass__GetCallingNew() {
    return fgCallingNew;
 }
 
-struct ObjRepoValue {
-   ObjRepoValue(const TClass *what, Version_t version) : fClass(what),fVersion(version) {}
-   const TClass *fClass;
-   Version_t     fVersion;
+struct TClass__GetCallingNewRAII
+{
+   TClass::ENewType &fCurrentValue;
+   TClass::ENewType  fOldValue;
+
+   TClass__GetCallingNewRAII(TClass::ENewType newvalue) :
+      fCurrentValue(TClass__GetCallingNew()),
+      fOldValue(fCurrentValue)
+   {
+      fCurrentValue = newvalue;
+   }
+
+   ~TClass__GetCallingNewRAII()
+   {
+      fCurrentValue = fOldValue;
+   }
 };
 
-static TVirtualMutex* gOVRMutex = 0;
-typedef std::multimap<void*, ObjRepoValue> RepoCont_t;
-static RepoCont_t gObjectVersionRepository;
-
-static void RegisterAddressInRepository(const char * /*where*/, void *location, const TClass *what)
+void TClass::RegisterAddressInRepository(const char * /*where*/, void *location, const TClass *what) const
 {
    // Register the object for special handling in the destructor.
 
    Version_t version = what->GetClassVersion();
-//    if (!gObjectVersionRepository.count(location)) {
+//    if (!fObjectVersionRepository.count(location)) {
 //       Info(where, "Registering address %p of class '%s' version %d", location, what->GetName(), version);
 //    } else {
 //       Warning(where, "Registering address %p again of class '%s' version %d", location, what->GetName(), version);
 //    }
    {
-      R__LOCKGUARD2(gOVRMutex);
-      gObjectVersionRepository.insert(RepoCont_t::value_type(location, RepoCont_t::mapped_type(what,version)));
+      R__LOCKGUARD2(fOVRMutex);
+      fObjectVersionRepository.insert(RepoCont_t::value_type(location, version));
    }
 #if 0
    // This code could be used to prevent an address to be registered twice.
-   std::pair<RepoCont_t::iterator, Bool_t> tmp = gObjectVersionRepository.insert(RepoCont_t::value_type>(location, RepoCont_t::mapped_type(what,version)));
+   std::pair<RepoCont_t::iterator, Bool_t> tmp = fObjectVersionRepository.insert(RepoCont_t::value_type>(location, version));
    if (!tmp.second) {
       Warning(where, "Reregistering an object of class '%s' version %d at address %p", what->GetName(), version, p);
-      gObjectVersionRepository.erase(tmp.first);
-      tmp = gObjectVersionRepository.insert(RepoCont_t::value_type>(location, RepoCont_t::mapped_type(what,version)));
+      fObjectVersionRepository.erase(tmp.first);
+      tmp = fObjectVersionRepository.insert(RepoCont_t::value_type>(location, version));
       if (!tmp.second) {
          Warning(where, "Failed to reregister an object of class '%s' version %d at address %p", what->GetName(), version, location);
       }
@@ -305,18 +313,18 @@ static void RegisterAddressInRepository(const char * /*where*/, void *location, 
 #endif
 }
 
-static void UnregisterAddressInRepository(const char * /*where*/, void *location, const TClass *what)
+void TClass::UnregisterAddressInRepository(const char * /*where*/, void *location, const TClass *what) const
 {
    // Remove an address from the repository of address/object.
 
-   R__LOCKGUARD2(gOVRMutex);
-   RepoCont_t::iterator cur = gObjectVersionRepository.find(location);
-   for (; cur != gObjectVersionRepository.end();) {
+   R__LOCKGUARD2(fOVRMutex);
+   RepoCont_t::iterator cur = fObjectVersionRepository.find(location);
+   for (; cur != fObjectVersionRepository.end();) {
       RepoCont_t::iterator tmp = cur++;
-      if ((tmp->first == location) && (tmp->second.fVersion == what->GetClassVersion())) {
+      if ((tmp->first == location) && (tmp->second == what->GetClassVersion())) {
          // -- We still have an address, version match.
          // Info(where, "Unregistering address %p of class '%s' version %d", location, what->GetName(), what->GetClassVersion());
-         gObjectVersionRepository.erase(tmp);
+         fObjectVersionRepository.erase(tmp);
       } else {
          // -- No address, version match, we've reached the end.
          break;
@@ -324,22 +332,22 @@ static void UnregisterAddressInRepository(const char * /*where*/, void *location
    }
 }
 
-static void MoveAddressInRepository(const char * /*where*/, void *oldadd, void *newadd, const TClass *what)
+void TClass::MoveAddressInRepository(const char * /*where*/, void *oldadd, void *newadd, const TClass *what) const
 {
    // Register in the repository that an object has moved.
 
    // Move not only the object itself but also any base classes or sub-objects.
    size_t objsize = what->Size();
    long delta = (char*)newadd - (char*)oldadd;
-   R__LOCKGUARD2(gOVRMutex);
-   RepoCont_t::iterator cur = gObjectVersionRepository.find(oldadd);
-   for (; cur != gObjectVersionRepository.end();) {
+   R__LOCKGUARD2(fOVRMutex);
+   RepoCont_t::iterator cur = fObjectVersionRepository.find(oldadd);
+   for (; cur != fObjectVersionRepository.end();) {
       RepoCont_t::iterator tmp = cur++;
       if (oldadd <= tmp->first && tmp->first < ( ((char*)oldadd) + objsize) ) {
          // The location is within the object, let's move it.
 
-         gObjectVersionRepository.insert(RepoCont_t::value_type(((char*)tmp->first)+delta, RepoCont_t::mapped_type(tmp->second.fClass,tmp->second.fVersion)));
-         gObjectVersionRepository.erase(tmp);
+         fObjectVersionRepository.insert(RepoCont_t::value_type(((char*)tmp->first)+delta, tmp->second));
+         fObjectVersionRepository.erase(tmp);
 
       } else {
          // -- No address, version match, we've reached the end.
@@ -1053,7 +1061,7 @@ TClass::TClass() :
    fStreamer(0), fIsA(0), fGlobalIsA(0), fIsAMethod(0),
    fMerge(0), fResetAfterMerge(0), fNew(0), fNewArray(0), fDelete(0), fDeleteArray(0),
    fDestructor(0), fDirAutoAdd(0), fStreamerFunc(0), fConvStreamerFunc(0), fSizeof(-1),
-   fCanSplit(-1), fProperty(0), fClassProperty(0), fHasRootPcmInfo(kFALSE), fCanLoadClassInfo(kFALSE),
+   fCanSplit(-1), fIsSyntheticPair(kFALSE), fProperty(0), fClassProperty(0), fHasRootPcmInfo(kFALSE), fCanLoadClassInfo(kFALSE),
    fIsOffsetStreamerSet(kFALSE), fVersionUsed(kFALSE), fRuntimeProperties(0), fOffsetStreamer(0), fStreamerType(TClass::kDefault),
    fState(kNoInfo),
    fCurrentInfo(0), fLastReadInfo(0), fRefProxy(0),
@@ -1091,7 +1099,7 @@ TClass::TClass(const char *name, Bool_t silent) :
    fStreamer(0), fIsA(0), fGlobalIsA(0), fIsAMethod(0),
    fMerge(0), fResetAfterMerge(0), fNew(0), fNewArray(0), fDelete(0), fDeleteArray(0),
    fDestructor(0), fDirAutoAdd(0), fStreamerFunc(0), fConvStreamerFunc(0), fSizeof(-1),
-   fCanSplit(-1), fProperty(0), fClassProperty(0), fHasRootPcmInfo(kFALSE), fCanLoadClassInfo(kFALSE),
+   fCanSplit(-1), fIsSyntheticPair(kFALSE), fProperty(0), fClassProperty(0), fHasRootPcmInfo(kFALSE), fCanLoadClassInfo(kFALSE),
    fIsOffsetStreamerSet(kFALSE), fVersionUsed(kFALSE), fRuntimeProperties(0), fOffsetStreamer(0), fStreamerType(TClass::kDefault),
    fState(kNoInfo),
    fCurrentInfo(0), fLastReadInfo(0), fRefProxy(0),
@@ -1138,7 +1146,7 @@ TClass::TClass(const char *name, Version_t cversion, Bool_t silent) :
    fStreamer(0), fIsA(0), fGlobalIsA(0), fIsAMethod(0),
    fMerge(0), fResetAfterMerge(0), fNew(0), fNewArray(0), fDelete(0), fDeleteArray(0),
    fDestructor(0), fDirAutoAdd(0), fStreamerFunc(0), fConvStreamerFunc(0), fSizeof(-1),
-   fCanSplit(-1), fProperty(0), fClassProperty(0), fHasRootPcmInfo(kFALSE), fCanLoadClassInfo(kFALSE),
+   fCanSplit(-1), fIsSyntheticPair(kFALSE), fProperty(0), fClassProperty(0), fHasRootPcmInfo(kFALSE), fCanLoadClassInfo(kFALSE),
    fIsOffsetStreamerSet(kFALSE), fVersionUsed(kFALSE), fRuntimeProperties(0), fOffsetStreamer(0), fStreamerType(TClass::kDefault),
    fState(kNoInfo),
    fCurrentInfo(0), fLastReadInfo(0), fRefProxy(0),
@@ -1165,7 +1173,7 @@ TClass::TClass(const char *name, Version_t cversion, EState theState, Bool_t sil
    fStreamer(0), fIsA(0), fGlobalIsA(0), fIsAMethod(0),
    fMerge(0), fResetAfterMerge(0), fNew(0), fNewArray(0), fDelete(0), fDeleteArray(0),
    fDestructor(0), fDirAutoAdd(0), fStreamerFunc(0), fConvStreamerFunc(0), fSizeof(-1),
-   fCanSplit(-1), fProperty(0), fClassProperty(0), fHasRootPcmInfo(kFALSE), fCanLoadClassInfo(kFALSE),
+   fCanSplit(-1), fIsSyntheticPair(kFALSE), fProperty(0), fClassProperty(0), fHasRootPcmInfo(kFALSE), fCanLoadClassInfo(kFALSE),
    fIsOffsetStreamerSet(kFALSE), fVersionUsed(kFALSE), fRuntimeProperties(0), fOffsetStreamer(0), fStreamerType(TClass::kDefault),
    fState(theState),
    fCurrentInfo(0), fLastReadInfo(0), fRefProxy(0),
@@ -1209,7 +1217,7 @@ TClass::TClass(ClassInfo_t *classInfo, Version_t cversion,
    fStreamer(0), fIsA(0), fGlobalIsA(0), fIsAMethod(0),
    fMerge(0), fResetAfterMerge(0), fNew(0), fNewArray(0), fDelete(0), fDeleteArray(0),
    fDestructor(0), fDirAutoAdd(0), fStreamerFunc(0), fConvStreamerFunc(0), fSizeof(-1),
-   fCanSplit(-1), fProperty(0), fClassProperty(0), fHasRootPcmInfo(kFALSE), fCanLoadClassInfo(kFALSE),
+   fCanSplit(-1), fIsSyntheticPair(kFALSE), fProperty(0), fClassProperty(0), fHasRootPcmInfo(kFALSE), fCanLoadClassInfo(kFALSE),
    fIsOffsetStreamerSet(kFALSE), fVersionUsed(kFALSE), fRuntimeProperties(0), fOffsetStreamer(0), fStreamerType(TClass::kDefault),
    fState(kNoInfo),
    fCurrentInfo(0), fLastReadInfo(0), fRefProxy(0),
@@ -1259,7 +1267,7 @@ TClass::TClass(const char *name, Version_t cversion,
    fStreamer(0), fIsA(0), fGlobalIsA(0), fIsAMethod(0),
    fMerge(0), fResetAfterMerge(0), fNew(0), fNewArray(0), fDelete(0), fDeleteArray(0),
    fDestructor(0), fDirAutoAdd(0), fStreamerFunc(0), fConvStreamerFunc(0), fSizeof(-1),
-   fCanSplit(-1), fProperty(0), fClassProperty(0), fHasRootPcmInfo(kFALSE), fCanLoadClassInfo(kFALSE),
+   fCanSplit(-1), fIsSyntheticPair(kFALSE), fProperty(0), fClassProperty(0), fHasRootPcmInfo(kFALSE), fCanLoadClassInfo(kFALSE),
    fIsOffsetStreamerSet(kFALSE), fVersionUsed(kFALSE), fRuntimeProperties(0), fOffsetStreamer(0), fStreamerType(TClass::kDefault),
    fState(kNoInfo),
    fCurrentInfo(0), fLastReadInfo(0), fRefProxy(0),
@@ -1290,7 +1298,7 @@ TClass::TClass(const char *name, Version_t cversion,
    fStreamer(0), fIsA(0), fGlobalIsA(0), fIsAMethod(0),
    fMerge(0), fResetAfterMerge(0), fNew(0), fNewArray(0), fDelete(0), fDeleteArray(0),
    fDestructor(0), fDirAutoAdd(0), fStreamerFunc(0), fConvStreamerFunc(0), fSizeof(-1),
-   fCanSplit(-1), fProperty(0), fClassProperty(0), fHasRootPcmInfo(kFALSE), fCanLoadClassInfo(kFALSE),
+   fCanSplit(-1), fIsSyntheticPair(kFALSE), fProperty(0), fClassProperty(0), fHasRootPcmInfo(kFALSE), fCanLoadClassInfo(kFALSE),
    fIsOffsetStreamerSet(kFALSE), fVersionUsed(kFALSE), fRuntimeProperties(0), fOffsetStreamer(0), fStreamerType(TClass::kDefault),
    fState(kHasTClassInit),
    fCurrentInfo(0), fLastReadInfo(0), fRefProxy(0),
@@ -1573,7 +1581,7 @@ void TClass::Init(const char *name, Version_t cversion,
    if (fClassInfo) {
       SetTitle(gCling->ClassInfo_Title(fClassInfo));
       if ( fDeclFileName == 0 || fDeclFileName[0] == '\0' ) {
-	fDeclFileName = kUndeterminedClassInfoName;
+         fDeclFileName = kUndeterminedClassInfoName;
          // Missing interface:
          // fDeclFileLine = gInterpreter->ClassInfo_FileLine( fClassInfo );
 
@@ -2011,7 +2019,7 @@ void TClass::BuildRealData(void* pointer, Bool_t isTransient)
    if (!HasInterpreterInfo() || TClassEdit::IsSTLCont(GetName(), 0) || TClassEdit::IsSTLBitset(GetName())) {
       // We are an emulated class or an STL container.
       fRealData = new TList;
-      BuildEmulatedRealData("", 0, this);
+      BuildEmulatedRealData("", 0, this, isTransient);
       return;
    }
 
@@ -2070,7 +2078,7 @@ void TClass::BuildRealData(void* pointer, Bool_t isTransient)
 ////////////////////////////////////////////////////////////////////////////////
 /// Build the list of real data for an emulated class
 
-void TClass::BuildEmulatedRealData(const char *name, Long_t offset, TClass *cl)
+void TClass::BuildEmulatedRealData(const char *name, Long_t offset, TClass *cl, Bool_t isTransient)
 {
    R__LOCKGUARD(gInterpreterMutex);
 
@@ -2078,7 +2086,7 @@ void TClass::BuildEmulatedRealData(const char *name, Long_t offset, TClass *cl)
    if (Property() & kIsAbstract) {
       info = GetStreamerInfoAbstractEmulated();
    } else {
-      info = GetStreamerInfo();
+      info = GetStreamerInfoImpl(fClassVersion, isTransient);
    }
    if (!info) {
       // This class is abstract, but we don't yet have a SteamerInfo for it ...
@@ -2107,7 +2115,7 @@ void TClass::BuildEmulatedRealData(const char *name, Long_t offset, TClass *cl)
          cl->GetListOfRealData()->Add(rd);
          // Now we a dot
          rdname.Form("%s%s.",name,element->GetFullName());
-         if (cle) cle->BuildEmulatedRealData(rdname,offset+eoffset,cl);
+         if (cle) cle->BuildEmulatedRealData(rdname,offset+eoffset,cl, isTransient);
       } else {
          //others
          TString rdname; rdname.Form("%s%s",name,element->GetFullName());
@@ -2129,7 +2137,7 @@ void TClass::BuildEmulatedRealData(const char *name, Long_t offset, TClass *cl)
          //base class
          Long_t eoffset = element->GetOffset();
          TClass *cle    = element->GetClassPointer();
-         if (cle) cle->BuildEmulatedRealData(name,offset+eoffset,cl);
+         if (cle) cle->BuildEmulatedRealData(name,offset+eoffset,cl, isTransient);
       }
    }
 }
@@ -2928,6 +2936,11 @@ TVirtualIsAProxy* TClass::GetIsAProxy() const
 
 TClass *TClass::GetClass(const char *name, Bool_t load, Bool_t silent)
 {
+   return TClass::GetClass(name, load, silent, 0, 0);
+}
+
+TClass *TClass::GetClass(const char *name, Bool_t load, Bool_t silent, size_t hint_pair_offset, size_t hint_pair_size)
+{
    if (!name || !name[0]) return 0;
 
    if (strstr(name, "(anonymous)")) return 0;
@@ -3086,10 +3099,11 @@ TClass *TClass::GetClass(const char *name, Bool_t load, Bool_t silent)
    // TClass if we have one.
    if (cl) return cl;
 
-   if (ispair) {
-      auto pairinfo = TVirtualStreamerInfo::Factory()->GenerateInfoForPair(normalizedName);
-      return pairinfo ? pairinfo->GetClass() : nullptr;
-
+   if (ispair &&  hint_pair_offset && hint_pair_size) {
+      auto pairinfo = TVirtualStreamerInfo::Factory()->GenerateInfoForPair(normalizedName, silent, hint_pair_offset, hint_pair_size);
+      //return pairinfo ? pairinfo->GetClass() : nullptr;
+      if (pairinfo)
+         return pairinfo->GetClass();
    } else if (TClassEdit::IsSTLCont( normalizedName.c_str() )) {
 
       return gInterpreter->GenerateTClass(normalizedName.c_str(), kTRUE, silent);
@@ -3172,7 +3186,7 @@ TClass *TClass::GetClass(const char *name, Bool_t load, Bool_t silent)
 ////////////////////////////////////////////////////////////////////////////////
 /// Return pointer to class with name.
 
-TClass *TClass::GetClass(const std::type_info& typeinfo, Bool_t load, Bool_t /* silent */)
+TClass *TClass::GetClass(const std::type_info& typeinfo, Bool_t load, Bool_t /* silent */, size_t hint_pair_offset, size_t hint_pair_size)
 {
    if (!gROOT->GetListOfClasses())
       return 0;
@@ -3237,9 +3251,20 @@ TClass *TClass::GetClass(const std::type_info& typeinfo, Bool_t load, Bool_t /* 
    if (autoload_old && gInterpreter->AutoLoad(typeinfo,kTRUE)) {
       // Disable autoload to avoid potential infinite recursion
       TInterpreter::SuspendAutoLoadingRAII autoloadOff(gInterpreter);
-      cl = GetClass(typeinfo, load);
+      cl = GetClass(typeinfo, load, hint_pair_offset, hint_pair_size);
       if (cl) {
          return cl;
+      }
+   }
+
+   if (hint_pair_offset) {
+      int err = 0;
+      char* demangled_name = TClassEdit::DemangleTypeIdName(typeinfo, err);
+      if (!err) {
+         cl = TClass::GetClass(demangled_name, load, kTRUE, hint_pair_offset, hint_pair_size);
+         free(demangled_name);
+         if (cl)
+            return cl;
       }
    }
 
@@ -4093,7 +4118,6 @@ void TClass::ReplaceWith(TClass *newcl) const
    TIter nextClass(gROOT->GetListOfClasses());
    TClass *acl;
    TVirtualStreamerInfo *info;
-   TList tobedeleted;
 
    // Since we are in the process of replacing a TClass by a TClass
    // coming from a dictionary, there is no point in loading any
@@ -4109,10 +4133,6 @@ void TClass::ReplaceWith(TClass *newcl) const
       }
    }
 
-   TIter delIter( &tobedeleted );
-   while ((acl = (TClass*)delIter())) {
-      delete acl;
-   }
    gInterpreter->UnRegisterTClassUpdate(this);
 }
 
@@ -4546,7 +4566,7 @@ Int_t TClass::GetNmethods()
 ///           with TStreamer::Optimize()!
 ///
 
-TVirtualStreamerInfo* TClass::GetStreamerInfo(Int_t version /* = 0 */) const
+TVirtualStreamerInfo* TClass::GetStreamerInfo(Int_t version /* = 0 */, Bool_t isTransient /* = false */) const
 {
    TVirtualStreamerInfo *sinfo = fLastReadInfo;
 
@@ -4576,6 +4596,13 @@ TVirtualStreamerInfo* TClass::GetStreamerInfo(Int_t version /* = 0 */) const
 
    R__LOCKGUARD(gInterpreterMutex);
 
+   return GetStreamerInfoImpl(version, isTransient);
+};
+
+// Implementation of/for TStreamerInfo::GetStreamerInfo.
+// This routine assumes the global lock has been taken.
+TVirtualStreamerInfo* TClass::GetStreamerInfoImpl(Int_t version, Bool_t silent) const
+{
    // Warning: version may be -1 for an emulated class, or -2 if the
    //          user requested the emulated streamerInfo for an abstract
    //          base class, even though we have a dictionary for it.
@@ -4586,7 +4613,7 @@ TVirtualStreamerInfo* TClass::GetStreamerInfo(Int_t version /* = 0 */) const
       version = fClassVersion;
    }
 
-   sinfo = (TVirtualStreamerInfo *)fStreamerInfo->At(version);
+   TVirtualStreamerInfo *sinfo = (TVirtualStreamerInfo *)fStreamerInfo->At(version);
 
    if (!sinfo && (version != fClassVersion)) {
       // When the requested version does not exist we return
@@ -4609,7 +4636,7 @@ TVirtualStreamerInfo* TClass::GetStreamerInfo(Int_t version /* = 0 */) const
       if (HasDataMemberInfo() || fCollectionProxy) {
          // If we do not have a StreamerInfo for this version and we do not
          // have dictionary information nor a proxy, there is nothing to build!
-         sinfo->Build();
+         sinfo->Build(silent);
       }
    } else {
       if (!sinfo->IsCompiled()) {
@@ -4920,16 +4947,31 @@ const void *TClass::DynamicCast(const TClass *cl, const void *obj, Bool_t up)
 
 void *TClass::New(ENewType defConstructor, Bool_t quiet) const
 {
-   void* p = 0;
+   auto obj = NewObject(defConstructor, quiet);
+   if (obj.GetPtr() && obj.GetAllocator()) {
+      // Register the object for special handling in the destructor.
+      RegisterAddressInRepository("TClass::New", obj.GetPtr(), this);
+   }
+   return obj.GetPtr();
+}
+
+// See TClass:New
+// returns a TClass::ObjectPtr which remembers if the object was allocated
+// via a TStreamerInfo.
+
+TClass::ObjectPtr TClass::NewObject(ENewType defConstructor, Bool_t quiet) const
+{
+   ObjectPtr p;
 
    if (fNew) {
       // We have the new operator wrapper function,
       // so there is a dictionary and it was generated
       // by rootcint, so there should be a default
       // constructor we can call through the wrapper.
-      TClass__GetCallingNew() = defConstructor;
-      p = fNew(0);
-      TClass__GetCallingNew() = kRealNew;
+      {
+         TClass__GetCallingNewRAII callingNew(defConstructor);
+         p = fNew(0);
+      }
       if (!p && !quiet) {
          //Error("New", "cannot create object of class %s version %d", GetName(), fClassVersion);
          Error("New", "cannot create object of class %s", GetName());
@@ -4943,9 +4985,10 @@ void *TClass::New(ENewType defConstructor, Bool_t quiet) const
       // library is loaded and there will be a default
       // constructor we can call.
       // [This is very unlikely to work, but who knows!]
-      TClass__GetCallingNew() = defConstructor;
-      p = gCling->ClassInfo_New(GetClassInfo());
-      TClass__GetCallingNew() = kRealNew;
+      {
+         TClass__GetCallingNewRAII callingNew(defConstructor);
+         p = gCling->ClassInfo_New(GetClassInfo());
+      }
       if (!p && !quiet) {
          //Error("New", "cannot create object of class %s version %d", GetName(), fClassVersion);
          Error("New", "cannot create object of class %s", GetName());
@@ -4954,9 +4997,10 @@ void *TClass::New(ENewType defConstructor, Bool_t quiet) const
       // There is no dictionary at all, so this is an emulated
       // class; however we do have the services of a collection proxy,
       // so this is an emulated STL class.
-      TClass__GetCallingNew() = defConstructor;
-      p = fCollectionProxy->New();
-      TClass__GetCallingNew() = kRealNew;
+      {
+         TClass__GetCallingNewRAII callingNew(defConstructor);
+         p = fCollectionProxy->NewObject();
+      }
       if (!p && !quiet) {
          //Error("New", "cannot create object of class %s version %d", GetName(), fClassVersion);
          Error("New", "cannot create object of class %s", GetName());
@@ -4980,14 +5024,16 @@ void *TClass::New(ENewType defConstructor, Bool_t quiet) const
          SetObjectStat(kFALSE);
       }
       TVirtualStreamerInfo* sinfo = GetStreamerInfo();
-      if (!sinfo && !quiet) {
-         Error("New", "Cannot construct class '%s' version %d, no streamer info available!", GetName(), fClassVersion);
+      if (!sinfo) {
+         if (!quiet)
+            Error("New", "Cannot construct class '%s' version %d, no streamer info available!", GetName(), fClassVersion);
          return 0;
       }
 
-      TClass__GetCallingNew() = defConstructor;
-      p = sinfo->New();
-      TClass__GetCallingNew() = kRealNew;
+      {
+         TClass__GetCallingNewRAII callingNew(defConstructor);
+         p = { sinfo->New(), sinfo};
+      }
 
       // FIXME: Mistake?  See note above at the GetObjectStat() call.
       // Allow TObject's to be registered again.
@@ -4995,12 +5041,11 @@ void *TClass::New(ENewType defConstructor, Bool_t quiet) const
          SetObjectStat(statsave);
       }
 
-      // Register the object for special handling in the destructor.
-      if (p) {
-         RegisterAddressInRepository("New",p,this);
-      } else {
+      if (!p) {
          Error("New", "Failed to construct class '%s' using streamer info", GetName());
       }
+
+      return p;
    } else {
       Fatal("New", "This cannot happen!");
    }
@@ -5015,16 +5060,32 @@ void *TClass::New(ENewType defConstructor, Bool_t quiet) const
 
 void *TClass::New(void *arena, ENewType defConstructor) const
 {
-   void* p = 0;
+   auto obj = NewObject(arena, defConstructor);
+   if (obj.GetPtr() && obj.GetAllocator()) {
+      // Register the object for special handling in the destructor.
+      RegisterAddressInRepository("TClass::New with placement", obj.GetPtr(), this);
+   }
+   return obj.GetPtr();
+}
+
+////////////////////////////////////////////////////////////////////////////////
+/// Return a pointer to a newly allocated object of this class.
+/// The class must have a default constructor. For meaning of
+/// defConstructor, see TClass::IsCallingNew().
+
+TClass::ObjectPtr TClass::NewObject(void *arena, ENewType defConstructor) const
+{
+   ObjectPtr p;
 
    if (fNew) {
       // We have the new operator wrapper function,
       // so there is a dictionary and it was generated
       // by rootcint, so there should be a default
       // constructor we can call through the wrapper.
-      TClass__GetCallingNew() = defConstructor;
-      p = fNew(arena);
-      TClass__GetCallingNew() = kRealNew;
+      {
+         TClass__GetCallingNewRAII callingNew(defConstructor);
+         p = fNew(arena);
+      }
       if (!p) {
          Error("New with placement", "cannot create object of class %s version %d at address %p", GetName(), fClassVersion, arena);
       }
@@ -5037,9 +5098,10 @@ void *TClass::New(void *arena, ENewType defConstructor) const
       // library is loaded and there will be a default
       // constructor we can call.
       // [This is very unlikely to work, but who knows!]
-      TClass__GetCallingNew() = defConstructor;
-      p = gCling->ClassInfo_New(GetClassInfo(),arena);
-      TClass__GetCallingNew() = kRealNew;
+      {
+         TClass__GetCallingNewRAII callingNew(defConstructor);
+         p = gCling->ClassInfo_New(GetClassInfo(),arena);
+      }
       if (!p) {
          Error("New with placement", "cannot create object of class %s version %d at address %p", GetName(), fClassVersion, arena);
       }
@@ -5047,9 +5109,10 @@ void *TClass::New(void *arena, ENewType defConstructor) const
       // There is no dictionary at all, so this is an emulated
       // class; however we do have the services of a collection proxy,
       // so this is an emulated STL class.
-      TClass__GetCallingNew() = defConstructor;
-      p = fCollectionProxy->New(arena);
-      TClass__GetCallingNew() = kRealNew;
+      {
+         TClass__GetCallingNewRAII callingNew(defConstructor);
+         p = fCollectionProxy->NewObject(arena);
+      }
    } else if (!HasInterpreterInfo() && !fCollectionProxy) {
       // There is no dictionary at all and we do not have
       // the services of a collection proxy available, so
@@ -5073,9 +5136,10 @@ void *TClass::New(void *arena, ENewType defConstructor) const
          return 0;
       }
 
-      TClass__GetCallingNew() = defConstructor;
-      p = sinfo->New(arena);
-      TClass__GetCallingNew() = kRealNew;
+      {
+         TClass__GetCallingNewRAII callingNew(defConstructor);
+         p = { sinfo->New(arena), sinfo };
+      }
 
       // ???BUG???
       // Allow TObject's to be registered again.
@@ -5083,10 +5147,6 @@ void *TClass::New(void *arena, ENewType defConstructor) const
          SetObjectStat(statsave);
       }
 
-      // Register the object for special handling in the destructor.
-      if (p) {
-         RegisterAddressInRepository("TClass::New with placement",p,this);
-      }
    } else {
       Error("New with placement", "This cannot happen!");
    }
@@ -5102,16 +5162,33 @@ void *TClass::New(void *arena, ENewType defConstructor) const
 
 void *TClass::NewArray(Long_t nElements, ENewType defConstructor) const
 {
-   void* p = 0;
+   auto obj = NewObjectArray(nElements, defConstructor);
+   if (obj.GetPtr() && obj.GetAllocator()) {
+      // Register the object for special handling in the destructor.
+      RegisterAddressInRepository("TClass::NewArray", obj.GetPtr(), this);
+   }
+   return obj.GetPtr();
+}
+
+////////////////////////////////////////////////////////////////////////////////
+/// Return a pointer to a newly allocated array of objects
+/// of this class.
+/// The class must have a default constructor. For meaning of
+/// defConstructor, see TClass::IsCallingNew().
+
+TClass::ObjectPtr TClass::NewObjectArray(Long_t nElements, ENewType defConstructor) const
+{
+   ObjectPtr p;
 
    if (fNewArray) {
       // We have the new operator wrapper function,
       // so there is a dictionary and it was generated
       // by rootcint, so there should be a default
       // constructor we can call through the wrapper.
-      TClass__GetCallingNew() = defConstructor;
-      p = fNewArray(nElements, 0);
-      TClass__GetCallingNew() = kRealNew;
+      {
+         TClass__GetCallingNewRAII callingNew(defConstructor);
+         p = fNewArray(nElements, 0);
+      }
       if (!p) {
          Error("NewArray", "cannot create object of class %s version %d", GetName(), fClassVersion);
       }
@@ -5124,9 +5201,10 @@ void *TClass::NewArray(Long_t nElements, ENewType defConstructor) const
       // library is loaded and there will be a default
       // constructor we can call.
       // [This is very unlikely to work, but who knows!]
-      TClass__GetCallingNew() = defConstructor;
-      p = gCling->ClassInfo_New(GetClassInfo(),nElements);
-      TClass__GetCallingNew() = kRealNew;
+      {
+         TClass__GetCallingNewRAII callingNew(defConstructor);
+         p = gCling->ClassInfo_New(GetClassInfo(),nElements);
+      }
       if (!p) {
          Error("NewArray", "cannot create object of class %s version %d", GetName(), fClassVersion);
       }
@@ -5134,9 +5212,10 @@ void *TClass::NewArray(Long_t nElements, ENewType defConstructor) const
       // There is no dictionary at all, so this is an emulated
       // class; however we do have the services of a collection proxy,
       // so this is an emulated STL class.
-      TClass__GetCallingNew() = defConstructor;
-      p = fCollectionProxy->NewArray(nElements);
-      TClass__GetCallingNew() = kRealNew;
+      {
+         TClass__GetCallingNewRAII callingNew(defConstructor);
+         p = fCollectionProxy->NewObjectArray(nElements);
+      }
    } else if (!HasInterpreterInfo() && !fCollectionProxy) {
       // There is no dictionary at all and we do not have
       // the services of a collection proxy available, so
@@ -5160,9 +5239,10 @@ void *TClass::NewArray(Long_t nElements, ENewType defConstructor) const
          return 0;
       }
 
-      TClass__GetCallingNew() = defConstructor;
-      p = sinfo->NewArray(nElements);
-      TClass__GetCallingNew() = kRealNew;
+      {
+         TClass__GetCallingNewRAII callingNew(defConstructor);
+         p = { sinfo->NewArray(nElements), sinfo };
+      }
 
       // ???BUG???
       // Allow TObject's to be registered again.
@@ -5170,10 +5250,6 @@ void *TClass::NewArray(Long_t nElements, ENewType defConstructor) const
          SetObjectStat(statsave);
       }
 
-      // Register the object for special handling in the destructor.
-      if (p) {
-         RegisterAddressInRepository("TClass::NewArray",p,this);
-      }
    } else {
       Error("NewArray", "This cannot happen!");
    }
@@ -5188,16 +5264,32 @@ void *TClass::NewArray(Long_t nElements, ENewType defConstructor) const
 
 void *TClass::NewArray(Long_t nElements, void *arena, ENewType defConstructor) const
 {
-   void* p = 0;
+   auto obj = NewObjectArray(nElements, arena, defConstructor);
+   if (obj.GetPtr() && obj.GetAllocator()) {
+      // Register the object for special handling in the destructor.
+      RegisterAddressInRepository("TClass::NewArray with placement", obj.GetPtr(), this);
+   }
+   return obj.GetPtr();
+}
+
+////////////////////////////////////////////////////////////////////////////////
+/// Return a pointer to a newly allocated object of this class.
+/// The class must have a default constructor. For meaning of
+/// defConstructor, see TClass::IsCallingNew().
+
+TClass::ObjectPtr TClass::NewObjectArray(Long_t nElements, void *arena, ENewType defConstructor) const
+{
+   ObjectPtr p;
 
    if (fNewArray) {
       // We have the new operator wrapper function,
       // so there is a dictionary and it was generated
       // by rootcint, so there should be a default
       // constructor we can call through the wrapper.
-      TClass__GetCallingNew() = defConstructor;
-      p = fNewArray(nElements, arena);
-      TClass__GetCallingNew() = kRealNew;
+      {
+         TClass__GetCallingNewRAII callingNew(defConstructor);
+         p = fNewArray(nElements, arena);
+      }
       if (!p) {
          Error("NewArray with placement", "cannot create object of class %s version %d at address %p", GetName(), fClassVersion, arena);
       }
@@ -5210,9 +5302,10 @@ void *TClass::NewArray(Long_t nElements, void *arena, ENewType defConstructor) c
       // call, or the class is interpreted and we will call the default
       // constructor that way, or no default constructor is available and
       // we fail.
-      TClass__GetCallingNew() = defConstructor;
-      p = gCling->ClassInfo_New(GetClassInfo(),nElements, arena);
-      TClass__GetCallingNew() = kRealNew;
+      {
+         TClass__GetCallingNewRAII callingNew(defConstructor);
+         p = gCling->ClassInfo_New(GetClassInfo(),nElements, arena);
+      }
       if (!p) {
          Error("NewArray with placement", "cannot create object of class %s version %d at address %p", GetName(), fClassVersion, arena);
       }
@@ -5220,9 +5313,10 @@ void *TClass::NewArray(Long_t nElements, void *arena, ENewType defConstructor) c
       // There is no dictionary at all, so this is an emulated
       // class; however we do have the services of a collection proxy,
       // so this is an emulated STL class.
-      TClass__GetCallingNew() = defConstructor;
-      p = fCollectionProxy->NewArray(nElements, arena);
-      TClass__GetCallingNew() = kRealNew;
+      {
+         TClass__GetCallingNewRAII callingNew(defConstructor);
+         p = fCollectionProxy->NewObjectArray(nElements, arena);
+      }
    } else if (!HasInterpreterInfo() && !fCollectionProxy) {
       // There is no dictionary at all and we do not have
       // the services of a collection proxy available, so
@@ -5246,9 +5340,10 @@ void *TClass::NewArray(Long_t nElements, void *arena, ENewType defConstructor) c
          return 0;
       }
 
-      TClass__GetCallingNew() = defConstructor;
-      p = sinfo->NewArray(nElements, arena);
-      TClass__GetCallingNew() = kRealNew;
+      {
+         TClass__GetCallingNewRAII callingNew(defConstructor);
+         p = { sinfo->NewArray(nElements, arena), sinfo };
+      }
 
       // ???BUG???
       // Allow TObject's to be registered again.
@@ -5261,10 +5356,7 @@ void *TClass::NewArray(Long_t nElements, void *arena, ENewType defConstructor) c
          // use the streamer info to destroy them.
       }
 
-      // Register the object for special handling in the destructor.
-      if (p) {
-         RegisterAddressInRepository("TClass::NewArray with placement",p,this);
-      }
+      return p;
    } else {
       Error("NewArray with placement", "This cannot happen!");
    }
@@ -5314,31 +5406,30 @@ void TClass::Destructor(void *obj, Bool_t dtorOnly)
       // destructor.
 
       Bool_t inRepo = kTRUE;
-      Bool_t verFound = kFALSE;
+      Bool_t currentVersion = kFALSE;
 
       // Was this object allocated through TClass?
-      std::multiset<Version_t> knownVersions;
-      R__LOCKGUARD2(gOVRMutex);
-
+      Version_t objVer = -1;
       {
-         RepoCont_t::iterator iter = gObjectVersionRepository.find(p);
-         if (iter == gObjectVersionRepository.end()) {
+         R__LOCKGUARD2(fOVRMutex);
+         RepoCont_t::iterator iter = fObjectVersionRepository.find(p);
+         if (iter == fObjectVersionRepository.end()) {
             // No, it wasn't, skip special version handling.
             //Error("Destructor2", "Attempt to delete unregistered object of class '%s' at address %p!", GetName(), p);
             inRepo = kFALSE;
          } else {
             //objVer = iter->second;
-            for (; (iter != gObjectVersionRepository.end()) && (iter->first == p); ++iter) {
-               Version_t ver = iter->second.fVersion;
-               knownVersions.insert(ver);
-               if (ver == fClassVersion && this == iter->second.fClass) {
-                  verFound = kTRUE;
+            for (; (iter != fObjectVersionRepository.end()) && (iter->first == p); ++iter) {
+               objVer = iter->second;
+               if (objVer == fClassVersion) {
+                  currentVersion = kTRUE;
+                  break;
                }
             }
          }
       }
 
-      if (!inRepo || verFound) {
+      if (!inRepo || currentVersion) {
          // The object was allocated using code for the same class version
          // as is loaded now.  We may proceed without worry.
          TVirtualStreamerInfo* si = GetStreamerInfo();
@@ -5360,14 +5451,12 @@ void TClass::Destructor(void *obj, Bool_t dtorOnly)
          // The loaded class version is not the same as the version of the code
          // which was used to allocate this object.  The best we can do is use
          // the TVirtualStreamerInfo to try to free up some of the allocated memory.
-         Error("Destructor", "Loaded class %s version %d is not registered for addr %p", GetName(), fClassVersion, p);
-#if 0
          TVirtualStreamerInfo* si = (TVirtualStreamerInfo*) fStreamerInfo->At(objVer);
          if (si) {
             si->Destructor(p, dtorOnly);
          } else {
-            Error("Destructor2", "No streamer info available for class '%s' version %d, cannot destruct object at addr: %p", GetName(), objVer, p);
-            Error("Destructor2", "length of fStreamerInfo is %d", fStreamerInfo->GetSize());
+            Error("Destructor", "No streamer info available for class '%s' version %d, cannot destruct object at addr: %p", GetName(), objVer, p);
+            Error("Destructor", "length of fStreamerInfo is %d", fStreamerInfo->GetSize());
             Int_t i = fStreamerInfo->LowerBound();
             for (Int_t v = 0; v < fStreamerInfo->GetSize(); ++v, ++i) {
                Error("Destructor2", "fStreamerInfo->At(%d): %p", i, fStreamerInfo->At(i));
@@ -5378,14 +5467,29 @@ void TClass::Destructor(void *obj, Bool_t dtorOnly)
                }
             }
          }
-#endif
       }
 
-      if (inRepo && verFound && p) {
+      if (inRepo && p) {
          UnregisterAddressInRepository("TClass::Destructor",p,this);
       }
    } else {
       Error("Destructor", "This cannot happen! (class %s)", GetName());
+   }
+}
+
+////////////////////////////////////////////////////////////////////////////////
+/// Explicitly call destructor for object.
+
+void TClass::Destructor(TClass::ObjectPtr obj, Bool_t dtorOnly)
+{
+   // Do nothing if passed a null pointer.
+   if (obj.GetPtr() == 0)
+      return;
+
+   if (obj.GetAllocator()) {
+      obj.GetAllocator()->Destructor(obj.GetPtr(), dtorOnly);
+   } else {
+      Destructor(obj.GetPtr(), dtorOnly);
    }
 }
 
@@ -5428,29 +5532,29 @@ void TClass::DeleteArray(void *ary, Bool_t dtorOnly)
       // array destructor.
 
       Bool_t inRepo = kTRUE;
-      Bool_t verFound = kFALSE;
+      Bool_t currentVersion = kFALSE;
 
       // Was this array object allocated through TClass?
-      std::multiset<Version_t> knownVersions;
+      Version_t objVer = -1;
       {
-         R__LOCKGUARD2(gOVRMutex);
-         RepoCont_t::iterator iter = gObjectVersionRepository.find(p);
-         if (iter == gObjectVersionRepository.end()) {
+         R__LOCKGUARD2(fOVRMutex);
+         RepoCont_t::iterator iter = fObjectVersionRepository.find(p);
+         if (iter == fObjectVersionRepository.end()) {
             // No, it wasn't, we cannot know what to do.
             //Error("DeleteArray", "Attempt to delete unregistered array object, element type '%s', at address %p!", GetName(), p);
             inRepo = kFALSE;
          } else {
-            for (; (iter != gObjectVersionRepository.end()) && (iter->first == p); ++iter) {
-               Version_t ver = iter->second.fVersion;
-               knownVersions.insert(ver);
-               if (ver == fClassVersion && this == iter->second.fClass ) {
-                  verFound = kTRUE;
+            for (; (iter != fObjectVersionRepository.end()) && (iter->first == p); ++iter) {
+               objVer = iter->second;
+               if (objVer == fClassVersion) {
+                  currentVersion = kTRUE;
+                  break;
                }
             }
          }
       }
 
-      if (!inRepo || verFound) {
+      if (!inRepo || currentVersion) {
          // The object was allocated using code for the same class version
          // as is loaded now.  We may proceed without worry.
          TVirtualStreamerInfo* si = GetStreamerInfo();
@@ -5472,11 +5576,6 @@ void TClass::DeleteArray(void *ary, Bool_t dtorOnly)
          // The loaded class version is not the same as the version of the code
          // which was used to allocate this array.  The best we can do is use
          // the TVirtualStreamerInfo to try to free up some of the allocated memory.
-         Error("DeleteArray", "Loaded class version %d is not registered for addr %p", fClassVersion, p);
-
-
-
-#if 0
          TVirtualStreamerInfo* si = (TVirtualStreamerInfo*) fStreamerInfo->At(objVer);
          if (si) {
             si->DeleteArray(ary, dtorOnly);
@@ -5493,17 +5592,29 @@ void TClass::DeleteArray(void *ary, Bool_t dtorOnly)
                }
             }
          }
-#endif
-
-
       }
 
       // Deregister the object for special handling in the destructor.
-      if (inRepo && verFound && p) {
+      if (inRepo && p) {
          UnregisterAddressInRepository("TClass::DeleteArray",p,this);
       }
    } else {
       Error("DeleteArray", "This cannot happen! (class '%s')", GetName());
+   }
+}
+
+////////////////////////////////////////////////////////////////////////////////
+/// Explicitly call operator delete[] for an array.
+
+void TClass::DeleteArray(TClass::ObjectPtr obj, Bool_t dtorOnly)
+{
+   // Do nothing if passed a null pointer.
+   if (obj.GetPtr() == 0) return;
+
+   if (obj.GetAllocator()) {
+      obj.GetAllocator()->DeleteArray(obj.GetPtr(), dtorOnly);
+   } else {
+      DeleteArray(obj.GetPtr(), dtorOnly);
    }
 }
 
@@ -6848,15 +6959,17 @@ void TClass::SetDirectoryAutoAdd(ROOT::DirAutoAdd_t autoAddFunc)
 ////////////////////////////////////////////////////////////////////////////////
 /// Find the TVirtualStreamerInfo in the StreamerInfos corresponding to checksum
 
-TVirtualStreamerInfo *TClass::FindStreamerInfo(UInt_t checksum) const
+TVirtualStreamerInfo *TClass::FindStreamerInfo(UInt_t checksum, Bool_t isTransient) const
 {
    TVirtualStreamerInfo *guess = fLastReadInfo;
    if (guess && guess->GetCheckSum() == checksum) {
       return guess;
    } else {
-      if (fCheckSum == checksum) return GetStreamerInfo();
+      if (fCheckSum == checksum)
+         return GetStreamerInfo(0, isTransient);
 
       R__LOCKGUARD(gInterpreterMutex);
+
       Int_t ninfos = fStreamerInfo->GetEntriesFast()-1;
       for (Int_t i=-1;i<ninfos;++i) {
          // TClass::fStreamerInfos has a lower bound not equal to 0,
@@ -6934,7 +7047,7 @@ TVirtualStreamerInfo *TClass::GetConversionStreamerInfo( const TClass* cl, Int_t
          arr = it->second;
       }
 
-      if( arr && version > -1 && version < arr->GetSize() && arr->At( version ) )
+      if( arr && version >= -1 && version < arr->GetSize() && arr->At( version ) )
          return (TVirtualStreamerInfo*) arr->At( version );
    }
 
@@ -6963,6 +7076,11 @@ TVirtualStreamerInfo *TClass::GetConversionStreamerInfo( const TClass* cl, Int_t
 
    info = (TVirtualStreamerInfo*)info->Clone();
 
+   // When cloning the StreamerInfo we record (and thus restore)
+   // the absolute value of the version, let's restore the sign.
+   if (version == -1)
+      info->SetClassVersion(-1);
+
    if( !info->BuildFor( this ) ) {
       delete info;
       return 0;
@@ -6985,6 +7103,11 @@ TVirtualStreamerInfo *TClass::GetConversionStreamerInfo( const TClass* cl, Int_t
          fConversionStreamerInfo = new std::map<std::string, TObjArray*>();
       }
       (*fConversionStreamerInfo)[cl->GetName()] = arr;
+   }
+   if (arr->At(info->GetClassVersion())) {
+      Error("GetConversionStreamerInfo", "Conversion StreamerInfo from %s to %s version %d has already been created",
+            this->GetName(), info->GetName(), info->GetClassVersion());
+      delete arr->At(info->GetClassVersion());
    }
    arr->AddAtAndExpand( info, info->GetClassVersion() );
    return info;
@@ -7056,7 +7179,14 @@ TVirtualStreamerInfo *TClass::FindConversionStreamerInfo( const TClass* cl, UInt
    // non artificial streamer elements and we should build it for current class
    /////////////////////////////////////////////////////////////////////////////
 
+   int version = info->GetClassVersion();
    info = (TVirtualStreamerInfo*)info->Clone();
+
+   // When cloning the StreamerInfo we record (and thus restore)
+   // the absolute value of the version, let's restore the sign.
+   if (version == -1)
+      info->SetClassVersion(-1);
+
    if( !info->BuildFor( this ) ) {
       delete info;
       return 0;

@@ -2470,7 +2470,7 @@ tree/tree/CMakeFiles/Tree.dir/src/TTree.cxx.o: ../core/foundation/inc/TClassEdit
 tree/tree/CMakeFiles/Tree.dir/src/TTree.cxx.o: ../core/gui/inc/GuiTypes.h
 tree/tree/CMakeFiles/Tree.dir/src/TTree.cxx.o: ../core/gui/inc/TBrowser.h
 tree/tree/CMakeFiles/Tree.dir/src/TTree.cxx.o: ../core/gui/inc/TBrowserImp.h
-tree/tree/CMakeFiles/Tree.dir/src/TTree.cxx.o: ../core/imt/inc/ROOT/TPoolManager.hxx
+tree/tree/CMakeFiles/Tree.dir/src/TTree.cxx.o: ../core/imt/inc/ROOT/RTaskArena.hxx
 tree/tree/CMakeFiles/Tree.dir/src/TTree.cxx.o: ../core/imt/inc/ROOT/TTaskGroup.hxx
 tree/tree/CMakeFiles/Tree.dir/src/TTree.cxx.o: ../core/imt/inc/ROOT/TThreadExecutor.hxx
 tree/tree/CMakeFiles/Tree.dir/src/TTree.cxx.o: ../core/meta/inc/TBaseClass.h
@@ -2505,6 +2505,7 @@ tree/tree/CMakeFiles/Tree.dir/src/TTree.cxx.o: ../io/io/inc/TFile.h
 tree/tree/CMakeFiles/Tree.dir/src/TTree.cxx.o: ../io/io/inc/TFileCacheRead.h
 tree/tree/CMakeFiles/Tree.dir/src/TTree.cxx.o: ../io/io/inc/TGenCollectionProxy.h
 tree/tree/CMakeFiles/Tree.dir/src/TTree.cxx.o: ../io/io/inc/TKey.h
+tree/tree/CMakeFiles/Tree.dir/src/TTree.cxx.o: ../io/io/inc/TMemFile.h
 tree/tree/CMakeFiles/Tree.dir/src/TTree.cxx.o: ../io/io/inc/TStreamerInfo.h
 tree/tree/CMakeFiles/Tree.dir/src/TTree.cxx.o: ../io/io/inc/TStreamerInfoActions.h
 tree/tree/CMakeFiles/Tree.dir/src/TTree.cxx.o: ../math/mathcore/inc/Math/TRandomEngine.h
@@ -2685,7 +2686,7 @@ tree/tree/CMakeFiles/Tree.dir/src/TTreeCacheUnzip.cxx.o: ../core/foundation/inc/
 tree/tree/CMakeFiles/Tree.dir/src/TTreeCacheUnzip.cxx.o: ../core/foundation/inc/ROOT/RWrap_libcpp_string_view.h
 tree/tree/CMakeFiles/Tree.dir/src/TTreeCacheUnzip.cxx.o: ../core/foundation/inc/ROOT/TypeTraits.hxx
 tree/tree/CMakeFiles/Tree.dir/src/TTreeCacheUnzip.cxx.o: ../core/foundation/inc/ROOT/libcpp_string_view.h
-tree/tree/CMakeFiles/Tree.dir/src/TTreeCacheUnzip.cxx.o: ../core/imt/inc/ROOT/TPoolManager.hxx
+tree/tree/CMakeFiles/Tree.dir/src/TTreeCacheUnzip.cxx.o: ../core/imt/inc/ROOT/RTaskArena.hxx
 tree/tree/CMakeFiles/Tree.dir/src/TTreeCacheUnzip.cxx.o: ../core/imt/inc/ROOT/TTaskGroup.hxx
 tree/tree/CMakeFiles/Tree.dir/src/TTreeCacheUnzip.cxx.o: ../core/imt/inc/ROOT/TThreadExecutor.hxx
 tree/tree/CMakeFiles/Tree.dir/src/TTreeCacheUnzip.cxx.o: ../core/meta/inc/TClass.h

@@ -53,7 +53,7 @@ core/newdelete/CMakeFiles/New.dir/src/MemCheck.cxx.o
  ../core/meta/inc/TSchemaHelper.h
  ../core/meta/inc/TVirtualIsAProxy.h
  ../core/newdelete/inc/MemCheck.h
- /content/root_src/core/newdelete/src/MemCheck.cxx
+ /content/root_src_37/core/newdelete/src/MemCheck.cxx
  ginclude/RConfigure.h
 core/newdelete/CMakeFiles/New.dir/src/NewDelete.cxx.o
  ../core/base/inc/Bytes.h
@@ -109,5 +109,5 @@ core/newdelete/CMakeFiles/New.dir/src/NewDelete.cxx.o
  ../core/meta/inc/TSchemaHelper.h
  ../core/meta/inc/TVirtualIsAProxy.h
  ../core/newdelete/inc/MemCheck.h
- /content/root_src/core/newdelete/src/NewDelete.cxx
+ /content/root_src_37/core/newdelete/src/NewDelete.cxx
  ginclude/RConfigure.h

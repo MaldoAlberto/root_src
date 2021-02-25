@@ -1,8 +1,8 @@
-# Install script for directory: /content/root_src/interpreter/cling/tools/plugins/example
+# Install script for directory: /content/root_src_37/interpreter/cling/tools/plugins/example
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/content/root_src/root_install")
+  set(CMAKE_INSTALL_PREFIX "/content/root_src_37/root_install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,8 +39,8 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xclingDemoPluginx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES
-    "/content/root_src/root_build/interpreter/llvm/src/tools/cling/tools/plugins/example/libclingDemoPlugin.so.5.0.0"
-    "/content/root_src/root_build/interpreter/llvm/src/tools/cling/tools/plugins/example/libclingDemoPlugin.so.5"
+    "/content/root_src_37/root_build/interpreter/llvm/src/tools/cling/tools/plugins/example/libclingDemoPlugin.so.5.0.0"
+    "/content/root_src_37/root_build/interpreter/llvm/src/tools/cling/tools/plugins/example/libclingDemoPlugin.so.5"
     )
   foreach(file
       "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libclingDemoPlugin.so.5.0.0"
@@ -56,7 +56,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xclingDemoPluginx" OR NOT CMAKE_INST
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xclingDemoPluginx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/content/root_src/root_build/interpreter/llvm/src/tools/cling/tools/plugins/example/libclingDemoPlugin.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/content/root_src_37/root_build/interpreter/llvm/src/tools/cling/tools/plugins/example/libclingDemoPlugin.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libclingDemoPlugin.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libclingDemoPlugin.so")
     if(CMAKE_INSTALL_DO_STRIP)

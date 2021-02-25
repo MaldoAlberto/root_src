@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/content/root_src/interpreter/llvm/src/tools/clang/lib/Edit/Commit.cpp" "/content/root_src/root_build/interpreter/llvm/src/tools/clang/lib/Edit/CMakeFiles/clangEdit.dir/Commit.cpp.o"
-  "/content/root_src/interpreter/llvm/src/tools/clang/lib/Edit/EditedSource.cpp" "/content/root_src/root_build/interpreter/llvm/src/tools/clang/lib/Edit/CMakeFiles/clangEdit.dir/EditedSource.cpp.o"
-  "/content/root_src/interpreter/llvm/src/tools/clang/lib/Edit/RewriteObjCFoundationAPI.cpp" "/content/root_src/root_build/interpreter/llvm/src/tools/clang/lib/Edit/CMakeFiles/clangEdit.dir/RewriteObjCFoundationAPI.cpp.o"
+  "/content/root_src_37/interpreter/llvm/src/tools/clang/lib/Edit/Commit.cpp" "/content/root_src_37/root_build/interpreter/llvm/src/tools/clang/lib/Edit/CMakeFiles/clangEdit.dir/Commit.cpp.o"
+  "/content/root_src_37/interpreter/llvm/src/tools/clang/lib/Edit/EditedSource.cpp" "/content/root_src_37/root_build/interpreter/llvm/src/tools/clang/lib/Edit/CMakeFiles/clangEdit.dir/EditedSource.cpp.o"
+  "/content/root_src_37/interpreter/llvm/src/tools/clang/lib/Edit/RewriteObjCFoundationAPI.cpp" "/content/root_src_37/root_build/interpreter/llvm/src/tools/clang/lib/Edit/CMakeFiles/clangEdit.dir/RewriteObjCFoundationAPI.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

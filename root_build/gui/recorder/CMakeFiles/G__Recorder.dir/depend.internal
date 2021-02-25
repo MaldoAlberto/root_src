@@ -3,7 +3,7 @@
 
 gui/recorder/CMakeFiles/G__Recorder.dir/G__Recorder.cxx.o
  ../gui/recorder/inc/TRecorder.h
- /content/root_src/root_build/gui/recorder/G__Recorder.cxx
+ /content/root_src_37/root_build/gui/recorder/G__Recorder.cxx
  include/Buttons.h
  include/Bytes.h
  include/Byteswap.h
@@ -87,8 +87,8 @@ gui/recorder/CMakeFiles/G__Recorder.dir/G__Recorder.cxx.o
  include/snprintf.h
  include/strlcpy.h
 gui/recorder/G__Recorder.cxx
- /content/root_src/gui/recorder/inc/LinkDef.h
- /content/root_src/gui/recorder/inc/TRecorder.h
+ /content/root_src_37/gui/recorder/inc/LinkDef.h
+ /content/root_src_37/gui/recorder/inc/TRecorder.h
  include/Buttons.h
  include/DllImport.h
  include/ESTLType.h

@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/content/root_src/math/vecops/src/RAdoptAllocator.cxx" "/content/root_src/root_build/math/vecops/CMakeFiles/ROOTVecOps.dir/src/RAdoptAllocator.cxx.o"
-  "/content/root_src/math/vecops/src/RVec.cxx" "/content/root_src/root_build/math/vecops/CMakeFiles/ROOTVecOps.dir/src/RVec.cxx.o"
+  "/content/root_src_37/math/vecops/src/RAdoptAllocator.cxx" "/content/root_src_37/root_build/math/vecops/CMakeFiles/ROOTVecOps.dir/src/RAdoptAllocator.cxx.o"
+  "/content/root_src_37/math/vecops/src/RVec.cxx" "/content/root_src_37/root_build/math/vecops/CMakeFiles/ROOTVecOps.dir/src/RVec.cxx.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -29,7 +29,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/content/root_src/root_build/core/CMakeFiles/Core.dir/DependInfo.cmake"
+  "/content/root_src_37/root_build/core/CMakeFiles/Core.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

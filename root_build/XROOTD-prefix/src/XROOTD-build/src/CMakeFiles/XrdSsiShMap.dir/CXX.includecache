@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/./XrdSsi/XrdSsiAtomics.hh
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/./XrdSsi/XrdSsiAtomics.hh
 string.h
 -
 atomic
@@ -14,21 +14,21 @@ atomic
 pthread.h
 -
 
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/./XrdSsi/XrdSsiShMam.hh
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/./XrdSsi/XrdSsiShMam.hh
 pthread.h
 -
 XrdSsi/XrdSsiAtomics.hh
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/./XrdSsi/XrdSsi/XrdSsiAtomics.hh
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/./XrdSsi/XrdSsi/XrdSsiAtomics.hh
 XrdSsi/XrdSsiShMat.hh
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/./XrdSsi/XrdSsi/XrdSsiShMat.hh
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/./XrdSsi/XrdSsi/XrdSsiShMat.hh
 
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/./XrdSsi/XrdSsiShMat.hh
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/./XrdSsi/XrdSsiShMat.hh
 stdlib.h
 -
 string.h
 -
 
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/XrdSsi/XrdSsiShMam.cc
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/XrdSsi/XrdSsiShMam.cc
 errno.h
 -
 fcntl.h
@@ -58,15 +58,15 @@ zlib.h
 iostream
 -
 XrdSsi/XrdSsiShMam.hh
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/XrdSsi/XrdSsi/XrdSsiShMam.hh
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/XrdSsi/XrdSsi/XrdSsiShMam.hh
 
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/XrdSsi/XrdSsiShMat.cc
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/XrdSsi/XrdSsiShMat.cc
 errno.h
 -
 XrdSsi/XrdSsiShMat.hh
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/XrdSsi/XrdSsi/XrdSsiShMat.hh
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/XrdSsi/XrdSsi/XrdSsiShMat.hh
 XrdSsi/XrdSsiShMam.hh
-/content/root_src/root_build/XROOTD-prefix/src/XROOTD/src/XrdSsi/XrdSsi/XrdSsiShMam.hh
+/content/root_src_37/root_build/XROOTD-prefix/src/XROOTD/src/XrdSsi/XrdSsi/XrdSsiShMam.hh
 
 /usr/include/x86_64-linux-gnu/bits/mman-linux.h
 bits/mman-shared.h

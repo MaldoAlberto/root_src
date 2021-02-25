@@ -1,8 +1,8 @@
-# Install script for directory: /content/root_src/interpreter/llvm/src/tools/clang/include/clang
+# Install script for directory: /content/root_src_37/interpreter/llvm/src/tools/clang/include/clang
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/content/root_src/root_install")
+  set(CMAKE_INSTALL_PREFIX "/content/root_src_37/root_install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,13 +39,13 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/content/root_src/root_build/interpreter/llvm/src/tools/clang/include/clang/AST/cmake_install.cmake")
-  include("/content/root_src/root_build/interpreter/llvm/src/tools/clang/include/clang/Basic/cmake_install.cmake")
-  include("/content/root_src/root_build/interpreter/llvm/src/tools/clang/include/clang/Driver/cmake_install.cmake")
-  include("/content/root_src/root_build/interpreter/llvm/src/tools/clang/include/clang/Parse/cmake_install.cmake")
-  include("/content/root_src/root_build/interpreter/llvm/src/tools/clang/include/clang/Sema/cmake_install.cmake")
-  include("/content/root_src/root_build/interpreter/llvm/src/tools/clang/include/clang/Serialization/cmake_install.cmake")
-  include("/content/root_src/root_build/interpreter/llvm/src/tools/clang/include/clang/StaticAnalyzer/Checkers/cmake_install.cmake")
+  include("/content/root_src_37/root_build/interpreter/llvm/src/tools/clang/include/clang/AST/cmake_install.cmake")
+  include("/content/root_src_37/root_build/interpreter/llvm/src/tools/clang/include/clang/Basic/cmake_install.cmake")
+  include("/content/root_src_37/root_build/interpreter/llvm/src/tools/clang/include/clang/Driver/cmake_install.cmake")
+  include("/content/root_src_37/root_build/interpreter/llvm/src/tools/clang/include/clang/Parse/cmake_install.cmake")
+  include("/content/root_src_37/root_build/interpreter/llvm/src/tools/clang/include/clang/Sema/cmake_install.cmake")
+  include("/content/root_src_37/root_build/interpreter/llvm/src/tools/clang/include/clang/Serialization/cmake_install.cmake")
+  include("/content/root_src_37/root_build/interpreter/llvm/src/tools/clang/include/clang/StaticAnalyzer/Checkers/cmake_install.cmake")
 
 endif()
 

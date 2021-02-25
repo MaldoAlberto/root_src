@@ -53,10 +53,10 @@ tmva/tmvagui/CMakeFiles/G__TMVAGui.dir/G__TMVAGui.cxx.o: include/RConfigure.h
 tmva/tmvagui/CMakeFiles/G__TMVAGui.dir/G__TMVAGui.cxx.o: include/ROOT/RConcurrentHashColl.hxx
 tmva/tmvagui/CMakeFiles/G__TMVAGui.dir/G__TMVAGui.cxx.o: include/ROOT/RConfig.hxx
 tmva/tmvagui/CMakeFiles/G__TMVAGui.dir/G__TMVAGui.cxx.o: include/ROOT/RStringView.hxx
+tmva/tmvagui/CMakeFiles/G__TMVAGui.dir/G__TMVAGui.cxx.o: include/ROOT/RTaskArena.hxx
 tmva/tmvagui/CMakeFiles/G__TMVAGui.dir/G__TMVAGui.cxx.o: include/ROOT/RWrap_libcpp_string_view.h
 tmva/tmvagui/CMakeFiles/G__TMVAGui.dir/G__TMVAGui.cxx.o: include/ROOT/TExecutor.hxx
 tmva/tmvagui/CMakeFiles/G__TMVAGui.dir/G__TMVAGui.cxx.o: include/ROOT/TIOFeatures.hxx
-tmva/tmvagui/CMakeFiles/G__TMVAGui.dir/G__TMVAGui.cxx.o: include/ROOT/TPoolManager.hxx
 tmva/tmvagui/CMakeFiles/G__TMVAGui.dir/G__TMVAGui.cxx.o: include/ROOT/TRWSpinLock.hxx
 tmva/tmvagui/CMakeFiles/G__TMVAGui.dir/G__TMVAGui.cxx.o: include/ROOT/TSeq.hxx
 tmva/tmvagui/CMakeFiles/G__TMVAGui.dir/G__TMVAGui.cxx.o: include/ROOT/TSpinMutex.hxx
@@ -287,10 +287,10 @@ tmva/tmvagui/G__TMVAGui.cxx: include/RConfigure.h
 tmva/tmvagui/G__TMVAGui.cxx: include/ROOT/RConcurrentHashColl.hxx
 tmva/tmvagui/G__TMVAGui.cxx: include/ROOT/RConfig.hxx
 tmva/tmvagui/G__TMVAGui.cxx: include/ROOT/RStringView.hxx
+tmva/tmvagui/G__TMVAGui.cxx: include/ROOT/RTaskArena.hxx
 tmva/tmvagui/G__TMVAGui.cxx: include/ROOT/RWrap_libcpp_string_view.h
 tmva/tmvagui/G__TMVAGui.cxx: include/ROOT/TExecutor.hxx
 tmva/tmvagui/G__TMVAGui.cxx: include/ROOT/TIOFeatures.hxx
-tmva/tmvagui/G__TMVAGui.cxx: include/ROOT/TPoolManager.hxx
 tmva/tmvagui/G__TMVAGui.cxx: include/ROOT/TRWSpinLock.hxx
 tmva/tmvagui/G__TMVAGui.cxx: include/ROOT/TSeq.hxx
 tmva/tmvagui/G__TMVAGui.cxx: include/ROOT/TSpinMutex.hxx

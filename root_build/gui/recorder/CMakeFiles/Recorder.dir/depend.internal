@@ -116,5 +116,5 @@ gui/recorder/CMakeFiles/Recorder.dir/src/TRecorder.cxx.o
  ../tree/tree/inc/TBranchCacheInfo.h
  ../tree/tree/inc/TTree.h
  ../tree/tree/inc/TVirtualTreePlayer.h
- /content/root_src/gui/recorder/src/TRecorder.cxx
+ /content/root_src_37/gui/recorder/src/TRecorder.cxx
  ginclude/RConfigure.h

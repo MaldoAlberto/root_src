@@ -7,11 +7,11 @@ C_FLAGS =  -Wno-implicit-fallthrough -pipe -Wall -W -pthread -O3 -DNDEBUG
 
 C_DEFINES = 
 
-C_INCLUDES = -I/content/root_src/core/base/inc -I/content/root_src/core/clib/inc -I/content/root_src/core/meta/inc -I/content/root_src/root_build/ginclude 
+C_INCLUDES = -I/content/root_src_37/core/base/inc -I/content/root_src_37/core/clib/inc -I/content/root_src_37/core/meta/inc -I/content/root_src_37/root_build/ginclude 
 
 CXX_FLAGS =  -std=c++11 -Wno-implicit-fallthrough -Wno-noexcept-type -pipe  -Wshadow -Wall -W -Woverloaded-virtual -fsigned-char -pthread -O3 -DNDEBUG   -std=c++11
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/content/root_src/core/base/inc -I/content/root_src/core/clib/inc -I/content/root_src/core/meta/inc -I/content/root_src/root_build/ginclude 
+CXX_INCLUDES = -I/content/root_src_37/core/base/inc -I/content/root_src_37/core/clib/inc -I/content/root_src_37/core/meta/inc -I/content/root_src_37/root_build/ginclude 
 

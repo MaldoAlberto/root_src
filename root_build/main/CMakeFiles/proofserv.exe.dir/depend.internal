@@ -52,5 +52,5 @@ main/CMakeFiles/proofserv.exe.dir/src/pmain.cxx.o
  ../core/meta/inc/TIsAProxy.h
  ../core/meta/inc/TSchemaHelper.h
  ../core/meta/inc/TVirtualIsAProxy.h
- /content/root_src/main/src/pmain.cxx
+ /content/root_src_37/main/src/pmain.cxx
  ginclude/RConfigure.h

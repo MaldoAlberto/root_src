@@ -73,27 +73,27 @@ set_target_properties(clingDemoPlugin PROPERTIES
 set_property(TARGET clingInterpreter APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(clingInterpreter PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/content/root_src/root_build/interpreter/llvm/src/lib/libclingInterpreter.a"
+  IMPORTED_LOCATION_RELEASE "/content/root_src_37/root_build/interpreter/llvm/src/lib/libclingInterpreter.a"
   )
 
 # Import target "clingMetaProcessor" for configuration "Release"
 set_property(TARGET clingMetaProcessor APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(clingMetaProcessor PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/content/root_src/root_build/interpreter/llvm/src/lib/libclingMetaProcessor.a"
+  IMPORTED_LOCATION_RELEASE "/content/root_src_37/root_build/interpreter/llvm/src/lib/libclingMetaProcessor.a"
   )
 
 # Import target "clingUtils" for configuration "Release"
 set_property(TARGET clingUtils APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(clingUtils PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/content/root_src/root_build/interpreter/llvm/src/lib/libclingUtils.a"
+  IMPORTED_LOCATION_RELEASE "/content/root_src_37/root_build/interpreter/llvm/src/lib/libclingUtils.a"
   )
 
 # Import target "clingDemoPlugin" for configuration "Release"
 set_property(TARGET clingDemoPlugin APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(clingDemoPlugin PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/content/root_src/root_build/interpreter/llvm/src/tools/cling/tools/plugins/example/libclingDemoPlugin.so.5.0.0"
+  IMPORTED_LOCATION_RELEASE "/content/root_src_37/root_build/interpreter/llvm/src/tools/cling/tools/plugins/example/libclingDemoPlugin.so.5.0.0"
   IMPORTED_SONAME_RELEASE "libclingDemoPlugin.so.5"
   )
 

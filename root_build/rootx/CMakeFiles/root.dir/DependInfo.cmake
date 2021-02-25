@@ -5,7 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/content/root_src/core/clib/src/strlcpy.c" "/content/root_src/root_build/rootx/CMakeFiles/root.dir/__/core/clib/src/strlcpy.c.o"
+  "/content/root_src_37/core/clib/src/strlcpy.c" "/content/root_src_37/root_build/rootx/CMakeFiles/root.dir/__/core/clib/src/strlcpy.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -17,8 +17,8 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "ginclude"
   )
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/content/root_src/rootx/src/rootx.cxx" "/content/root_src/root_build/rootx/CMakeFiles/root.dir/src/rootx.cxx.o"
-  "/content/root_src/rootx/src/rootxx.cxx" "/content/root_src/root_build/rootx/CMakeFiles/root.dir/src/rootxx.cxx.o"
+  "/content/root_src_37/rootx/src/rootx.cxx" "/content/root_src_37/root_build/rootx/CMakeFiles/root.dir/src/rootx.cxx.o"
+  "/content/root_src_37/rootx/src/rootxx.cxx" "/content/root_src_37/root_build/rootx/CMakeFiles/root.dir/src/rootxx.cxx.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

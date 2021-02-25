@@ -8,15 +8,15 @@
 
 ../graf3d/g3d/inc/X3DBuffer.h
 
-/content/root_src/graf3d/g3d/src/X3DBuffer.c
+/content/root_src_37/graf3d/g3d/src/X3DBuffer.c
 X3DBuffer.h
-/content/root_src/graf3d/g3d/src/X3DBuffer.h
+/content/root_src_37/graf3d/g3d/src/X3DBuffer.h
 ../../x3d/src/X3DDefs.h
-/content/root_src/graf3d/x3d/src/X3DDefs.h
+/content/root_src_37/graf3d/x3d/src/X3DDefs.h
 stdio.h
 -
 stdlib.h
 -
 
-/content/root_src/graf3d/x3d/src/X3DDefs.h
+/content/root_src_37/graf3d/x3d/src/X3DDefs.h
 

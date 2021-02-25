@@ -6,5 +6,5 @@ CXX_FLAGS =  -std=c++11 -Wno-implicit-fallthrough -Wno-noexcept-type -pipe  -Wsh
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/content/root_src/io/xml/inc -I/content/root_src/core/unix/inc -I/content/root_src/core/clingutils/inc -I/content/root_src/core/textinput/inc -I/content/root_src/core/thread/inc -I/content/root_src/core/zip/inc -I/content/root_src/core/rint/inc -I/content/root_src/core/clib/inc -I/content/root_src/core/meta/inc -I/content/root_src/core/gui/inc -I/content/root_src/core/cont/inc -I/content/root_src/core/foundation/inc -I/content/root_src/core/base/inc -I/content/root_src/root_build/ginclude -I/content/root_src/io/io/inc -I/content/root_src/io/io/res -I/content/root_src/core/clib/res 
+CXX_INCLUDES = -I/content/root_src_37/io/xml/inc -I/content/root_src_37/core/unix/inc -I/content/root_src_37/core/clingutils/inc -I/content/root_src_37/core/textinput/inc -I/content/root_src_37/core/thread/inc -I/content/root_src_37/core/zip/inc -I/content/root_src_37/core/rint/inc -I/content/root_src_37/core/clib/inc -I/content/root_src_37/core/meta/inc -I/content/root_src_37/core/gui/inc -I/content/root_src_37/core/cont/inc -I/content/root_src_37/core/foundation/inc -I/content/root_src_37/core/base/inc -I/content/root_src_37/root_build/ginclude -I/content/root_src_37/io/io/inc -I/content/root_src_37/io/io/res -I/content/root_src_37/core/clib/res 
 
