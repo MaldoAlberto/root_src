@@ -6,6 +6,10 @@ The steps to follow are done in the PyROOT_template.ipynb file which can be foun
 https://github.com/MaldoAlberto/root_src_37/blob/main/PyROOT_template.ipynb
 
 
+for PYthon 3.6 you need to rename the folder and commands in the notebook of  root_src_37 by root_src .
+
+
+
 # LICENSE
 
 This library is free software; you can redistribute it and/or
